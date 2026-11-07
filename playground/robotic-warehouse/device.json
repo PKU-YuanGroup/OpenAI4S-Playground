@@ -1,0 +1,17 @@
+{
+  "name": "robotic-warehouse",
+  "mhs_package": "mhs/MHS/drivers/robots/semitable__robotic-warehouse",
+  "upstream": {
+    "repo_url": "https://github.com/semitable/robotic-warehouse",
+    "commit": "96fbc64e3eae5fee915e0d390f864fa06ddccd47",
+    "license": "MIT",
+    "path": "playground/robotic-warehouse/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "backends": [
+    "fake"
+  ],
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/semitable__robotic-warehouse --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/semitable__robotic-warehouse --backend fake --mcp"
+}

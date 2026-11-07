@@ -13,3 +13,7 @@
 	path = playground/gym-aloha/upstream
 	url = https://github.com/huggingface/gym-aloha
 	shallow = true
+[submodule "playground/robotic-warehouse/upstream"]
+	path = playground/robotic-warehouse/upstream
+	url = https://github.com/semitable/robotic-warehouse
+	shallow = true
