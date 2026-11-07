@@ -1,0 +1,3 @@
+[submodule "mhs"]
+	path = mhs
+	url = https://github.com/PKU-YuanGroup/OpenMHS.git
