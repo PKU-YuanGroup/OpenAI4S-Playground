@@ -1,3 +1,7 @@
 [submodule "mhs"]
 	path = mhs
 	url = https://github.com/PKU-YuanGroup/OpenMHS.git
+[submodule "playground/gymnasium/upstream"]
+	path = playground/gymnasium/upstream
+	url = https://github.com/farama-foundation/gymnasium
+	shallow = true
