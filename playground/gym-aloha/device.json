@@ -1,0 +1,17 @@
+{
+  "name": "gym-aloha",
+  "mhs_package": "mhs/MHS/drivers/robots/huggingface__gym-aloha",
+  "upstream": {
+    "repo_url": "https://github.com/huggingface/gym-aloha",
+    "commit": "bd3325740ea8d1c97411c41ea1e0f4ce0a7de8da",
+    "license": "Apache-2.0",
+    "path": "playground/gym-aloha/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "backends": [
+    "fake"
+  ],
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__gym-aloha --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__gym-aloha --backend fake --mcp"
+}
