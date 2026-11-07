@@ -1,0 +1,17 @@
+{
+  "name": "gym-ur5",
+  "mhs_package": "mhs/MHS/drivers/robots/pnnayyeri__gym-ur5",
+  "upstream": {
+    "repo_url": "https://github.com/pnnayyeri/gym-ur5",
+    "commit": "e515a405d6619456a8cd77f8e5108e7f0bc08246",
+    "license": "MIT",
+    "path": "playground/gym-ur5/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "backends": [
+    "fake"
+  ],
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pnnayyeri__gym-ur5 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pnnayyeri__gym-ur5 --backend fake --mcp"
+}
