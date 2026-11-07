@@ -21,3 +21,7 @@
 	path = playground/gym-ur5/upstream
 	url = https://github.com/pnnayyeri/gym-ur5
 	shallow = true
+[submodule "playground/gym-muller_brown/upstream"]
+	path = playground/gym-muller_brown/upstream
+	url = https://github.com/jjgoings/gym-muller_brown
+	shallow = true

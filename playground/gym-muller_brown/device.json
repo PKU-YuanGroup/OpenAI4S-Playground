@@ -1,0 +1,17 @@
+{
+  "name": "gym-muller_brown",
+  "mhs_package": "mhs/MHS/drivers/labs/jjgoings__gym-muller_brown",
+  "upstream": {
+    "repo_url": "https://github.com/jjgoings/gym-muller_brown",
+    "commit": "41467f4137008045c759a499cdcbb3aadf04f70c",
+    "license": "MIT",
+    "path": "playground/gym-muller_brown/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "backends": [
+    "fake"
+  ],
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jjgoings__gym-muller_brown --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jjgoings__gym-muller_brown --backend fake --mcp"
+}
