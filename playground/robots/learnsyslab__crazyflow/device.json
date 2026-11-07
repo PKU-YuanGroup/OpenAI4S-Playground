@@ -1,0 +1,25 @@
+{
+  "name": "robots/learnsyslab__crazyflow",
+  "package": "robots/learnsyslab__crazyflow",
+  "mhs_package": "mhs/MHS/drivers/robots/learnsyslab__crazyflow",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/learnsyslab/crazyflow",
+    "commit": "70d09e455859580c45b0e4a06ee4a92efbbc2d6f",
+    "license": "MIT",
+    "path": "playground/robots/learnsyslab__crazyflow/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/learnsyslab__crazyflow --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/learnsyslab__crazyflow --backend fake --mcp"
+}

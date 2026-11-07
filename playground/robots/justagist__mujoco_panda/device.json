@@ -1,0 +1,25 @@
+{
+  "name": "robots/justagist__mujoco_panda",
+  "package": "robots/justagist__mujoco_panda",
+  "mhs_package": "mhs/MHS/drivers/robots/justagist__mujoco_panda",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/justagist/mujoco_panda",
+    "commit": "207938fbc99bd3f8a4b05d35c18dd999b7a8dd7f",
+    "license": "NOASSERTION",
+    "path": "playground/robots/justagist__mujoco_panda/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justagist__mujoco_panda --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justagist__mujoco_panda --backend fake --mcp"
+}

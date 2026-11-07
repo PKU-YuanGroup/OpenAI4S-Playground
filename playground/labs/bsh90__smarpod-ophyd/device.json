@@ -1,0 +1,26 @@
+{
+  "name": "labs/bsh90__smarpod-ophyd",
+  "package": "labs/bsh90__smarpod-ophyd",
+  "mhs_package": "mhs/MHS/drivers/labs/bsh90__smarpod-ophyd",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/bsh90/smarpod-ophyd",
+    "commit": "a3d50e67618b9a15527d54339a333f199f58681d",
+    "license": "MIT",
+    "path": "playground/labs/bsh90__smarpod-ophyd/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bsh90__smarpod-ophyd --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bsh90__smarpod-ophyd --backend fake --mcp"
+}

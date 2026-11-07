@@ -1,0 +1,26 @@
+{
+  "name": "labs/usnistgov__ssmdevices",
+  "package": "labs/usnistgov__ssmdevices",
+  "mhs_package": "mhs/MHS/drivers/labs/usnistgov__ssmdevices",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/usnistgov/ssmdevices",
+    "commit": "4680dde885660d6aa467dc883aec1226f401589a",
+    "license": "NIST-PD",
+    "path": "playground/labs/usnistgov__ssmdevices/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/usnistgov__ssmdevices --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/usnistgov__ssmdevices --backend fake --mcp"
+}

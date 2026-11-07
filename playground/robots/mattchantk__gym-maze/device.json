@@ -1,0 +1,25 @@
+{
+  "name": "robots/mattchantk__gym-maze",
+  "package": "robots/mattchantk__gym-maze",
+  "mhs_package": "mhs/MHS/drivers/robots/mattchantk__gym-maze",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/mattchantk/gym-maze",
+    "commit": "83176811b49b5538a6213520612f44fb1bc49114",
+    "license": "MIT",
+    "path": "playground/robots/mattchantk__gym-maze/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mattchantk__gym-maze --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mattchantk__gym-maze --backend fake --mcp"
+}

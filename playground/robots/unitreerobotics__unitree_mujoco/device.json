@@ -1,0 +1,25 @@
+{
+  "name": "robots/unitreerobotics__unitree_mujoco",
+  "package": "robots/unitreerobotics__unitree_mujoco",
+  "mhs_package": "mhs/MHS/drivers/robots/unitreerobotics__unitree_mujoco",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/unitreerobotics/unitree_mujoco",
+    "commit": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/unitreerobotics__unitree_mujoco/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unitreerobotics__unitree_mujoco --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unitreerobotics__unitree_mujoco --backend fake --mcp"
+}

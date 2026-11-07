@@ -1,0 +1,25 @@
+{
+  "name": "robots/isaaczh__himloco_lab",
+  "package": "robots/isaaczh__himloco_lab",
+  "mhs_package": "mhs/MHS/drivers/robots/isaaczh__himloco_lab",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/isaaczh/himloco_lab",
+    "commit": "c3fbd0173f2a53a86e472c099f8e2e9744cf7639",
+    "license": "NOASSERTION",
+    "path": "playground/robots/isaaczh__himloco_lab/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isaaczh__himloco_lab --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isaaczh__himloco_lab --backend fake --mcp"
+}

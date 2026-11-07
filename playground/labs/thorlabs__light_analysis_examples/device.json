@@ -1,0 +1,26 @@
+{
+  "name": "labs/thorlabs__light_analysis_examples",
+  "package": "labs/thorlabs__light_analysis_examples",
+  "mhs_package": "mhs/MHS/drivers/labs/thorlabs__light_analysis_examples",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/thorlabs/light_analysis_examples",
+    "commit": "1e7f3aa6fe29ca9739c582464bf870232232567b",
+    "license": "MIT",
+    "path": "playground/labs/thorlabs__light_analysis_examples/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/thorlabs__light_analysis_examples --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/thorlabs__light_analysis_examples --backend fake --mcp"
+}

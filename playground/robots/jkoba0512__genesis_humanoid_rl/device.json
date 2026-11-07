@@ -1,0 +1,25 @@
+{
+  "name": "robots/jkoba0512__genesis_humanoid_rl",
+  "package": "robots/jkoba0512__genesis_humanoid_rl",
+  "mhs_package": "mhs/MHS/drivers/robots/jkoba0512__genesis_humanoid_rl",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/jkoba0512/genesis_humanoid_rl",
+    "commit": "32e5bd1a1e516bf4caedcb31f1a8ee366f2efebc",
+    "license": "MIT",
+    "path": "playground/robots/jkoba0512__genesis_humanoid_rl/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jkoba0512__genesis_humanoid_rl --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jkoba0512__genesis_humanoid_rl --backend fake --mcp"
+}

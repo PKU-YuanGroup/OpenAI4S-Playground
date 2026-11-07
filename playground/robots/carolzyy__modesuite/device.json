@@ -1,0 +1,25 @@
+{
+  "name": "robots/carolzyy__modesuite",
+  "package": "robots/carolzyy__modesuite",
+  "mhs_package": "mhs/MHS/drivers/robots/carolzyy__modesuite",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/carolzyy/modesuite",
+    "commit": "470681a7ff117e487060ad52bc4f199e3fa34474",
+    "license": "NOASSERTION",
+    "path": "playground/robots/carolzyy__modesuite/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/carolzyy__modesuite --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/carolzyy__modesuite --backend fake --mcp"
+}

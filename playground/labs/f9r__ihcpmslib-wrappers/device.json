@@ -1,0 +1,26 @@
+{
+  "name": "labs/f9r__ihcpmslib-wrappers",
+  "package": "labs/f9r__ihcpmslib-wrappers",
+  "mhs_package": "mhs/MHS/drivers/labs/f9r__ihcpmslib-wrappers",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/f9r/ihcpmslib-wrappers",
+    "commit": "3e6bd4c47f395bc37122e0e814184c540a99dd4e",
+    "license": "BSD-2-Clause",
+    "path": "playground/labs/f9r__ihcpmslib-wrappers/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/f9r__ihcpmslib-wrappers --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/f9r__ihcpmslib-wrappers --backend fake --mcp"
+}

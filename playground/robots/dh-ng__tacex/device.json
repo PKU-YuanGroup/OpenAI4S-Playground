@@ -1,0 +1,25 @@
+{
+  "name": "robots/dh-ng__tacex",
+  "package": "robots/dh-ng__tacex",
+  "mhs_package": "mhs/MHS/drivers/robots/dh-ng__tacex",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/dh-ng/tacex",
+    "commit": "adceed41afb7cb48f9ec1f66a662fb8e5a06627f",
+    "license": "NOASSERTION",
+    "path": "playground/robots/dh-ng__tacex/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dh-ng__tacex --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dh-ng__tacex --backend fake --mcp"
+}

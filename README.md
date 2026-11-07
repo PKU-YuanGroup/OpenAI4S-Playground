@@ -1,65 +1,59 @@
 # OpenAI4S-Playground
 
-Devices and simulators that [OpenAI4S](https://github.com/PKU-YuanGroup/OpenAI4S) can use through
-[OpenMHS](https://github.com/PKU-YuanGroup/OpenMHS), an open standard and SDK for model-to-hardware control.
-OpenMHS is an independent open-source project, not affiliated with or endorsed by Anthropic.
+The device catalog for [OpenAI4S](https://github.com/PKU-YuanGroup/OpenAI4S), powered by
+[OpenMHS — Model Hardware Standard](https://mhs.openai4s.org).
 
-## Layout
-
-| Path | What it holds |
-|---|---|
-| `mhs/` | OpenMHS as a submodule: the specification, the standard-library SDK and its driver packages. |
-| `playground/<device>/upstream/` | The device's own repository as a shallow submodule, pinned to the commit its OpenMHS package was checked against. |
-| `playground/<device>/device.json` | The OpenMHS package that serves the device, and the commands that serve it. |
-| `scripts/add_device.py` | Adds another OpenMHS package and its upstream repository. |
+All **746 passing adaptations** are included: laboratory instruments, robots and simulators.
+Browse [devices.json](devices.json), or the `device.json` files under [playground/](playground/).
+Each entry gives its upstream commit and license, declared mode and risk, and commands to serve its fake backend.
+The catalog is generated from the pinned OpenMHS submodule; blocked packages stay in OpenMHS's registry.
 
 ## Quick start
 
-Python 3.10 or newer; the SDK needs no third-party package.
+Python 3.10 or newer. The fake backend needs only the standard library.
 
 ```bash
-git clone --recurse-submodules --shallow-submodules https://github.com/PKU-YuanGroup/OpenAI4S-Playground.git
+git clone https://github.com/PKU-YuanGroup/OpenAI4S-Playground.git
 cd OpenAI4S-Playground
+git submodule update --init mhs
 export PYTHONPATH=mhs/MHS/sdk/src
 python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__gym-pusht --backend fake --port 7400
-# in a second terminal
+# In another terminal
 PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs describe --endpoint http://127.0.0.1:7400
 ```
 
-Each `device.json` lists the same commands for its device (`serve_http`, and `serve_mcp` for the MCP projection on
-stdio).
+Use any catalog entry's `serve_http` or `serve_mcp` command to start another package.
+Commands use the fake backend by default. `validation` records fake contract checks; native simulation and
+hardware use require their own environment and device setup.
 
-## Devices
+## Upstream sources on demand
 
-| Device | OpenMHS package | Upstream (licence) |
-|---|---|---|
-| Gymnasium CartPole-v1 (classic control) | `robots/farama-foundation__gymnasium` | farama-foundation/gymnasium (MIT) |
-| PushT 2D manipulation (PushT-v0) | `robots/huggingface__gym-pusht` | huggingface/gym-pusht (Apache-2.0) |
-| ALOHA bimanual insertion (AlohaInsertion-v0) | `robots/huggingface__gym-aloha` | huggingface/gym-aloha (Apache-2.0) |
-| RWARE warehouse with one agent | `robots/semitable__robotic-warehouse` | semitable/robotic-warehouse (MIT) |
-| UR5 with a Jaco hand in CoppeliaSim | `robots/pnnayyeri__gym-ur5` | pnnayyeri/gym-ur5 (MIT) |
-| Discrete Muller-Brown potential | `labs/jjgoings__gym-muller_brown` | jjgoings/gym-muller_brown (MIT) |
-
-All six are simulations at risk R0 whose packages pass the OpenMHS gate.
-
-## Connecting OpenAI4S
-
-OpenAI4S reaches each served device as an MCP connector. The integration is experimental and disabled by default. See
-[`mhs/integration/openai4s/README.md`](https://github.com/PKU-YuanGroup/OpenMHS/tree/main/integration/openai4s) for the
-reference host and the OpenAI4S guide `docs/openmhs.md`.
-
-## Safety
-
-- The `fake` backend runs without the upstream code. The `sim` backend needs the upstream package installed from
-  `playground/<device>/upstream`.
-- No device here drives hardware. An OpenMHS hardware backend needs a human reviewer's signature (`reviewed_by`) and an
-  explicit operator decision (`--allow-hardware --arm`) before it starts.
-- OpenMHS is a supervisory software contract, not a safety certification, and never replaces a hardware emergency stop.
-
-## Adding a device
+The adapted drivers ship in `mhs/`; you can use their fake backends immediately.
+Fetch an upstream checkout only when needed:
 
 ```bash
-python3 scripts/add_device.py robots/<owner>__<repo> [--name <folder>]
+python3 scripts/add_device.py robots/huggingface__gym-pusht
 ```
 
-The script accepts only packages that pass the OpenMHS gate. Check the upstream licence before you add a repository.
+The script checks out the exact commit in the catalog. Install upstream dependencies according to its README.
+The original six featured simulator submodules remain available with `git submodule update --init --depth 1`.
+
+## Update the catalog
+
+```bash
+git -C mhs pull --ff-only
+python3 scripts/sync_devices.py
+python3 scripts/sync_devices.py --check
+```
+
+Passing packages are included regardless of historical internal publication-review labels.
+Each upstream repository retains its own license; this catalog records it without relicensing its sources.
+
+## Connect OpenAI4S
+
+Follow the [OpenAI4S integration guide](https://github.com/PKU-YuanGroup/OpenAI4S/blob/feat/openmhs-integration/docs/openmhs.md)
+to enable the MCP connector. The [reference host guide](https://github.com/PKU-YuanGroup/OpenMHS/tree/main/integration/openai4s)
+covers endpoint configuration and evidence.
+
+Hardware access remains an explicit operator choice. The endpoint enforces limits, interlocks and emergency stops;
+a software stop does not replace a hardware emergency stop.

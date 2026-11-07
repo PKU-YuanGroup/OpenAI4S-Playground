@@ -1,0 +1,25 @@
+{
+  "name": "robots/limxdynamics__humanoid-description",
+  "package": "robots/limxdynamics__humanoid-description",
+  "mhs_package": "mhs/MHS/drivers/robots/limxdynamics__humanoid-description",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/limxdynamics/humanoid-description",
+    "commit": "80fbd2d650c43c38916979c2a6eab7a4c79e38de",
+    "license": "Apache-2.0",
+    "path": "playground/robots/limxdynamics__humanoid-description/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/limxdynamics__humanoid-description --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/limxdynamics__humanoid-description --backend fake --mcp"
+}

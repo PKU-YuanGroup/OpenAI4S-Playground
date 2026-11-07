@@ -1,0 +1,25 @@
+{
+  "name": "robots/apirrone__open_duck_mini",
+  "package": "robots/apirrone__open_duck_mini",
+  "mhs_package": "mhs/MHS/drivers/robots/apirrone__open_duck_mini",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/apirrone/open_duck_mini",
+    "commit": "b23317a485b3cec7d8417f352478778b3475173c",
+    "license": "Apache-2.0",
+    "path": "playground/robots/apirrone__open_duck_mini/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/apirrone__open_duck_mini --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/apirrone__open_duck_mini --backend fake --mcp"
+}

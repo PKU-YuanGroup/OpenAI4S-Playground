@@ -1,0 +1,25 @@
+{
+  "name": "robots/avisengine__avis-engine-python-api",
+  "package": "robots/avisengine__avis-engine-python-api",
+  "mhs_package": "mhs/MHS/drivers/robots/avisengine__avis-engine-python-api",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/avisengine/avis-engine-python-api",
+    "commit": "32b9a9e063a5608b9b60a87aa32171d44c116316",
+    "license": "NOASSERTION",
+    "path": "playground/robots/avisengine__avis-engine-python-api/upstream"
+  },
+  "family": "python-object",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/avisengine__avis-engine-python-api --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/avisengine__avis-engine-python-api --backend fake --mcp"
+}

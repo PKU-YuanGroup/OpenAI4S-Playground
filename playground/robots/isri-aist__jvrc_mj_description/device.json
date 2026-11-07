@@ -1,0 +1,25 @@
+{
+  "name": "robots/isri-aist__jvrc_mj_description",
+  "package": "robots/isri-aist__jvrc_mj_description",
+  "mhs_package": "mhs/MHS/drivers/robots/isri-aist__jvrc_mj_description",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/isri-aist/jvrc_mj_description",
+    "commit": "8cfc65f5c5793582b55e0d5eb4726dfb3094a224",
+    "license": "BSD-2-Clause",
+    "path": "playground/robots/isri-aist__jvrc_mj_description/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isri-aist__jvrc_mj_description --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isri-aist__jvrc_mj_description --backend fake --mcp"
+}

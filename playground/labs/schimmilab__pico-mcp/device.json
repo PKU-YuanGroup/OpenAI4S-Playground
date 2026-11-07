@@ -1,0 +1,26 @@
+{
+  "name": "labs/schimmilab__pico-mcp",
+  "package": "labs/schimmilab__pico-mcp",
+  "mhs_package": "mhs/MHS/drivers/labs/schimmilab__pico-mcp",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/schimmilab/pico-mcp",
+    "commit": "08fd81ee1c1e79b4d82e0997ca840b46adeef811",
+    "license": "MIT",
+    "path": "playground/labs/schimmilab__pico-mcp/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/schimmilab__pico-mcp --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/schimmilab__pico-mcp --backend fake --mcp"
+}

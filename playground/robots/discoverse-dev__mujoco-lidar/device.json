@@ -1,0 +1,25 @@
+{
+  "name": "robots/discoverse-dev__mujoco-lidar",
+  "package": "robots/discoverse-dev__mujoco-lidar",
+  "mhs_package": "mhs/MHS/drivers/robots/discoverse-dev__mujoco-lidar",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/discoverse-dev/mujoco-lidar",
+    "commit": "e6b879df4b96daaed30ef10fe02650d29048fa9b",
+    "license": "MIT",
+    "path": "playground/robots/discoverse-dev__mujoco-lidar/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/discoverse-dev__mujoco-lidar --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/discoverse-dev__mujoco-lidar --backend fake --mcp"
+}

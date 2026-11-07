@@ -1,0 +1,26 @@
+{
+  "name": "labs/anguyen-23__sila-testing",
+  "package": "labs/anguyen-23__sila-testing",
+  "mhs_package": "mhs/MHS/drivers/labs/anguyen-23__sila-testing",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/anguyen-23/sila-testing",
+    "commit": "0b572380e06977c1920510773b4bfee7bcd0eec5",
+    "license": "NOASSERTION",
+    "path": "playground/labs/anguyen-23__sila-testing/upstream"
+  },
+  "family": "sila2",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/anguyen-23__sila-testing --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/anguyen-23__sila-testing --backend fake --mcp"
+}

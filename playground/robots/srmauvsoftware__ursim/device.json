@@ -1,0 +1,25 @@
+{
+  "name": "robots/srmauvsoftware__ursim",
+  "package": "robots/srmauvsoftware__ursim",
+  "mhs_package": "mhs/MHS/drivers/robots/srmauvsoftware__ursim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/srmauvsoftware/ursim",
+    "commit": "feb7d257e61f192067209de5456965d7d0a3a612",
+    "license": "Apache-2.0",
+    "path": "playground/robots/srmauvsoftware__ursim/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/srmauvsoftware__ursim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/srmauvsoftware__ursim --backend fake --mcp"
+}

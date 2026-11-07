@@ -1,0 +1,25 @@
+{
+  "name": "robots/google-research__robel",
+  "package": "robots/google-research__robel",
+  "mhs_package": "mhs/MHS/drivers/robots/google-research__robel",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/google-research/robel",
+    "commit": "5b0fd3704629931712c6e0f7268ace1c2154dc83",
+    "license": "Apache-2.0",
+    "path": "playground/robots/google-research__robel/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-research__robel --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-research__robel --backend fake --mcp"
+}

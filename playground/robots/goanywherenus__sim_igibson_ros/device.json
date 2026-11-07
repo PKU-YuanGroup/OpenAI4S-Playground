@@ -1,0 +1,25 @@
+{
+  "name": "robots/goanywherenus__sim_igibson_ros",
+  "package": "robots/goanywherenus__sim_igibson_ros",
+  "mhs_package": "mhs/MHS/drivers/robots/goanywherenus__sim_igibson_ros",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/goanywherenus/sim_igibson_ros",
+    "commit": "cf9a546437e00bce59237571e0a1b5b7e2ba3e05",
+    "license": "NOASSERTION",
+    "path": "playground/robots/goanywherenus__sim_igibson_ros/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/goanywherenus__sim_igibson_ros --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/goanywherenus__sim_igibson_ros --backend fake --mcp"
+}

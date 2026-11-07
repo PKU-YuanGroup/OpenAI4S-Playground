@@ -1,0 +1,26 @@
+{
+  "name": "labs/openuc2__imswitch",
+  "package": "labs/openuc2__imswitch",
+  "mhs_package": "mhs/MHS/drivers/labs/openuc2__imswitch",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/openuc2/imswitch",
+    "commit": "e5db60f1021b0d7b72f171069258768127880ac5",
+    "license": "GPL-3.0",
+    "path": "playground/labs/openuc2__imswitch/upstream"
+  },
+  "family": "python-object",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/openuc2__imswitch --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/openuc2__imswitch --backend fake --mcp"
+}

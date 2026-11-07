@@ -1,0 +1,25 @@
+{
+  "name": "robots/enactic__openarm_mujoco",
+  "package": "robots/enactic__openarm_mujoco",
+  "mhs_package": "mhs/MHS/drivers/robots/enactic__openarm_mujoco",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/enactic/openarm_mujoco",
+    "commit": "0e050bb5d3472b75c6bfa00b310a77c7c2c5be79",
+    "license": "Apache-2.0",
+    "path": "playground/robots/enactic__openarm_mujoco/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/enactic__openarm_mujoco --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/enactic__openarm_mujoco --backend fake --mcp"
+}

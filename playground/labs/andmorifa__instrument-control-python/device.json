@@ -1,0 +1,26 @@
+{
+  "name": "labs/andmorifa__instrument-control-python",
+  "package": "labs/andmorifa__instrument-control-python",
+  "mhs_package": "mhs/MHS/drivers/labs/andmorifa__instrument-control-python",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/andmorifa/instrument-control-python",
+    "commit": "0622a4aee5cf8b7a4704711d1fdf81fe35b0b6ff",
+    "license": "MIT",
+    "path": "playground/labs/andmorifa__instrument-control-python/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/andmorifa__instrument-control-python --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/andmorifa__instrument-control-python --backend fake --mcp"
+}

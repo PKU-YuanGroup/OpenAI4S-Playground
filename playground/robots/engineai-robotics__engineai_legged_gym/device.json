@@ -1,0 +1,25 @@
+{
+  "name": "robots/engineai-robotics__engineai_legged_gym",
+  "package": "robots/engineai-robotics__engineai_legged_gym",
+  "mhs_package": "mhs/MHS/drivers/robots/engineai-robotics__engineai_legged_gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/engineai-robotics/engineai_legged_gym",
+    "commit": "1a659aa0aa77445766ecea6d95708a5812e9f290",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/engineai-robotics__engineai_legged_gym/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/engineai-robotics__engineai_legged_gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/engineai-robotics__engineai_legged_gym --backend fake --mcp"
+}

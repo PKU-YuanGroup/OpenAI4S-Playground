@@ -1,0 +1,25 @@
+{
+  "name": "robots/catachiii__crl-humanoid-ros",
+  "package": "robots/catachiii__crl-humanoid-ros",
+  "mhs_package": "mhs/MHS/drivers/robots/catachiii__crl-humanoid-ros",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/catachiii/crl-humanoid-ros",
+    "commit": "31202ed7c73ab6b6735d0416274ee9d256ecdf02",
+    "license": "MIT",
+    "path": "playground/robots/catachiii__crl-humanoid-ros/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/catachiii__crl-humanoid-ros --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/catachiii__crl-humanoid-ros --backend fake --mcp"
+}

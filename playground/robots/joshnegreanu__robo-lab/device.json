@@ -1,0 +1,25 @@
+{
+  "name": "robots/joshnegreanu__robo-lab",
+  "package": "robots/joshnegreanu__robo-lab",
+  "mhs_package": "mhs/MHS/drivers/robots/joshnegreanu__robo-lab",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/joshnegreanu/robo-lab",
+    "commit": "f7d677dd46324e1805ad13057e1cf3359a166443",
+    "license": "NOASSERTION",
+    "path": "playground/robots/joshnegreanu__robo-lab/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/joshnegreanu__robo-lab --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/joshnegreanu__robo-lab --backend fake --mcp"
+}

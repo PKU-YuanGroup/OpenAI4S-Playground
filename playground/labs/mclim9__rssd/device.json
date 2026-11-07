@@ -1,0 +1,25 @@
+{
+  "name": "labs/mclim9__rssd",
+  "package": "labs/mclim9__rssd",
+  "mhs_package": "mhs/MHS/drivers/labs/mclim9__rssd",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/mclim9/rssd",
+    "commit": "7b040ee12841e721953a1f737297586135c0c110",
+    "license": "MIT",
+    "path": "playground/labs/mclim9__rssd/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mclim9__rssd --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mclim9__rssd --backend fake --mcp"
+}

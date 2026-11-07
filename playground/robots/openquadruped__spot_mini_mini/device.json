@@ -1,0 +1,25 @@
+{
+  "name": "robots/openquadruped__spot_mini_mini",
+  "package": "robots/openquadruped__spot_mini_mini",
+  "mhs_package": "mhs/MHS/drivers/robots/openquadruped__spot_mini_mini",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/openquadruped/spot_mini_mini",
+    "commit": "c7e4905be176c63fa0e68a09c177b937e916fa60",
+    "license": "MIT",
+    "path": "playground/robots/openquadruped__spot_mini_mini/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openquadruped__spot_mini_mini --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openquadruped__spot_mini_mini --backend fake --mcp"
+}

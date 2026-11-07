@@ -1,0 +1,25 @@
+{
+  "name": "robots/linorobot__linorobot2",
+  "package": "robots/linorobot__linorobot2",
+  "mhs_package": "mhs/MHS/drivers/robots/linorobot__linorobot2",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/linorobot/linorobot2",
+    "commit": "f6b0bd0350c4a9d6b815ef4bb5c701a1e5129711",
+    "license": "Apache-2.0",
+    "path": "playground/robots/linorobot__linorobot2/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linorobot__linorobot2 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linorobot__linorobot2 --backend fake --mcp"
+}

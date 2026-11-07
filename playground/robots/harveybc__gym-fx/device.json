@@ -1,0 +1,25 @@
+{
+  "name": "robots/harveybc__gym-fx",
+  "package": "robots/harveybc__gym-fx",
+  "mhs_package": "mhs/MHS/drivers/robots/harveybc__gym-fx",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/harveybc/gym-fx",
+    "commit": "1eeecb789965f3e01e9e51f479c6f89265b03859",
+    "license": "NOASSERTION",
+    "path": "playground/robots/harveybc__gym-fx/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/harveybc__gym-fx --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/harveybc__gym-fx --backend fake --mcp"
+}

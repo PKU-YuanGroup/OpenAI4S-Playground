@@ -1,0 +1,25 @@
+{
+  "name": "robots/spencerfolk__rotorpy",
+  "package": "robots/spencerfolk__rotorpy",
+  "mhs_package": "mhs/MHS/drivers/robots/spencerfolk__rotorpy",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/spencerfolk/rotorpy",
+    "commit": "40b09697a6a1596d404a67f459941d46a39eedd3",
+    "license": "MIT",
+    "path": "playground/robots/spencerfolk__rotorpy/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/spencerfolk__rotorpy --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/spencerfolk__rotorpy --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/tektronix__curvequery",
+  "package": "labs/tektronix__curvequery",
+  "mhs_package": "mhs/MHS/drivers/labs/tektronix__curvequery",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tektronix/curvequery",
+    "commit": "57e59cc076eb41feaa3c606dcc5a68d447b44026",
+    "license": "Apache-2.0",
+    "path": "playground/labs/tektronix__curvequery/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tektronix__curvequery --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tektronix__curvequery --backend fake --mcp"
+}

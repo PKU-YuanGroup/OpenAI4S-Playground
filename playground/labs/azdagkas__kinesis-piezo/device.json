@@ -1,0 +1,26 @@
+{
+  "name": "labs/azdagkas__kinesis-piezo",
+  "package": "labs/azdagkas__kinesis-piezo",
+  "mhs_package": "mhs/MHS/drivers/labs/azdagkas__kinesis-piezo",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/azdagkas/kinesis-piezo",
+    "commit": "ecfe0586cef37d83e287a1fee3496a3eb67f4acd",
+    "license": "BSD-3-Clause",
+    "path": "playground/labs/azdagkas__kinesis-piezo/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/azdagkas__kinesis-piezo --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/azdagkas__kinesis-piezo --backend fake --mcp"
+}

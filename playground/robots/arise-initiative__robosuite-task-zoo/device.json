@@ -1,0 +1,25 @@
+{
+  "name": "robots/arise-initiative__robosuite-task-zoo",
+  "package": "robots/arise-initiative__robosuite-task-zoo",
+  "mhs_package": "mhs/MHS/drivers/robots/arise-initiative__robosuite-task-zoo",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/arise-initiative/robosuite-task-zoo",
+    "commit": "74eab7f88214c21ca1ae8617c2b2f8d19718a9ed",
+    "license": "MIT",
+    "path": "playground/robots/arise-initiative__robosuite-task-zoo/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/arise-initiative__robosuite-task-zoo --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/arise-initiative__robosuite-task-zoo --backend fake --mcp"
+}

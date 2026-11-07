@@ -1,0 +1,25 @@
+{
+  "name": "robots/google-research__robodesk",
+  "package": "robots/google-research__robodesk",
+  "mhs_package": "mhs/MHS/drivers/robots/google-research__robodesk",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/google-research/robodesk",
+    "commit": "a8edde34f879242730c026dfe7c6e3beb4318023",
+    "license": "Apache-2.0",
+    "path": "playground/robots/google-research__robodesk/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-research__robodesk --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-research__robodesk --backend fake --mcp"
+}

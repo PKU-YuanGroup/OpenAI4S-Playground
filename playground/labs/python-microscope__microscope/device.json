@@ -1,0 +1,26 @@
+{
+  "name": "labs/python-microscope__microscope",
+  "package": "labs/python-microscope__microscope",
+  "mhs_package": "mhs/MHS/drivers/labs/python-microscope__microscope",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/python-microscope/microscope",
+    "commit": "47c13d0342dca476a279f2de2da5b84ce2162326",
+    "license": "GPL-3.0",
+    "path": "playground/labs/python-microscope__microscope/upstream"
+  },
+  "family": "python-object",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/python-microscope__microscope --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/python-microscope__microscope --backend fake --mcp"
+}

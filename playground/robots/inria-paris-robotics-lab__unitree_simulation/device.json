@@ -1,0 +1,25 @@
+{
+  "name": "robots/inria-paris-robotics-lab__unitree_simulation",
+  "package": "robots/inria-paris-robotics-lab__unitree_simulation",
+  "mhs_package": "mhs/MHS/drivers/robots/inria-paris-robotics-lab__unitree_simulation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/inria-paris-robotics-lab/unitree_simulation",
+    "commit": "b53b31bc0757e3ff48ac1199227e0b144d4008d2",
+    "license": "NOASSERTION",
+    "path": "playground/robots/inria-paris-robotics-lab__unitree_simulation/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/inria-paris-robotics-lab__unitree_simulation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/inria-paris-robotics-lab__unitree_simulation --backend fake --mcp"
+}

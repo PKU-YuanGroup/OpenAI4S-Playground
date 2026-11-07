@@ -1,0 +1,25 @@
+{
+  "name": "robots/hshi74__toddlerbot",
+  "package": "robots/hshi74__toddlerbot",
+  "mhs_package": "mhs/MHS/drivers/robots/hshi74__toddlerbot",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hshi74/toddlerbot",
+    "commit": "e337f3b177b4b53abff70b31d1695a7b66cc6d2e",
+    "license": "MIT",
+    "path": "playground/robots/hshi74__toddlerbot/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hshi74__toddlerbot --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hshi74__toddlerbot --backend fake --mcp"
+}

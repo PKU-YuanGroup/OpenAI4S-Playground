@@ -1,0 +1,25 @@
+{
+  "name": "labs/bernardokyotoku__pydcu",
+  "package": "labs/bernardokyotoku__pydcu",
+  "mhs_package": "mhs/MHS/drivers/labs/bernardokyotoku__pydcu",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/bernardokyotoku/pydcu",
+    "commit": "ff9557e701e348c4be9a01dbf7a84fd467f8c20d",
+    "license": "NOASSERTION",
+    "path": "playground/labs/bernardokyotoku__pydcu/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bernardokyotoku__pydcu --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bernardokyotoku__pydcu --backend fake --mcp"
+}

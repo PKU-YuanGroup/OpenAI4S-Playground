@@ -1,0 +1,26 @@
+{
+  "name": "labs/yuanxun-yx__syrpp",
+  "package": "labs/yuanxun-yx__syrpp",
+  "mhs_package": "mhs/MHS/drivers/labs/yuanxun-yx__syrpp",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/yuanxun-yx/syrpp",
+    "commit": "ae784882903cd9d1b72162835902dca0074b2e14",
+    "license": "MIT",
+    "path": "playground/labs/yuanxun-yx__syrpp/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/yuanxun-yx__syrpp --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/yuanxun-yx__syrpp --backend fake --mcp"
+}

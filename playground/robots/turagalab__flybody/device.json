@@ -1,0 +1,25 @@
+{
+  "name": "robots/turagalab__flybody",
+  "package": "robots/turagalab__flybody",
+  "mhs_package": "mhs/MHS/drivers/robots/turagalab__flybody",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/turagalab/flybody",
+    "commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+    "license": "Apache-2.0",
+    "path": "playground/robots/turagalab__flybody/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/turagalab__flybody --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/turagalab__flybody --backend fake --mcp"
+}

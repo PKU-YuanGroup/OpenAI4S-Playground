@@ -1,0 +1,26 @@
+{
+  "name": "labs/simonmeersschaut__stagecontroller",
+  "package": "labs/simonmeersschaut__stagecontroller",
+  "mhs_package": "mhs/MHS/drivers/labs/simonmeersschaut__stagecontroller",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/simonmeersschaut/stagecontroller",
+    "commit": "7edb1ac137a0cfedba78966815421fbfd5e73b38",
+    "license": "NOASSERTION",
+    "path": "playground/labs/simonmeersschaut__stagecontroller/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/simonmeersschaut__stagecontroller --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/simonmeersschaut__stagecontroller --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "robots/xarm-developer__xarm-python-sdk",
+  "package": "robots/xarm-developer__xarm-python-sdk",
+  "mhs_package": "mhs/MHS/drivers/robots/xarm-developer__xarm-python-sdk",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/xarm-developer/xarm-python-sdk",
+    "commit": "d911319cebc45142613e18086aabb8067b18ab7f",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/xarm-developer__xarm-python-sdk/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/xarm-developer__xarm-python-sdk --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/xarm-developer__xarm-python-sdk --backend fake --mcp"
+}

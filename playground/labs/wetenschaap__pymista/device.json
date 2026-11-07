@@ -1,0 +1,26 @@
+{
+  "name": "labs/wetenschaap__pymista",
+  "package": "labs/wetenschaap__pymista",
+  "mhs_package": "mhs/MHS/drivers/labs/wetenschaap__pymista",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/wetenschaap/pymista",
+    "commit": "b30040a192c329b6144a120f0dfea2ca68060760",
+    "license": "GPL-3.0",
+    "path": "playground/labs/wetenschaap__pymista/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/wetenschaap__pymista --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/wetenschaap__pymista --backend fake --mcp"
+}

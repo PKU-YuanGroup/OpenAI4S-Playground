@@ -1,0 +1,25 @@
+{
+  "name": "robots/princeton-robot-planning-and-learning__kindergarden",
+  "package": "robots/princeton-robot-planning-and-learning__kindergarden",
+  "mhs_package": "mhs/MHS/drivers/robots/princeton-robot-planning-and-learning__kindergarden",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/princeton-robot-planning-and-learning/kindergarden",
+    "commit": "5b2dbac482142b879b48449b3fa2af63f641aed3",
+    "license": "MIT",
+    "path": "playground/robots/princeton-robot-planning-and-learning__kindergarden/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/princeton-robot-planning-and-learning__kindergarden --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/princeton-robot-planning-and-learning__kindergarden --backend fake --mcp"
+}

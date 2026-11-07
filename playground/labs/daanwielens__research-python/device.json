@@ -1,0 +1,25 @@
+{
+  "name": "labs/daanwielens__research-python",
+  "package": "labs/daanwielens__research-python",
+  "mhs_package": "mhs/MHS/drivers/labs/daanwielens__research-python",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/daanwielens/research-python",
+    "commit": "c17811c9b43bc581f5523f1e9eafd9dce1fdb9d2",
+    "license": "NOASSERTION",
+    "path": "playground/labs/daanwielens__research-python/upstream"
+  },
+  "family": "scpi",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/daanwielens__research-python --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/daanwielens__research-python --backend fake --mcp"
+}

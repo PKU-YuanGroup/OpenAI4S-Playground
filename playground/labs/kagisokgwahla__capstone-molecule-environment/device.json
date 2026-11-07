@@ -1,0 +1,25 @@
+{
+  "name": "labs/kagisokgwahla__capstone-molecule-environment",
+  "package": "labs/kagisokgwahla__capstone-molecule-environment",
+  "mhs_package": "mhs/MHS/drivers/labs/kagisokgwahla__capstone-molecule-environment",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/kagisokgwahla/capstone-molecule-environment",
+    "commit": "8c1bb00fcec88b366ba3947623fa3d52990be0d2",
+    "license": "GPL-3.0",
+    "path": "playground/labs/kagisokgwahla__capstone-molecule-environment/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kagisokgwahla__capstone-molecule-environment --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kagisokgwahla__capstone-molecule-environment --backend fake --mcp"
+}

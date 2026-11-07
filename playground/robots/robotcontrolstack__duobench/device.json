@@ -1,0 +1,25 @@
+{
+  "name": "robots/robotcontrolstack__duobench",
+  "package": "robots/robotcontrolstack__duobench",
+  "mhs_package": "mhs/MHS/drivers/robots/robotcontrolstack__duobench",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/robotcontrolstack/duobench",
+    "commit": "29e09f916d68539d454c93266c195d2abb8a8253",
+    "license": "Apache-2.0",
+    "path": "playground/robots/robotcontrolstack__duobench/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcontrolstack__duobench --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcontrolstack__duobench --backend fake --mcp"
+}

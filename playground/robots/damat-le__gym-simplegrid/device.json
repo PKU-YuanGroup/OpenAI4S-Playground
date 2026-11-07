@@ -1,0 +1,25 @@
+{
+  "name": "robots/damat-le__gym-simplegrid",
+  "package": "robots/damat-le__gym-simplegrid",
+  "mhs_package": "mhs/MHS/drivers/robots/damat-le__gym-simplegrid",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/damat-le/gym-simplegrid",
+    "commit": "6ded2fcf684727b27b5569688cad6f92bc3bc52b",
+    "license": "Apache-2.0",
+    "path": "playground/robots/damat-le__gym-simplegrid/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/damat-le__gym-simplegrid --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/damat-le__gym-simplegrid --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/luckyrobots__g1-manipulation-challenge",
+  "package": "robots/luckyrobots__g1-manipulation-challenge",
+  "mhs_package": "mhs/MHS/drivers/robots/luckyrobots__g1-manipulation-challenge",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/luckyrobots/g1-manipulation-challenge",
+    "commit": "0e9d1f9b61772905c9f7997b527f221dc7800fc9",
+    "license": "NOASSERTION",
+    "path": "playground/robots/luckyrobots__g1-manipulation-challenge/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/luckyrobots__g1-manipulation-challenge --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/luckyrobots__g1-manipulation-challenge --backend fake --mcp"
+}

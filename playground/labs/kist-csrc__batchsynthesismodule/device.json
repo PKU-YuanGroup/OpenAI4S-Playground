@@ -1,0 +1,26 @@
+{
+  "name": "labs/kist-csrc__batchsynthesismodule",
+  "package": "labs/kist-csrc__batchsynthesismodule",
+  "mhs_package": "mhs/MHS/drivers/labs/kist-csrc__batchsynthesismodule",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/kist-csrc/batchsynthesismodule",
+    "commit": "5d0e9bb2ae49758f478021be35d7e5f6c2deac8f",
+    "license": "NOASSERTION",
+    "path": "playground/labs/kist-csrc__batchsynthesismodule/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kist-csrc__batchsynthesismodule --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kist-csrc__batchsynthesismodule --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/limxdynamics__humanoid-mujoco-sim",
+  "package": "robots/limxdynamics__humanoid-mujoco-sim",
+  "mhs_package": "mhs/MHS/drivers/robots/limxdynamics__humanoid-mujoco-sim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/limxdynamics/humanoid-mujoco-sim",
+    "commit": "4a1f297725660172e590a239020cc08fb3798aa3",
+    "license": "Apache-2.0",
+    "path": "playground/robots/limxdynamics__humanoid-mujoco-sim/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/limxdynamics__humanoid-mujoco-sim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/limxdynamics__humanoid-mujoco-sim --backend fake --mcp"
+}

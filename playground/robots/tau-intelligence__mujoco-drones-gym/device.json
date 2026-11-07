@@ -1,0 +1,25 @@
+{
+  "name": "robots/tau-intelligence__mujoco-drones-gym",
+  "package": "robots/tau-intelligence__mujoco-drones-gym",
+  "mhs_package": "mhs/MHS/drivers/robots/tau-intelligence__mujoco-drones-gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tau-intelligence/mujoco-drones-gym",
+    "commit": "ca170dc6760d422e47ef46fb3af46f8cd20410eb",
+    "license": "MIT",
+    "path": "playground/robots/tau-intelligence__mujoco-drones-gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tau-intelligence__mujoco-drones-gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tau-intelligence__mujoco-drones-gym --backend fake --mcp"
+}

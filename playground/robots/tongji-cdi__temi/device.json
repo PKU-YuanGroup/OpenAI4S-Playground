@@ -1,0 +1,26 @@
+{
+  "name": "robots/tongji-cdi__temi",
+  "package": "robots/tongji-cdi__temi",
+  "mhs_package": "mhs/MHS/drivers/robots/tongji-cdi__temi",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tongji-cdi/temi",
+    "commit": "ec0a395405df1583d3357fd944b0c43396b30a7c",
+    "license": "MIT",
+    "path": "playground/robots/tongji-cdi__temi/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tongji-cdi__temi --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tongji-cdi__temi --backend fake --mcp"
+}

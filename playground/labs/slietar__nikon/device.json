@@ -1,0 +1,26 @@
+{
+  "name": "labs/slietar__nikon",
+  "package": "labs/slietar__nikon",
+  "mhs_package": "mhs/MHS/drivers/labs/slietar__nikon",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/slietar/nikon",
+    "commit": "d53b4e261ae487f237a65048cf1931a40e39794b",
+    "license": "EUPL-1.2",
+    "path": "playground/labs/slietar__nikon/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/slietar__nikon --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/slietar__nikon --backend fake --mcp"
+}

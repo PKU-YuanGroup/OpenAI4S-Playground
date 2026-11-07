@@ -1,0 +1,25 @@
+{
+  "name": "robots/farama-foundation__mo-gymnasium",
+  "package": "robots/farama-foundation__mo-gymnasium",
+  "mhs_package": "mhs/MHS/drivers/robots/farama-foundation__mo-gymnasium",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/farama-foundation/mo-gymnasium",
+    "commit": "8d280fdc3f517b18090619806843c03f51d775af",
+    "license": "MIT",
+    "path": "playground/robots/farama-foundation__mo-gymnasium/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__mo-gymnasium --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__mo-gymnasium --backend fake --mcp"
+}

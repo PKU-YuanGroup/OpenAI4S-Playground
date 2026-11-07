@@ -1,0 +1,25 @@
+{
+  "name": "robots/xingyu-lin__softgym",
+  "package": "robots/xingyu-lin__softgym",
+  "mhs_package": "mhs/MHS/drivers/robots/xingyu-lin__softgym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/xingyu-lin/softgym",
+    "commit": "bb383f64cd488062587714abbae38f27ed9f2457",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/xingyu-lin__softgym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/xingyu-lin__softgym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/xingyu-lin__softgym --backend fake --mcp"
+}

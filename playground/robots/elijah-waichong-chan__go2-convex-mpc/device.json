@@ -1,0 +1,25 @@
+{
+  "name": "robots/elijah-waichong-chan__go2-convex-mpc",
+  "package": "robots/elijah-waichong-chan__go2-convex-mpc",
+  "mhs_package": "mhs/MHS/drivers/robots/elijah-waichong-chan__go2-convex-mpc",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/elijah-waichong-chan/go2-convex-mpc",
+    "commit": "1c63c6a762779887ab0431fd60db681dede6cb32",
+    "license": "MIT",
+    "path": "playground/robots/elijah-waichong-chan__go2-convex-mpc/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/elijah-waichong-chan__go2-convex-mpc --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/elijah-waichong-chan__go2-convex-mpc --backend fake --mcp"
+}

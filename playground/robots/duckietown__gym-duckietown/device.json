@@ -1,0 +1,25 @@
+{
+  "name": "robots/duckietown__gym-duckietown",
+  "package": "robots/duckietown__gym-duckietown",
+  "mhs_package": "mhs/MHS/drivers/robots/duckietown__gym-duckietown",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/duckietown/gym-duckietown",
+    "commit": "c76a7fec7f739db4f624f40ca83ce99383665558",
+    "license": "NOASSERTION",
+    "path": "playground/robots/duckietown__gym-duckietown/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/duckietown__gym-duckietown --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/duckietown__gym-duckietown --backend fake --mcp"
+}

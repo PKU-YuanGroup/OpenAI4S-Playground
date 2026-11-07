@@ -1,0 +1,25 @@
+{
+  "name": "robots/sanan222__lecasa",
+  "package": "robots/sanan222__lecasa",
+  "mhs_package": "mhs/MHS/drivers/robots/sanan222__lecasa",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/sanan222/lecasa",
+    "commit": "7dc0f63c0fc1519226262f0cc8cf48c6343043c0",
+    "license": "Apache-2.0",
+    "path": "playground/robots/sanan222__lecasa/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sanan222__lecasa --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sanan222__lecasa --backend fake --mcp"
+}

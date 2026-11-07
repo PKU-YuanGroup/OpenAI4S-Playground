@@ -1,0 +1,25 @@
+{
+  "name": "labs/mba2d__test_equipment_control",
+  "package": "labs/mba2d__test_equipment_control",
+  "mhs_package": "mhs/MHS/drivers/labs/mba2d__test_equipment_control",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/mba2d/test_equipment_control",
+    "commit": "34bb54c13c766fdfe7e6260872a03e8dfefd3ad2",
+    "license": "GPL-3.0",
+    "path": "playground/labs/mba2d__test_equipment_control/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mba2d__test_equipment_control --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mba2d__test_equipment_control --backend fake --mcp"
+}

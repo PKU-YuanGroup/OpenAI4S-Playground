@@ -1,0 +1,25 @@
+{
+  "name": "robots/ritalaezza__gym-agx",
+  "package": "robots/ritalaezza__gym-agx",
+  "mhs_package": "mhs/MHS/drivers/robots/ritalaezza__gym-agx",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ritalaezza/gym-agx",
+    "commit": "1773c4aa3ecc2e509623ff3d14163f9d5721f227",
+    "license": "MIT",
+    "path": "playground/robots/ritalaezza__gym-agx/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ritalaezza__gym-agx --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ritalaezza__gym-agx --backend fake --mcp"
+}

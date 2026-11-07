@@ -1,0 +1,25 @@
+{
+  "name": "robots/geonhee-lee__ur5_ros_gym",
+  "package": "robots/geonhee-lee__ur5_ros_gym",
+  "mhs_package": "mhs/MHS/drivers/robots/geonhee-lee__ur5_ros_gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/geonhee-lee/ur5_ros_gym",
+    "commit": "bd291129c8a12be28311538822c900d7d0930930",
+    "license": "NOASSERTION",
+    "path": "playground/robots/geonhee-lee__ur5_ros_gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/geonhee-lee__ur5_ros_gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/geonhee-lee__ur5_ros_gym --backend fake --mcp"
+}

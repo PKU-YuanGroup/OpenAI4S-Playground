@@ -1,0 +1,25 @@
+{
+  "name": "robots/arise-initiative__robosuite_models",
+  "package": "robots/arise-initiative__robosuite_models",
+  "mhs_package": "mhs/MHS/drivers/robots/arise-initiative__robosuite_models",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/arise-initiative/robosuite_models",
+    "commit": "2d63a6b4319bda772420daf10594ce0de5bd793d",
+    "license": "MIT",
+    "path": "playground/robots/arise-initiative__robosuite_models/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/arise-initiative__robosuite_models --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/arise-initiative__robosuite_models --backend fake --mcp"
+}

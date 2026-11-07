@@ -1,0 +1,25 @@
+{
+  "name": "robots/angel-ayala__gym-webots-drone",
+  "package": "robots/angel-ayala__gym-webots-drone",
+  "mhs_package": "mhs/MHS/drivers/robots/angel-ayala__gym-webots-drone",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/angel-ayala/gym-webots-drone",
+    "commit": "24eb199041403d108bc94fac0f522cb33a544c9c",
+    "license": "GPL-3.0",
+    "path": "playground/robots/angel-ayala__gym-webots-drone/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/angel-ayala__gym-webots-drone --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/angel-ayala__gym-webots-drone --backend fake --mcp"
+}

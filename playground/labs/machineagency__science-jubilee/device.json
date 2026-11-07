@@ -1,0 +1,26 @@
+{
+  "name": "labs/machineagency__science-jubilee",
+  "package": "labs/machineagency__science-jubilee",
+  "mhs_package": "mhs/MHS/drivers/labs/machineagency__science-jubilee",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/machineagency/science-jubilee",
+    "commit": "bb918fa78f300f57cc379a80731cfca7bdb55c66",
+    "license": "MIT",
+    "path": "playground/labs/machineagency__science-jubilee/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/machineagency__science-jubilee --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/machineagency__science-jubilee --backend fake --mcp"
+}

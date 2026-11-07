@@ -1,0 +1,25 @@
+{
+  "name": "robots/quincy-u__ego_humanoid_manipulation_benchmark",
+  "package": "robots/quincy-u__ego_humanoid_manipulation_benchmark",
+  "mhs_package": "mhs/MHS/drivers/robots/quincy-u__ego_humanoid_manipulation_benchmark",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/quincy-u/ego_humanoid_manipulation_benchmark",
+    "commit": "4489a673153d40f0dcba84c9210c426edfc62812",
+    "license": "MIT",
+    "path": "playground/robots/quincy-u__ego_humanoid_manipulation_benchmark/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/quincy-u__ego_humanoid_manipulation_benchmark --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/quincy-u__ego_humanoid_manipulation_benchmark --backend fake --mcp"
+}

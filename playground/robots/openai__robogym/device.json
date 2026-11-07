@@ -1,0 +1,25 @@
+{
+  "name": "robots/openai__robogym",
+  "package": "robots/openai__robogym",
+  "mhs_package": "mhs/MHS/drivers/robots/openai__robogym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/openai/robogym",
+    "commit": "9ff1111fd557b1a01911d7d8c9d59a453071c96e",
+    "license": "MIT",
+    "path": "playground/robots/openai__robogym/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__robogym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__robogym --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/ebim-benchmark__benchmark",
+  "package": "robots/ebim-benchmark__benchmark",
+  "mhs_package": "mhs/MHS/drivers/robots/ebim-benchmark__benchmark",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ebim-benchmark/benchmark",
+    "commit": "161db49e9eafd34be31e5bdada72d8e2f796c16a",
+    "license": "Apache-2.0",
+    "path": "playground/robots/ebim-benchmark__benchmark/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ebim-benchmark__benchmark --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ebim-benchmark__benchmark --backend fake --mcp"
+}

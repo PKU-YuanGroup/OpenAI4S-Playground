@@ -1,0 +1,25 @@
+{
+  "name": "robots/simple-robotics__simple",
+  "package": "robots/simple-robotics__simple",
+  "mhs_package": "mhs/MHS/drivers/robots/simple-robotics__simple",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/simple-robotics/simple",
+    "commit": "03d4784ed87b2b4986c74564d20ef5544b30936d",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/simple-robotics__simple/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/simple-robotics__simple --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/simple-robotics__simple --backend fake --mcp"
+}

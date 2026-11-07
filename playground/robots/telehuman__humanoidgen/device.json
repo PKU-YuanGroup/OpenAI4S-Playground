@@ -1,0 +1,25 @@
+{
+  "name": "robots/telehuman__humanoidgen",
+  "package": "robots/telehuman__humanoidgen",
+  "mhs_package": "mhs/MHS/drivers/robots/telehuman__humanoidgen",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/telehuman/humanoidgen",
+    "commit": "015b808fd316629f499a903b5968f5b37fcd7573",
+    "license": "NOASSERTION",
+    "path": "playground/robots/telehuman__humanoidgen/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/telehuman__humanoidgen --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/telehuman__humanoidgen --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/botianhao__humanoid_control",
+  "package": "robots/botianhao__humanoid_control",
+  "mhs_package": "mhs/MHS/drivers/robots/botianhao__humanoid_control",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/botianhao/humanoid_control",
+    "commit": "cfb27eb205d6ee21a801abe273ffc0a53d3be0f2",
+    "license": "MIT",
+    "path": "playground/robots/botianhao__humanoid_control/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/botianhao__humanoid_control --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/botianhao__humanoid_control --backend fake --mcp"
+}

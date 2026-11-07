@@ -1,0 +1,25 @@
+{
+  "name": "robots/hybridrobotics__whole_body_tracking",
+  "package": "robots/hybridrobotics__whole_body_tracking",
+  "mhs_package": "mhs/MHS/drivers/robots/hybridrobotics__whole_body_tracking",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hybridrobotics/whole_body_tracking",
+    "commit": "cd65172032893724b445448818c34165846d847d",
+    "license": "MIT",
+    "path": "playground/robots/hybridrobotics__whole_body_tracking/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hybridrobotics__whole_body_tracking --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hybridrobotics__whole_body_tracking --backend fake --mcp"
+}

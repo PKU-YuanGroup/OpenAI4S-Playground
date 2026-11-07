@@ -1,0 +1,26 @@
+{
+  "name": "labs/karimrayttu__ece-tool-suite",
+  "package": "labs/karimrayttu__ece-tool-suite",
+  "mhs_package": "mhs/MHS/drivers/labs/karimrayttu__ece-tool-suite",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/karimrayttu/ece-tool-suite",
+    "commit": "13f7962a674ebc998a2ad2a31eb8592df65ad022",
+    "license": "MIT",
+    "path": "playground/labs/karimrayttu__ece-tool-suite/upstream"
+  },
+  "family": "python-object",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/karimrayttu__ece-tool-suite --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/karimrayttu__ece-tool-suite --backend fake --mcp"
+}

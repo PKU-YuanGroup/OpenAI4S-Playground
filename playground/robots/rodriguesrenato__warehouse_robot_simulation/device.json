@@ -1,0 +1,25 @@
+{
+  "name": "robots/rodriguesrenato__warehouse_robot_simulation",
+  "package": "robots/rodriguesrenato__warehouse_robot_simulation",
+  "mhs_package": "mhs/MHS/drivers/robots/rodriguesrenato__warehouse_robot_simulation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/rodriguesrenato/warehouse_robot_simulation",
+    "commit": "c8fe89a8501bfbcd97ffb0a0a4bef26e1abffc75",
+    "license": "MIT",
+    "path": "playground/robots/rodriguesrenato__warehouse_robot_simulation/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rodriguesrenato__warehouse_robot_simulation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rodriguesrenato__warehouse_robot_simulation --backend fake --mcp"
+}

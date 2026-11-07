@@ -1,0 +1,26 @@
+{
+  "name": "labs/e-lab-sfsu__robocam3.1",
+  "package": "labs/e-lab-sfsu__robocam3.1",
+  "mhs_package": "mhs/MHS/drivers/labs/e-lab-sfsu__robocam3.1",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/e-lab-sfsu/robocam3.1",
+    "commit": "cc402f32f7b781c550a94dc9f78e54df3de7fd53",
+    "license": "MIT",
+    "path": "playground/labs/e-lab-sfsu__robocam3.1/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/e-lab-sfsu__robocam3.1 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/e-lab-sfsu__robocam3.1 --backend fake --mcp"
+}

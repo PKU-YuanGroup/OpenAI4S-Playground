@@ -1,0 +1,25 @@
+{
+  "name": "robots/fdcl-gwu__uav_simulator",
+  "package": "robots/fdcl-gwu__uav_simulator",
+  "mhs_package": "mhs/MHS/drivers/robots/fdcl-gwu__uav_simulator",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/fdcl-gwu/uav_simulator",
+    "commit": "7270fe4e274f2a5d84432336311da478d87d8d3d",
+    "license": "MIT",
+    "path": "playground/robots/fdcl-gwu__uav_simulator/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fdcl-gwu__uav_simulator --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fdcl-gwu__uav_simulator --backend fake --mcp"
+}

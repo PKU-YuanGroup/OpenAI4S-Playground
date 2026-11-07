@@ -1,0 +1,26 @@
+{
+  "name": "labs/fibsem-os__fibsem-os",
+  "package": "labs/fibsem-os__fibsem-os",
+  "mhs_package": "mhs/MHS/drivers/labs/fibsem-os__fibsem-os",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/fibsem-os/fibsem-os",
+    "commit": "8bd5dc731f523354273c38cd2cc190db9b7483e5",
+    "license": "MIT",
+    "path": "playground/labs/fibsem-os__fibsem-os/upstream"
+  },
+  "family": "python-object",
+  "role": "twin-candidate",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/fibsem-os__fibsem-os --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/fibsem-os__fibsem-os --backend fake --mcp"
+}

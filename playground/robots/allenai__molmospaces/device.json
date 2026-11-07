@@ -1,0 +1,25 @@
+{
+  "name": "robots/allenai__molmospaces",
+  "package": "robots/allenai__molmospaces",
+  "mhs_package": "mhs/MHS/drivers/robots/allenai__molmospaces",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/allenai/molmospaces",
+    "commit": "713fd12ab593c3bbb4abfaa76622e14249aa36b3",
+    "license": "Apache-2.0",
+    "path": "playground/robots/allenai__molmospaces/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/allenai__molmospaces --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/allenai__molmospaces --backend fake --mcp"
+}

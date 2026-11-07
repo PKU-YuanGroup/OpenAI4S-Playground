@@ -1,0 +1,25 @@
+{
+  "name": "robots/gsilano__crazys",
+  "package": "robots/gsilano__crazys",
+  "mhs_package": "mhs/MHS/drivers/robots/gsilano__crazys",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/gsilano/crazys",
+    "commit": "c7ee25a7c6f89d41468e33c857ded99f3e804e70",
+    "license": "Apache-2.0",
+    "path": "playground/robots/gsilano__crazys/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/gsilano__crazys --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/gsilano__crazys --backend fake --mcp"
+}

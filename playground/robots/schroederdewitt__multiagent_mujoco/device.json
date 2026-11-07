@@ -1,0 +1,25 @@
+{
+  "name": "robots/schroederdewitt__multiagent_mujoco",
+  "package": "robots/schroederdewitt__multiagent_mujoco",
+  "mhs_package": "mhs/MHS/drivers/robots/schroederdewitt__multiagent_mujoco",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/schroederdewitt/multiagent_mujoco",
+    "commit": "b212ddd74b258e7cea006ff1d642b5ffada4b99d",
+    "license": "Apache-2.0",
+    "path": "playground/robots/schroederdewitt__multiagent_mujoco/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/schroederdewitt__multiagent_mujoco --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/schroederdewitt__multiagent_mujoco --backend fake --mcp"
+}

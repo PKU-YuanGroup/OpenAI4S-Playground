@@ -1,0 +1,25 @@
+{
+  "name": "robots/uzh-rpg__flightmare",
+  "package": "robots/uzh-rpg__flightmare",
+  "mhs_package": "mhs/MHS/drivers/robots/uzh-rpg__flightmare",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/uzh-rpg/flightmare",
+    "commit": "d4218aedac18cbe9364a0a0df10ab992c4b65e4f",
+    "license": "MIT",
+    "path": "playground/robots/uzh-rpg__flightmare/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/uzh-rpg__flightmare --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/uzh-rpg__flightmare --backend fake --mcp"
+}

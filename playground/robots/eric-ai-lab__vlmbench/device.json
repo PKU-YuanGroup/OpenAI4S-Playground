@@ -1,0 +1,25 @@
+{
+  "name": "robots/eric-ai-lab__vlmbench",
+  "package": "robots/eric-ai-lab__vlmbench",
+  "mhs_package": "mhs/MHS/drivers/robots/eric-ai-lab__vlmbench",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/eric-ai-lab/vlmbench",
+    "commit": "479bd17b7d80645002af74f142a29dfe8b428876",
+    "license": "MIT",
+    "path": "playground/robots/eric-ai-lab__vlmbench/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/eric-ai-lab__vlmbench --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/eric-ai-lab__vlmbench --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/hslarson__speck-lab-goniometer",
+  "package": "labs/hslarson__speck-lab-goniometer",
+  "mhs_package": "mhs/MHS/drivers/labs/hslarson__speck-lab-goniometer",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hslarson/speck-lab-goniometer",
+    "commit": "9ca84d8c8c6c6ec9f9f3a3bd3cd968fc6657a803",
+    "license": "MIT",
+    "path": "playground/labs/hslarson__speck-lab-goniometer/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hslarson__speck-lab-goniometer --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hslarson__speck-lab-goniometer --backend fake --mcp"
+}

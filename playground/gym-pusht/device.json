@@ -1,6 +1,8 @@
 {
   "name": "gym-pusht",
+  "package": "robots/huggingface__gym-pusht",
   "mhs_package": "mhs/MHS/drivers/robots/huggingface__gym-pusht",
+  "website": "https://mhs.openai4s.org",
   "upstream": {
     "repo_url": "https://github.com/huggingface/gym-pusht",
     "commit": "1dce32970bc3d25e7fad5872c3020159bc5eb31f",
@@ -9,9 +11,15 @@
   },
   "family": "gymnasium",
   "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
   "backends": [
     "fake"
   ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__gym-pusht --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__gym-pusht --backend fake --mcp"
 }

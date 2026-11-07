@@ -1,0 +1,25 @@
+{
+  "name": "robots/internrobotics__internutopia",
+  "package": "robots/internrobotics__internutopia",
+  "mhs_package": "mhs/MHS/drivers/robots/internrobotics__internutopia",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/internrobotics/internutopia",
+    "commit": "b0a9520c586317c2743023c153cbf7c4f04f4732",
+    "license": "MIT",
+    "path": "playground/robots/internrobotics__internutopia/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/internrobotics__internutopia --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/internrobotics__internutopia --backend fake --mcp"
+}

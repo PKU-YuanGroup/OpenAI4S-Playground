@@ -1,0 +1,25 @@
+{
+  "name": "robots/felipemohr__isaaclab-quadruped-tasks",
+  "package": "robots/felipemohr__isaaclab-quadruped-tasks",
+  "mhs_package": "mhs/MHS/drivers/robots/felipemohr__isaaclab-quadruped-tasks",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/felipemohr/isaaclab-quadruped-tasks",
+    "commit": "6d2f0b39c162330f9697db132238b64855cb6ae3",
+    "license": "MIT",
+    "path": "playground/robots/felipemohr__isaaclab-quadruped-tasks/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/felipemohr__isaaclab-quadruped-tasks --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/felipemohr__isaaclab-quadruped-tasks --backend fake --mcp"
+}

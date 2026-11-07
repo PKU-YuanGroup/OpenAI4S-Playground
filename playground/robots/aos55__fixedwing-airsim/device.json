@@ -1,0 +1,25 @@
+{
+  "name": "robots/aos55__fixedwing-airsim",
+  "package": "robots/aos55__fixedwing-airsim",
+  "mhs_package": "mhs/MHS/drivers/robots/aos55__fixedwing-airsim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/aos55/fixedwing-airsim",
+    "commit": "c5054486fb05dc67668b123c7789e399c8d4ce02",
+    "license": "MIT",
+    "path": "playground/robots/aos55__fixedwing-airsim/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aos55__fixedwing-airsim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aos55__fixedwing-airsim --backend fake --mcp"
+}

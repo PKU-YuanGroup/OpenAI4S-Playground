@@ -1,0 +1,25 @@
+{
+  "name": "robots/qdeyna__ur10e_2f140_topic_based_ros2_control",
+  "package": "robots/qdeyna__ur10e_2f140_topic_based_ros2_control",
+  "mhs_package": "mhs/MHS/drivers/robots/qdeyna__ur10e_2f140_topic_based_ros2_control",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/qdeyna/ur10e_2f140_topic_based_ros2_control",
+    "commit": "7db5397edae2795c8366d1ac1581f277124bde98",
+    "license": "NOASSERTION",
+    "path": "playground/robots/qdeyna__ur10e_2f140_topic_based_ros2_control/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/qdeyna__ur10e_2f140_topic_based_ros2_control --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/qdeyna__ur10e_2f140_topic_based_ros2_control --backend fake --mcp"
+}

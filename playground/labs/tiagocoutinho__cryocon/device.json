@@ -1,0 +1,26 @@
+{
+  "name": "labs/tiagocoutinho__cryocon",
+  "package": "labs/tiagocoutinho__cryocon",
+  "mhs_package": "mhs/MHS/drivers/labs/tiagocoutinho__cryocon",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tiagocoutinho/cryocon",
+    "commit": "a60636963d001e407c534494443b772742f6f545",
+    "license": "LGPL-3.0",
+    "path": "playground/labs/tiagocoutinho__cryocon/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__cryocon --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__cryocon --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/matteobroketa__harvard_pump_diy_control",
+  "package": "labs/matteobroketa__harvard_pump_diy_control",
+  "mhs_package": "mhs/MHS/drivers/labs/matteobroketa__harvard_pump_diy_control",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/matteobroketa/harvard_pump_diy_control",
+    "commit": "d4a888432a81d69dad963fddb9df5adf3bc94633",
+    "license": "MIT",
+    "path": "playground/labs/matteobroketa__harvard_pump_diy_control/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/matteobroketa__harvard_pump_diy_control --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/matteobroketa__harvard_pump_diy_control --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/harunteper__auna",
+  "package": "robots/harunteper__auna",
+  "mhs_package": "mhs/MHS/drivers/robots/harunteper__auna",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/harunteper/auna",
+    "commit": "1d8bb13d574deca84c42e0bc9a0ff04d470d371f",
+    "license": "MIT",
+    "path": "playground/robots/harunteper__auna/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/harunteper__auna --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/harunteper__auna --backend fake --mcp"
+}

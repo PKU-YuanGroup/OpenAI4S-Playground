@@ -1,0 +1,25 @@
+{
+  "name": "robots/linqi-ye__robot-universe",
+  "package": "robots/linqi-ye__robot-universe",
+  "mhs_package": "mhs/MHS/drivers/robots/linqi-ye__robot-universe",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/linqi-ye/robot-universe",
+    "commit": "3f2de2ab27f18cd677cf159afe1992a42daa24d8",
+    "license": "NOASSERTION",
+    "path": "playground/robots/linqi-ye__robot-universe/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linqi-ye__robot-universe --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linqi-ye__robot-universe --backend fake --mcp"
+}

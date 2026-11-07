@@ -1,0 +1,25 @@
+{
+  "name": "robots/jaykorea__isaac-rl-two-wheel-legged-bot",
+  "package": "robots/jaykorea__isaac-rl-two-wheel-legged-bot",
+  "mhs_package": "mhs/MHS/drivers/robots/jaykorea__isaac-rl-two-wheel-legged-bot",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/jaykorea/isaac-rl-two-wheel-legged-bot",
+    "commit": "d922cce9e07a8877c37e12b2cb39dfdcf34b9d40",
+    "license": "MIT",
+    "path": "playground/robots/jaykorea__isaac-rl-two-wheel-legged-bot/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jaykorea__isaac-rl-two-wheel-legged-bot --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jaykorea__isaac-rl-two-wheel-legged-bot --backend fake --mcp"
+}

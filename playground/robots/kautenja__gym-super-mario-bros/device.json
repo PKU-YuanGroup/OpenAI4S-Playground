@@ -1,0 +1,25 @@
+{
+  "name": "robots/kautenja__gym-super-mario-bros",
+  "package": "robots/kautenja__gym-super-mario-bros",
+  "mhs_package": "mhs/MHS/drivers/robots/kautenja__gym-super-mario-bros",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/kautenja/gym-super-mario-bros",
+    "commit": "7ba17c778e1df8240fd1cf99dbe5238d0e9b93aa",
+    "license": "MIT",
+    "path": "playground/robots/kautenja__gym-super-mario-bros/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kautenja__gym-super-mario-bros --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kautenja__gym-super-mario-bros --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "labs/ludwigregalado__lock-in_sr830",
+  "package": "labs/ludwigregalado__lock-in_sr830",
+  "mhs_package": "mhs/MHS/drivers/labs/ludwigregalado__lock-in_sr830",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ludwigregalado/lock-in_sr830",
+    "commit": "fbd78df88f25a051d938cdbe5b0a1263b938e6de",
+    "license": "NOASSERTION",
+    "path": "playground/labs/ludwigregalado__lock-in_sr830/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ludwigregalado__lock-in_sr830 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ludwigregalado__lock-in_sr830 --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/opengalaxea__galaxeamanipsim",
+  "package": "robots/opengalaxea__galaxeamanipsim",
+  "mhs_package": "mhs/MHS/drivers/robots/opengalaxea__galaxeamanipsim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/opengalaxea/galaxeamanipsim",
+    "commit": "abe7f5161eeaa150e6eaffdf443af5df7f23f356",
+    "license": "Apache-2.0",
+    "path": "playground/robots/opengalaxea__galaxeamanipsim/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/opengalaxea__galaxeamanipsim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/opengalaxea__galaxeamanipsim --backend fake --mcp"
+}

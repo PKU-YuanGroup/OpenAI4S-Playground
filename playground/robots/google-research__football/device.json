@@ -1,0 +1,25 @@
+{
+  "name": "robots/google-research__football",
+  "package": "robots/google-research__football",
+  "mhs_package": "mhs/MHS/drivers/robots/google-research__football",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/google-research/football",
+    "commit": "3d9e754720a95621bba6475c4d3b0d56fe919014",
+    "license": "Apache-2.0",
+    "path": "playground/robots/google-research__football/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-research__football --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-research__football --backend fake --mcp"
+}

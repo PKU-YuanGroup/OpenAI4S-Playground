@@ -1,0 +1,25 @@
+{
+  "name": "robots/seohongpark__ocbench",
+  "package": "robots/seohongpark__ocbench",
+  "mhs_package": "mhs/MHS/drivers/robots/seohongpark__ocbench",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/seohongpark/ocbench",
+    "commit": "6939a1e84f7ce9dbdd20c9f80d4cf335e8f83b49",
+    "license": "MIT",
+    "path": "playground/robots/seohongpark__ocbench/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/seohongpark__ocbench --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/seohongpark__ocbench --backend fake --mcp"
+}

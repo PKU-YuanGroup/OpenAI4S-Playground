@@ -1,0 +1,26 @@
+{
+  "name": "labs/diamondlightsource__dodal",
+  "package": "labs/diamondlightsource__dodal",
+  "mhs_package": "mhs/MHS/drivers/labs/diamondlightsource__dodal",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/diamondlightsource/dodal",
+    "commit": "f96fef4e72a734de6bb523b4229410254e7e8eab",
+    "license": "Apache-2.0",
+    "path": "playground/labs/diamondlightsource__dodal/upstream"
+  },
+  "family": "ophyd",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/diamondlightsource__dodal --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/diamondlightsource__dodal --backend fake --mcp"
+}

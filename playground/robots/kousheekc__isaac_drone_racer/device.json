@@ -1,0 +1,25 @@
+{
+  "name": "robots/kousheekc__isaac_drone_racer",
+  "package": "robots/kousheekc__isaac_drone_racer",
+  "mhs_package": "mhs/MHS/drivers/robots/kousheekc__isaac_drone_racer",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/kousheekc/isaac_drone_racer",
+    "commit": "d530f67768d53701454f406e4da967e0e9c30842",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/kousheekc__isaac_drone_racer/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kousheekc__isaac_drone_racer --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kousheekc__isaac_drone_racer --backend fake --mcp"
+}

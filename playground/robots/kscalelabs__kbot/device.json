@@ -1,0 +1,25 @@
+{
+  "name": "robots/kscalelabs__kbot",
+  "package": "robots/kscalelabs__kbot",
+  "mhs_package": "mhs/MHS/drivers/robots/kscalelabs__kbot",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/kscalelabs/kbot",
+    "commit": "76aba70e3372fecf3583ed6dbe5f379d44c8511c",
+    "license": "MIT",
+    "path": "playground/robots/kscalelabs__kbot/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kscalelabs__kbot --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kscalelabs__kbot --backend fake --mcp"
+}

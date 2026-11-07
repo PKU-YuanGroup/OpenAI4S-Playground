@@ -1,0 +1,26 @@
+{
+  "name": "robots/strands-labs__robots",
+  "package": "robots/strands-labs__robots",
+  "mhs_package": "mhs/MHS/drivers/robots/strands-labs__robots",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/strands-labs/robots",
+    "commit": "f19439bf8c80e7ae6f0fdc0f003d850d638dd97d",
+    "license": "Apache-2.0",
+    "path": "playground/robots/strands-labs__robots/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/strands-labs__robots --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/strands-labs__robots --backend fake --mcp"
+}

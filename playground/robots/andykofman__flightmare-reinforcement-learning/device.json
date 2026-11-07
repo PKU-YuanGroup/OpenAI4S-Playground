@@ -1,0 +1,25 @@
+{
+  "name": "robots/andykofman__flightmare-reinforcement-learning",
+  "package": "robots/andykofman__flightmare-reinforcement-learning",
+  "mhs_package": "mhs/MHS/drivers/robots/andykofman__flightmare-reinforcement-learning",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/andykofman/flightmare-reinforcement-learning",
+    "commit": "22fb5d16eec32b1816aa568c20643d91ca7c76f7",
+    "license": "MIT",
+    "path": "playground/robots/andykofman__flightmare-reinforcement-learning/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andykofman__flightmare-reinforcement-learning --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andykofman__flightmare-reinforcement-learning --backend fake --mcp"
+}

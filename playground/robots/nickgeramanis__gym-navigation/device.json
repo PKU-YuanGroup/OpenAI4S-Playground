@@ -1,0 +1,25 @@
+{
+  "name": "robots/nickgeramanis__gym-navigation",
+  "package": "robots/nickgeramanis__gym-navigation",
+  "mhs_package": "mhs/MHS/drivers/robots/nickgeramanis__gym-navigation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/nickgeramanis/gym-navigation",
+    "commit": "98be757c6aa2b2834cecbb7dde3c2c05e5f1b57b",
+    "license": "GPL-3.0",
+    "path": "playground/robots/nickgeramanis__gym-navigation/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nickgeramanis__gym-navigation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nickgeramanis__gym-navigation --backend fake --mcp"
+}

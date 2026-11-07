@@ -1,0 +1,25 @@
+{
+  "name": "robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch",
+  "package": "robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch",
+  "mhs_package": "mhs/MHS/drivers/robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/erfanmhi/deep-reinforcement-learning-cs285-pytorch",
+    "commit": "6da04f367e52a451c202ae7e5477994c1d149baf",
+    "license": "MIT",
+    "path": "playground/robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch --backend fake --mcp"
+}

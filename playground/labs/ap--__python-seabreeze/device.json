@@ -1,0 +1,26 @@
+{
+  "name": "labs/ap--__python-seabreeze",
+  "package": "labs/ap--__python-seabreeze",
+  "mhs_package": "mhs/MHS/drivers/labs/ap--__python-seabreeze",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ap--/python-seabreeze",
+    "commit": "3de4fdd6bbb533a701309c746c94cac2ffc05be0",
+    "license": "MIT",
+    "path": "playground/labs/ap--__python-seabreeze/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ap--__python-seabreeze --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ap--__python-seabreeze --backend fake --mcp"
+}

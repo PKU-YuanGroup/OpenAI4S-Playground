@@ -1,0 +1,25 @@
+{
+  "name": "robots/gepetto__constraints-as-terminations",
+  "package": "robots/gepetto__constraints-as-terminations",
+  "mhs_package": "mhs/MHS/drivers/robots/gepetto__constraints-as-terminations",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/gepetto/constraints-as-terminations",
+    "commit": "5fc729b789a27d39bf95df1b58fbc32b794106ff",
+    "license": "MIT",
+    "path": "playground/robots/gepetto__constraints-as-terminations/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/gepetto__constraints-as-terminations --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/gepetto__constraints-as-terminations --backend fake --mcp"
+}

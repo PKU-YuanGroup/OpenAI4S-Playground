@@ -1,0 +1,25 @@
+{
+  "name": "robots/klintan__ros2_track_imu",
+  "package": "robots/klintan__ros2_track_imu",
+  "mhs_package": "mhs/MHS/drivers/robots/klintan__ros2_track_imu",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/klintan/ros2_track_imu",
+    "commit": "21741c413ceec1104c62276a6d00deddb95fec4c",
+    "license": "MIT",
+    "path": "playground/robots/klintan__ros2_track_imu/upstream"
+  },
+  "family": "ros",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_track_imu --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_track_imu --backend fake --mcp"
+}

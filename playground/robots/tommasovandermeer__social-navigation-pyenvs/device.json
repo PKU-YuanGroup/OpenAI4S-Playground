@@ -1,0 +1,25 @@
+{
+  "name": "robots/tommasovandermeer__social-navigation-pyenvs",
+  "package": "robots/tommasovandermeer__social-navigation-pyenvs",
+  "mhs_package": "mhs/MHS/drivers/robots/tommasovandermeer__social-navigation-pyenvs",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tommasovandermeer/social-navigation-pyenvs",
+    "commit": "f9cd244d3e529247ca1031364de22954717b9493",
+    "license": "Apache-2.0",
+    "path": "playground/robots/tommasovandermeer__social-navigation-pyenvs/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tommasovandermeer__social-navigation-pyenvs --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tommasovandermeer__social-navigation-pyenvs --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "labs/maximilianb2__pc-gym",
+  "package": "labs/maximilianb2__pc-gym",
+  "mhs_package": "mhs/MHS/drivers/labs/maximilianb2__pc-gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/maximilianb2/pc-gym",
+    "commit": "fbfb36bf84b494cd157cff88292e1fd1b864cee5",
+    "license": "MIT",
+    "path": "playground/labs/maximilianb2__pc-gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/maximilianb2__pc-gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/maximilianb2__pc-gym --backend fake --mcp"
+}

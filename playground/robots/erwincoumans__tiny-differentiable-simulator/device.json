@@ -1,0 +1,25 @@
+{
+  "name": "robots/erwincoumans__tiny-differentiable-simulator",
+  "package": "robots/erwincoumans__tiny-differentiable-simulator",
+  "mhs_package": "mhs/MHS/drivers/robots/erwincoumans__tiny-differentiable-simulator",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/erwincoumans/tiny-differentiable-simulator",
+    "commit": "8381b8c9ad7f0a959548e4982eb8a63431a842d2",
+    "license": "Apache-2.0",
+    "path": "playground/robots/erwincoumans__tiny-differentiable-simulator/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erwincoumans__tiny-differentiable-simulator --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erwincoumans__tiny-differentiable-simulator --backend fake --mcp"
+}

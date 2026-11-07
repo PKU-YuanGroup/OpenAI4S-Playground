@@ -1,0 +1,25 @@
+{
+  "name": "robots/klintan__ros2_video_streamer",
+  "package": "robots/klintan__ros2_video_streamer",
+  "mhs_package": "mhs/MHS/drivers/robots/klintan__ros2_video_streamer",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/klintan/ros2_video_streamer",
+    "commit": "4fc6d858d748322250cb0dc5a7864ac2576d148f",
+    "license": "MIT",
+    "path": "playground/robots/klintan__ros2_video_streamer/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_video_streamer --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_video_streamer --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/facebookresearch__house3d",
+  "package": "robots/facebookresearch__house3d",
+  "mhs_package": "mhs/MHS/drivers/robots/facebookresearch__house3d",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/facebookresearch/house3d",
+    "commit": "e616837a99c2a209212d5556bdbb3dda75298ca9",
+    "license": "Apache-2.0",
+    "path": "playground/robots/facebookresearch__house3d/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/facebookresearch__house3d --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/facebookresearch__house3d --backend fake --mcp"
+}

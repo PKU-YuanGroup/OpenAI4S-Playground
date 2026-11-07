@@ -1,0 +1,25 @@
+{
+  "name": "robots/unity-technologies__unity-robotics-hub",
+  "package": "robots/unity-technologies__unity-robotics-hub",
+  "mhs_package": "mhs/MHS/drivers/robots/unity-technologies__unity-robotics-hub",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/unity-technologies/unity-robotics-hub",
+    "commit": "b8d1e1d4c76c9ce75fc145cdbf55a9072cc77364",
+    "license": "Apache-2.0",
+    "path": "playground/robots/unity-technologies__unity-robotics-hub/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unity-technologies__unity-robotics-hub --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unity-technologies__unity-robotics-hub --backend fake --mcp"
+}

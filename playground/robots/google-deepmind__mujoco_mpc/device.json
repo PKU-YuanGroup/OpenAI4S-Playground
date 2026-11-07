@@ -1,0 +1,25 @@
+{
+  "name": "robots/google-deepmind__mujoco_mpc",
+  "package": "robots/google-deepmind__mujoco_mpc",
+  "mhs_package": "mhs/MHS/drivers/robots/google-deepmind__mujoco_mpc",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/google-deepmind/mujoco_mpc",
+    "commit": "ff572a21e7c2bf9fda62e1862a758da7e9a8719b",
+    "license": "Apache-2.0",
+    "path": "playground/robots/google-deepmind__mujoco_mpc/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-deepmind__mujoco_mpc --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-deepmind__mujoco_mpc --backend fake --mcp"
+}

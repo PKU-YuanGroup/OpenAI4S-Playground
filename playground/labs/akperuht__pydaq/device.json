@@ -1,0 +1,25 @@
+{
+  "name": "labs/akperuht__pydaq",
+  "package": "labs/akperuht__pydaq",
+  "mhs_package": "mhs/MHS/drivers/labs/akperuht__pydaq",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/akperuht/pydaq",
+    "commit": "edb7584d00891aa0f1a0ef483d12d1d59ab4f794",
+    "license": "MIT",
+    "path": "playground/labs/akperuht__pydaq/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/akperuht__pydaq --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/akperuht__pydaq --backend fake --mcp"
+}

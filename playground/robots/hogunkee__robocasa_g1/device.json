@@ -1,0 +1,25 @@
+{
+  "name": "robots/hogunkee__robocasa_g1",
+  "package": "robots/hogunkee__robocasa_g1",
+  "mhs_package": "mhs/MHS/drivers/robots/hogunkee__robocasa_g1",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hogunkee/robocasa_g1",
+    "commit": "6796d20bbee3fbe49e8f80a08f04bece07f481fd",
+    "license": "MIT",
+    "path": "playground/robots/hogunkee__robocasa_g1/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hogunkee__robocasa_g1 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hogunkee__robocasa_g1 --backend fake --mcp"
+}

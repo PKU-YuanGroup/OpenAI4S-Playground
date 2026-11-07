@@ -1,0 +1,25 @@
+{
+  "name": "robots/ll7__robot_sf_ll7",
+  "package": "robots/ll7__robot_sf_ll7",
+  "mhs_package": "mhs/MHS/drivers/robots/ll7__robot_sf_ll7",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ll7/robot_sf_ll7",
+    "commit": "53721be3248600e08641a9816d094b605e3c93e4",
+    "license": "GPL-3.0",
+    "path": "playground/robots/ll7__robot_sf_ll7/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ll7__robot_sf_ll7 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ll7__robot_sf_ll7 --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/robotology-legacy__gym-ignition",
+  "package": "robots/robotology-legacy__gym-ignition",
+  "mhs_package": "mhs/MHS/drivers/robots/robotology-legacy__gym-ignition",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/robotology-legacy/gym-ignition",
+    "commit": "4bc8e0465eed68911434485ba0b9c0a6740d516e",
+    "license": "LGPL-3.0",
+    "path": "playground/robots/robotology-legacy__gym-ignition/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotology-legacy__gym-ignition --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotology-legacy__gym-ignition --backend fake --mcp"
+}

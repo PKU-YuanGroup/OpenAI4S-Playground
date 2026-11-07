@@ -1,0 +1,26 @@
+{
+  "name": "labs/drkirkm__syringepump",
+  "package": "labs/drkirkm__syringepump",
+  "mhs_package": "mhs/MHS/drivers/labs/drkirkm__syringepump",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/drkirkm/syringepump",
+    "commit": "6a39723535c339f24b0eeb7332c2dfe96e5a7afb",
+    "license": "CC0-1.0",
+    "path": "playground/labs/drkirkm__syringepump/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/drkirkm__syringepump --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/drkirkm__syringepump --backend fake --mcp"
+}

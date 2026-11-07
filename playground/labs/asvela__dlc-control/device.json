@@ -1,0 +1,26 @@
+{
+  "name": "labs/asvela__dlc-control",
+  "package": "labs/asvela__dlc-control",
+  "mhs_package": "mhs/MHS/drivers/labs/asvela__dlc-control",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/asvela/dlc-control",
+    "commit": "eba98c139581e73dce32c0b196f41b253f6009f8",
+    "license": "MIT",
+    "path": "playground/labs/asvela__dlc-control/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R3",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/asvela__dlc-control --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/asvela__dlc-control --backend fake --mcp"
+}

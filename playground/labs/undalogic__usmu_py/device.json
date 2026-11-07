@@ -1,0 +1,26 @@
+{
+  "name": "labs/undalogic__usmu_py",
+  "package": "labs/undalogic__usmu_py",
+  "mhs_package": "mhs/MHS/drivers/labs/undalogic__usmu_py",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/undalogic/usmu_py",
+    "commit": "345dc809f9711162a7cc60ca273a3fd13693735a",
+    "license": "MIT",
+    "path": "playground/labs/undalogic__usmu_py/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/undalogic__usmu_py --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/undalogic__usmu_py --backend fake --mcp"
+}

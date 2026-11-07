@@ -1,0 +1,25 @@
+{
+  "name": "robots/will0103__ros2-mobile-manipulator",
+  "package": "robots/will0103__ros2-mobile-manipulator",
+  "mhs_package": "mhs/MHS/drivers/robots/will0103__ros2-mobile-manipulator",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/will0103/ros2-mobile-manipulator",
+    "commit": "6f49e8f3b306a864d8d139d2dc270afebecea819",
+    "license": "NOASSERTION",
+    "path": "playground/robots/will0103__ros2-mobile-manipulator/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/will0103__ros2-mobile-manipulator --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/will0103__ros2-mobile-manipulator --backend fake --mcp"
+}

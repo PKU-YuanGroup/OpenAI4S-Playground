@@ -1,0 +1,26 @@
+{
+  "name": "robots/dyson-ai__grip",
+  "package": "robots/dyson-ai__grip",
+  "mhs_package": "mhs/MHS/drivers/robots/dyson-ai__grip",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/dyson-ai/grip",
+    "commit": "eee9f38f86ac636ba4b4ddd1e6b9cfb783f0e203",
+    "license": "MIT",
+    "path": "playground/robots/dyson-ai__grip/upstream"
+  },
+  "family": "python-object",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "sim"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dyson-ai__grip --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dyson-ai__grip --backend fake --mcp"
+}

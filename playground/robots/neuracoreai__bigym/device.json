@@ -1,0 +1,25 @@
+{
+  "name": "robots/neuracoreai__bigym",
+  "package": "robots/neuracoreai__bigym",
+  "mhs_package": "mhs/MHS/drivers/robots/neuracoreai__bigym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/neuracoreai/bigym",
+    "commit": "14beb30318ad14c5d6723175c2ee2281129792af",
+    "license": "Apache-2.0",
+    "path": "playground/robots/neuracoreai__bigym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/neuracoreai__bigym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/neuracoreai__bigym --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/lewbert__talos-2d-transfer",
+  "package": "labs/lewbert__talos-2d-transfer",
+  "mhs_package": "mhs/MHS/drivers/labs/lewbert__talos-2d-transfer",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/lewbert/talos-2d-transfer",
+    "commit": "2b85b6a9c74b194d4507e3d7713f343a00680a32",
+    "license": "GPL-3.0",
+    "path": "playground/labs/lewbert__talos-2d-transfer/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/lewbert__talos-2d-transfer --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/lewbert__talos-2d-transfer --backend fake --mcp"
+}

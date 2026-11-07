@@ -1,0 +1,26 @@
+{
+  "name": "labs/uw-loci__flamingo_control",
+  "package": "labs/uw-loci__flamingo_control",
+  "mhs_package": "mhs/MHS/drivers/labs/uw-loci__flamingo_control",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/uw-loci/flamingo_control",
+    "commit": "0eee5dac8e54edbb02ec0c4a18d3e362ad772310",
+    "license": "MIT",
+    "path": "playground/labs/uw-loci__flamingo_control/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/uw-loci__flamingo_control --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/uw-loci__flamingo_control --backend fake --mcp"
+}

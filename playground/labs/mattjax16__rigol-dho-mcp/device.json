@@ -1,0 +1,26 @@
+{
+  "name": "labs/mattjax16__rigol-dho-mcp",
+  "package": "labs/mattjax16__rigol-dho-mcp",
+  "mhs_package": "mhs/MHS/drivers/labs/mattjax16__rigol-dho-mcp",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/mattjax16/rigol-dho-mcp",
+    "commit": "f9ac7191869845ae46ca714de69a877c388b2530",
+    "license": "MIT",
+    "path": "playground/labs/mattjax16__rigol-dho-mcp/upstream"
+  },
+  "family": "mcp-client",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mattjax16__rigol-dho-mcp --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mattjax16__rigol-dho-mcp --backend fake --mcp"
+}

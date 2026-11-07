@@ -1,0 +1,25 @@
+{
+  "name": "robots/notfoundthisperson__robocas-v0",
+  "package": "robots/notfoundthisperson__robocas-v0",
+  "mhs_package": "mhs/MHS/drivers/robots/notfoundthisperson__robocas-v0",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/notfoundthisperson/robocas-v0",
+    "commit": "b7844e975df7b54963b299d2f59ab3283523d708",
+    "license": "MIT",
+    "path": "playground/robots/notfoundthisperson__robocas-v0/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/notfoundthisperson__robocas-v0 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/notfoundthisperson__robocas-v0 --backend fake --mcp"
+}

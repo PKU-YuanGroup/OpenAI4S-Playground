@@ -1,0 +1,25 @@
+{
+  "name": "robots/christianrauch__raspicam2_node",
+  "package": "robots/christianrauch__raspicam2_node",
+  "mhs_package": "mhs/MHS/drivers/robots/christianrauch__raspicam2_node",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/christianrauch/raspicam2_node",
+    "commit": "749689a967bfc427e74520dfd107f30f5c50bf0e",
+    "license": "NOASSERTION",
+    "path": "playground/robots/christianrauch__raspicam2_node/upstream"
+  },
+  "family": "ros",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/christianrauch__raspicam2_node --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/christianrauch__raspicam2_node --backend fake --mcp"
+}

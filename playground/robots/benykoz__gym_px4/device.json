@@ -1,0 +1,25 @@
+{
+  "name": "robots/benykoz__gym_px4",
+  "package": "robots/benykoz__gym_px4",
+  "mhs_package": "mhs/MHS/drivers/robots/benykoz__gym_px4",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/benykoz/gym_px4",
+    "commit": "d53a9d47030d7ca3132747527d66f9a097fd0986",
+    "license": "NOASSERTION",
+    "path": "playground/robots/benykoz__gym_px4/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/benykoz__gym_px4 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/benykoz__gym_px4 --backend fake --mcp"
+}

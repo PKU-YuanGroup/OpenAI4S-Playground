@@ -1,0 +1,25 @@
+{
+  "name": "robots/ian-chuang__homestri-ur5e-rl",
+  "package": "robots/ian-chuang__homestri-ur5e-rl",
+  "mhs_package": "mhs/MHS/drivers/robots/ian-chuang__homestri-ur5e-rl",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ian-chuang/homestri-ur5e-rl",
+    "commit": "89b7e23cc5acbd9a164222fa548cb0113684523e",
+    "license": "NOASSERTION",
+    "path": "playground/robots/ian-chuang__homestri-ur5e-rl/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ian-chuang__homestri-ur5e-rl --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ian-chuang__homestri-ur5e-rl --backend fake --mcp"
+}

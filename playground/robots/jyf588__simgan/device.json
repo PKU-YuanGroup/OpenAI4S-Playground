@@ -1,0 +1,25 @@
+{
+  "name": "robots/jyf588__simgan",
+  "package": "robots/jyf588__simgan",
+  "mhs_package": "mhs/MHS/drivers/robots/jyf588__simgan",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/jyf588/simgan",
+    "commit": "23283d7b5629f1653567b2437bb28aac1cc17169",
+    "license": "Apache-2.0",
+    "path": "playground/robots/jyf588__simgan/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jyf588__simgan --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jyf588__simgan --backend fake --mcp"
+}

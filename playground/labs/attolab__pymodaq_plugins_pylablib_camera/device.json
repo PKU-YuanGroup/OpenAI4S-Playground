@@ -1,0 +1,26 @@
+{
+  "name": "labs/attolab__pymodaq_plugins_pylablib_camera",
+  "package": "labs/attolab__pymodaq_plugins_pylablib_camera",
+  "mhs_package": "mhs/MHS/drivers/labs/attolab__pymodaq_plugins_pylablib_camera",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/attolab/pymodaq_plugins_pylablib_camera",
+    "commit": "ff1e71510bc1a4b07a700034d37f74a5e916abf8",
+    "license": "CECILL-B",
+    "path": "playground/labs/attolab__pymodaq_plugins_pylablib_camera/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/attolab__pymodaq_plugins_pylablib_camera --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/attolab__pymodaq_plugins_pylablib_camera --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/stevemacenski__ros2_ouster_drivers",
+  "package": "robots/stevemacenski__ros2_ouster_drivers",
+  "mhs_package": "mhs/MHS/drivers/robots/stevemacenski__ros2_ouster_drivers",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/stevemacenski/ros2_ouster_drivers",
+    "commit": "19c2523025e3e55a2fa803581e4e830e467a9d47",
+    "license": "Apache-2.0",
+    "path": "playground/robots/stevemacenski__ros2_ouster_drivers/upstream"
+  },
+  "family": "ros",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stevemacenski__ros2_ouster_drivers --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stevemacenski__ros2_ouster_drivers --backend fake --mcp"
+}

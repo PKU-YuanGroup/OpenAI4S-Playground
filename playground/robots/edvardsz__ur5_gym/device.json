@@ -1,0 +1,25 @@
+{
+  "name": "robots/edvardsz__ur5_gym",
+  "package": "robots/edvardsz__ur5_gym",
+  "mhs_package": "mhs/MHS/drivers/robots/edvardsz__ur5_gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/edvardsz/ur5_gym",
+    "commit": "d059332a01d320a48617d5a46edb9856f3a4c86d",
+    "license": "MIT",
+    "path": "playground/robots/edvardsz__ur5_gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/edvardsz__ur5_gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/edvardsz__ur5_gym --backend fake --mcp"
+}

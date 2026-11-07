@@ -1,0 +1,26 @@
+{
+  "name": "robots/vimalabs__vimabench",
+  "package": "robots/vimalabs__vimabench",
+  "mhs_package": "mhs/MHS/drivers/robots/vimalabs__vimabench",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/vimalabs/vimabench",
+    "commit": "97e0af11e126fd477c9d81eeabfb6c739021c680",
+    "license": "MIT",
+    "path": "playground/robots/vimalabs__vimabench/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "sim"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vimalabs__vimabench --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vimalabs__vimabench --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/farama-foundation__highwayenv",
+  "package": "robots/farama-foundation__highwayenv",
+  "mhs_package": "mhs/MHS/drivers/robots/farama-foundation__highwayenv",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/farama-foundation/highwayenv",
+    "commit": "2a268f348f10f4d1ac83f96bc8a53d2fa50dd3b0",
+    "license": "MIT",
+    "path": "playground/robots/farama-foundation__highwayenv/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__highwayenv --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__highwayenv --backend fake --mcp"
+}

@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Native sources are optional local checkouts; the original six submodules stay tracked.
+playground/**/upstream/

@@ -1,0 +1,25 @@
+{
+  "name": "labs/norlovs__ot2-robotics-cv-control",
+  "package": "labs/norlovs__ot2-robotics-cv-control",
+  "mhs_package": "mhs/MHS/drivers/labs/norlovs__ot2-robotics-cv-control",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/norlovs/ot2-robotics-cv-control",
+    "commit": "a0a621e5a79c32e70c8c97864d256693d3b3eac0",
+    "license": "NOASSERTION",
+    "path": "playground/labs/norlovs__ot2-robotics-cv-control/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/norlovs__ot2-robotics-cv-control --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/norlovs__ot2-robotics-cv-control --backend fake --mcp"
+}

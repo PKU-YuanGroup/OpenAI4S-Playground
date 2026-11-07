@@ -1,0 +1,25 @@
+{
+  "name": "robots/rr-learning__causalworld",
+  "package": "robots/rr-learning__causalworld",
+  "mhs_package": "mhs/MHS/drivers/robots/rr-learning__causalworld",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/rr-learning/causalworld",
+    "commit": "1045277101a92c506db42704da28f6e7227d401b",
+    "license": "MIT",
+    "path": "playground/robots/rr-learning__causalworld/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rr-learning__causalworld --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rr-learning__causalworld --backend fake --mcp"
+}

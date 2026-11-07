@@ -1,0 +1,25 @@
+{
+  "name": "robots/axelbr__racecar_gym",
+  "package": "robots/axelbr__racecar_gym",
+  "mhs_package": "mhs/MHS/drivers/robots/axelbr__racecar_gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/axelbr/racecar_gym",
+    "commit": "70496767d80397010ac9b5ba722647ca67e3f85c",
+    "license": "MIT",
+    "path": "playground/robots/axelbr__racecar_gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/axelbr__racecar_gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/axelbr__racecar_gym --backend fake --mcp"
+}

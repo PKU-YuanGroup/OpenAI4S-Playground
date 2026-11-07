@@ -1,0 +1,25 @@
+{
+  "name": "robots/noetix-robotics__noetix_n2_gym",
+  "package": "robots/noetix-robotics__noetix_n2_gym",
+  "mhs_package": "mhs/MHS/drivers/robots/noetix-robotics__noetix_n2_gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/noetix-robotics/noetix_n2_gym",
+    "commit": "153aad12dcc44aeafe378efe2f652873b02e0d89",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/noetix-robotics__noetix_n2_gym/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/noetix-robotics__noetix_n2_gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/noetix-robotics__noetix_n2_gym --backend fake --mcp"
+}

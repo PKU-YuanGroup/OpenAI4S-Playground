@@ -1,0 +1,25 @@
+{
+  "name": "labs/autobio-bench__autobio",
+  "package": "labs/autobio-bench__autobio",
+  "mhs_package": "mhs/MHS/drivers/labs/autobio-bench__autobio",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/autobio-bench/autobio",
+    "commit": "08504213356cbfe9a82bcd33a43cd282945a45df",
+    "license": "NOASSERTION",
+    "path": "playground/labs/autobio-bench__autobio/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/autobio-bench__autobio --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/autobio-bench__autobio --backend fake --mcp"
+}

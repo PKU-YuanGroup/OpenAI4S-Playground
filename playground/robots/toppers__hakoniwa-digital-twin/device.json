@@ -1,0 +1,25 @@
+{
+  "name": "robots/toppers__hakoniwa-digital-twin",
+  "package": "robots/toppers__hakoniwa-digital-twin",
+  "mhs_package": "mhs/MHS/drivers/robots/toppers__hakoniwa-digital-twin",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/toppers/hakoniwa-digital-twin",
+    "commit": "1a2c15b8aade01696a81207c8f28a77013497384",
+    "license": "NOASSERTION",
+    "path": "playground/robots/toppers__hakoniwa-digital-twin/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/toppers__hakoniwa-digital-twin --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/toppers__hakoniwa-digital-twin --backend fake --mcp"
+}

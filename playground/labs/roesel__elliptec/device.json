@@ -1,0 +1,26 @@
+{
+  "name": "labs/roesel__elliptec",
+  "package": "labs/roesel__elliptec",
+  "mhs_package": "mhs/MHS/drivers/labs/roesel__elliptec",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/roesel/elliptec",
+    "commit": "5f86ca595f80397bca280347830339c832a7b0bc",
+    "license": "GPL-3.0",
+    "path": "playground/labs/roesel__elliptec/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/roesel__elliptec --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/roesel__elliptec --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/nsls-ii-chx__syringe_pump_controller",
+  "package": "labs/nsls-ii-chx__syringe_pump_controller",
+  "mhs_package": "mhs/MHS/drivers/labs/nsls-ii-chx__syringe_pump_controller",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/nsls-ii-chx/syringe_pump_controller",
+    "commit": "cbda9ca1c20127a220eb91a61b6420a366ae5cf8",
+    "license": "NOASSERTION",
+    "path": "playground/labs/nsls-ii-chx__syringe_pump_controller/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-chx__syringe_pump_controller --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-chx__syringe_pump_controller --backend fake --mcp"
+}

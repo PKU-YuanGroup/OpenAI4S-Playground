@@ -1,0 +1,26 @@
+{
+  "name": "labs/holtzmanjon__apoalpyca",
+  "package": "labs/holtzmanjon__apoalpyca",
+  "mhs_package": "mhs/MHS/drivers/labs/holtzmanjon__apoalpyca",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/holtzmanjon/apoalpyca",
+    "commit": "3d4c48ec092c7dfd095f47b30efe9eb29ca2d031",
+    "license": "GPL-3.0",
+    "path": "playground/labs/holtzmanjon__apoalpyca/upstream"
+  },
+  "family": "tag-bridge",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/holtzmanjon__apoalpyca --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/holtzmanjon__apoalpyca --backend fake --mcp"
+}

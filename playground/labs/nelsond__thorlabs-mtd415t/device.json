@@ -1,0 +1,26 @@
+{
+  "name": "labs/nelsond__thorlabs-mtd415t",
+  "package": "labs/nelsond__thorlabs-mtd415t",
+  "mhs_package": "mhs/MHS/drivers/labs/nelsond__thorlabs-mtd415t",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/nelsond/thorlabs-mtd415t",
+    "commit": "c53ec5c7db67f4cb47619d2ceaa4aead5e583923",
+    "license": "MIT",
+    "path": "playground/labs/nelsond__thorlabs-mtd415t/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nelsond__thorlabs-mtd415t --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nelsond__thorlabs-mtd415t --backend fake --mcp"
+}

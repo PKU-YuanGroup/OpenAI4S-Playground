@@ -1,0 +1,25 @@
+{
+  "name": "robots/alrhub__d3il",
+  "package": "robots/alrhub__d3il",
+  "mhs_package": "mhs/MHS/drivers/robots/alrhub__d3il",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/alrhub/d3il",
+    "commit": "1d9c71850d4fc1477cee17b557c8b97d70b13071",
+    "license": "MIT",
+    "path": "playground/robots/alrhub__d3il/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/alrhub__d3il --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/alrhub__d3il --backend fake --mcp"
+}

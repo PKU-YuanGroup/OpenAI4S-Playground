@@ -1,0 +1,25 @@
+{
+  "name": "robots/hzaskywalker__plasticinelab",
+  "package": "robots/hzaskywalker__plasticinelab",
+  "mhs_package": "mhs/MHS/drivers/robots/hzaskywalker__plasticinelab",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hzaskywalker/plasticinelab",
+    "commit": "ac1a2f7b0bbbe88706b51bf3aa9d72483e1d05b6",
+    "license": "NOASSERTION",
+    "path": "playground/robots/hzaskywalker__plasticinelab/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hzaskywalker__plasticinelab --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hzaskywalker__plasticinelab --backend fake --mcp"
+}

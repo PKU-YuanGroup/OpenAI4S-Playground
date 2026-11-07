@@ -1,0 +1,25 @@
+{
+  "name": "labs/ad-sdl__sdl-simulation",
+  "package": "labs/ad-sdl__sdl-simulation",
+  "mhs_package": "mhs/MHS/drivers/labs/ad-sdl__sdl-simulation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ad-sdl/sdl-simulation",
+    "commit": "7ae7b7ac5581a891451e0007c0cd8de885773082",
+    "license": "NOASSERTION",
+    "path": "playground/labs/ad-sdl__sdl-simulation/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ad-sdl__sdl-simulation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ad-sdl__sdl-simulation --backend fake --mcp"
+}

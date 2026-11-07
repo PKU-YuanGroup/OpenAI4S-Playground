@@ -1,0 +1,25 @@
+{
+  "name": "robots/nvlabs__humanoidmimicgen",
+  "package": "robots/nvlabs__humanoidmimicgen",
+  "mhs_package": "mhs/MHS/drivers/robots/nvlabs__humanoidmimicgen",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/nvlabs/humanoidmimicgen",
+    "commit": "d82844dcec242c82d6b82628ccc45933c3ad5cbd",
+    "license": "Apache-2.0",
+    "path": "playground/robots/nvlabs__humanoidmimicgen/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nvlabs__humanoidmimicgen --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nvlabs__humanoidmimicgen --backend fake --mcp"
+}

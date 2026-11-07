@@ -1,0 +1,25 @@
+{
+  "name": "robots/yang-zj1026__navila-bench",
+  "package": "robots/yang-zj1026__navila-bench",
+  "mhs_package": "mhs/MHS/drivers/robots/yang-zj1026__navila-bench",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/yang-zj1026/navila-bench",
+    "commit": "e9d2db12ce5788c0f987d734c0094100b6bc0d3a",
+    "license": "MIT",
+    "path": "playground/robots/yang-zj1026__navila-bench/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/yang-zj1026__navila-bench --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/yang-zj1026__navila-bench --backend fake --mcp"
+}

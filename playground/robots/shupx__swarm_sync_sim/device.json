@@ -1,0 +1,25 @@
+{
+  "name": "robots/shupx__swarm_sync_sim",
+  "package": "robots/shupx__swarm_sync_sim",
+  "mhs_package": "mhs/MHS/drivers/robots/shupx__swarm_sync_sim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/shupx/swarm_sync_sim",
+    "commit": "4837b511c3d2bcaa36448e5e5af51335004bafd8",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/shupx__swarm_sync_sim/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/shupx__swarm_sync_sim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/shupx__swarm_sync_sim --backend fake --mcp"
+}

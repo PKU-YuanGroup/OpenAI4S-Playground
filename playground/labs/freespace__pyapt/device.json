@@ -1,0 +1,26 @@
+{
+  "name": "labs/freespace__pyapt",
+  "package": "labs/freespace__pyapt",
+  "mhs_package": "mhs/MHS/drivers/labs/freespace__pyapt",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/freespace/pyapt",
+    "commit": "914a6f618cacce6aa9ce42d371a895989e092b59",
+    "license": "MIT",
+    "path": "playground/labs/freespace__pyapt/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/freespace__pyapt --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/freespace__pyapt --backend fake --mcp"
+}

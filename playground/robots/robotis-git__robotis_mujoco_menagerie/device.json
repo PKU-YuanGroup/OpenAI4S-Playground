@@ -1,0 +1,25 @@
+{
+  "name": "robots/robotis-git__robotis_mujoco_menagerie",
+  "package": "robots/robotis-git__robotis_mujoco_menagerie",
+  "mhs_package": "mhs/MHS/drivers/robots/robotis-git__robotis_mujoco_menagerie",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/robotis-git/robotis_mujoco_menagerie",
+    "commit": "d8344c0dbe7a00208d0301111523dde65efc174a",
+    "license": "Apache-2.0",
+    "path": "playground/robots/robotis-git__robotis_mujoco_menagerie/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotis-git__robotis_mujoco_menagerie --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotis-git__robotis_mujoco_menagerie --backend fake --mcp"
+}

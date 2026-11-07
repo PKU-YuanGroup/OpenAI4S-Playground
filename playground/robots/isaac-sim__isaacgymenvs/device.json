@@ -1,0 +1,25 @@
+{
+  "name": "robots/isaac-sim__isaacgymenvs",
+  "package": "robots/isaac-sim__isaacgymenvs",
+  "mhs_package": "mhs/MHS/drivers/robots/isaac-sim__isaacgymenvs",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/isaac-sim/isaacgymenvs",
+    "commit": "aeed298638a1f7b5421b38f5f3cc2d1079b6d9c3",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/isaac-sim__isaacgymenvs/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isaac-sim__isaacgymenvs --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isaac-sim__isaacgymenvs --backend fake --mcp"
+}

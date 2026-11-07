@@ -1,0 +1,25 @@
+{
+  "name": "robots/andy-xiong6__bipedal_locomotion_isaaclab",
+  "package": "robots/andy-xiong6__bipedal_locomotion_isaaclab",
+  "mhs_package": "mhs/MHS/drivers/robots/andy-xiong6__bipedal_locomotion_isaaclab",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/andy-xiong6/bipedal_locomotion_isaaclab",
+    "commit": "748f879e099aaa3d3d19437a7eed48c9a72b1e28",
+    "license": "MIT",
+    "path": "playground/robots/andy-xiong6__bipedal_locomotion_isaaclab/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andy-xiong6__bipedal_locomotion_isaaclab --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andy-xiong6__bipedal_locomotion_isaaclab --backend fake --mcp"
+}

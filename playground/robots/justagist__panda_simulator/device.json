@@ -1,0 +1,25 @@
+{
+  "name": "robots/justagist__panda_simulator",
+  "package": "robots/justagist__panda_simulator",
+  "mhs_package": "mhs/MHS/drivers/robots/justagist__panda_simulator",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/justagist/panda_simulator",
+    "commit": "6cec91dcc739df105a845e2f29e361b6c608bb48",
+    "license": "Apache-2.0",
+    "path": "playground/robots/justagist__panda_simulator/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justagist__panda_simulator --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justagist__panda_simulator --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/field-robotics-lab__dave",
+  "package": "robots/field-robotics-lab__dave",
+  "mhs_package": "mhs/MHS/drivers/robots/field-robotics-lab__dave",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/field-robotics-lab/dave",
+    "commit": "e54ea16bdaf7d6dbb466cf141846a03f284a44dd",
+    "license": "Apache-2.0",
+    "path": "playground/robots/field-robotics-lab__dave/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/field-robotics-lab__dave --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/field-robotics-lab__dave --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/enac-drones__dronesim",
+  "package": "robots/enac-drones__dronesim",
+  "mhs_package": "mhs/MHS/drivers/robots/enac-drones__dronesim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/enac-drones/dronesim",
+    "commit": "158e40f4631e64d731f16f81641f629fa7b2a986",
+    "license": "MIT",
+    "path": "playground/robots/enac-drones__dronesim/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/enac-drones__dronesim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/enac-drones__dronesim --backend fake --mcp"
+}

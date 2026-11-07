@@ -1,0 +1,26 @@
+{
+  "name": "robots/generalroboticslab__dukehumanoidhardwarecontrol",
+  "package": "robots/generalroboticslab__dukehumanoidhardwarecontrol",
+  "mhs_package": "mhs/MHS/drivers/robots/generalroboticslab__dukehumanoidhardwarecontrol",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/generalroboticslab/dukehumanoidhardwarecontrol",
+    "commit": "3a9c3cd4c8daf6b3ffe2e41768360d0515f2df55",
+    "license": "NOASSERTION",
+    "path": "playground/robots/generalroboticslab__dukehumanoidhardwarecontrol/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/generalroboticslab__dukehumanoidhardwarecontrol --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/generalroboticslab__dukehumanoidhardwarecontrol --backend fake --mcp"
+}

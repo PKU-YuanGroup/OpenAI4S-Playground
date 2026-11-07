@@ -1,0 +1,26 @@
+{
+  "name": "labs/croningp__pylabware",
+  "package": "labs/croningp__pylabware",
+  "mhs_package": "mhs/MHS/drivers/labs/croningp__pylabware",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/croningp/pylabware",
+    "commit": "fbf287c7866ad3ac1e1a3bc44845035b8ae4a7b9",
+    "license": "MIT",
+    "path": "playground/labs/croningp__pylabware/upstream"
+  },
+  "family": "python-object",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/croningp__pylabware --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/croningp__pylabware --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/chuanyune__maniskill-vitac2025",
+  "package": "robots/chuanyune__maniskill-vitac2025",
+  "mhs_package": "mhs/MHS/drivers/robots/chuanyune__maniskill-vitac2025",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/chuanyune/maniskill-vitac2025",
+    "commit": "a3d7df54bca9a2e57f34b37be3a3df36dc218915",
+    "license": "Apache-2.0",
+    "path": "playground/robots/chuanyune__maniskill-vitac2025/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/chuanyune__maniskill-vitac2025 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/chuanyune__maniskill-vitac2025 --backend fake --mcp"
+}

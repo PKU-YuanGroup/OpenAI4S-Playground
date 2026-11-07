@@ -1,0 +1,25 @@
+{
+  "name": "labs/cleanit__chemistrygym",
+  "package": "labs/cleanit__chemistrygym",
+  "mhs_package": "mhs/MHS/drivers/labs/cleanit__chemistrygym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/cleanit/chemistrygym",
+    "commit": "f6536cbc30f06c8d326107a68725f46bb53cff15",
+    "license": "NOASSERTION",
+    "path": "playground/labs/cleanit__chemistrygym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cleanit__chemistrygym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cleanit__chemistrygym --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/geo-jtao__unitree_robot_sim",
+  "package": "robots/geo-jtao__unitree_robot_sim",
+  "mhs_package": "mhs/MHS/drivers/robots/geo-jtao__unitree_robot_sim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/geo-jtao/unitree_robot_sim",
+    "commit": "49fb7fa50e0c3b65dd2a07ac4df370ba781858b8",
+    "license": "NOASSERTION",
+    "path": "playground/robots/geo-jtao__unitree_robot_sim/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/geo-jtao__unitree_robot_sim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/geo-jtao__unitree_robot_sim --backend fake --mcp"
+}

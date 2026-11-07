@@ -1,0 +1,25 @@
+{
+  "name": "labs/samdejong86__agilent33600",
+  "package": "labs/samdejong86__agilent33600",
+  "mhs_package": "mhs/MHS/drivers/labs/samdejong86__agilent33600",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/samdejong86/agilent33600",
+    "commit": "262275ddb4e1486c9643587725908456d765b12b",
+    "license": "NOASSERTION",
+    "path": "playground/labs/samdejong86__agilent33600/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/samdejong86__agilent33600 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/samdejong86__agilent33600 --backend fake --mcp"
+}

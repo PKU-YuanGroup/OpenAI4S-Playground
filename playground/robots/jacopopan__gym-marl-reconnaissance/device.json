@@ -1,0 +1,25 @@
+{
+  "name": "robots/jacopopan__gym-marl-reconnaissance",
+  "package": "robots/jacopopan__gym-marl-reconnaissance",
+  "mhs_package": "mhs/MHS/drivers/robots/jacopopan__gym-marl-reconnaissance",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/jacopopan/gym-marl-reconnaissance",
+    "commit": "85a4373f3ebee66b12c88a0bdd5e4e96f9606e5a",
+    "license": "MIT",
+    "path": "playground/robots/jacopopan__gym-marl-reconnaissance/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jacopopan__gym-marl-reconnaissance --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jacopopan__gym-marl-reconnaissance --backend fake --mcp"
+}

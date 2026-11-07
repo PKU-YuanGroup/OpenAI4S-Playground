@@ -1,0 +1,25 @@
+{
+  "name": "robots/andrejorsula__space_robotics_bench",
+  "package": "robots/andrejorsula__space_robotics_bench",
+  "mhs_package": "mhs/MHS/drivers/robots/andrejorsula__space_robotics_bench",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/andrejorsula/space_robotics_bench",
+    "commit": "7528ff81f1ac0b34ba259b1ae150fdb4f6a90b5e",
+    "license": "Apache-2.0",
+    "path": "playground/robots/andrejorsula__space_robotics_bench/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andrejorsula__space_robotics_bench --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andrejorsula__space_robotics_bench --backend fake --mcp"
+}

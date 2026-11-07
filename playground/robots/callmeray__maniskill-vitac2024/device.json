@@ -1,0 +1,25 @@
+{
+  "name": "robots/callmeray__maniskill-vitac2024",
+  "package": "robots/callmeray__maniskill-vitac2024",
+  "mhs_package": "mhs/MHS/drivers/robots/callmeray__maniskill-vitac2024",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/callmeray/maniskill-vitac2024",
+    "commit": "114035d58c693dba00ff616fef6e67e1fe62a1f1",
+    "license": "Apache-2.0",
+    "path": "playground/robots/callmeray__maniskill-vitac2024/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/callmeray__maniskill-vitac2024 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/callmeray__maniskill-vitac2024 --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/ac-93__tactile_gym",
+  "package": "robots/ac-93__tactile_gym",
+  "mhs_package": "mhs/MHS/drivers/robots/ac-93__tactile_gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ac-93/tactile_gym",
+    "commit": "28417ebaf52ac325200c4fbd351cd13c6a466f7d",
+    "license": "GPL-3.0",
+    "path": "playground/robots/ac-93__tactile_gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ac-93__tactile_gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ac-93__tactile_gym --backend fake --mcp"
+}

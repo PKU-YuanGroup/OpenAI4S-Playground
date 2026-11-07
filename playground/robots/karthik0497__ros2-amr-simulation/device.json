@@ -1,0 +1,25 @@
+{
+  "name": "robots/karthik0497__ros2-amr-simulation",
+  "package": "robots/karthik0497__ros2-amr-simulation",
+  "mhs_package": "mhs/MHS/drivers/robots/karthik0497__ros2-amr-simulation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/karthik0497/ros2-amr-simulation",
+    "commit": "202aad5cac8842dcf94385be4ed186fdd8b29718",
+    "license": "MIT",
+    "path": "playground/robots/karthik0497__ros2-amr-simulation/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/karthik0497__ros2-amr-simulation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/karthik0497__ros2-amr-simulation --backend fake --mcp"
+}

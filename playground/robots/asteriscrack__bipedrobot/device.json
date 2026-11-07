@@ -1,0 +1,25 @@
+{
+  "name": "robots/asteriscrack__bipedrobot",
+  "package": "robots/asteriscrack__bipedrobot",
+  "mhs_package": "mhs/MHS/drivers/robots/asteriscrack__bipedrobot",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/asteriscrack/bipedrobot",
+    "commit": "bdaa21ee73c9cfa60a7fe76caf5082fc67329891",
+    "license": "MIT",
+    "path": "playground/robots/asteriscrack__bipedrobot/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/asteriscrack__bipedrobot --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/asteriscrack__bipedrobot --backend fake --mcp"
+}

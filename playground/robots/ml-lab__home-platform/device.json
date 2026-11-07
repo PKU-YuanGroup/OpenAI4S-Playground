@@ -1,0 +1,25 @@
+{
+  "name": "robots/ml-lab__home-platform",
+  "package": "robots/ml-lab__home-platform",
+  "mhs_package": "mhs/MHS/drivers/robots/ml-lab__home-platform",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ml-lab/home-platform",
+    "commit": "cbd373f270faaf19f21ed88f0e3bd272a1cbdaa6",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/ml-lab__home-platform/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ml-lab__home-platform --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ml-lab__home-platform --backend fake --mcp"
+}

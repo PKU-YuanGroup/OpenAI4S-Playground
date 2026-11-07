@@ -1,0 +1,25 @@
+{
+  "name": "robots/mees__calvin_env",
+  "package": "robots/mees__calvin_env",
+  "mhs_package": "mhs/MHS/drivers/robots/mees__calvin_env",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/mees/calvin_env",
+    "commit": "797142c588c21e76717268b7b430958dbd13bf48",
+    "license": "MIT",
+    "path": "playground/robots/mees__calvin_env/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mees__calvin_env --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mees__calvin_env --backend fake --mcp"
+}

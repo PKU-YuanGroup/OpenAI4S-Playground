@@ -1,0 +1,26 @@
+{
+  "name": "labs/vcjdeboer__odyssey-app-hap",
+  "package": "labs/vcjdeboer__odyssey-app-hap",
+  "mhs_package": "mhs/MHS/drivers/labs/vcjdeboer__odyssey-app-hap",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/vcjdeboer/odyssey-app-hap",
+    "commit": "4dffe3a3ed0b32153c50b398ccac3fc7d30db7d1",
+    "license": "MIT",
+    "path": "playground/labs/vcjdeboer__odyssey-app-hap/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/vcjdeboer__odyssey-app-hap --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/vcjdeboer__odyssey-app-hap --backend fake --mcp"
+}

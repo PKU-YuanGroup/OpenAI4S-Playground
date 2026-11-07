@@ -1,0 +1,25 @@
+{
+  "name": "robots/jr-robotics__robo-gym",
+  "package": "robots/jr-robotics__robo-gym",
+  "mhs_package": "mhs/MHS/drivers/robots/jr-robotics__robo-gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/jr-robotics/robo-gym",
+    "commit": "f086bc90068c41ffd1889d290f3766d69291bf26",
+    "license": "MIT",
+    "path": "playground/robots/jr-robotics__robo-gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jr-robotics__robo-gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jr-robotics__robo-gym --backend fake --mcp"
+}

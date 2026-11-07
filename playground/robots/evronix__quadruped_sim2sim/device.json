@@ -1,0 +1,25 @@
+{
+  "name": "robots/evronix__quadruped_sim2sim",
+  "package": "robots/evronix__quadruped_sim2sim",
+  "mhs_package": "mhs/MHS/drivers/robots/evronix__quadruped_sim2sim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/evronix/quadruped_sim2sim",
+    "commit": "99040173a6ec16efb56e236d57fd088fdd61484a",
+    "license": "MIT",
+    "path": "playground/robots/evronix__quadruped_sim2sim/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/evronix__quadruped_sim2sim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/evronix__quadruped_sim2sim --backend fake --mcp"
+}

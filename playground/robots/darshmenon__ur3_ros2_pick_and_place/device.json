@@ -1,0 +1,26 @@
+{
+  "name": "robots/darshmenon__ur3_ros2_pick_and_place",
+  "package": "robots/darshmenon__ur3_ros2_pick_and_place",
+  "mhs_package": "mhs/MHS/drivers/robots/darshmenon__ur3_ros2_pick_and_place",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/darshmenon/ur3_ros2_pick_and_place",
+    "commit": "e58ea6178d8d8195beb92387ba365227840a96a9",
+    "license": "MIT",
+    "path": "playground/robots/darshmenon__ur3_ros2_pick_and_place/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "sim"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/darshmenon__ur3_ros2_pick_and_place --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/darshmenon__ur3_ros2_pick_and_place --backend fake --mcp"
+}

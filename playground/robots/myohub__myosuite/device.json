@@ -1,0 +1,25 @@
+{
+  "name": "robots/myohub__myosuite",
+  "package": "robots/myohub__myosuite",
+  "mhs_package": "mhs/MHS/drivers/robots/myohub__myosuite",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/myohub/myosuite",
+    "commit": "2d08f42dfec85278566c95b1d09f5bd67662b3d6",
+    "license": "Apache-2.0",
+    "path": "playground/robots/myohub__myosuite/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/myohub__myosuite --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/myohub__myosuite --backend fake --mcp"
+}

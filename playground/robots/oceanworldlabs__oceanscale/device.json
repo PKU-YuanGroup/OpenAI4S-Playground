@@ -1,0 +1,25 @@
+{
+  "name": "robots/oceanworldlabs__oceanscale",
+  "package": "robots/oceanworldlabs__oceanscale",
+  "mhs_package": "mhs/MHS/drivers/robots/oceanworldlabs__oceanscale",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/oceanworldlabs/oceanscale",
+    "commit": "84f6cc4ce3dcf7cb4a53e2e9d2e81f541b0c63f2",
+    "license": "Apache-2.0",
+    "path": "playground/robots/oceanworldlabs__oceanscale/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/oceanworldlabs__oceanscale --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/oceanworldlabs__oceanscale --backend fake --mcp"
+}

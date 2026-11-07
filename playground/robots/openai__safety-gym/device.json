@@ -1,0 +1,25 @@
+{
+  "name": "robots/openai__safety-gym",
+  "package": "robots/openai__safety-gym",
+  "mhs_package": "mhs/MHS/drivers/robots/openai__safety-gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/openai/safety-gym",
+    "commit": "f31042f2f9ee61b9034dd6a416955972911544f5",
+    "license": "MIT",
+    "path": "playground/robots/openai__safety-gym/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__safety-gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__safety-gym --backend fake --mcp"
+}

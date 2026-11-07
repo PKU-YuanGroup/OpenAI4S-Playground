@@ -1,0 +1,25 @@
+{
+  "name": "robots/boosterrobotics__booster_train",
+  "package": "robots/boosterrobotics__booster_train",
+  "mhs_package": "mhs/MHS/drivers/robots/boosterrobotics__booster_train",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/boosterrobotics/booster_train",
+    "commit": "8bb5b53824e0fbcfe69a5cb78a81f4bddb3e2a6e",
+    "license": "Apache-2.0",
+    "path": "playground/robots/boosterrobotics__booster_train/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/boosterrobotics__booster_train --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/boosterrobotics__booster_train --backend fake --mcp"
+}

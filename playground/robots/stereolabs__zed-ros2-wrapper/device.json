@@ -1,0 +1,25 @@
+{
+  "name": "robots/stereolabs__zed-ros2-wrapper",
+  "package": "robots/stereolabs__zed-ros2-wrapper",
+  "mhs_package": "mhs/MHS/drivers/robots/stereolabs__zed-ros2-wrapper",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/stereolabs/zed-ros2-wrapper",
+    "commit": "b19902daf0136b6e841b5e415c2d01f425411c45",
+    "license": "Apache-2.0",
+    "path": "playground/robots/stereolabs__zed-ros2-wrapper/upstream"
+  },
+  "family": "ros",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stereolabs__zed-ros2-wrapper --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stereolabs__zed-ros2-wrapper --backend fake --mcp"
+}

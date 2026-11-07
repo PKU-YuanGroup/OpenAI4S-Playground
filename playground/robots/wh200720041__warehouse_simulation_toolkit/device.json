@@ -1,0 +1,25 @@
+{
+  "name": "robots/wh200720041__warehouse_simulation_toolkit",
+  "package": "robots/wh200720041__warehouse_simulation_toolkit",
+  "mhs_package": "mhs/MHS/drivers/robots/wh200720041__warehouse_simulation_toolkit",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/wh200720041/warehouse_simulation_toolkit",
+    "commit": "18df8ce6dde61711e0705f3bd872465a01bd01a2",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/wh200720041__warehouse_simulation_toolkit/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/wh200720041__warehouse_simulation_toolkit --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/wh200720041__warehouse_simulation_toolkit --backend fake --mcp"
+}

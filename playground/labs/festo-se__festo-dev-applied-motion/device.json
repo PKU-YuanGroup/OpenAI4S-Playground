@@ -1,0 +1,26 @@
+{
+  "name": "labs/festo-se__festo-dev-applied-motion",
+  "package": "labs/festo-se__festo-dev-applied-motion",
+  "mhs_package": "mhs/MHS/drivers/labs/festo-se__festo-dev-applied-motion",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/festo-se/festo-dev-applied-motion",
+    "commit": "c1926f02d8e69cec7f8d265dba20e9e5b474f425",
+    "license": "MIT",
+    "path": "playground/labs/festo-se__festo-dev-applied-motion/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/festo-se__festo-dev-applied-motion --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/festo-se__festo-dev-applied-motion --backend fake --mcp"
+}

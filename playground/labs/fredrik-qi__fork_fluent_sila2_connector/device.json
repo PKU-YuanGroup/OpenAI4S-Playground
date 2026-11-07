@@ -1,0 +1,26 @@
+{
+  "name": "labs/fredrik-qi__fork_fluent_sila2_connector",
+  "package": "labs/fredrik-qi__fork_fluent_sila2_connector",
+  "mhs_package": "mhs/MHS/drivers/labs/fredrik-qi__fork_fluent_sila2_connector",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/fredrik-qi/fork_fluent_sila2_connector",
+    "commit": "4a2f857c619c5bcead352b52622a72cc2d356ffe",
+    "license": "BSD-3-Clause",
+    "path": "playground/labs/fredrik-qi__fork_fluent_sila2_connector/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/fredrik-qi__fork_fluent_sila2_connector --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/fredrik-qi__fork_fluent_sila2_connector --backend fake --mcp"
+}

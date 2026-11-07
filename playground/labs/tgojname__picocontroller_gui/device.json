@@ -1,0 +1,26 @@
+{
+  "name": "labs/tgojname__picocontroller_gui",
+  "package": "labs/tgojname__picocontroller_gui",
+  "mhs_package": "mhs/MHS/drivers/labs/tgojname__picocontroller_gui",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tgojname/picocontroller_gui",
+    "commit": "82a5f65663c916fd971e18deaadbab0eb714f233",
+    "license": "NOASSERTION",
+    "path": "playground/labs/tgojname__picocontroller_gui/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tgojname__picocontroller_gui --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tgojname__picocontroller_gui --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/clementperroud__gym-trading-env",
+  "package": "robots/clementperroud__gym-trading-env",
+  "mhs_package": "mhs/MHS/drivers/robots/clementperroud__gym-trading-env",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/clementperroud/gym-trading-env",
+    "commit": "a86fc03d29759374fae2db7df4d878485808a730",
+    "license": "MIT",
+    "path": "playground/robots/clementperroud__gym-trading-env/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/clementperroud__gym-trading-env --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/clementperroud__gym-trading-env --backend fake --mcp"
+}

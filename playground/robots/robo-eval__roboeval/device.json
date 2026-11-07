@@ -1,0 +1,25 @@
+{
+  "name": "robots/robo-eval__roboeval",
+  "package": "robots/robo-eval__roboeval",
+  "mhs_package": "mhs/MHS/drivers/robots/robo-eval__roboeval",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/robo-eval/roboeval",
+    "commit": "7199e5c4851bbf8eaf185d486735cbcb233f608a",
+    "license": "Apache-2.0",
+    "path": "playground/robots/robo-eval__roboeval/upstream"
+  },
+  "family": "python-object",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robo-eval__roboeval --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robo-eval__roboeval --backend fake --mcp"
+}

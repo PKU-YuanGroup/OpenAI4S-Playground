@@ -1,0 +1,25 @@
+{
+  "name": "robots/blackcoffeerobotics__bcr_arm",
+  "package": "robots/blackcoffeerobotics__bcr_arm",
+  "mhs_package": "mhs/MHS/drivers/robots/blackcoffeerobotics__bcr_arm",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/blackcoffeerobotics/bcr_arm",
+    "commit": "9bd3d60b306bb2ed22f5cb1fd588aca99081a711",
+    "license": "Apache-2.0",
+    "path": "playground/robots/blackcoffeerobotics__bcr_arm/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/blackcoffeerobotics__bcr_arm --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/blackcoffeerobotics__bcr_arm --backend fake --mcp"
+}

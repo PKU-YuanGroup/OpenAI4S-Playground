@@ -1,0 +1,26 @@
+{
+  "name": "labs/ap--__python-oceanoptics",
+  "package": "labs/ap--__python-oceanoptics",
+  "mhs_package": "mhs/MHS/drivers/labs/ap--__python-oceanoptics",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ap--/python-oceanoptics",
+    "commit": "3df0c263e47c374dcd569681780cf5fc5faa2029",
+    "license": "MIT",
+    "path": "playground/labs/ap--__python-oceanoptics/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ap--__python-oceanoptics --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ap--__python-oceanoptics --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/haosulab__maniskill-legacy",
+  "package": "robots/haosulab__maniskill-legacy",
+  "mhs_package": "mhs/MHS/drivers/robots/haosulab__maniskill-legacy",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/haosulab/maniskill-legacy",
+    "commit": "58964d08b4c7d2e14c5e6e287dbb9430d900f54d",
+    "license": "Apache-2.0",
+    "path": "playground/robots/haosulab__maniskill-legacy/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/haosulab__maniskill-legacy --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/haosulab__maniskill-legacy --backend fake --mcp"
+}

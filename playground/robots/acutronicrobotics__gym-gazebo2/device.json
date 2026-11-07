@@ -1,0 +1,25 @@
+{
+  "name": "robots/acutronicrobotics__gym-gazebo2",
+  "package": "robots/acutronicrobotics__gym-gazebo2",
+  "mhs_package": "mhs/MHS/drivers/robots/acutronicrobotics__gym-gazebo2",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/acutronicrobotics/gym-gazebo2",
+    "commit": "545e203e07895927fd7aae66596d83d97ee89fe5",
+    "license": "Apache-2.0",
+    "path": "playground/robots/acutronicrobotics__gym-gazebo2/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/acutronicrobotics__gym-gazebo2 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/acutronicrobotics__gym-gazebo2 --backend fake --mcp"
+}

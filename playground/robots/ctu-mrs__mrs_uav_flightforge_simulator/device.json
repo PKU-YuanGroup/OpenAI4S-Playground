@@ -1,0 +1,25 @@
+{
+  "name": "robots/ctu-mrs__mrs_uav_flightforge_simulator",
+  "package": "robots/ctu-mrs__mrs_uav_flightforge_simulator",
+  "mhs_package": "mhs/MHS/drivers/robots/ctu-mrs__mrs_uav_flightforge_simulator",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ctu-mrs/mrs_uav_flightforge_simulator",
+    "commit": "e4715a8c75aac70a9bcd7f75113746b938139117",
+    "license": "GPL-2.0",
+    "path": "playground/robots/ctu-mrs__mrs_uav_flightforge_simulator/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ctu-mrs__mrs_uav_flightforge_simulator --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ctu-mrs__mrs_uav_flightforge_simulator --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/rwb27__openflexure_microscope_software",
+  "package": "labs/rwb27__openflexure_microscope_software",
+  "mhs_package": "mhs/MHS/drivers/labs/rwb27__openflexure_microscope_software",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/rwb27/openflexure_microscope_software",
+    "commit": "991e1b72b94d796a05caf4c896c0b001ea5a2c97",
+    "license": "GPL-3.0",
+    "path": "playground/labs/rwb27__openflexure_microscope_software/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/rwb27__openflexure_microscope_software --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/rwb27__openflexure_microscope_software --backend fake --mcp"
+}

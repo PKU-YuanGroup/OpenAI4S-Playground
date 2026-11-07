@@ -1,0 +1,25 @@
+{
+  "name": "robots/bilalkabas__drl-nav",
+  "package": "robots/bilalkabas__drl-nav",
+  "mhs_package": "mhs/MHS/drivers/robots/bilalkabas__drl-nav",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/bilalkabas/drl-nav",
+    "commit": "a996f5461c90adfe765ca3274d4da7c8499891c3",
+    "license": "AGPL-3.0",
+    "path": "playground/robots/bilalkabas__drl-nav/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/bilalkabas__drl-nav --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/bilalkabas__drl-nav --backend fake --mcp"
+}

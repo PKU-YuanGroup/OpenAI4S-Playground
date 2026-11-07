@@ -1,0 +1,26 @@
+{
+  "name": "labs/clarklabucb__newerapumps_python3",
+  "package": "labs/clarklabucb__newerapumps_python3",
+  "mhs_package": "mhs/MHS/drivers/labs/clarklabucb__newerapumps_python3",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/clarklabucb/newerapumps_python3",
+    "commit": "b8e3d0214ded43734ad22fa378b5bd408010f109",
+    "license": "NOASSERTION",
+    "path": "playground/labs/clarklabucb__newerapumps_python3/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/clarklabucb__newerapumps_python3 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/clarklabucb__newerapumps_python3 --backend fake --mcp"
+}

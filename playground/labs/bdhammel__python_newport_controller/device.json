@@ -1,0 +1,26 @@
+{
+  "name": "labs/bdhammel__python_newport_controller",
+  "package": "labs/bdhammel__python_newport_controller",
+  "mhs_package": "mhs/MHS/drivers/labs/bdhammel__python_newport_controller",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/bdhammel/python_newport_controller",
+    "commit": "1d960070435d1a47708ed42986697ac72a0ba4f3",
+    "license": "MIT",
+    "path": "playground/labs/bdhammel__python_newport_controller/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bdhammel__python_newport_controller --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bdhammel__python_newport_controller --backend fake --mcp"
+}

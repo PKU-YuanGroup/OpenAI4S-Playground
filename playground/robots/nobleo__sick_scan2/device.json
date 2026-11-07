@@ -1,0 +1,25 @@
+{
+  "name": "robots/nobleo__sick_scan2",
+  "package": "robots/nobleo__sick_scan2",
+  "mhs_package": "mhs/MHS/drivers/robots/nobleo__sick_scan2",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/nobleo/sick_scan2",
+    "commit": "8e851e7f728e5cfb1a68a721bff833c1b50e4410",
+    "license": "Apache-2.0",
+    "path": "playground/robots/nobleo__sick_scan2/upstream"
+  },
+  "family": "ros",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nobleo__sick_scan2 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nobleo__sick_scan2 --backend fake --mcp"
+}

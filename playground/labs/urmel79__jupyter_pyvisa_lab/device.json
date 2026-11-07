@@ -1,0 +1,26 @@
+{
+  "name": "labs/urmel79__jupyter_pyvisa_lab",
+  "package": "labs/urmel79__jupyter_pyvisa_lab",
+  "mhs_package": "mhs/MHS/drivers/labs/urmel79__jupyter_pyvisa_lab",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/urmel79/jupyter_pyvisa_lab",
+    "commit": "418a7f6bbef16a7c30ece599f8367fe5585291d9",
+    "license": "GPL-3.0",
+    "path": "playground/labs/urmel79__jupyter_pyvisa_lab/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/urmel79__jupyter_pyvisa_lab --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/urmel79__jupyter_pyvisa_lab --backend fake --mcp"
+}

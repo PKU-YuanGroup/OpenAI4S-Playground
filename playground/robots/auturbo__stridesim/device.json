@@ -1,0 +1,25 @@
+{
+  "name": "robots/auturbo__stridesim",
+  "package": "robots/auturbo__stridesim",
+  "mhs_package": "mhs/MHS/drivers/robots/auturbo__stridesim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/auturbo/stridesim",
+    "commit": "d941ee93cec051c9455cf0c699384fd5410d4d3f",
+    "license": "MIT",
+    "path": "playground/robots/auturbo__stridesim/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/auturbo__stridesim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/auturbo__stridesim --backend fake --mcp"
+}

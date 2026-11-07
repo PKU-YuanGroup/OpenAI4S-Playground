@@ -1,0 +1,25 @@
+{
+  "name": "robots/clvrai__furniture",
+  "package": "robots/clvrai__furniture",
+  "mhs_package": "mhs/MHS/drivers/robots/clvrai__furniture",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/clvrai/furniture",
+    "commit": "ed4a905e7beb1daf3af7717d979e0ba93421077a",
+    "license": "MIT",
+    "path": "playground/robots/clvrai__furniture/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/clvrai__furniture --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/clvrai__furniture --backend fake --mcp"
+}

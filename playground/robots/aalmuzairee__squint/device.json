@@ -1,0 +1,25 @@
+{
+  "name": "robots/aalmuzairee__squint",
+  "package": "robots/aalmuzairee__squint",
+  "mhs_package": "mhs/MHS/drivers/robots/aalmuzairee__squint",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/aalmuzairee/squint",
+    "commit": "7086fd516eda7df585a5261c541e0670a6d916b4",
+    "license": "MIT",
+    "path": "playground/robots/aalmuzairee__squint/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aalmuzairee__squint --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aalmuzairee__squint --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/abizovnuralem__go2_omniverse",
+  "package": "robots/abizovnuralem__go2_omniverse",
+  "mhs_package": "mhs/MHS/drivers/robots/abizovnuralem__go2_omniverse",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/abizovnuralem/go2_omniverse",
+    "commit": "db18970d66fa77a68bf0976b0f7c183825cd2292",
+    "license": "BSD-2-Clause",
+    "path": "playground/robots/abizovnuralem__go2_omniverse/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/abizovnuralem__go2_omniverse --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/abizovnuralem__go2_omniverse --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/pcdshub__pcdsdevices",
+  "package": "labs/pcdshub__pcdsdevices",
+  "mhs_package": "mhs/MHS/drivers/labs/pcdshub__pcdsdevices",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/pcdshub/pcdsdevices",
+    "commit": "d13b06eb53e6185088a7534ce0e17ab154463407",
+    "license": "BSD-3-Clause",
+    "path": "playground/labs/pcdshub__pcdsdevices/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pcdshub__pcdsdevices --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pcdshub__pcdsdevices --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "labs/pmezydlo__oscilloscope_lan_data_capture",
+  "package": "labs/pmezydlo__oscilloscope_lan_data_capture",
+  "mhs_package": "mhs/MHS/drivers/labs/pmezydlo__oscilloscope_lan_data_capture",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/pmezydlo/oscilloscope_lan_data_capture",
+    "commit": "f68c0b8d5acb7592ad21fd39b453d5a4d892a91e",
+    "license": "NOASSERTION",
+    "path": "playground/labs/pmezydlo__oscilloscope_lan_data_capture/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pmezydlo__oscilloscope_lan_data_capture --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pmezydlo__oscilloscope_lan_data_capture --backend fake --mcp"
+}

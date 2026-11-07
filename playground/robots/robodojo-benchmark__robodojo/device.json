@@ -1,0 +1,25 @@
+{
+  "name": "robots/robodojo-benchmark__robodojo",
+  "package": "robots/robodojo-benchmark__robodojo",
+  "mhs_package": "mhs/MHS/drivers/robots/robodojo-benchmark__robodojo",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/robodojo-benchmark/robodojo",
+    "commit": "09bd5f5e762b949f5858ece31347ce62057b3a5e",
+    "license": "MIT",
+    "path": "playground/robots/robodojo-benchmark__robodojo/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robodojo-benchmark__robodojo --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robodojo-benchmark__robodojo --backend fake --mcp"
+}

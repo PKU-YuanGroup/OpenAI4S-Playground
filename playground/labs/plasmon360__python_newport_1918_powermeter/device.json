@@ -1,0 +1,26 @@
+{
+  "name": "labs/plasmon360__python_newport_1918_powermeter",
+  "package": "labs/plasmon360__python_newport_1918_powermeter",
+  "mhs_package": "mhs/MHS/drivers/labs/plasmon360__python_newport_1918_powermeter",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/plasmon360/python_newport_1918_powermeter",
+    "commit": "5c8ae02c1f9d412c0cbabec39141e99393e0f048",
+    "license": "NOASSERTION",
+    "path": "playground/labs/plasmon360__python_newport_1918_powermeter/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/plasmon360__python_newport_1918_powermeter --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/plasmon360__python_newport_1918_powermeter --backend fake --mcp"
+}

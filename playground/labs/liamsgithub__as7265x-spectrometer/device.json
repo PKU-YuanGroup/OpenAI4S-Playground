@@ -1,0 +1,26 @@
+{
+  "name": "labs/liamsgithub__as7265x-spectrometer",
+  "package": "labs/liamsgithub__as7265x-spectrometer",
+  "mhs_package": "mhs/MHS/drivers/labs/liamsgithub__as7265x-spectrometer",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/liamsgithub/as7265x-spectrometer",
+    "commit": "9b0ce11be6b904a89e907dc18dd10b03620cc90f",
+    "license": "NOASSERTION",
+    "path": "playground/labs/liamsgithub__as7265x-spectrometer/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/liamsgithub__as7265x-spectrometer --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/liamsgithub__as7265x-spectrometer --backend fake --mcp"
+}

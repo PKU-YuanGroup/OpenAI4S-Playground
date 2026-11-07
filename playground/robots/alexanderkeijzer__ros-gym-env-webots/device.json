@@ -1,0 +1,25 @@
+{
+  "name": "robots/alexanderkeijzer__ros-gym-env-webots",
+  "package": "robots/alexanderkeijzer__ros-gym-env-webots",
+  "mhs_package": "mhs/MHS/drivers/robots/alexanderkeijzer__ros-gym-env-webots",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/alexanderkeijzer/ros-gym-env-webots",
+    "commit": "6cc613bdee4bad0adb157230df51a9bacdf621e4",
+    "license": "NOASSERTION",
+    "path": "playground/robots/alexanderkeijzer__ros-gym-env-webots/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/alexanderkeijzer__ros-gym-env-webots --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/alexanderkeijzer__ros-gym-env-webots --backend fake --mcp"
+}

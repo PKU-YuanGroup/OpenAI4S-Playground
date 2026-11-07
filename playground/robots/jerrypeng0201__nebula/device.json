@@ -1,0 +1,25 @@
+{
+  "name": "robots/jerrypeng0201__nebula",
+  "package": "robots/jerrypeng0201__nebula",
+  "mhs_package": "mhs/MHS/drivers/robots/jerrypeng0201__nebula",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/jerrypeng0201/nebula",
+    "commit": "2d16ad04e9825b4a6212847ba847e5ae910feed4",
+    "license": "GPL-3.0",
+    "path": "playground/robots/jerrypeng0201__nebula/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jerrypeng0201__nebula --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jerrypeng0201__nebula --backend fake --mcp"
+}

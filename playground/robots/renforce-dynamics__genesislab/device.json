@@ -1,0 +1,25 @@
+{
+  "name": "robots/renforce-dynamics__genesislab",
+  "package": "robots/renforce-dynamics__genesislab",
+  "mhs_package": "mhs/MHS/drivers/robots/renforce-dynamics__genesislab",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/renforce-dynamics/genesislab",
+    "commit": "0f2e4d96df9b24bcce66f8bdf7a1884a1363a5bb",
+    "license": "BSD-3-Clause",
+    "path": "playground/robots/renforce-dynamics__genesislab/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/renforce-dynamics__genesislab --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/renforce-dynamics__genesislab --backend fake --mcp"
+}

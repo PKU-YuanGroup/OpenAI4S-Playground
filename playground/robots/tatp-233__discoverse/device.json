@@ -1,0 +1,25 @@
+{
+  "name": "robots/tatp-233__discoverse",
+  "package": "robots/tatp-233__discoverse",
+  "mhs_package": "mhs/MHS/drivers/robots/tatp-233__discoverse",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tatp-233/discoverse",
+    "commit": "d67f47c084aba0e0cf422a8725235f8b9238655a",
+    "license": "MIT",
+    "path": "playground/robots/tatp-233__discoverse/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tatp-233__discoverse --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tatp-233__discoverse --backend fake --mcp"
+}

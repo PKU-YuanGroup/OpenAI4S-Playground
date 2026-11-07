@@ -1,0 +1,26 @@
+{
+  "name": "labs/asvela__tektronix-func-gen",
+  "package": "labs/asvela__tektronix-func-gen",
+  "mhs_package": "mhs/MHS/drivers/labs/asvela__tektronix-func-gen",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/asvela/tektronix-func-gen",
+    "commit": "30f7406e89bd9f344487b84913f5111e8bb110a7",
+    "license": "MIT",
+    "path": "playground/labs/asvela__tektronix-func-gen/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/asvela__tektronix-func-gen --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/asvela__tektronix-func-gen --backend fake --mcp"
+}

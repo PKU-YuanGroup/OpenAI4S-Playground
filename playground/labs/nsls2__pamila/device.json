@@ -1,0 +1,26 @@
+{
+  "name": "labs/nsls2__pamila",
+  "package": "labs/nsls2__pamila",
+  "mhs_package": "mhs/MHS/drivers/labs/nsls2__pamila",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/nsls2/pamila",
+    "commit": "62a439b6be7cb72353575183a7fea26b45a35394",
+    "license": "BSD-3-Clause",
+    "path": "playground/labs/nsls2__pamila/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls2__pamila --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls2__pamila --backend fake --mcp"
+}

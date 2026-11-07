@@ -1,0 +1,26 @@
+{
+  "name": "labs/abduznik__instrumation",
+  "package": "labs/abduznik__instrumation",
+  "mhs_package": "mhs/MHS/drivers/labs/abduznik__instrumation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/abduznik/instrumation",
+    "commit": "483d6d5d0b6984f0e261e340363f784f6e2dd2f8",
+    "license": "AGPL-3.0",
+    "path": "playground/labs/abduznik__instrumation/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/abduznik__instrumation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/abduznik__instrumation --backend fake --mcp"
+}

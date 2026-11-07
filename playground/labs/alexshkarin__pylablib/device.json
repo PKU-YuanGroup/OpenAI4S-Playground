@@ -1,0 +1,26 @@
+{
+  "name": "labs/alexshkarin__pylablib",
+  "package": "labs/alexshkarin__pylablib",
+  "mhs_package": "mhs/MHS/drivers/labs/alexshkarin__pylablib",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/alexshkarin/pylablib",
+    "commit": "96d9504d3e668f18beb3b75503c01b93152dbcd5",
+    "license": "GPL-3.0",
+    "path": "playground/labs/alexshkarin__pylablib/upstream"
+  },
+  "family": "python-object",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alexshkarin__pylablib --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alexshkarin__pylablib --backend fake --mcp"
+}

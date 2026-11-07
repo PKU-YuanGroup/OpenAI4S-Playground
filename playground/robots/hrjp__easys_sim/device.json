@@ -1,0 +1,25 @@
+{
+  "name": "robots/hrjp__easys_sim",
+  "package": "robots/hrjp__easys_sim",
+  "mhs_package": "mhs/MHS/drivers/robots/hrjp__easys_sim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hrjp/easys_sim",
+    "commit": "65f5daeb8fb82970ea03b5a0cc7a24509ea8c5c5",
+    "license": "Apache-2.0",
+    "path": "playground/robots/hrjp__easys_sim/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hrjp__easys_sim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hrjp__easys_sim --backend fake --mcp"
+}

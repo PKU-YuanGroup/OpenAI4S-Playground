@@ -1,0 +1,26 @@
+{
+  "name": "labs/alba-synchrotron__sls-detector",
+  "package": "labs/alba-synchrotron__sls-detector",
+  "mhs_package": "mhs/MHS/drivers/labs/alba-synchrotron__sls-detector",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/alba-synchrotron/sls-detector",
+    "commit": "961d33152af298eb4cbd311d9d185683ba992199",
+    "license": "MIT",
+    "path": "playground/labs/alba-synchrotron__sls-detector/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alba-synchrotron__sls-detector --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alba-synchrotron__sls-detector --backend fake --mcp"
+}

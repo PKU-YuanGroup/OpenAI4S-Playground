@@ -1,0 +1,26 @@
+{
+  "name": "labs/williamtsalter__fielddinomicroscopy",
+  "package": "labs/williamtsalter__fielddinomicroscopy",
+  "mhs_package": "mhs/MHS/drivers/labs/williamtsalter__fielddinomicroscopy",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/williamtsalter/fielddinomicroscopy",
+    "commit": "e67297f1822dbe3b5a385a41828fb5064cdf8b25",
+    "license": "NOASSERTION",
+    "path": "playground/labs/williamtsalter__fielddinomicroscopy/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/williamtsalter__fielddinomicroscopy --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/williamtsalter__fielddinomicroscopy --backend fake --mcp"
+}

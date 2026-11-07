@@ -1,0 +1,25 @@
+{
+  "name": "robots/skim0119__gym-softrobot",
+  "package": "robots/skim0119__gym-softrobot",
+  "mhs_package": "mhs/MHS/drivers/robots/skim0119__gym-softrobot",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/skim0119/gym-softrobot",
+    "commit": "e4a73ed86191747f4d0af56e612a6e339e952448",
+    "license": "MIT",
+    "path": "playground/robots/skim0119__gym-softrobot/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/skim0119__gym-softrobot --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/skim0119__gym-softrobot --backend fake --mcp"
+}

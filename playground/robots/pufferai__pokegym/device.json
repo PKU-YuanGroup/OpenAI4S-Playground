@@ -1,0 +1,25 @@
+{
+  "name": "robots/pufferai__pokegym",
+  "package": "robots/pufferai__pokegym",
+  "mhs_package": "mhs/MHS/drivers/robots/pufferai__pokegym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/pufferai/pokegym",
+    "commit": "9050f7ae43e21b9337ac5ae407d37e6eb34ca03f",
+    "license": "MIT",
+    "path": "playground/robots/pufferai__pokegym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pufferai__pokegym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pufferai__pokegym --backend fake --mcp"
+}

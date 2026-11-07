@@ -1,0 +1,25 @@
+{
+  "name": "robots/fmdazhar__mujoco_sim",
+  "package": "robots/fmdazhar__mujoco_sim",
+  "mhs_package": "mhs/MHS/drivers/robots/fmdazhar__mujoco_sim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/fmdazhar/mujoco_sim",
+    "commit": "9c204da4f307c7a711ca4e5cddb1d46a86cab0b1",
+    "license": "MIT",
+    "path": "playground/robots/fmdazhar__mujoco_sim/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fmdazhar__mujoco_sim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fmdazhar__mujoco_sim --backend fake --mcp"
+}

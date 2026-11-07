@@ -1,0 +1,25 @@
+{
+  "name": "robots/robotcasters__b1env",
+  "package": "robots/robotcasters__b1env",
+  "mhs_package": "mhs/MHS/drivers/robots/robotcasters__b1env",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/robotcasters/b1env",
+    "commit": "cdf57676193c1bbe15960157aac059a291c0e89c",
+    "license": "MIT",
+    "path": "playground/robots/robotcasters__b1env/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcasters__b1env --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcasters__b1env --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/tiagocoutinho__vacuubrand",
+  "package": "labs/tiagocoutinho__vacuubrand",
+  "mhs_package": "mhs/MHS/drivers/labs/tiagocoutinho__vacuubrand",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tiagocoutinho/vacuubrand",
+    "commit": "12b2e12aa43866ffa2ab986fc466c5548a7aba07",
+    "license": "LGPL-3.0",
+    "path": "playground/labs/tiagocoutinho__vacuubrand/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__vacuubrand --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__vacuubrand --backend fake --mcp"
+}

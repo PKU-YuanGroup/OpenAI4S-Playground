@@ -1,0 +1,26 @@
+{
+  "name": "robots/zayfod__pycozmo",
+  "package": "robots/zayfod__pycozmo",
+  "mhs_package": "mhs/MHS/drivers/robots/zayfod__pycozmo",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/zayfod/pycozmo",
+    "commit": "1b6dcd9b869a3784f1d8b02e820bb033f95fd13a",
+    "license": "MIT",
+    "path": "playground/robots/zayfod__pycozmo/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zayfod__pycozmo --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zayfod__pycozmo --backend fake --mcp"
+}

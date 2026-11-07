@@ -1,0 +1,25 @@
+{
+  "name": "robots/mcarfagno__gym-panda-reach",
+  "package": "robots/mcarfagno__gym-panda-reach",
+  "mhs_package": "mhs/MHS/drivers/robots/mcarfagno__gym-panda-reach",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/mcarfagno/gym-panda-reach",
+    "commit": "928d1e6b779b52d25bbef2a9f717bcf64991f6fb",
+    "license": "MIT",
+    "path": "playground/robots/mcarfagno__gym-panda-reach/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mcarfagno__gym-panda-reach --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mcarfagno__gym-panda-reach --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/fazildgr8__ros_autonomous_slam",
+  "package": "robots/fazildgr8__ros_autonomous_slam",
+  "mhs_package": "mhs/MHS/drivers/robots/fazildgr8__ros_autonomous_slam",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/fazildgr8/ros_autonomous_slam",
+    "commit": "997c968cb64f544b913e72debcceaad0ed2faea9",
+    "license": "MIT",
+    "path": "playground/robots/fazildgr8__ros_autonomous_slam/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fazildgr8__ros_autonomous_slam --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fazildgr8__ros_autonomous_slam --backend fake --mcp"
+}

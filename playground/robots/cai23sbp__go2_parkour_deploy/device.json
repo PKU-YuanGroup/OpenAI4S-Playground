@@ -1,0 +1,25 @@
+{
+  "name": "robots/cai23sbp__go2_parkour_deploy",
+  "package": "robots/cai23sbp__go2_parkour_deploy",
+  "mhs_package": "mhs/MHS/drivers/robots/cai23sbp__go2_parkour_deploy",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/cai23sbp/go2_parkour_deploy",
+    "commit": "5f04c3b51dcef3629a9500aef16e247d756fcd61",
+    "license": "GPL-3.0",
+    "path": "playground/robots/cai23sbp__go2_parkour_deploy/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/cai23sbp__go2_parkour_deploy --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/cai23sbp__go2_parkour_deploy --backend fake --mcp"
+}

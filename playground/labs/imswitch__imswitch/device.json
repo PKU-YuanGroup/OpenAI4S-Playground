@@ -1,0 +1,26 @@
+{
+  "name": "labs/imswitch__imswitch",
+  "package": "labs/imswitch__imswitch",
+  "mhs_package": "mhs/MHS/drivers/labs/imswitch__imswitch",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/imswitch/imswitch",
+    "commit": "37bf1df6de0ee4746b05bef9684c782e4995b2e8",
+    "license": "GPL-3.0",
+    "path": "playground/labs/imswitch__imswitch/upstream"
+  },
+  "family": "python-object",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/imswitch__imswitch --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/imswitch__imswitch --backend fake --mcp"
+}

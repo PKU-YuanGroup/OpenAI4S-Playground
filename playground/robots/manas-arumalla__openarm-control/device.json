@@ -1,0 +1,25 @@
+{
+  "name": "robots/manas-arumalla__openarm-control",
+  "package": "robots/manas-arumalla__openarm-control",
+  "mhs_package": "mhs/MHS/drivers/robots/manas-arumalla__openarm-control",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/manas-arumalla/openarm-control",
+    "commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
+    "license": "Apache-2.0",
+    "path": "playground/robots/manas-arumalla__openarm-control/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/manas-arumalla__openarm-control --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/manas-arumalla__openarm-control --backend fake --mcp"
+}

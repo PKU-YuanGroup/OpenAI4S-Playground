@@ -1,0 +1,25 @@
+{
+  "name": "robots/uoe-agents__skill-aware-panda-gym",
+  "package": "robots/uoe-agents__skill-aware-panda-gym",
+  "mhs_package": "mhs/MHS/drivers/robots/uoe-agents__skill-aware-panda-gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/uoe-agents/skill-aware-panda-gym",
+    "commit": "4910d3733da4df60991d5cd82e839e5eb16e6b74",
+    "license": "MIT",
+    "path": "playground/robots/uoe-agents__skill-aware-panda-gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/uoe-agents__skill-aware-panda-gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/uoe-agents__skill-aware-panda-gym --backend fake --mcp"
+}

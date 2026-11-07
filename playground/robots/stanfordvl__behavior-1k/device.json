@@ -1,0 +1,25 @@
+{
+  "name": "robots/stanfordvl__behavior-1k",
+  "package": "robots/stanfordvl__behavior-1k",
+  "mhs_package": "mhs/MHS/drivers/robots/stanfordvl__behavior-1k",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/stanfordvl/behavior-1k",
+    "commit": "cd484e0477e79bf1f17d373af232c53431ccc660",
+    "license": "MIT",
+    "path": "playground/robots/stanfordvl__behavior-1k/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stanfordvl__behavior-1k --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stanfordvl__behavior-1k --backend fake --mcp"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "labs/steinkohl__korad_powersupply",
+  "package": "labs/steinkohl__korad_powersupply",
+  "mhs_package": "mhs/MHS/drivers/labs/steinkohl__korad_powersupply",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/steinkohl/korad_powersupply",
+    "commit": "fd2e8b7c59a4dd9f9e609bdacf15b3d7bc1b3d5e",
+    "license": "MIT",
+    "path": "playground/labs/steinkohl__korad_powersupply/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/steinkohl__korad_powersupply --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/steinkohl__korad_powersupply --backend fake --mcp"
+}

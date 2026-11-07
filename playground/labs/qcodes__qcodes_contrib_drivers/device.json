@@ -1,0 +1,26 @@
+{
+  "name": "labs/qcodes__qcodes_contrib_drivers",
+  "package": "labs/qcodes__qcodes_contrib_drivers",
+  "mhs_package": "mhs/MHS/drivers/labs/qcodes__qcodes_contrib_drivers",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/qcodes/qcodes_contrib_drivers",
+    "commit": "187164d608ed3a281fccdf3f68693d29b2d46a62",
+    "license": "MIT",
+    "path": "playground/labs/qcodes__qcodes_contrib_drivers/upstream"
+  },
+  "family": "qcodes",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/qcodes__qcodes_contrib_drivers --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/qcodes__qcodes_contrib_drivers --backend fake --mcp"
+}

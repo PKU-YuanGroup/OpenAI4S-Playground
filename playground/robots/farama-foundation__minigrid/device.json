@@ -1,0 +1,25 @@
+{
+  "name": "robots/farama-foundation__minigrid",
+  "package": "robots/farama-foundation__minigrid",
+  "mhs_package": "mhs/MHS/drivers/robots/farama-foundation__minigrid",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/farama-foundation/minigrid",
+    "commit": "b34a5755dbef71e3f1662552259a94b255c1a8bb",
+    "license": "Apache-2.0",
+    "path": "playground/robots/farama-foundation__minigrid/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__minigrid --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__minigrid --backend fake --mcp"
+}

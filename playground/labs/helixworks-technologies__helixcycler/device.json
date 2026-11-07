@@ -1,0 +1,26 @@
+{
+  "name": "labs/helixworks-technologies__helixcycler",
+  "package": "labs/helixworks-technologies__helixcycler",
+  "mhs_package": "mhs/MHS/drivers/labs/helixworks-technologies__helixcycler",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/helixworks-technologies/helixcycler",
+    "commit": "29bcd934a8d5289021fb774de17ecdf578ff92f7",
+    "license": "NOASSERTION",
+    "path": "playground/labs/helixworks-technologies__helixcycler/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/helixworks-technologies__helixcycler --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/helixworks-technologies__helixcycler --backend fake --mcp"
+}

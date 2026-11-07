@@ -1,0 +1,26 @@
+{
+  "name": "labs/nsls-ii-ari__ari_sxn_common",
+  "package": "labs/nsls-ii-ari__ari_sxn_common",
+  "mhs_package": "mhs/MHS/drivers/labs/nsls-ii-ari__ari_sxn_common",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/nsls-ii-ari/ari_sxn_common",
+    "commit": "13892fc39dd2605a8641d76649e7b13c434d9183",
+    "license": "BSD-3-Clause",
+    "path": "playground/labs/nsls-ii-ari__ari_sxn_common/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-ari__ari_sxn_common --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-ari__ari_sxn_common --backend fake --mcp"
+}

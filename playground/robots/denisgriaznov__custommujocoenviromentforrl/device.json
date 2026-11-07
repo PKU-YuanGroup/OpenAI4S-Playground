@@ -1,0 +1,25 @@
+{
+  "name": "robots/denisgriaznov__custommujocoenviromentforrl",
+  "package": "robots/denisgriaznov__custommujocoenviromentforrl",
+  "mhs_package": "mhs/MHS/drivers/robots/denisgriaznov__custommujocoenviromentforrl",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/denisgriaznov/custommujocoenviromentforrl",
+    "commit": "a6d91aeb4e9770feda5210753706e7a431643242",
+    "license": "NOASSERTION",
+    "path": "playground/robots/denisgriaznov__custommujocoenviromentforrl/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/denisgriaznov__custommujocoenviromentforrl --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/denisgriaznov__custommujocoenviromentforrl --backend fake --mcp"
+}

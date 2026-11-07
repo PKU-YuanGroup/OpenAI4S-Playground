@@ -1,0 +1,25 @@
+{
+  "name": "robots/robocasa__robocasa-gr1-tabletop-tasks",
+  "package": "robots/robocasa__robocasa-gr1-tabletop-tasks",
+  "mhs_package": "mhs/MHS/drivers/robots/robocasa__robocasa-gr1-tabletop-tasks",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/robocasa/robocasa-gr1-tabletop-tasks",
+    "commit": "4840e671596f93ca03651524b9f72ffb1aadfeff",
+    "license": "MIT",
+    "path": "playground/robots/robocasa__robocasa-gr1-tabletop-tasks/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robocasa__robocasa-gr1-tabletop-tasks --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robocasa__robocasa-gr1-tabletop-tasks --backend fake --mcp"
+}

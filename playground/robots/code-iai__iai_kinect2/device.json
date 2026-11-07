@@ -1,0 +1,25 @@
+{
+  "name": "robots/code-iai__iai_kinect2",
+  "package": "robots/code-iai__iai_kinect2",
+  "mhs_package": "mhs/MHS/drivers/robots/code-iai__iai_kinect2",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/code-iai/iai_kinect2",
+    "commit": "0e2c5f63134a076606bb79963406e1d47f2da651",
+    "license": "Apache-2.0",
+    "path": "playground/robots/code-iai__iai_kinect2/upstream"
+  },
+  "family": "ros",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/code-iai__iai_kinect2 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/code-iai__iai_kinect2 --backend fake --mcp"
+}

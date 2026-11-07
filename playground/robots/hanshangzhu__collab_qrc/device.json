@@ -1,0 +1,25 @@
+{
+  "name": "robots/hanshangzhu__collab_qrc",
+  "package": "robots/hanshangzhu__collab_qrc",
+  "mhs_package": "mhs/MHS/drivers/robots/hanshangzhu__collab_qrc",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hanshangzhu/collab_qrc",
+    "commit": "f9e6998d2f7b086f60810b35683791c8c6a41d87",
+    "license": "NOASSERTION",
+    "path": "playground/robots/hanshangzhu__collab_qrc/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hanshangzhu__collab_qrc --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hanshangzhu__collab_qrc --backend fake --mcp"
+}

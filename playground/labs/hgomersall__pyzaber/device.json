@@ -1,0 +1,25 @@
+{
+  "name": "labs/hgomersall__pyzaber",
+  "package": "labs/hgomersall__pyzaber",
+  "mhs_package": "mhs/MHS/drivers/labs/hgomersall__pyzaber",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hgomersall/pyzaber",
+    "commit": "1a3f1e712f3d5bb3dab8512cdfeda9d21244b374",
+    "license": "NOASSERTION",
+    "path": "playground/labs/hgomersall__pyzaber/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hgomersall__pyzaber --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hgomersall__pyzaber --backend fake --mcp"
+}

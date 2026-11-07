@@ -1,0 +1,25 @@
+{
+  "name": "labs/chemgymrl__chemgymrl",
+  "package": "labs/chemgymrl__chemgymrl",
+  "mhs_package": "mhs/MHS/drivers/labs/chemgymrl__chemgymrl",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/chemgymrl/chemgymrl",
+    "commit": "ab8227b6b33f13617b7e551bdf6b894df7eec68d",
+    "license": "GPL-3.0",
+    "path": "playground/labs/chemgymrl__chemgymrl/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/chemgymrl__chemgymrl --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/chemgymrl__chemgymrl --backend fake --mcp"
+}

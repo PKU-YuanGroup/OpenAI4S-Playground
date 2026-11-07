@@ -1,0 +1,26 @@
+{
+  "name": "labs/kajalbiju__psi_bluesky_backend",
+  "package": "labs/kajalbiju__psi_bluesky_backend",
+  "mhs_package": "mhs/MHS/drivers/labs/kajalbiju__psi_bluesky_backend",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/kajalbiju/psi_bluesky_backend",
+    "commit": "59252b014ef37fc4f2de2e37eda1fca755afe50f",
+    "license": "NOASSERTION",
+    "path": "playground/labs/kajalbiju__psi_bluesky_backend/upstream"
+  },
+  "family": "scpi",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kajalbiju__psi_bluesky_backend --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kajalbiju__psi_bluesky_backend --backend fake --mcp"
+}

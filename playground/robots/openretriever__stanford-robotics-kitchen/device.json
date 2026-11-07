@@ -1,0 +1,25 @@
+{
+  "name": "robots/openretriever__stanford-robotics-kitchen",
+  "package": "robots/openretriever__stanford-robotics-kitchen",
+  "mhs_package": "mhs/MHS/drivers/robots/openretriever__stanford-robotics-kitchen",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/openretriever/stanford-robotics-kitchen",
+    "commit": "546fd4b108f093f776a1a7c5919547233945dc88",
+    "license": "LicenseRef-proprietary",
+    "path": "playground/robots/openretriever__stanford-robotics-kitchen/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openretriever__stanford-robotics-kitchen --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openretriever__stanford-robotics-kitchen --backend fake --mcp"
+}

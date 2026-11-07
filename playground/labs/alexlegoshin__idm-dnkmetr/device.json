@@ -1,0 +1,26 @@
+{
+  "name": "labs/alexlegoshin__idm-dnkmetr",
+  "package": "labs/alexlegoshin__idm-dnkmetr",
+  "mhs_package": "mhs/MHS/drivers/labs/alexlegoshin__idm-dnkmetr",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/alexlegoshin/idm-dnkmetr",
+    "commit": "8f69873e51d2dce10c292feda3a44f745f1af5c1",
+    "license": "MIT",
+    "path": "playground/labs/alexlegoshin__idm-dnkmetr/upstream"
+  },
+  "family": "scpi",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alexlegoshin__idm-dnkmetr --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alexlegoshin__idm-dnkmetr --backend fake --mcp"
+}

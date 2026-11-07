@@ -1,0 +1,26 @@
+{
+  "name": "labs/tipith__py6632b",
+  "package": "labs/tipith__py6632b",
+  "mhs_package": "mhs/MHS/drivers/labs/tipith__py6632b",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tipith/py6632b",
+    "commit": "a91f78a004f592e7588d483f28daebcbab8572e8",
+    "license": "NOASSERTION",
+    "path": "playground/labs/tipith__py6632b/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tipith__py6632b --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tipith__py6632b --backend fake --mcp"
+}

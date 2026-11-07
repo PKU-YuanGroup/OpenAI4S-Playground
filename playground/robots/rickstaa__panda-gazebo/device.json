@@ -1,0 +1,25 @@
+{
+  "name": "robots/rickstaa__panda-gazebo",
+  "package": "robots/rickstaa__panda-gazebo",
+  "mhs_package": "mhs/MHS/drivers/robots/rickstaa__panda-gazebo",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/rickstaa/panda-gazebo",
+    "commit": "113df8afa8de6c4342a99d3eb33b05084da644b9",
+    "license": "MIT",
+    "path": "playground/robots/rickstaa__panda-gazebo/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rickstaa__panda-gazebo --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rickstaa__panda-gazebo --backend fake --mcp"
+}

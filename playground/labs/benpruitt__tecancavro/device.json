@@ -1,0 +1,26 @@
+{
+  "name": "labs/benpruitt__tecancavro",
+  "package": "labs/benpruitt__tecancavro",
+  "mhs_package": "mhs/MHS/drivers/labs/benpruitt__tecancavro",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/benpruitt/tecancavro",
+    "commit": "5267fd2ed48b7e38d2261459cbf4a381e54c33c1",
+    "license": "MIT",
+    "path": "playground/labs/benpruitt__tecancavro/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/benpruitt__tecancavro --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/benpruitt__tecancavro --backend fake --mcp"
+}

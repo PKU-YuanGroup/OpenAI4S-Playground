@@ -1,0 +1,26 @@
+{
+  "name": "labs/accelerationconsortium__opentrons-flex",
+  "package": "labs/accelerationconsortium__opentrons-flex",
+  "mhs_package": "mhs/MHS/drivers/labs/accelerationconsortium__opentrons-flex",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/accelerationconsortium/opentrons-flex",
+    "commit": "2639016ee9f234949aaf596c2ab2b93694eb0e0b",
+    "license": "NOASSERTION",
+    "path": "playground/labs/accelerationconsortium__opentrons-flex/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/accelerationconsortium__opentrons-flex --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/accelerationconsortium__opentrons-flex --backend fake --mcp"
+}

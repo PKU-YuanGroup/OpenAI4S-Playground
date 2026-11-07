@@ -1,0 +1,26 @@
+{
+  "name": "robots/iamaisim__projectairsim",
+  "package": "robots/iamaisim__projectairsim",
+  "mhs_package": "mhs/MHS/drivers/robots/iamaisim__projectairsim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/iamaisim/projectairsim",
+    "commit": "62229cd7c77ad31da7bc8aba8dd6303c564d8ba2",
+    "license": "MIT",
+    "path": "playground/robots/iamaisim__projectairsim/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "sim"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/iamaisim__projectairsim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/iamaisim__projectairsim --backend fake --mcp"
+}

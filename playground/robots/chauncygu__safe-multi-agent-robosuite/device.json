@@ -1,0 +1,25 @@
+{
+  "name": "robots/chauncygu__safe-multi-agent-robosuite",
+  "package": "robots/chauncygu__safe-multi-agent-robosuite",
+  "mhs_package": "mhs/MHS/drivers/robots/chauncygu__safe-multi-agent-robosuite",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/chauncygu/safe-multi-agent-robosuite",
+    "commit": "df9ade0fa8df984bfe6853fda7604edf10440b65",
+    "license": "MIT",
+    "path": "playground/robots/chauncygu__safe-multi-agent-robosuite/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/chauncygu__safe-multi-agent-robosuite --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/chauncygu__safe-multi-agent-robosuite --backend fake --mcp"
+}

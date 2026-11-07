@@ -1,0 +1,26 @@
+{
+  "name": "labs/drmcnelson__linear-ccd-with-ltspice-kicad-firmware-and-python-library",
+  "package": "labs/drmcnelson__linear-ccd-with-ltspice-kicad-firmware-and-python-library",
+  "mhs_package": "mhs/MHS/drivers/labs/drmcnelson__linear-ccd-with-ltspice-kicad-firmware-and-python-library",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/drmcnelson/linear-ccd-with-ltspice-kicad-firmware-and-python-library",
+    "commit": "fcda5364d1ec63bc1b0e17efc40508b7fdef76b3",
+    "license": "CC-BY-NC-SA-4.0",
+    "path": "playground/labs/drmcnelson__linear-ccd-with-ltspice-kicad-firmware-and-python-library/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/drmcnelson__linear-ccd-with-ltspice-kicad-firmware-and-python-library --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/drmcnelson__linear-ccd-with-ltspice-kicad-firmware-and-python-library --backend fake --mcp"
+}

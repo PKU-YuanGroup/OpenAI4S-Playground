@@ -1,0 +1,25 @@
+{
+  "name": "robots/klintan__ros2_usb_camera",
+  "package": "robots/klintan__ros2_usb_camera",
+  "mhs_package": "mhs/MHS/drivers/robots/klintan__ros2_usb_camera",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/klintan/ros2_usb_camera",
+    "commit": "146c5911ebcc5539eb8550e02763abe1fdfa8d05",
+    "license": "Apache-2.0",
+    "path": "playground/robots/klintan__ros2_usb_camera/upstream"
+  },
+  "family": "ros",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_usb_camera --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_usb_camera --backend fake --mcp"
+}

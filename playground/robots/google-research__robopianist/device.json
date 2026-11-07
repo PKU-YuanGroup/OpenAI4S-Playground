@@ -1,0 +1,26 @@
+{
+  "name": "robots/google-research__robopianist",
+  "package": "robots/google-research__robopianist",
+  "mhs_package": "mhs/MHS/drivers/robots/google-research__robopianist",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/google-research/robopianist",
+    "commit": "0d9736c64eba5faafdf214ed7d38d648ffbd5c7f",
+    "license": "Apache-2.0",
+    "path": "playground/robots/google-research__robopianist/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "sim"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-research__robopianist --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-research__robopianist --backend fake --mcp"
+}

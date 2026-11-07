@@ -1,0 +1,25 @@
+{
+  "name": "robots/umass-foundation-model__co-llm-agents",
+  "package": "robots/umass-foundation-model__co-llm-agents",
+  "mhs_package": "mhs/MHS/drivers/robots/umass-foundation-model__co-llm-agents",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/umass-foundation-model/co-llm-agents",
+    "commit": "3e12dea925d735eefce33da71806ae9da6fcaf3f",
+    "license": "NOASSERTION",
+    "path": "playground/robots/umass-foundation-model__co-llm-agents/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/umass-foundation-model__co-llm-agents --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/umass-foundation-model__co-llm-agents --backend fake --mcp"
+}

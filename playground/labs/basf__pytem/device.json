@@ -1,0 +1,26 @@
+{
+  "name": "labs/basf__pytem",
+  "package": "labs/basf__pytem",
+  "mhs_package": "mhs/MHS/drivers/labs/basf__pytem",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/basf/pytem",
+    "commit": "d2b2800329524c205c266fe72a35c7fd477cc735",
+    "license": "MIT",
+    "path": "playground/labs/basf__pytem/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R3",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/basf__pytem --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/basf__pytem --backend fake --mcp"
+}

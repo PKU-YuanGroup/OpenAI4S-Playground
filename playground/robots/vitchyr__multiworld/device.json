@@ -1,0 +1,25 @@
+{
+  "name": "robots/vitchyr__multiworld",
+  "package": "robots/vitchyr__multiworld",
+  "mhs_package": "mhs/MHS/drivers/robots/vitchyr__multiworld",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/vitchyr/multiworld",
+    "commit": "12a05bfa4139f90741608ba409edebb95d7ef9ab",
+    "license": "MIT",
+    "path": "playground/robots/vitchyr__multiworld/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vitchyr__multiworld --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vitchyr__multiworld --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "labs/sqlim__sr860-python",
+  "package": "labs/sqlim__sr860-python",
+  "mhs_package": "mhs/MHS/drivers/labs/sqlim__sr860-python",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/sqlim/sr860-python",
+    "commit": "00fa066450759cfa994b1e999eeec7074bc5724c",
+    "license": "MIT",
+    "path": "playground/labs/sqlim__sr860-python/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/sqlim__sr860-python --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/sqlim__sr860-python --backend fake --mcp"
+}

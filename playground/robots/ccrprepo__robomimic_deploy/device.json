@@ -1,0 +1,25 @@
+{
+  "name": "robots/ccrprepo__robomimic_deploy",
+  "package": "robots/ccrprepo__robomimic_deploy",
+  "mhs_package": "mhs/MHS/drivers/robots/ccrprepo__robomimic_deploy",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ccrprepo/robomimic_deploy",
+    "commit": "3a72ec1a55dcf155be88c9dcc4a32ecb5c11e313",
+    "license": "NOASSERTION",
+    "path": "playground/robots/ccrprepo__robomimic_deploy/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ccrprepo__robomimic_deploy --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ccrprepo__robomimic_deploy --backend fake --mcp"
+}

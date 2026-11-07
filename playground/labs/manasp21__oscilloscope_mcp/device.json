@@ -1,0 +1,26 @@
+{
+  "name": "labs/manasp21__oscilloscope_mcp",
+  "package": "labs/manasp21__oscilloscope_mcp",
+  "mhs_package": "mhs/MHS/drivers/labs/manasp21__oscilloscope_mcp",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/manasp21/oscilloscope_mcp",
+    "commit": "49b9c4a7b06b0a98688f5f9cd689ec21c25d3eeb",
+    "license": "MIT",
+    "path": "playground/labs/manasp21__oscilloscope_mcp/upstream"
+  },
+  "family": "python-object",
+  "role": "twin-candidate",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/manasp21__oscilloscope_mcp --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/manasp21__oscilloscope_mcp --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/justyx404__spot_gazebo_ros2",
+  "package": "robots/justyx404__spot_gazebo_ros2",
+  "mhs_package": "mhs/MHS/drivers/robots/justyx404__spot_gazebo_ros2",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/justyx404/spot_gazebo_ros2",
+    "commit": "23166d6efd67724edc1ce41e9ee4bb909cf9a2f9",
+    "license": "Apache-2.0",
+    "path": "playground/robots/justyx404__spot_gazebo_ros2/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justyx404__spot_gazebo_ros2 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justyx404__spot_gazebo_ros2 --backend fake --mcp"
+}

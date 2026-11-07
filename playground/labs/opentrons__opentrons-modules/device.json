@@ -1,0 +1,26 @@
+{
+  "name": "labs/opentrons__opentrons-modules",
+  "package": "labs/opentrons__opentrons-modules",
+  "mhs_package": "mhs/MHS/drivers/labs/opentrons__opentrons-modules",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/opentrons/opentrons-modules",
+    "commit": "bb98120ac93ccff0ae9224f95309604dd8b7d0aa",
+    "license": "NOASSERTION",
+    "path": "playground/labs/opentrons__opentrons-modules/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/opentrons__opentrons-modules --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/opentrons__opentrons-modules --backend fake --mcp"
+}

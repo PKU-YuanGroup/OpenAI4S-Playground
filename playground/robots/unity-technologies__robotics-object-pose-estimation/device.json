@@ -1,0 +1,25 @@
+{
+  "name": "robots/unity-technologies__robotics-object-pose-estimation",
+  "package": "robots/unity-technologies__robotics-object-pose-estimation",
+  "mhs_package": "mhs/MHS/drivers/robots/unity-technologies__robotics-object-pose-estimation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/unity-technologies/robotics-object-pose-estimation",
+    "commit": "45156479bee5d308085022aa8f20edc0c6a3bccc",
+    "license": "Apache-2.0",
+    "path": "playground/robots/unity-technologies__robotics-object-pose-estimation/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R1",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unity-technologies__robotics-object-pose-estimation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unity-technologies__robotics-object-pose-estimation --backend fake --mcp"
+}

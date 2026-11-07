@@ -1,0 +1,25 @@
+{
+  "name": "robots/zzy5510__ur5-grasp-and-kinect-demo-on-gazebo",
+  "package": "robots/zzy5510__ur5-grasp-and-kinect-demo-on-gazebo",
+  "mhs_package": "mhs/MHS/drivers/robots/zzy5510__ur5-grasp-and-kinect-demo-on-gazebo",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/zzy5510/ur5-grasp-and-kinect-demo-on-gazebo",
+    "commit": "a5b25d72fe7637ebfad26a60c4bc57c1a8b418c4",
+    "license": "NOASSERTION",
+    "path": "playground/robots/zzy5510__ur5-grasp-and-kinect-demo-on-gazebo/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zzy5510__ur5-grasp-and-kinect-demo-on-gazebo --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zzy5510__ur5-grasp-and-kinect-demo-on-gazebo --backend fake --mcp"
+}

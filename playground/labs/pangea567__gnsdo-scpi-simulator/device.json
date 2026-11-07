@@ -1,0 +1,25 @@
+{
+  "name": "labs/pangea567__gnsdo-scpi-simulator",
+  "package": "labs/pangea567__gnsdo-scpi-simulator",
+  "mhs_package": "mhs/MHS/drivers/labs/pangea567__gnsdo-scpi-simulator",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/pangea567/gnsdo-scpi-simulator",
+    "commit": "a2d57a9759ab72fcfa42578a505d8ca4248bc0a4",
+    "license": "MIT",
+    "path": "playground/labs/pangea567__gnsdo-scpi-simulator/upstream"
+  },
+  "family": "serial",
+  "role": "twin-candidate",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pangea567__gnsdo-scpi-simulator --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pangea567__gnsdo-scpi-simulator --backend fake --mcp"
+}

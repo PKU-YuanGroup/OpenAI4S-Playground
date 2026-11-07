@@ -1,0 +1,25 @@
+{
+  "name": "robots/novog93__sjtu_drone",
+  "package": "robots/novog93__sjtu_drone",
+  "mhs_package": "mhs/MHS/drivers/robots/novog93__sjtu_drone",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/novog93/sjtu_drone",
+    "commit": "3f8627ebddf390fd35ffb84b8654b62e0b66fca2",
+    "license": "GPL-3.0",
+    "path": "playground/robots/novog93__sjtu_drone/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/novog93__sjtu_drone --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/novog93__sjtu_drone --backend fake --mcp"
+}

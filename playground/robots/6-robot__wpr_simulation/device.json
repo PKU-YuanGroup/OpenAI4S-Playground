@@ -1,0 +1,25 @@
+{
+  "name": "robots/6-robot__wpr_simulation",
+  "package": "robots/6-robot__wpr_simulation",
+  "mhs_package": "mhs/MHS/drivers/robots/6-robot__wpr_simulation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/6-robot/wpr_simulation",
+    "commit": "9c2861944205b087e55482d46911cb1819532be6",
+    "license": "GPL-3.0",
+    "path": "playground/robots/6-robot__wpr_simulation/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/6-robot__wpr_simulation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/6-robot__wpr_simulation --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/hsp-iit__pybullet-robot-envs",
+  "package": "robots/hsp-iit__pybullet-robot-envs",
+  "mhs_package": "mhs/MHS/drivers/robots/hsp-iit__pybullet-robot-envs",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/hsp-iit/pybullet-robot-envs",
+    "commit": "8fb3f9ba1f1a0dec4cd1e96e26556afbd89cbd59",
+    "license": "LGPL-2.1",
+    "path": "playground/robots/hsp-iit__pybullet-robot-envs/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hsp-iit__pybullet-robot-envs --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hsp-iit__pybullet-robot-envs --backend fake --mcp"
+}

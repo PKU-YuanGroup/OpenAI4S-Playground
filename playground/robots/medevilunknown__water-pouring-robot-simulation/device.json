@@ -1,0 +1,25 @@
+{
+  "name": "robots/medevilunknown__water-pouring-robot-simulation",
+  "package": "robots/medevilunknown__water-pouring-robot-simulation",
+  "mhs_package": "mhs/MHS/drivers/robots/medevilunknown__water-pouring-robot-simulation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/medevilunknown/water-pouring-robot-simulation",
+    "commit": "ff33ae12ae58ef9569ff40d75c88635a14c61d27",
+    "license": "NOASSERTION",
+    "path": "playground/robots/medevilunknown__water-pouring-robot-simulation/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/medevilunknown__water-pouring-robot-simulation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/medevilunknown__water-pouring-robot-simulation --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "labs/yongxb__keithley-smu-controls",
+  "package": "labs/yongxb__keithley-smu-controls",
+  "mhs_package": "mhs/MHS/drivers/labs/yongxb__keithley-smu-controls",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/yongxb/keithley-smu-controls",
+    "commit": "6afb567c29125beb133facbbe62bb88c37d8529f",
+    "license": "NOASSERTION",
+    "path": "playground/labs/yongxb__keithley-smu-controls/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R3",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/yongxb__keithley-smu-controls --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/yongxb__keithley-smu-controls --backend fake --mcp"
+}

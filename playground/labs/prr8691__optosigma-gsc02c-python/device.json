@@ -1,0 +1,26 @@
+{
+  "name": "labs/prr8691__optosigma-gsc02c-python",
+  "package": "labs/prr8691__optosigma-gsc02c-python",
+  "mhs_package": "mhs/MHS/drivers/labs/prr8691__optosigma-gsc02c-python",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/prr8691/optosigma-gsc02c-python",
+    "commit": "d3403dc83f62fd39a3b437c13076ee676122e760",
+    "license": "NOASSERTION",
+    "path": "playground/labs/prr8691__optosigma-gsc02c-python/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/prr8691__optosigma-gsc02c-python --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/prr8691__optosigma-gsc02c-python --backend fake --mcp"
+}

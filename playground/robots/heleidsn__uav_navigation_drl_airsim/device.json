@@ -1,0 +1,25 @@
+{
+  "name": "robots/heleidsn__uav_navigation_drl_airsim",
+  "package": "robots/heleidsn__uav_navigation_drl_airsim",
+  "mhs_package": "mhs/MHS/drivers/robots/heleidsn__uav_navigation_drl_airsim",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/heleidsn/uav_navigation_drl_airsim",
+    "commit": "389e5220595361dc26a0b84c75bc4e6cde3a3112",
+    "license": "NOASSERTION",
+    "path": "playground/robots/heleidsn__uav_navigation_drl_airsim/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/heleidsn__uav_navigation_drl_airsim --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/heleidsn__uav_navigation_drl_airsim --backend fake --mcp"
+}

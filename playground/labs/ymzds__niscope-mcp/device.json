@@ -1,0 +1,26 @@
+{
+  "name": "labs/ymzds__niscope-mcp",
+  "package": "labs/ymzds__niscope-mcp",
+  "mhs_package": "mhs/MHS/drivers/labs/ymzds__niscope-mcp",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ymzds/niscope-mcp",
+    "commit": "75a3a09bb6eab9b1b0dd9e48ecdb30e93bbac6ed",
+    "license": "MIT",
+    "path": "playground/labs/ymzds__niscope-mcp/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ymzds__niscope-mcp --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ymzds__niscope-mcp --backend fake --mcp"
+}

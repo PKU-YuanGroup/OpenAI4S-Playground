@@ -1,0 +1,26 @@
+{
+  "name": "labs/ombayley__chemklipper",
+  "package": "labs/ombayley__chemklipper",
+  "mhs_package": "mhs/MHS/drivers/labs/ombayley__chemklipper",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ombayley/chemklipper",
+    "commit": "e88503106b481ad12a2469b3dbe991c18186e650",
+    "license": "GPL-3.0",
+    "path": "playground/labs/ombayley__chemklipper/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ombayley__chemklipper --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ombayley__chemklipper --backend fake --mcp"
+}

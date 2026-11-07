@@ -1,0 +1,26 @@
+{
+  "name": "labs/beniroquai__opentrons-microscope-platereader",
+  "package": "labs/beniroquai__opentrons-microscope-platereader",
+  "mhs_package": "mhs/MHS/drivers/labs/beniroquai__opentrons-microscope-platereader",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/beniroquai/opentrons-microscope-platereader",
+    "commit": "867f54163da7e8d17db1e6aac0bbdb0105905f22",
+    "license": "MIT",
+    "path": "playground/labs/beniroquai__opentrons-microscope-platereader/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R3",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/beniroquai__opentrons-microscope-platereader --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/beniroquai__opentrons-microscope-platereader --backend fake --mcp"
+}

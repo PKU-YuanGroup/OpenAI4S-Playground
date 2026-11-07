@@ -1,0 +1,25 @@
+{
+  "name": "robots/ut-austin-robin__oopsieverse",
+  "package": "robots/ut-austin-robin__oopsieverse",
+  "mhs_package": "mhs/MHS/drivers/robots/ut-austin-robin__oopsieverse",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/ut-austin-robin/oopsieverse",
+    "commit": "a739f99e94f32c3229ae6932299e2e0e8c065480",
+    "license": "MIT",
+    "path": "playground/robots/ut-austin-robin__oopsieverse/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ut-austin-robin__oopsieverse --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ut-austin-robin__oopsieverse --backend fake --mcp"
+}

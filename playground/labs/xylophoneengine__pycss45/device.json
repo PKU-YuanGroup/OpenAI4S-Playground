@@ -1,0 +1,26 @@
+{
+  "name": "labs/xylophoneengine__pycss45",
+  "package": "labs/xylophoneengine__pycss45",
+  "mhs_package": "mhs/MHS/drivers/labs/xylophoneengine__pycss45",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/xylophoneengine/pycss45",
+    "commit": "e4364bae4d889efd579ffb3c4947099405becb27",
+    "license": "MIT",
+    "path": "playground/labs/xylophoneengine__pycss45/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/xylophoneengine__pycss45 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/xylophoneengine__pycss45 --backend fake --mcp"
+}

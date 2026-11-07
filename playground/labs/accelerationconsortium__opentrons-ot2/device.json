@@ -1,0 +1,26 @@
+{
+  "name": "labs/accelerationconsortium__opentrons-ot2",
+  "package": "labs/accelerationconsortium__opentrons-ot2",
+  "mhs_package": "mhs/MHS/drivers/labs/accelerationconsortium__opentrons-ot2",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/accelerationconsortium/opentrons-ot2",
+    "commit": "9ba663504dcf8b27eb1b9e777a84c01667202893",
+    "license": "NOASSERTION",
+    "path": "playground/labs/accelerationconsortium__opentrons-ot2/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/accelerationconsortium__opentrons-ot2 --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/accelerationconsortium__opentrons-ot2 --backend fake --mcp"
+}

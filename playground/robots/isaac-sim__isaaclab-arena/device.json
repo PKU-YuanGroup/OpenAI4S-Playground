@@ -1,0 +1,25 @@
+{
+  "name": "robots/isaac-sim__isaaclab-arena",
+  "package": "robots/isaac-sim__isaaclab-arena",
+  "mhs_package": "mhs/MHS/drivers/robots/isaac-sim__isaaclab-arena",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/isaac-sim/isaaclab-arena",
+    "commit": "2cc9e9766f1f62a500b85c92207192d8c60fcce5",
+    "license": "Apache-2.0",
+    "path": "playground/robots/isaac-sim__isaaclab-arena/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isaac-sim__isaaclab-arena --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isaac-sim__isaaclab-arena --backend fake --mcp"
+}

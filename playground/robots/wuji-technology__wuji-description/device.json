@@ -1,0 +1,25 @@
+{
+  "name": "robots/wuji-technology__wuji-description",
+  "package": "robots/wuji-technology__wuji-description",
+  "mhs_package": "mhs/MHS/drivers/robots/wuji-technology__wuji-description",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/wuji-technology/wuji-description",
+    "commit": "829c9aa27cb12c3a49d5b8d63c9869dd8f656702",
+    "license": "MIT",
+    "path": "playground/robots/wuji-technology__wuji-description/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/wuji-technology__wuji-description --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/wuji-technology__wuji-description --backend fake --mcp"
+}

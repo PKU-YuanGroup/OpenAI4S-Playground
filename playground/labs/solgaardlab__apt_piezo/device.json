@@ -1,0 +1,26 @@
+{
+  "name": "labs/solgaardlab__apt_piezo",
+  "package": "labs/solgaardlab__apt_piezo",
+  "mhs_package": "mhs/MHS/drivers/labs/solgaardlab__apt_piezo",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/solgaardlab/apt_piezo",
+    "commit": "677eb8f632b6b1d7c84c1fd83a5821239331e4a5",
+    "license": "NOASSERTION",
+    "path": "playground/labs/solgaardlab__apt_piezo/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/solgaardlab__apt_piezo --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/solgaardlab__apt_piezo --backend fake --mcp"
+}

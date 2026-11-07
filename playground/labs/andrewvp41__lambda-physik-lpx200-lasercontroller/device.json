@@ -1,0 +1,26 @@
+{
+  "name": "labs/andrewvp41__lambda-physik-lpx200-lasercontroller",
+  "package": "labs/andrewvp41__lambda-physik-lpx200-lasercontroller",
+  "mhs_package": "mhs/MHS/drivers/labs/andrewvp41__lambda-physik-lpx200-lasercontroller",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/andrewvp41/lambda-physik-lpx200-lasercontroller",
+    "commit": "abd240f534a93923342ae6bef374e9d9885b8776",
+    "license": "NOASSERTION",
+    "path": "playground/labs/andrewvp41__lambda-physik-lpx200-lasercontroller/upstream"
+  },
+  "family": "scpi",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R3",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/andrewvp41__lambda-physik-lpx200-lasercontroller --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/andrewvp41__lambda-physik-lpx200-lasercontroller --backend fake --mcp"
+}

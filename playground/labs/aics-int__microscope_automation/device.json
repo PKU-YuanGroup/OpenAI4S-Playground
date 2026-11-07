@@ -1,0 +1,26 @@
+{
+  "name": "labs/aics-int__microscope_automation",
+  "package": "labs/aics-int__microscope_automation",
+  "mhs_package": "mhs/MHS/drivers/labs/aics-int__microscope_automation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/aics-int/microscope_automation",
+    "commit": "cdac7bdb191ea2d85965574b32ec65e3c2a7e22d",
+    "license": "BSD-2-Clause",
+    "path": "playground/labs/aics-int__microscope_automation/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aics-int__microscope_automation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aics-int__microscope_automation --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/navneet-nmk__hierarchical-meta-reinforcement-learning",
+  "package": "robots/navneet-nmk__hierarchical-meta-reinforcement-learning",
+  "mhs_package": "mhs/MHS/drivers/robots/navneet-nmk__hierarchical-meta-reinforcement-learning",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/navneet-nmk/hierarchical-meta-reinforcement-learning",
+    "commit": "4ef92cebfa11760d9de55d54fc8e827271982a63",
+    "license": "MIT",
+    "path": "playground/robots/navneet-nmk__hierarchical-meta-reinforcement-learning/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/navneet-nmk__hierarchical-meta-reinforcement-learning --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/navneet-nmk__hierarchical-meta-reinforcement-learning --backend fake --mcp"
+}

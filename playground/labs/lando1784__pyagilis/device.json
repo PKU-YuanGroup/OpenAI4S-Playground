@@ -1,0 +1,26 @@
+{
+  "name": "labs/lando1784__pyagilis",
+  "package": "labs/lando1784__pyagilis",
+  "mhs_package": "mhs/MHS/drivers/labs/lando1784__pyagilis",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/lando1784/pyagilis",
+    "commit": "7d27bd1571aa6b4187e2e0d40c9f34feb45456f2",
+    "license": "LGPL-3.0",
+    "path": "playground/labs/lando1784__pyagilis/upstream"
+  },
+  "family": "serial",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/lando1784__pyagilis --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/lando1784__pyagilis --backend fake --mcp"
+}

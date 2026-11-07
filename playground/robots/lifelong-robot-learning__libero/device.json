@@ -1,0 +1,25 @@
+{
+  "name": "robots/lifelong-robot-learning__libero",
+  "package": "robots/lifelong-robot-learning__libero",
+  "mhs_package": "mhs/MHS/drivers/robots/lifelong-robot-learning__libero",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/lifelong-robot-learning/libero",
+    "commit": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+    "license": "MIT",
+    "path": "playground/robots/lifelong-robot-learning__libero/upstream"
+  },
+  "family": "mujoco",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lifelong-robot-learning__libero --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lifelong-robot-learning__libero --backend fake --mcp"
+}

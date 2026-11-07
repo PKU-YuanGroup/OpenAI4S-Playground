@@ -1,0 +1,25 @@
+{
+  "name": "robots/vikashplus__adroit",
+  "package": "robots/vikashplus__adroit",
+  "mhs_package": "mhs/MHS/drivers/robots/vikashplus__adroit",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/vikashplus/adroit",
+    "commit": "c98c9c92fc9729e92a10c8db79588348897d8fe3",
+    "license": "Apache-2.0",
+    "path": "playground/robots/vikashplus__adroit/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vikashplus__adroit --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vikashplus__adroit --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/abmorobotics__rlroverlab",
+  "package": "robots/abmorobotics__rlroverlab",
+  "mhs_package": "mhs/MHS/drivers/robots/abmorobotics__rlroverlab",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/abmorobotics/rlroverlab",
+    "commit": "578906ad5c3383087aeec038be82b87e05d4ee2c",
+    "license": "Apache-2.0",
+    "path": "playground/robots/abmorobotics__rlroverlab/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/abmorobotics__rlroverlab --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/abmorobotics__rlroverlab --backend fake --mcp"
+}

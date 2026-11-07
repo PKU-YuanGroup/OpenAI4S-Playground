@@ -1,0 +1,26 @@
+{
+  "name": "labs/tiagocoutinho__gepace",
+  "package": "labs/tiagocoutinho__gepace",
+  "mhs_package": "mhs/MHS/drivers/labs/tiagocoutinho__gepace",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tiagocoutinho/gepace",
+    "commit": "4caa5f8c404277281033bc7f10b280d42941dfeb",
+    "license": "LGPL-3.0",
+    "path": "playground/labs/tiagocoutinho__gepace/upstream"
+  },
+  "family": "python-object",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R2",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__gepace --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__gepace --backend fake --mcp"
+}

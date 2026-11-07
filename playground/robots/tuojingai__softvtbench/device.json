@@ -1,0 +1,25 @@
+{
+  "name": "robots/tuojingai__softvtbench",
+  "package": "robots/tuojingai__softvtbench",
+  "mhs_package": "mhs/MHS/drivers/robots/tuojingai__softvtbench",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/tuojingai/softvtbench",
+    "commit": "58056111f01e05bf1a4ae1dee75db4e3d9e7c5be",
+    "license": "Apache-2.0",
+    "path": "playground/robots/tuojingai__softvtbench/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tuojingai__softvtbench --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tuojingai__softvtbench --backend fake --mcp"
+}

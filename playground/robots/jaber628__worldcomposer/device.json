@@ -1,0 +1,25 @@
+{
+  "name": "robots/jaber628__worldcomposer",
+  "package": "robots/jaber628__worldcomposer",
+  "mhs_package": "mhs/MHS/drivers/robots/jaber628__worldcomposer",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/jaber628/worldcomposer",
+    "commit": "c2de3a2c9b3cc0f91e2bf739e5e6a24742988da2",
+    "license": "NOASSERTION",
+    "path": "playground/robots/jaber628__worldcomposer/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jaber628__worldcomposer --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jaber628__worldcomposer --backend fake --mcp"
+}

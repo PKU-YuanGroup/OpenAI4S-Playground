@@ -1,0 +1,25 @@
+{
+  "name": "robots/disaster-robotics-proalertas__usv_sim_lsa",
+  "package": "robots/disaster-robotics-proalertas__usv_sim_lsa",
+  "mhs_package": "mhs/MHS/drivers/robots/disaster-robotics-proalertas__usv_sim_lsa",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/disaster-robotics-proalertas/usv_sim_lsa",
+    "commit": "61e8f4a5f78f18c01dac0d4eea7f4c3c416e6cb8",
+    "license": "Apache-2.0",
+    "path": "playground/robots/disaster-robotics-proalertas__usv_sim_lsa/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/disaster-robotics-proalertas__usv_sim_lsa --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/disaster-robotics-proalertas__usv_sim_lsa --backend fake --mcp"
+}

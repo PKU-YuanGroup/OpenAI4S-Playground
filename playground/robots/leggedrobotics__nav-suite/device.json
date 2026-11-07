@@ -1,0 +1,25 @@
+{
+  "name": "robots/leggedrobotics__nav-suite",
+  "package": "robots/leggedrobotics__nav-suite",
+  "mhs_package": "mhs/MHS/drivers/robots/leggedrobotics__nav-suite",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/leggedrobotics/nav-suite",
+    "commit": "648ba3b28dac61aec48e150a507c2a8507646ea2",
+    "license": "Apache-2.0",
+    "path": "playground/robots/leggedrobotics__nav-suite/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/leggedrobotics__nav-suite --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/leggedrobotics__nav-suite --backend fake --mcp"
+}

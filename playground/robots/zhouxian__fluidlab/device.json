@@ -1,0 +1,25 @@
+{
+  "name": "robots/zhouxian__fluidlab",
+  "package": "robots/zhouxian__fluidlab",
+  "mhs_package": "mhs/MHS/drivers/robots/zhouxian__fluidlab",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/zhouxian/fluidlab",
+    "commit": "7295eb6ed7ee92b2be471fd30b432238577f28ce",
+    "license": "NOASSERTION",
+    "path": "playground/robots/zhouxian__fluidlab/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zhouxian__fluidlab --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zhouxian__fluidlab --backend fake --mcp"
+}

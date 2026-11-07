@@ -1,0 +1,26 @@
+{
+  "name": "labs/nsls-ii-sst__caproto_cryostat",
+  "package": "labs/nsls-ii-sst__caproto_cryostat",
+  "mhs_package": "mhs/MHS/drivers/labs/nsls-ii-sst__caproto_cryostat",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/nsls-ii-sst/caproto_cryostat",
+    "commit": "bc89595479d634106426f698eef27a993a5cb99a",
+    "license": "NOASSERTION",
+    "path": "playground/labs/nsls-ii-sst__caproto_cryostat/upstream"
+  },
+  "family": "tag-bridge",
+  "role": "device-driver",
+  "mode": "hardware",
+  "risk": "R0",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-sst__caproto_cryostat --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-sst__caproto_cryostat --backend fake --mcp"
+}

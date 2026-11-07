@@ -1,0 +1,25 @@
+{
+  "name": "robots/fdcl-gwu__gym-rotor-modularrl",
+  "package": "robots/fdcl-gwu__gym-rotor-modularrl",
+  "mhs_package": "mhs/MHS/drivers/robots/fdcl-gwu__gym-rotor-modularrl",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/fdcl-gwu/gym-rotor-modularrl",
+    "commit": "3d70dfbe4ccee71bf30953cba3a1a810f2084494",
+    "license": "MIT",
+    "path": "playground/robots/fdcl-gwu__gym-rotor-modularrl/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fdcl-gwu__gym-rotor-modularrl --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fdcl-gwu__gym-rotor-modularrl --backend fake --mcp"
+}

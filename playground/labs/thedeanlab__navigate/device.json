@@ -1,0 +1,26 @@
+{
+  "name": "labs/thedeanlab__navigate",
+  "package": "labs/thedeanlab__navigate",
+  "mhs_package": "mhs/MHS/drivers/labs/thedeanlab__navigate",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/thedeanlab/navigate",
+    "commit": "da14920d7b40d048a5d2225a7846d11f78e05212",
+    "license": "BSD-3-Clause-Clear",
+    "path": "playground/labs/thedeanlab__navigate/upstream"
+  },
+  "family": "python-object",
+  "role": "driver-pack",
+  "mode": "hardware",
+  "risk": "R1",
+  "backends": [
+    "fake",
+    "hardware"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/thedeanlab__navigate --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/thedeanlab__navigate --backend fake --mcp"
+}

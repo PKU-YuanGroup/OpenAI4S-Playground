@@ -1,0 +1,25 @@
+{
+  "name": "robots/metadriverse__metadrive",
+  "package": "robots/metadriverse__metadrive",
+  "mhs_package": "mhs/MHS/drivers/robots/metadriverse__metadrive",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/metadriverse/metadrive",
+    "commit": "325d9e2f9c20e495bde66f30e0ef2b40efbce39c",
+    "license": "Apache-2.0",
+    "path": "playground/robots/metadriverse__metadrive/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/metadriverse__metadrive --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/metadriverse__metadrive --backend fake --mcp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "robots/cram2__semantic_digital_twin",
+  "package": "robots/cram2__semantic_digital_twin",
+  "mhs_package": "mhs/MHS/drivers/robots/cram2__semantic_digital_twin",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/cram2/semantic_digital_twin",
+    "commit": "40a35e7e481b358cd7f9d939c7ff4e0c23826098",
+    "license": "LGPL-3.0",
+    "path": "playground/robots/cram2__semantic_digital_twin/upstream"
+  },
+  "family": "mujoco",
+  "role": "twin-candidate",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/cram2__semantic_digital_twin --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/cram2__semantic_digital_twin --backend fake --mcp"
+}

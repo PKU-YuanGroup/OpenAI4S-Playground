@@ -1,0 +1,25 @@
+{
+  "name": "robots/lihuang3__ur5_ros-gazebo",
+  "package": "robots/lihuang3__ur5_ros-gazebo",
+  "mhs_package": "mhs/MHS/drivers/robots/lihuang3__ur5_ros-gazebo",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/lihuang3/ur5_ros-gazebo",
+    "commit": "2f7b9b056bb41b9412f86589a60e25ba2816b78b",
+    "license": "NOASSERTION",
+    "path": "playground/robots/lihuang3__ur5_ros-gazebo/upstream"
+  },
+  "family": "ros",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R2",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lihuang3__ur5_ros-gazebo --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lihuang3__ur5_ros-gazebo --backend fake --mcp"
+}

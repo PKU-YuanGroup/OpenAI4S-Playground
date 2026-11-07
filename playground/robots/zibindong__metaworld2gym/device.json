@@ -1,0 +1,25 @@
+{
+  "name": "robots/zibindong__metaworld2gym",
+  "package": "robots/zibindong__metaworld2gym",
+  "mhs_package": "mhs/MHS/drivers/robots/zibindong__metaworld2gym",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/zibindong/metaworld2gym",
+    "commit": "9e7d3da16a86b6bed1353e1c2042115ed75edb1a",
+    "license": "MIT",
+    "path": "playground/robots/zibindong__metaworld2gym/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zibindong__metaworld2gym --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zibindong__metaworld2gym --backend fake --mcp"
+}

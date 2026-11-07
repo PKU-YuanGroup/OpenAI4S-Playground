@@ -1,0 +1,25 @@
+{
+  "name": "robots/eanswer__tactilesimulation",
+  "package": "robots/eanswer__tactilesimulation",
+  "mhs_package": "mhs/MHS/drivers/robots/eanswer__tactilesimulation",
+  "website": "https://mhs.openai4s.org",
+  "upstream": {
+    "repo_url": "https://github.com/eanswer/tactilesimulation",
+    "commit": "0c42783a8b5cc7abe1a9fa3e6aa65e4aeb8eb670",
+    "license": "NOASSERTION",
+    "path": "playground/robots/eanswer__tactilesimulation/upstream"
+  },
+  "family": "gymnasium",
+  "role": "sim-env",
+  "mode": "simulated",
+  "risk": "R0",
+  "backends": [
+    "fake"
+  ],
+  "validation": {
+    "backend": "fake",
+    "status": "contract_checked"
+  },
+  "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/eanswer__tactilesimulation --backend fake --port 7400",
+  "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/eanswer__tactilesimulation --backend fake --mcp"
+}
