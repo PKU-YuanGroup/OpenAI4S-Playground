@@ -5,3 +5,7 @@
 	path = playground/gymnasium/upstream
 	url = https://github.com/farama-foundation/gymnasium
 	shallow = true
+[submodule "playground/gym-pusht/upstream"]
+	path = playground/gym-pusht/upstream
+	url = https://github.com/huggingface/gym-pusht
+	shallow = true
