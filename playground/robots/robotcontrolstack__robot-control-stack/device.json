@@ -2,7 +2,11 @@
   "name": "robots/robotcontrolstack__robot-control-stack",
   "package": "robots/robotcontrolstack__robot-control-stack",
   "mhs_package": "mhs/MHS/drivers/robots/robotcontrolstack__robot-control-stack",
-  "website": "https://mhs.openai4s.org",
+  "title": "Robot Control Stack EmptyWorldFR3 (rcs/fr3)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "Robot Control Stack EmptyWorldFR3 (rcs/fr3), adapted from robotcontrolstack/robot-control-stack. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robotcontrolstack__robot-control-stack/",
   "upstream": {
     "repo_url": "https://github.com/robotcontrolstack/robot-control-stack",
     "commit": "afb3795ae9f49f9992bb61518eef6e7277b9011f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robotcontrolstack__robot-control-stack",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcontrolstack__robot-control-stack --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcontrolstack__robot-control-stack --backend fake --mcp"
 }

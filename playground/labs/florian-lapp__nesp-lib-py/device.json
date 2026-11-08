@@ -2,7 +2,11 @@
   "name": "labs/florian-lapp__nesp-lib-py",
   "package": "labs/florian-lapp__nesp-lib-py",
   "mhs_package": "mhs/MHS/drivers/labs/florian-lapp__nesp-lib-py",
-  "website": "https://mhs.openai4s.org",
+  "title": "New Era syringe pump (nesp-lib Pump)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "New Era syringe pump (nesp-lib Pump), adapted from florian-lapp/nesp-lib-py. It reads `model_number`, `firmware_version`, `status`, `running` and 2 more; sets `syringe_diameter_mm`, `pumping_direction`, `pumping_volume_ml`, `pumping_rate_ml_per_min` and 1 more; runs `run_pump`, `purge` and `stop_pump`. `run_pump`: start the pump with the configured direction, volume and rate (Pump.run without waiting); it returns after starting the pump, and the state reports whether it is running. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/florian-lapp__nesp-lib-py/",
   "upstream": {
     "repo_url": "https://github.com/florian-lapp/nesp-lib-py",
     "commit": "c16abc82c9feb7c356f06c30b0dff0d4d421cfe3",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/florian-lapp__nesp-lib-py",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/florian-lapp__nesp-lib-py --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/florian-lapp__nesp-lib-py --backend fake --mcp"
 }

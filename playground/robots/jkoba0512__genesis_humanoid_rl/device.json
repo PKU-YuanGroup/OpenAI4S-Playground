@@ -2,7 +2,11 @@
   "name": "robots/jkoba0512__genesis_humanoid_rl",
   "package": "robots/jkoba0512__genesis_humanoid_rl",
   "mhs_package": "mhs/MHS/drivers/robots/jkoba0512__genesis_humanoid_rl",
-  "website": "https://mhs.openai4s.org",
+  "title": "Genesis Humanoid RL (Unitree G1 walking environment)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "Genesis Humanoid RL (Unitree G1 walking environment), adapted from jkoba0512/genesis_humanoid_rl. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/jkoba0512__genesis_humanoid_rl/",
   "upstream": {
     "repo_url": "https://github.com/jkoba0512/genesis_humanoid_rl",
     "commit": "32e5bd1a1e516bf4caedcb31f1a8ee366f2efebc",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jkoba0512__genesis_humanoid_rl",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jkoba0512__genesis_humanoid_rl --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jkoba0512__genesis_humanoid_rl --backend fake --mcp"
 }

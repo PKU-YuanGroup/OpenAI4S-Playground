@@ -2,7 +2,11 @@
   "name": "labs/akperuht__pydaq",
   "package": "labs/akperuht__pydaq",
   "mhs_package": "mhs/MHS/drivers/labs/akperuht__pydaq",
-  "website": "https://mhs.openai4s.org",
+  "title": "Digimess PN300 power supply",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Digimess PN300 power supply, adapted from akperuht/pydaq. It reads `protection`, `measured_voltage` and `measured_current`; sets `output`, `source`, `operating_mode`, `source_type` and 2 more; runs `output_off`. `output_off`: disable the power supply output (the declared safe state). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/akperuht__pydaq/",
   "upstream": {
     "repo_url": "https://github.com/akperuht/pydaq",
     "commit": "edb7584d00891aa0f1a0ef483d12d1d59ab4f794",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/akperuht__pydaq",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/akperuht__pydaq --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/akperuht__pydaq --backend fake --mcp"
 }

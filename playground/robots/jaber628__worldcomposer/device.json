@@ -2,7 +2,11 @@
   "name": "robots/jaber628__worldcomposer",
   "package": "robots/jaber628__worldcomposer",
   "mhs_package": "mhs/MHS/drivers/robots/jaber628__worldcomposer",
-  "website": "https://mhs.openai4s.org",
+  "title": "WorldComposer Tableware (Isaac Lab DirectRLEnv)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "WorldComposer Tableware (Isaac Lab DirectRLEnv), adapted from jaber628/worldcomposer. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/jaber628__worldcomposer/",
   "upstream": {
     "repo_url": "https://github.com/jaber628/worldcomposer",
     "commit": "c2de3a2c9b3cc0f91e2bf739e5e6a24742988da2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jaber628__worldcomposer",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jaber628__worldcomposer --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jaber628__worldcomposer --backend fake --mcp"
 }

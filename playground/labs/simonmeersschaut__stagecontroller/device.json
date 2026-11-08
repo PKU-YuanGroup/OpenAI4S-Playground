@@ -2,7 +2,11 @@
   "name": "labs/simonmeersschaut__stagecontroller",
   "package": "labs/simonmeersschaut__stagecontroller",
   "mhs_package": "mhs/MHS/drivers/labs/simonmeersschaut__stagecontroller",
-  "website": "https://mhs.openai4s.org",
+  "title": "StageController (Phytron stepper over serial)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "StageController (Phytron stepper over serial), adapted from simonmeersschaut/stagecontroller. It runs `start_rotation` and `stop_rotation`. `start_rotation`: start the stepper rotation by sending the upstream XL+ command. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/simonmeersschaut__stagecontroller/",
   "upstream": {
     "repo_url": "https://github.com/simonmeersschaut/stagecontroller",
     "commit": "7edb1ac137a0cfedba78966815421fbfd5e73b38",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/simonmeersschaut__stagecontroller",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/simonmeersschaut__stagecontroller --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/simonmeersschaut__stagecontroller --backend fake --mcp"
 }

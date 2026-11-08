@@ -2,7 +2,11 @@
   "name": "robots/dobot-arm__tcp-ip-python-v4",
   "package": "robots/dobot-arm__tcp-ip-python-v4",
   "mhs_package": "mhs/MHS/drivers/robots/dobot-arm__tcp-ip-python-v4",
-  "website": "https://mhs.openai4s.org",
+  "title": "Dobot V4 series arm (TCP/IP Python SDK)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Dobot V4 series arm (TCP/IP Python SDK), adapted from dobot-arm/tcp-ip-python-v4. It reads `joint_positions`, `tcp_pose`, `robot_mode` and `error_ids`; runs `move_joints`, `move_pose` and `stop_motion`. `move_joints`: command one or more actuated joints to target positions in joint space, optionally over a declared duration, and report whether the target was reached within tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/dobot-arm__tcp-ip-python-v4/",
   "upstream": {
     "repo_url": "https://github.com/dobot-arm/tcp-ip-python-v4",
     "commit": "55ec1ec82201aaf2e6d54aa47b6272bbaa14c815",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/dobot-arm__tcp-ip-python-v4",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dobot-arm__tcp-ip-python-v4 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dobot-arm__tcp-ip-python-v4 --backend fake --mcp"
 }

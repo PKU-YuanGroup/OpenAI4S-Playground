@@ -2,7 +2,11 @@
   "name": "robots/kautenja__gym-super-mario-bros",
   "package": "robots/kautenja__gym-super-mario-bros",
   "mhs_package": "mhs/MHS/drivers/robots/kautenja__gym-super-mario-bros",
-  "website": "https://mhs.openai4s.org",
+  "title": "Gymnasium Super Mario Bros. (NES emulator)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Gymnasium Super Mario Bros. (NES emulator), adapted from kautenja/gym-super-mario-bros. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/kautenja__gym-super-mario-bros/",
   "upstream": {
     "repo_url": "https://github.com/kautenja/gym-super-mario-bros",
     "commit": "7ba17c778e1df8240fd1cf99dbe5238d0e9b93aa",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/kautenja__gym-super-mario-bros",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kautenja__gym-super-mario-bros --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kautenja__gym-super-mario-bros --backend fake --mcp"
 }

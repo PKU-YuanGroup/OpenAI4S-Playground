@@ -2,7 +2,11 @@
   "name": "robots/cyberorigin2077__open_cyber_glove",
   "package": "robots/cyberorigin2077__open_cyber_glove",
   "mhs_package": "mhs/MHS/drivers/robots/cyberorigin2077__open_cyber_glove",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenCyberGlove data glove (OpenCyberGlove SDK)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "OpenCyberGlove data glove (OpenCyberGlove SDK), adapted from cyberorigin2077/open_cyber_glove. It reads `hand`, `acquisition`, `tensile`, `accelerometer` and 5 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/cyberorigin2077__open_cyber_glove/",
   "upstream": {
     "repo_url": "https://github.com/cyberorigin2077/open_cyber_glove",
     "commit": "88910bec8433658ffe8e181f23fb259f5376bb88",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/cyberorigin2077__open_cyber_glove",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/cyberorigin2077__open_cyber_glove --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/cyberorigin2077__open_cyber_glove --backend fake --mcp"
 }

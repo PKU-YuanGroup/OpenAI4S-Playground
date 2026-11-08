@@ -2,7 +2,11 @@
   "name": "robots/chauby__coppeliasimrl",
   "package": "robots/chauby__coppeliasimrl",
   "mhs_package": "mhs/MHS/drivers/robots/chauby__coppeliasimrl",
-  "website": "https://mhs.openai4s.org",
+  "title": "CoppeliaSim cart-pole (chauby/coppeliasimrl)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "CoppeliaSim cart-pole (chauby/coppeliasimrl), adapted from chauby/coppeliasimrl. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/chauby__coppeliasimrl/",
   "upstream": {
     "repo_url": "https://github.com/chauby/coppeliasimrl",
     "commit": "8eb98b8a42b515b61eae5ffebcc9f228e2f5fdd1",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/chauby__coppeliasimrl",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/chauby__coppeliasimrl --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/chauby__coppeliasimrl --backend fake --mcp"
 }

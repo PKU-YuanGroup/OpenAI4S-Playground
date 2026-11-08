@@ -2,7 +2,11 @@
   "name": "robots/6-robot__wpr_simulation",
   "package": "robots/6-robot__wpr_simulation",
   "mhs_package": "mhs/MHS/drivers/robots/6-robot__wpr_simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "WPR Gazebo mobile-robot simulation",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "WPR Gazebo mobile-robot simulation, adapted from 6-robot/wpr_simulation. It reads `read_odometry` and `read_pose_diff`; runs `publish_cmd_vel` and `resume_simulation`. `publish_cmd_vel`: publish one geometry_msgs/Twist velocity setpoint on /cmd_vel. The WPRPlugin callback stores the components, also while the world is paused; the receipt is transmission evidence and the values sent, not motion or stopping. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/6-robot__wpr_simulation/",
   "upstream": {
     "repo_url": "https://github.com/6-robot/wpr_simulation",
     "commit": "9c2861944205b087e55482d46911cb1819532be6",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/6-robot__wpr_simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/6-robot__wpr_simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/6-robot__wpr_simulation --backend fake --mcp"
 }

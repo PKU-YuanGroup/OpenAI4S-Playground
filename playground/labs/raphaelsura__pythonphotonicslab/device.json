@@ -2,7 +2,11 @@
   "name": "labs/raphaelsura__pythonphotonicslab",
   "package": "labs/raphaelsura__pythonphotonicslab",
   "mhs_package": "mhs/MHS/drivers/labs/raphaelsura__pythonphotonicslab",
-  "website": "https://mhs.openai4s.org",
+  "title": "SRS DG645 digital delay generator",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "SRS DG645 digital delay generator, adapted from raphaelsura/pythonphotonicslab. It reads `timebase`, `trigger_source` and `last_error`; sets `amplitude`, `offset`, `polarity`, `delay` and 8 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/raphaelsura__pythonphotonicslab/",
   "upstream": {
     "repo_url": "https://github.com/raphaelsura/pythonphotonicslab",
     "commit": "bdef2648d4aec219566f710ade6c1b9ba224bc19",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/raphaelsura__pythonphotonicslab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/raphaelsura__pythonphotonicslab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/raphaelsura__pythonphotonicslab --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/silab-bonn__basil",
   "package": "labs/silab-bonn__basil",
   "mhs_package": "mhs/MHS/drivers/labs/silab-bonn__basil",
-  "website": "https://mhs.openai4s.org",
+  "title": "ISEG SHQ/NQH series high-voltage supply",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "ISEG SHQ/NQH series high-voltage supply, adapted from silab-bonn/basil. It reads `voltage` and `current`; sets `voltage_target`, `ramp_speed`, `answer_delay`, `autostart` and 1 more; runs `output_off`. `output_off`: set the channel's target voltage to 0 V (the upstream off()), the safe state of the supply. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/silab-bonn__basil/",
   "upstream": {
     "repo_url": "https://github.com/silab-bonn/basil",
     "commit": "0630d8fd717fed83cb036b0c1b6015bdd7b25547",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/silab-bonn__basil",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/silab-bonn__basil --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/silab-bonn__basil --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/chuanyune__maniskill-vitac2025",
   "package": "robots/chuanyune__maniskill-vitac2025",
   "mhs_package": "mhs/MHS/drivers/robots/chuanyune__maniskill-vitac2025",
-  "website": "https://mhs.openai4s.org",
+  "title": "ManiSkill-ViTac 2025 Track 1 peg insertion (tactile-vision simulation)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "ManiSkill-ViTac 2025 Track 1 peg insertion (tactile-vision simulation), adapted from chuanyune/maniskill-vitac2025. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/chuanyune__maniskill-vitac2025/",
   "upstream": {
     "repo_url": "https://github.com/chuanyune/maniskill-vitac2025",
     "commit": "a3d7df54bca9a2e57f34b37be3a3df36dc218915",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/chuanyune__maniskill-vitac2025",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/chuanyune__maniskill-vitac2025 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/chuanyune__maniskill-vitac2025 --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/accelerationconsortium__matterix",
   "package": "labs/accelerationconsortium__matterix",
   "mhs_package": "mhs/MHS/drivers/labs/accelerationconsortium__matterix",
-  "website": "https://mhs.openai4s.org",
+  "title": "Matterix Test Beakers Franka (Isaac Lab simulation)",
+  "category": "Simulation",
+  "topic": "wet-lab automation and chemistry",
+  "intro": "Matterix Test Beakers Franka (Isaac Lab simulation), adapted from accelerationconsortium/matterix. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/accelerationconsortium__matterix/",
   "upstream": {
     "repo_url": "https://github.com/accelerationconsortium/matterix",
     "commit": "687e2cef294f00e86dbb32173fefd93b50e5107f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/accelerationconsortium__matterix",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/accelerationconsortium__matterix --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/accelerationconsortium__matterix --backend fake --mcp"
 }

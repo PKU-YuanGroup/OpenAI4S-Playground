@@ -2,7 +2,11 @@
   "name": "labs/bennomeier__cetoni",
   "package": "labs/bennomeier__cetoni",
   "mhs_package": "mhs/MHS/drivers/labs/bennomeier__cetoni",
-  "website": "https://mhs.openai4s.org",
+  "title": "Cetoni Nemesys V4 syringe pump",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Cetoni Nemesys V4 syringe pump, adapted from bennomeier/cetoni. It reads `current_position` and `status`; sets `target_position`, `velocity`, `flow_rate` and `valve_position`; runs `pump` and `stop_pump`. `pump`: run a pump at a declared flow rate for a declared duration or volume in a declared direction, reporting the volume moved. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/bennomeier__cetoni/",
   "upstream": {
     "repo_url": "https://github.com/bennomeier/cetoni",
     "commit": "b957067d56c2698ca4b77bfe2b445af4b1d92045",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/bennomeier__cetoni",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bennomeier__cetoni --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bennomeier__cetoni --backend fake --mcp"
 }

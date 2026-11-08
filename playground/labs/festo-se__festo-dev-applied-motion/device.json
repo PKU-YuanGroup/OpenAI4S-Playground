@@ -2,7 +2,11 @@
   "name": "labs/festo-se__festo-dev-applied-motion",
   "package": "labs/festo-se__festo-dev-applied-motion",
   "mhs_package": "mhs/MHS/drivers/labs/festo-se__festo-dev-applied-motion",
-  "website": "https://mhs.openai4s.org",
+  "title": "Festo FPosBAPI gantry (FPosBAPIClient)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Festo FPosBAPI gantry (FPosBAPIClient), adapted from festo-se/festo-dev-applied-motion. It reads `position`, `sys_status`, `error_active`, `error_text` and 1 more; sets `global_speed`; runs `home`, `cartesian_pose` and `stop`. `home`: home all axes with one PLC HOME command; the PLC homes X, Y and Z together. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/festo-se__festo-dev-applied-motion/",
   "upstream": {
     "repo_url": "https://github.com/festo-se/festo-dev-applied-motion",
     "commit": "c1926f02d8e69cec7f8d265dba20e9e5b474f425",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/festo-se__festo-dev-applied-motion",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/festo-se__festo-dev-applied-motion --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/festo-se__festo-dev-applied-motion --backend fake --mcp"
 }

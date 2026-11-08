@@ -2,7 +2,11 @@
   "name": "labs/aaronslaff__tecan_sparkcontrol",
   "package": "labs/aaronslaff__tecan_sparkcontrol",
   "mhs_package": "mhs/MHS/drivers/labs/aaronslaff__tecan_sparkcontrol",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tecan SparkControl microplate reader (spark_control_automation.SparkControlClient)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Tecan SparkControl microplate reader (spark_control_automation.SparkControlClient), adapted from aaronslaff/tecan_sparkcontrol. It reads `instrument_status`, `available_apps`, `instrument_settings`, `plate_geometry` and 2 more; runs `calibrate`, `start_method`, `stop_method` and `stop_active_method`. `calibrate`: run the native calibration procedure for a calibration type. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/aaronslaff__tecan_sparkcontrol/",
   "upstream": {
     "repo_url": "https://github.com/aaronslaff/tecan_sparkcontrol",
     "commit": "d2272c6d0e0d4ded08a3af457ed19918a1e66446",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/aaronslaff__tecan_sparkcontrol",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aaronslaff__tecan_sparkcontrol --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aaronslaff__tecan_sparkcontrol --backend fake --mcp"
 }

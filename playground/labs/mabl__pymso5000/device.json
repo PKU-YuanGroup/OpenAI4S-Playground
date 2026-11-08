@@ -2,7 +2,11 @@
   "name": "labs/mabl__pymso5000",
   "package": "labs/mabl__pymso5000",
   "mhs_package": "mhs/MHS/drivers/labs/mabl__pymso5000",
-  "website": "https://mhs.openai4s.org",
+  "title": "RIGOL MSO5000 series oscilloscope (pymso5000.Scope)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "RIGOL MSO5000 series oscilloscope (pymso5000.Scope), adapted from mabl/pymso5000. It reads `identity`, `trigger_status`, `average_count`, `sample_rate` and 6 more; sets `acquisition_type`, `channel1_scale_per_div`, `channel1_offset`, `timebase_scale_s_per_div` and 2 more; runs `run`, `measure` and `configure_channel_input`. `run`: start continuous acquisition (the native RUN command). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/mabl__pymso5000/",
   "upstream": {
     "repo_url": "https://github.com/mabl/pymso5000",
     "commit": "48ebacc0317ada6d6f54a58ab03916c5d5a44e80",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/mabl__pymso5000",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mabl__pymso5000 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mabl__pymso5000 --backend fake --mcp"
 }

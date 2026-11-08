@@ -2,7 +2,11 @@
   "name": "robots/jerrypeng0201__nebula",
   "package": "robots/jerrypeng0201__nebula",
   "mhs_package": "mhs/MHS/drivers/robots/jerrypeng0201__nebula",
-  "website": "https://mhs.openai4s.org",
+  "title": "NEBULA SceneManipulation-v1 (Fetch manipulation scene)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "NEBULA SceneManipulation-v1 (Fetch manipulation scene), adapted from jerrypeng0201/nebula. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/jerrypeng0201__nebula/",
   "upstream": {
     "repo_url": "https://github.com/jerrypeng0201/nebula",
     "commit": "2d16ad04e9825b4a6212847ba847e5ae910feed4",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jerrypeng0201__nebula",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jerrypeng0201__nebula --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jerrypeng0201__nebula --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/pcdshub__ophyd-ads",
   "package": "labs/pcdshub__ophyd-ads",
   "mhs_package": "mhs/MHS/drivers/labs/pcdshub__ophyd-ads",
-  "website": "https://mhs.openai4s.org",
+  "title": "TwinCAT NC axis telemetry (ophyd-ads, read only)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "TwinCAT NC axis telemetry (ophyd-ads, read only), adapted from pcdshub/ophyd-ads. It reads `act_acc`, `act_pos`, `act_pos_modulo`, `act_torque` and 8 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pcdshub__ophyd-ads/",
   "upstream": {
     "repo_url": "https://github.com/pcdshub/ophyd-ads",
     "commit": "2029e0bebee6148aba47e5947467574337fea61a",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pcdshub__ophyd-ads",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pcdshub__ophyd-ads --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pcdshub__ophyd-ads --backend fake --mcp"
 }

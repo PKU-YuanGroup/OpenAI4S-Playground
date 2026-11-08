@@ -2,7 +2,11 @@
   "name": "robots/openretriever__stanford-robotics-kitchen",
   "package": "robots/openretriever__stanford-robotics-kitchen",
   "mhs_package": "mhs/MHS/drivers/robots/openretriever__stanford-robotics-kitchen",
-  "website": "https://mhs.openai4s.org",
+  "title": "Stanford Robotics Kitchen Panda (MuJoCo model)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "Stanford Robotics Kitchen Panda (MuJoCo model), adapted from openretriever/stanford-robotics-kitchen. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/openretriever__stanford-robotics-kitchen/",
   "upstream": {
     "repo_url": "https://github.com/openretriever/stanford-robotics-kitchen",
     "commit": "546fd4b108f093f776a1a7c5919547233945dc88",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/openretriever__stanford-robotics-kitchen",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openretriever__stanford-robotics-kitchen --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openretriever__stanford-robotics-kitchen --backend fake --mcp"
 }

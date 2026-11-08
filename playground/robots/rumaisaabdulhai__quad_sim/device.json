@@ -2,7 +2,11 @@
   "name": "robots/rumaisaabdulhai__quad_sim",
   "package": "robots/rumaisaabdulhai__quad_sim",
   "mhs_package": "mhs/MHS/drivers/robots/rumaisaabdulhai__quad_sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "quad_sim indoor quadcopter simulation",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "quad_sim indoor quadcopter simulation, adapted from rumaisaabdulhai/quad_sim. It reads `read_ground_truth_pose` and `read_goal_status`. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/rumaisaabdulhai__quad_sim/",
   "upstream": {
     "repo_url": "https://github.com/rumaisaabdulhai/quad_sim",
     "commit": "01d02f6e2fad8060d6522b7bca01cb82aa038c2a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/rumaisaabdulhai__quad_sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rumaisaabdulhai__quad_sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rumaisaabdulhai__quad_sim --backend fake --mcp"
 }

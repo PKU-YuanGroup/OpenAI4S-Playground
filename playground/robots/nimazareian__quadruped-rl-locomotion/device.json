@@ -2,7 +2,11 @@
   "name": "robots/nimazareian__quadruped-rl-locomotion",
   "package": "robots/nimazareian__quadruped-rl-locomotion",
   "mhs_package": "mhs/MHS/drivers/robots/nimazareian__quadruped-rl-locomotion",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree Go1 quadruped (MuJoCo torque scene)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Unitree Go1 quadruped (MuJoCo torque scene), adapted from nimazareian/quadruped-rl-locomotion. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/nimazareian__quadruped-rl-locomotion/",
   "upstream": {
     "repo_url": "https://github.com/nimazareian/quadruped-rl-locomotion",
     "commit": "99763acae393e7d686d006d53310b7b5eaca53e4",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/nimazareian__quadruped-rl-locomotion",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nimazareian__quadruped-rl-locomotion --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nimazareian__quadruped-rl-locomotion --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/autolab-project__autolab-drivers",
   "package": "labs/autolab-project__autolab-drivers",
   "mhs_package": "mhs/MHS/drivers/labs/autolab-project__autolab-drivers",
-  "website": "https://mhs.openai4s.org",
+  "title": "Anritsu MS2830A spectrum analyzer (autolab Driver_VISA)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Anritsu MS2830A spectrum analyzer (autolab Driver_VISA), adapted from autolab-project/autolab-drivers. It reads `identification`, `power_marker_1`, `power_marker_2` and `power_marker_3`; sets `frequency_start`, `frequency_stop`, `frequency_span`, `frequency_center` and 3 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/autolab-project__autolab-drivers/",
   "upstream": {
     "repo_url": "https://github.com/autolab-project/autolab-drivers",
     "commit": "4b44dfba7444d1e8e8b5fd895fa304fa550ce882",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/autolab-project__autolab-drivers",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/autolab-project__autolab-drivers --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/autolab-project__autolab-drivers --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/umass-foundation-model__co-llm-agents",
   "package": "robots/umass-foundation-model__co-llm-agents",
   "mhs_package": "mhs/MHS/drivers/robots/umass-foundation-model__co-llm-agents",
-  "website": "https://mhs.openai4s.org",
+  "title": "TDW-MAT transport_challenge_MA (ThreeDWorld multi-agent transport)",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "TDW-MAT transport_challenge_MA (ThreeDWorld multi-agent transport), adapted from umass-foundation-model/co-llm-agents. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/umass-foundation-model__co-llm-agents/",
   "upstream": {
     "repo_url": "https://github.com/umass-foundation-model/co-llm-agents",
     "commit": "3e12dea925d735eefce33da71806ae9da6fcaf3f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/umass-foundation-model__co-llm-agents",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/umass-foundation-model__co-llm-agents --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/umass-foundation-model__co-llm-agents --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/liuskywalkerjskd__mujoco_iiwa7_r800",
   "package": "robots/liuskywalkerjskd__mujoco_iiwa7_r800",
   "mhs_package": "mhs/MHS/drivers/robots/liuskywalkerjskd__mujoco_iiwa7_r800",
-  "website": "https://mhs.openai4s.org",
+  "title": "KUKA LBR iiwa 7 R800 (MuJoCo MJCF)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "KUKA LBR iiwa 7 R800 (MuJoCo MJCF), adapted from liuskywalkerjskd/mujoco_iiwa7_r800. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/liuskywalkerjskd__mujoco_iiwa7_r800/",
   "upstream": {
     "repo_url": "https://github.com/liuskywalkerjskd/mujoco_iiwa7_r800",
     "commit": "bf300255e9b511b6ad43ab40727347033a2619dd",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/liuskywalkerjskd__mujoco_iiwa7_r800",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/liuskywalkerjskd__mujoco_iiwa7_r800 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/liuskywalkerjskd__mujoco_iiwa7_r800 --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/qcodes__qcodes_contrib_drivers",
   "package": "labs/qcodes__qcodes_contrib_drivers",
   "mhs_package": "mhs/MHS/drivers/labs/qcodes__qcodes_contrib_drivers",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs PM100D optical power meter (QCoDeS contrib driver)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Thorlabs PM100D optical power meter (QCoDeS contrib driver), adapted from qcodes/qcodes_contrib_drivers. It reads `power`, `attenuation`, `averaging`, `zero_value` and 1 more; sets `power_range` and `auto_range`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/qcodes__qcodes_contrib_drivers/",
   "upstream": {
     "repo_url": "https://github.com/qcodes/qcodes_contrib_drivers",
     "commit": "187164d608ed3a281fccdf3f68693d29b2d46a62",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/qcodes__qcodes_contrib_drivers",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/qcodes__qcodes_contrib_drivers --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/qcodes__qcodes_contrib_drivers --backend fake --mcp"
 }

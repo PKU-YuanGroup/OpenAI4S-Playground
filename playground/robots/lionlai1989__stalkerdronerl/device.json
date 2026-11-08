@@ -2,7 +2,11 @@
   "name": "robots/lionlai1989__stalkerdronerl",
   "package": "robots/lionlai1989__stalkerdronerl",
   "mhs_package": "mhs/MHS/drivers/robots/lionlai1989__stalkerdronerl",
-  "website": "https://mhs.openai4s.org",
+  "title": "StalkerDroneRL QuadcopterTrackingEnv (ROS 2 + Gazebo simulation)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "StalkerDroneRL QuadcopterTrackingEnv (ROS 2 + Gazebo simulation), adapted from lionlai1989/stalkerdronerl. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/lionlai1989__stalkerdronerl/",
   "upstream": {
     "repo_url": "https://github.com/lionlai1989/stalkerdronerl",
     "commit": "e34db1c6a4926d22b447aa1ef93e9bb0bad4793c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/lionlai1989__stalkerdronerl",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lionlai1989__stalkerdronerl --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lionlai1989__stalkerdronerl --backend fake --mcp"
 }

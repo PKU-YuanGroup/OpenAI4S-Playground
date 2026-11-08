@@ -2,7 +2,11 @@
   "name": "robots/catachiii__crl-humanoid-ros",
   "package": "robots/catachiii__crl-humanoid-ros",
   "mhs_package": "mhs/MHS/drivers/robots/catachiii__crl-humanoid-ros",
-  "website": "https://mhs.openai4s.org",
+  "title": "CRL Humanoid ROS Unitree G1 (MuJoCo scene)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "CRL Humanoid ROS Unitree G1 (MuJoCo scene), adapted from catachiii/crl-humanoid-ros. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/catachiii__crl-humanoid-ros/",
   "upstream": {
     "repo_url": "https://github.com/catachiii/crl-humanoid-ros",
     "commit": "31202ed7c73ab6b6735d0416274ee9d256ecdf02",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/catachiii__crl-humanoid-ros",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/catachiii__crl-humanoid-ros --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/catachiii__crl-humanoid-ros --backend fake --mcp"
 }

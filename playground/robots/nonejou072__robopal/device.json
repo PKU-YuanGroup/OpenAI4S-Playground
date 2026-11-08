@@ -2,7 +2,11 @@
   "name": "robots/nonejou072__robopal",
   "package": "robots/nonejou072__robopal",
   "mhs_package": "mhs/MHS/drivers/robots/nonejou072__robopal",
-  "website": "https://mhs.openai4s.org",
+  "title": "robopal DianaMed arm world",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "robopal DianaMed arm world, adapted from nonejou072/robopal. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/nonejou072__robopal/",
   "upstream": {
     "repo_url": "https://github.com/nonejou072/robopal",
     "commit": "df5a503657cb4772f5ec7e09d694c584b0d8e172",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/nonejou072__robopal",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nonejou072__robopal --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nonejou072__robopal --backend fake --mcp"
 }

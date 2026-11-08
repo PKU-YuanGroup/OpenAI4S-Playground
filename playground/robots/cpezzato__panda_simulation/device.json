@@ -2,7 +2,11 @@
   "name": "robots/cpezzato__panda_simulation",
   "package": "robots/cpezzato__panda_simulation",
   "mhs_package": "mhs/MHS/drivers/robots/cpezzato__panda_simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "Panda active-inference simulation",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Panda active-inference simulation, adapted from cpezzato/panda_simulation. It reads `read_joint_state` and `read_free_energy`; runs `set_joint1_effort`, `set_joint2_effort`, `set_joint3_effort`, `set_joint4_effort` and 3 more. `set_joint1_effort`: publish one effort command for panda_joint1 on /robot1/panda_joint1_controller/command; the AIC node may overwrite it, and while the world is paused no effort reaches the joint. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/cpezzato__panda_simulation/",
   "upstream": {
     "repo_url": "https://github.com/cpezzato/panda_simulation",
     "commit": "58e1675a372bfef5a30b4dfd6bd5c898f8c012c9",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/cpezzato__panda_simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/cpezzato__panda_simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/cpezzato__panda_simulation --backend fake --mcp"
 }

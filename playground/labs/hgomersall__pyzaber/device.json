@@ -2,7 +2,11 @@
   "name": "labs/hgomersall__pyzaber",
   "package": "labs/hgomersall__pyzaber",
   "mhs_package": "mhs/MHS/drivers/labs/hgomersall__pyzaber",
-  "website": "https://mhs.openai4s.org",
+  "title": "Zaber multiaxis linear slides (pyzaber)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Zaber multiaxis linear slides (pyzaber), adapted from hgomersall/pyzaber. It reads `x_mm`, `y_mm` and `z_mm`; runs `home`, `move_to_position` and `stop_motion`. `home`: home all three axes with the native home command (command 1); the clone's example homes x, y and z in turn. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/hgomersall__pyzaber/",
   "upstream": {
     "repo_url": "https://github.com/hgomersall/pyzaber",
     "commit": "1a3f1e712f3d5bb3dab8512cdfeda9d21244b374",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/hgomersall__pyzaber",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hgomersall__pyzaber --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hgomersall__pyzaber --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/abmorobotics__rlroverlab",
   "package": "robots/abmorobotics__rlroverlab",
   "mhs_package": "mhs/MHS/drivers/robots/abmorobotics__rlroverlab",
-  "website": "https://mhs.openai4s.org",
+  "title": "RLRoverLab AAU Rover navigation (Isaac Lab)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "RLRoverLab AAU Rover navigation (Isaac Lab), adapted from abmorobotics/rlroverlab. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/abmorobotics__rlroverlab/",
   "upstream": {
     "repo_url": "https://github.com/abmorobotics/rlroverlab",
     "commit": "578906ad5c3383087aeec038be82b87e05d4ee2c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/abmorobotics__rlroverlab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/abmorobotics__rlroverlab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/abmorobotics__rlroverlab --backend fake --mcp"
 }

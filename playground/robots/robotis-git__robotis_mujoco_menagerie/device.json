@@ -2,7 +2,11 @@
   "name": "robots/robotis-git__robotis_mujoco_menagerie",
   "package": "robots/robotis-git__robotis_mujoco_menagerie",
   "mhs_package": "mhs/MHS/drivers/robots/robotis-git__robotis_mujoco_menagerie",
-  "website": "https://mhs.openai4s.org",
+  "title": "ROBOTIS AI Worker FFW-BG2 (MuJoCo model)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "ROBOTIS AI Worker FFW-BG2 (MuJoCo model), adapted from robotis-git/robotis_mujoco_menagerie. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robotis-git__robotis_mujoco_menagerie/",
   "upstream": {
     "repo_url": "https://github.com/robotis-git/robotis_mujoco_menagerie",
     "commit": "d8344c0dbe7a00208d0301111523dde65efc174a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robotis-git__robotis_mujoco_menagerie",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotis-git__robotis_mujoco_menagerie --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotis-git__robotis_mujoco_menagerie --backend fake --mcp"
 }

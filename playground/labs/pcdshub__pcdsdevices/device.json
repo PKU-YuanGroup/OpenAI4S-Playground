@@ -2,7 +2,11 @@
   "name": "labs/pcdshub__pcdsdevices",
   "package": "labs/pcdshub__pcdsdevices",
   "mhs_package": "mhs/MHS/drivers/labs/pcdshub__pcdsdevices",
-  "website": "https://mhs.openai4s.org",
+  "title": "LCLS TPR trigger channel (pcdsdevices.TprTrigger)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "LCLS TPR trigger channel (pcdsdevices.TprTrigger), adapted from pcdshub/pcdsdevices. It reads `channel_enabled`, `trigger_enabled`, `eventrate` and `label`; sets `delay_ns` and `width_ns`; runs `set_trigger_enabled`. `set_trigger_enabled`: enable or disable the configured TPR channel, its trigger output, or both. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pcdshub__pcdsdevices/",
   "upstream": {
     "repo_url": "https://github.com/pcdshub/pcdsdevices",
     "commit": "d13b06eb53e6185088a7534ce0e17ab154463407",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pcdshub__pcdsdevices",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pcdshub__pcdsdevices --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pcdshub__pcdsdevices --backend fake --mcp"
 }

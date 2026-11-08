@@ -2,7 +2,11 @@
   "name": "robots/nicrusso7__rex-gym",
   "package": "robots/nicrusso7__rex-gym",
   "mhs_package": "mhs/MHS/drivers/robots/nicrusso7__rex-gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "Rex-gym RexWalk-v0 (quadruped walk simulation)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Rex-gym RexWalk-v0 (quadruped walk simulation), adapted from nicrusso7/rex-gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/nicrusso7__rex-gym/",
   "upstream": {
     "repo_url": "https://github.com/nicrusso7/rex-gym",
     "commit": "26663048bd3c3da307714da4458b1a2a9dc81824",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/nicrusso7__rex-gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nicrusso7__rex-gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nicrusso7__rex-gym --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/tiagocoutinho__julabo",
   "package": "labs/tiagocoutinho__julabo",
   "mhs_package": "mhs/MHS/drivers/labs/tiagocoutinho__julabo",
-  "website": "https://mhs.openai4s.org",
+  "title": "JULABO circulator (julabo.JulaboCF)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "JULABO circulator (julabo.JulaboCF), adapted from tiagocoutinho/julabo. It reads `bath_temperature`, `external_temperature`, `active_set_point_channel`, `running` and 1 more; sets `setpoint`; runs `start_circulation` and `stop_circulation`. `start_circulation`: start the circulator (the native start). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/tiagocoutinho__julabo/",
   "upstream": {
     "repo_url": "https://github.com/tiagocoutinho/julabo",
     "commit": "650da2138459d93e3bfdb8db17ce0bd161c6a9a7",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/tiagocoutinho__julabo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__julabo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__julabo --backend fake --mcp"
 }

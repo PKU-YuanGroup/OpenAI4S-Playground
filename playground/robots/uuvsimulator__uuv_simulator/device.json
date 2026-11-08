@@ -2,7 +2,11 @@
   "name": "robots/uuvsimulator__uuv_simulator",
   "package": "robots/uuvsimulator__uuv_simulator",
   "mhs_package": "mhs/MHS/drivers/robots/uuvsimulator__uuv_simulator",
-  "website": "https://mhs.openai4s.org",
+  "title": "UUV Simulator underwater current environment",
+  "category": "Simulation",
+  "topic": "marine robotics",
+  "intro": "UUV Simulator underwater current environment, adapted from uuvsimulator/uuv_simulator. It reads `flow_velocity` and `read_current_velocity`; runs `set_current_velocity`, `set_horizontal_angle`, `set_vertical_angle` and `zero_current`. `set_current_velocity`: set the simulated current velocity and direction model means. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/uuvsimulator__uuv_simulator/",
   "upstream": {
     "repo_url": "https://github.com/uuvsimulator/uuv_simulator",
     "commit": "bfb40cb153684a0703173117b6bbf4258e8e71c5",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/uuvsimulator__uuv_simulator",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/uuvsimulator__uuv_simulator --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/uuvsimulator__uuv_simulator --backend fake --mcp"
 }

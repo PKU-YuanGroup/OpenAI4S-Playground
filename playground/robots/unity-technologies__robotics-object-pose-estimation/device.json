@@ -2,7 +2,11 @@
   "name": "robots/unity-technologies__robotics-object-pose-estimation",
   "package": "robots/unity-technologies__robotics-object-pose-estimation",
   "mhs_package": "mhs/MHS/drivers/robots/unity-technologies__robotics-object-pose-estimation",
-  "website": "https://mhs.openai4s.org",
+  "title": "UR3 pick-and-place planner (Unity object pose estimation demo)",
+  "category": "Other devices",
+  "topic": null,
+  "intro": "UR3 pick-and-place planner (Unity object pose estimation demo), adapted from unity-technologies/robotics-object-pose-estimation. It runs `plan_pick_and_place`. `plan_pick_and_place`: plan (never execute) the five UR3 pick-and-place trajectories; executed is false. A command: it changes the node's shared planner, so never call while Unity plans; a zero quaternion is refused. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/unity-technologies__robotics-object-pose-estimation/",
   "upstream": {
     "repo_url": "https://github.com/unity-technologies/robotics-object-pose-estimation",
     "commit": "45156479bee5d308085022aa8f20edc0c6a3bccc",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/unity-technologies__robotics-object-pose-estimation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unity-technologies__robotics-object-pose-estimation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unity-technologies__robotics-object-pose-estimation --backend fake --mcp"
 }

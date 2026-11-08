@@ -2,7 +2,11 @@
   "name": "robots/ipa320__cob_simulation",
   "package": "robots/ipa320__cob_simulation",
   "mhs_package": "mhs/MHS/drivers/robots/ipa320__cob_simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "Care-O-bot Gazebo simulation scene",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Care-O-bot Gazebo simulation scene, adapted from ipa320/cob_simulation. It reads `model_names` and `robot_pose`; runs `delete_model` and `publish_model_state`. `delete_model`: call the acknowledged gazebo_msgs/DeleteModel service to remove one model from the running Gazebo world; the output is the service's own success and status text. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ipa320__cob_simulation/",
   "upstream": {
     "repo_url": "https://github.com/ipa320/cob_simulation",
     "commit": "907144342c0351c9427ddd960ef4dfe013847113",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ipa320__cob_simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ipa320__cob_simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ipa320__cob_simulation --backend fake --mcp"
 }

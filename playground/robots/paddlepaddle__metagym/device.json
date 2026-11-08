@@ -2,7 +2,11 @@
   "name": "robots/paddlepaddle__metagym",
   "package": "robots/paddlepaddle__metagym",
   "mhs_package": "mhs/MHS/drivers/robots/paddlepaddle__metagym",
-  "website": "https://mhs.openai4s.org",
+  "title": "MetaGym Bandits (bandits-v0)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "MetaGym Bandits (bandits-v0), adapted from paddlepaddle/metagym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/paddlepaddle__metagym/",
   "upstream": {
     "repo_url": "https://github.com/paddlepaddle/metagym",
     "commit": "ca724c22fd0c2ade8ec905edc688a1befdf98a3c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/paddlepaddle__metagym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/paddlepaddle__metagym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/paddlepaddle__metagym --backend fake --mcp"
 }

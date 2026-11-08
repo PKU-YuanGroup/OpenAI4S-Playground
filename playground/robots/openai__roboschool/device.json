@@ -2,7 +2,11 @@
   "name": "robots/openai__roboschool",
   "package": "robots/openai__roboschool",
   "mhs_package": "mhs/MHS/drivers/robots/openai__roboschool",
-  "website": "https://mhs.openai4s.org",
+  "title": "Roboschool InvertedPendulum-v1 (OpenAI Roboschool)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Roboschool InvertedPendulum-v1 (OpenAI Roboschool), adapted from openai/roboschool. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/openai__roboschool/",
   "upstream": {
     "repo_url": "https://github.com/openai/roboschool",
     "commit": "d32bcb2b35b94168b5ce27233ca62f3c8678886f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/openai__roboschool",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__roboschool --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__roboschool --backend fake --mcp"
 }

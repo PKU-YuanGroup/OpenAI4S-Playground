@@ -2,7 +2,11 @@
   "name": "robots/lihuang3__ur5_ros-gazebo",
   "package": "robots/lihuang3__ur5_ros-gazebo",
   "mhs_package": "mhs/MHS/drivers/robots/lihuang3__ur5_ros-gazebo",
-  "website": "https://mhs.openai4s.org",
+  "title": "UR5 vacuum gripper array (Gazebo)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "UR5 vacuum gripper array (Gazebo), adapted from lihuang3/ur5_ros-gazebo. It reads `read_grasping`, `read_tracker` and `read_block_poses`; runs `vacuum_gripper_0_on`, `vacuum_gripper_1_on`, `vacuum_gripper_2_on`, `vacuum_gripper_3_on` and 14 more. `vacuum_gripper_0_on`: call the acknowledged /ur5/vacuum_gripper/on std_srvs/Empty service; the empty reply confirms only that the plugin handler returned. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/lihuang3__ur5_ros-gazebo/",
   "upstream": {
     "repo_url": "https://github.com/lihuang3/ur5_ros-gazebo",
     "commit": "2f7b9b056bb41b9412f86589a60e25ba2816b78b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/lihuang3__ur5_ros-gazebo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lihuang3__ur5_ros-gazebo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lihuang3__ur5_ros-gazebo --backend fake --mcp"
 }

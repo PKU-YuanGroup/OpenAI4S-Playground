@@ -2,7 +2,11 @@
   "name": "labs/abduznik__instrumation",
   "package": "labs/abduznik__instrumation",
   "mhs_package": "mhs/MHS/drivers/labs/abduznik__instrumation",
-  "website": "https://mhs.openai4s.org",
+  "title": "RIGOL DS1054Z oscilloscope",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "RIGOL DS1054Z oscilloscope, adapted from abduznik/instrumation. It reads `identity`, `sample_rate`, `timebase_mode`, `timebase_offset` and 5 more; sets `acquire_type`, `timebase_scale`, `trigger_sweep`, `edge_trigger_source` and 6 more; runs `run`, `force_trigger` and `stop_acquisition`. `run`: start the acquisition (:RUN) and report the trigger status. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/abduznik__instrumation/",
   "upstream": {
     "repo_url": "https://github.com/abduznik/instrumation",
     "commit": "483d6d5d0b6984f0e261e340363f784f6e2dd2f8",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/abduznik__instrumation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/abduznik__instrumation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/abduznik__instrumation --backend fake --mcp"
 }

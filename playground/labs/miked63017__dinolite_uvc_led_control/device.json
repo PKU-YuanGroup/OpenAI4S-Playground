@@ -2,7 +2,11 @@
   "name": "labs/miked63017__dinolite_uvc_led_control",
   "package": "labs/miked63017__dinolite_uvc_led_control",
   "mhs_package": "mhs/MHS/drivers/labs/miked63017__dinolite_uvc_led_control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Dino-Lite UVC LED control (dinoliteuvccontrol.DinoLiteUVCControl)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Dino-Lite UVC LED control (dinoliteuvccontrol.DinoLiteUVCControl), adapted from miked63017/dinolite_uvc_led_control. It reads `main_led_on`, `flc_on`, `flc_brightness`, `auto_exposure` and 3 more; runs `set_illumination`, `set_flc_brightness`, `toggle_flc_led`, `toggle_auto_exposure` and 2 more. `set_illumination`: turn the main LED or the FLC illumination on or off. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/miked63017__dinolite_uvc_led_control/",
   "upstream": {
     "repo_url": "https://github.com/miked63017/dinolite_uvc_led_control",
     "commit": "f70a4cedfa1f04fa15d5cdffe2d382851291248a",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/miked63017__dinolite_uvc_led_control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/miked63017__dinolite_uvc_led_control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/miked63017__dinolite_uvc_led_control --backend fake --mcp"
 }

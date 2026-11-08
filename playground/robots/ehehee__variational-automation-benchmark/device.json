@@ -2,7 +2,11 @@
   "name": "robots/ehehee__variational-automation-benchmark",
   "package": "robots/ehehee__variational-automation-benchmark",
   "mhs_package": "mhs/MHS/drivers/robots/ehehee__variational-automation-benchmark",
-  "website": "https://mhs.openai4s.org",
+  "title": "Variational Automation Benchmark single-arm environment",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "Variational Automation Benchmark single-arm environment, adapted from ehehee/variational-automation-benchmark. It reads `observation`, `reward`, `success`, `completion_rate` and 5 more; runs `step` and `reset_world`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ehehee__variational-automation-benchmark/",
   "upstream": {
     "repo_url": "https://github.com/ehehee/variational-automation-benchmark",
     "commit": "edcc4bf005446839c0c6f43f8a3bf416702af030",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ehehee__variational-automation-benchmark",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ehehee__variational-automation-benchmark --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ehehee__variational-automation-benchmark --backend fake --mcp"
 }

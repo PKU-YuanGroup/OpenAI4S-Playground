@@ -2,7 +2,11 @@
   "name": "labs/rwb27__openflexure_microscope_software",
   "package": "labs/rwb27__openflexure_microscope_software",
   "mhs_package": "mhs/MHS/drivers/labs/rwb27__openflexure_microscope_software",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenFlexure Microscope (openflexure_microscope.microscope:Microscope)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "OpenFlexure Microscope (openflexure_microscope.microscope:Microscope), adapted from rwb27/openflexure_microscope_software. It reads `resolution`, `shutter_speed` and `awb_mode`; sets `zoom`; runs `autofocus_scan`. `autofocus_scan`: run the microscope's autofocus over stage z positions and report the sharpness at each. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/rwb27__openflexure_microscope_software/",
   "upstream": {
     "repo_url": "https://github.com/rwb27/openflexure_microscope_software",
     "commit": "991e1b72b94d796a05caf4c896c0b001ea5a2c97",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/rwb27__openflexure_microscope_software",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/rwb27__openflexure_microscope_software --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/rwb27__openflexure_microscope_software --backend fake --mcp"
 }

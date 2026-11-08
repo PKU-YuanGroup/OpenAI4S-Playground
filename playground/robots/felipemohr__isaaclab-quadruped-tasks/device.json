@@ -2,7 +2,11 @@
   "name": "robots/felipemohr__isaaclab-quadruped-tasks",
   "package": "robots/felipemohr__isaaclab-quadruped-tasks",
   "mhs_package": "mhs/MHS/drivers/robots/felipemohr__isaaclab-quadruped-tasks",
-  "website": "https://mhs.openai4s.org",
+  "title": "Isaac Lab ANYmal D blind flat (Isaac-Quadruped-AnymalD-Blind-Flat-v0)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Isaac Lab ANYmal D blind flat (Isaac-Quadruped-AnymalD-Blind-Flat-v0), adapted from felipemohr/isaaclab-quadruped-tasks. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/felipemohr__isaaclab-quadruped-tasks/",
   "upstream": {
     "repo_url": "https://github.com/felipemohr/isaaclab-quadruped-tasks",
     "commit": "6d2f0b39c162330f9697db132238b64855cb6ae3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/felipemohr__isaaclab-quadruped-tasks",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/felipemohr__isaaclab-quadruped-tasks --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/felipemohr__isaaclab-quadruped-tasks --backend fake --mcp"
 }

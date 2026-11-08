@@ -2,7 +2,11 @@
   "name": "labs/dgretton__pyhamilton",
   "package": "labs/dgretton__pyhamilton",
   "mhs_package": "mhs/MHS/drivers/labs/dgretton__pyhamilton",
-  "website": "https://mhs.openai4s.org",
+  "title": "Hamilton liquid handler (pyhamilton.HamiltonInterface)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Hamilton liquid handler (pyhamilton.HamiltonInterface), adapted from dgretton/pyhamilton. It reads `is_open` and `server_exited`; runs `initialize`, `aspirate`, `dispense`, `move_plate` and 3 more. `initialize`: initialize the Hamilton robot (the upstream INITIALIZE command) and wait for its response. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/dgretton__pyhamilton/",
   "upstream": {
     "repo_url": "https://github.com/dgretton/pyhamilton",
     "commit": "65938d05cc8f5a5a0d3186648add560439ab1cdd",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/dgretton__pyhamilton",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/dgretton__pyhamilton --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/dgretton__pyhamilton --backend fake --mcp"
 }

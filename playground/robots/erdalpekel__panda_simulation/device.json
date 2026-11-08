@@ -2,7 +2,11 @@
   "name": "robots/erdalpekel__panda_simulation",
   "package": "robots/erdalpekel__panda_simulation",
   "mhs_package": "mhs/MHS/drivers/robots/erdalpekel__panda_simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "Panda arm in Gazebo simulation",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Panda arm in Gazebo simulation, adapted from erdalpekel/panda_simulation. It reads `read_joint_states`; runs `command_joint_positions` and `stop_robot`. `command_joint_positions`: publish seven arm joint positions to the custom joint-position controller; the topic has no acknowledgement, so the output reports publication only. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/erdalpekel__panda_simulation/",
   "upstream": {
     "repo_url": "https://github.com/erdalpekel/panda_simulation",
     "commit": "70b6a9d7a426a9cc4dd3e41b2a61f817f1531f4b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/erdalpekel__panda_simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erdalpekel__panda_simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erdalpekel__panda_simulation --backend fake --mcp"
 }

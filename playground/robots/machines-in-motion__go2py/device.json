@@ -2,7 +2,11 @@
   "name": "robots/machines-in-motion__go2py",
   "package": "robots/machines-in-motion__go2py",
   "mhs_package": "mhs/MHS/drivers/robots/machines-in-motion__go2py",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree Go2 (Go2Py GO2Real)",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "Unitree Go2 (Go2Py GO2Real), adapted from machines-in-motion/go2py. It reads `joint_positions`, `joint_velocities`, `joint_torques`, `motor_temperatures` and 6 more; runs `stop_motion`, `drive` and `command_joints`. `stop_motion`: stop all motion on the resource with a declared deceleration profile and report the stopping position. This capability is always cancellable=false and is exempt from rate limiting. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/machines-in-motion__go2py/",
   "upstream": {
     "repo_url": "https://github.com/machines-in-motion/go2py",
     "commit": "eff240b82b0ff6dae6ba5ee934a381f38fe64c0d",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/machines-in-motion__go2py",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/machines-in-motion__go2py --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/machines-in-motion__go2py --backend fake --mcp"
 }

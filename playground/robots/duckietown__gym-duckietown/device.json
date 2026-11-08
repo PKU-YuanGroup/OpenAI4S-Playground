@@ -2,7 +2,11 @@
   "name": "robots/duckietown__gym-duckietown",
   "package": "robots/duckietown__gym-duckietown",
   "mhs_package": "mhs/MHS/drivers/robots/duckietown__gym-duckietown",
-  "website": "https://mhs.openai4s.org",
+  "title": "Gym-Duckietown MultiMap-v0 (two-map camera simulator)",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "Gym-Duckietown MultiMap-v0 (two-map camera simulator), adapted from duckietown/gym-duckietown. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/duckietown__gym-duckietown/",
   "upstream": {
     "repo_url": "https://github.com/duckietown/gym-duckietown",
     "commit": "c76a7fec7f739db4f624f40ca83ce99383665558",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/duckietown__gym-duckietown",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/duckietown__gym-duckietown --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/duckietown__gym-duckietown --backend fake --mcp"
 }

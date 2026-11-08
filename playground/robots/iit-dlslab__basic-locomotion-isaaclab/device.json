@@ -2,7 +2,11 @@
   "name": "robots/iit-dlslab__basic-locomotion-isaaclab",
   "package": "robots/iit-dlslab__basic-locomotion-isaaclab",
   "mhs_package": "mhs/MHS/drivers/robots/iit-dlslab__basic-locomotion-isaaclab",
-  "website": "https://mhs.openai4s.org",
+  "title": "Isaac Lab Locomotion-Go2-Flat quadruped locomotion task",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Isaac Lab Locomotion-Go2-Flat quadruped locomotion task, adapted from iit-dlslab/basic-locomotion-isaaclab. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/iit-dlslab__basic-locomotion-isaaclab/",
   "upstream": {
     "repo_url": "https://github.com/iit-dlslab/basic-locomotion-isaaclab",
     "commit": "8bda7c7df8b223acf649e0b212635a92c8528900",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/iit-dlslab__basic-locomotion-isaaclab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/iit-dlslab__basic-locomotion-isaaclab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/iit-dlslab__basic-locomotion-isaaclab --backend fake --mcp"
 }

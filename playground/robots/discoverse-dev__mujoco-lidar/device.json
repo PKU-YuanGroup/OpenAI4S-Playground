@@ -2,7 +2,11 @@
   "name": "robots/discoverse-dev__mujoco-lidar",
   "package": "robots/discoverse-dev__mujoco-lidar",
   "mhs_package": "mhs/MHS/drivers/robots/discoverse-dev__mujoco-lidar",
-  "website": "https://mhs.openai4s.org",
+  "title": "MuJoCo-LiDAR Unitree G1 scene (MuJoCo model)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "MuJoCo-LiDAR Unitree G1 scene (MuJoCo model), adapted from discoverse-dev/mujoco-lidar. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/discoverse-dev__mujoco-lidar/",
   "upstream": {
     "repo_url": "https://github.com/discoverse-dev/mujoco-lidar",
     "commit": "e6b879df4b96daaed30ef10fe02650d29048fa9b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/discoverse-dev__mujoco-lidar",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/discoverse-dev__mujoco-lidar --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/discoverse-dev__mujoco-lidar --backend fake --mcp"
 }

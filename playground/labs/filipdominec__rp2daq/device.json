@@ -2,7 +2,11 @@
   "name": "labs/filipdominec__rp2daq",
   "package": "labs/filipdominec__rp2daq",
   "mhs_package": "mhs/MHS/drivers/labs/filipdominec__rp2daq",
-  "website": "https://mhs.openai4s.org",
+  "title": "RP2DAQ board (rp2daq.Rp2daq)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "RP2DAQ board (rp2daq.Rp2daq), adapted from filipdominec/rp2daq. It reads `adc_mean`, `stepper_position` and `stepper_moving`; sets `gpio_pin` and `gpio_level`; runs `adc_sample`, `pwm_set`, `stepper_init`, `stepper_move` and 1 more. `adc_sample`: capture one ADC block and return the mean raw count. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/filipdominec__rp2daq/",
   "upstream": {
     "repo_url": "https://github.com/filipdominec/rp2daq",
     "commit": "7744f34811d1b3722d30e6efd66205215405fe60",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/filipdominec__rp2daq",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/filipdominec__rp2daq --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/filipdominec__rp2daq --backend fake --mcp"
 }

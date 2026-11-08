@@ -2,7 +2,11 @@
   "name": "robots/jacopopan__aerial-autonomy-stack",
   "package": "robots/jacopopan__aerial-autonomy-stack",
   "mhs_package": "mhs/MHS/drivers/robots/jacopopan__aerial-autonomy-stack",
-  "website": "https://mhs.openai4s.org",
+  "title": "Aerial Autonomy Stack AASEnv-v0 (Gymnasium)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "Aerial Autonomy Stack AASEnv-v0 (Gymnasium), adapted from jacopopan/aerial-autonomy-stack. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/jacopopan__aerial-autonomy-stack/",
   "upstream": {
     "repo_url": "https://github.com/jacopopan/aerial-autonomy-stack",
     "commit": "bf1ca32ac8b13339da4b9bce742f46fcb9b5567c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jacopopan__aerial-autonomy-stack",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jacopopan__aerial-autonomy-stack --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jacopopan__aerial-autonomy-stack --backend fake --mcp"
 }

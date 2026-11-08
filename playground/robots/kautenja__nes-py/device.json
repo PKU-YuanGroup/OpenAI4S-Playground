@@ -2,7 +2,11 @@
   "name": "robots/kautenja__nes-py",
   "package": "robots/kautenja__nes-py",
   "mhs_package": "mhs/MHS/drivers/robots/kautenja__nes-py",
-  "website": "https://mhs.openai4s.org",
+  "title": "nes-py NES environment",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "nes-py NES environment, adapted from kautenja/nes-py. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/kautenja__nes-py/",
   "upstream": {
     "repo_url": "https://github.com/kautenja/nes-py",
     "commit": "8d27b099f24a57afaac7339fab7ec0f1f96a59c8",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/kautenja__nes-py",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kautenja__nes-py --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kautenja__nes-py --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/hrosiak__esp301",
   "package": "labs/hrosiak__esp301",
   "mhs_package": "mhs/MHS/drivers/labs/hrosiak__esp301",
-  "website": "https://mhs.openai4s.org",
+  "title": "Newport ESP 301 stepper motion controller (esp.esp)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Newport ESP 301 stepper motion controller (esp.esp), adapted from hrosiak/esp301. It reads `position` and `last_error`; sets `target_position`; runs `reset_axis`. `reset_axis`: reset the served axis with the upstream reset (OR, WS0) and report whether the controller returns no error afterwards. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/hrosiak__esp301/",
   "upstream": {
     "repo_url": "https://github.com/hrosiak/esp301",
     "commit": "b0d1921faf37a8afcceee73d2e9a38f2639adc79",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/hrosiak__esp301",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hrosiak__esp301 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hrosiak__esp301 --backend fake --mcp"
 }

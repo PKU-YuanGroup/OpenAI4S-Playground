@@ -2,7 +2,11 @@
   "name": "labs/complight__fisbareadybeam",
   "package": "labs/complight__fisbareadybeam",
   "mhs_package": "mhs/MHS/drivers/labs/complight__fisbareadybeam",
-  "website": "https://mhs.openai4s.org",
+  "title": "Fisba ReadyBeam multicolor laser module",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Fisba ReadyBeam multicolor laser module, adapted from complight/fisbareadybeam. It reads `device_status` and `device_type`; sets `brightness`; runs `lasers_off`. `lasers_off`: switch every laser channel off (all three at 0 percent), the safe state of the module. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/complight__fisbareadybeam/",
   "upstream": {
     "repo_url": "https://github.com/complight/fisbareadybeam",
     "commit": "65b73a79aa1fe3eb10c809246a40e44449780492",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/complight__fisbareadybeam",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/complight__fisbareadybeam --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/complight__fisbareadybeam --backend fake --mcp"
 }

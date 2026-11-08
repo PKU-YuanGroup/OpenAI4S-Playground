@@ -2,7 +2,11 @@
   "name": "robots/dartsim__gym-dart",
   "package": "robots/dartsim__gym-dart",
   "mhs_package": "mhs/MHS/drivers/robots/dartsim__gym-dart",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-dart DartCartPole-v0 (DART cart-pole)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "gym-dart DartCartPole-v0 (DART cart-pole), adapted from dartsim/gym-dart. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/dartsim__gym-dart/",
   "upstream": {
     "repo_url": "https://github.com/dartsim/gym-dart",
     "commit": "bf915eaa3baa70a3a4d0fd42e024694e7825d5fe",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/dartsim__gym-dart",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dartsim__gym-dart --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dartsim__gym-dart --backend fake --mcp"
 }

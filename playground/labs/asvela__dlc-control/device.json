@@ -2,7 +2,11 @@
   "name": "labs/asvela__dlc-control",
   "package": "labs/asvela__dlc-control",
   "mhs_package": "mhs/MHS/drivers/labs/asvela__dlc-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Toptica DLCpro laser controller (dlccontrol.DLCcontrol)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Toptica DLCpro laser controller (dlccontrol.DLCcontrol), adapted from asvela/dlc-control. It reads `emission`, `emission_button`, `wavelength_actual`, `temp_actual` and 3 more; sets `current_enabled`, `wavelength_setpoint`, `temp_setpoint`, `scan_enabled` and 5 more; runs `emission_off`. `emission_off`: disable the laser diode current (the documented emission off control). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/asvela__dlc-control/",
   "upstream": {
     "repo_url": "https://github.com/asvela/dlc-control",
     "commit": "eba98c139581e73dce32c0b196f41b253f6009f8",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/asvela__dlc-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/asvela__dlc-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/asvela__dlc-control --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/plasmon360__python_newport_1918_powermeter",
   "package": "labs/plasmon360__python_newport_1918_powermeter",
   "mhs_package": "mhs/MHS/drivers/labs/plasmon360__python_newport_1918_powermeter",
-  "website": "https://mhs.openai4s.org",
+  "title": "Newport 1918-C optical power meter (newport_1918c.Newport_1918c)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Newport 1918-C optical power meter (newport_1918c.Newport_1918c), adapted from plasmon360/python_newport_1918_powermeter. It reads `serial_number` and `model_number`; sets `wavelength_nm`; runs `measure_intensity`. `measure_intensity`: measure optical or radiant intensity at a declared wavelength or channel and return the value with its unit and integration time. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/plasmon360__python_newport_1918_powermeter/",
   "upstream": {
     "repo_url": "https://github.com/plasmon360/python_newport_1918_powermeter",
     "commit": "5c8ae02c1f9d412c0cbabec39141e99393e0f048",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/plasmon360__python_newport_1918_powermeter",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/plasmon360__python_newport_1918_powermeter --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/plasmon360__python_newport_1918_powermeter --backend fake --mcp"
 }

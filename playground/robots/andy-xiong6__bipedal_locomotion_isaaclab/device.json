@@ -2,7 +2,11 @@
   "name": "robots/andy-xiong6__bipedal_locomotion_isaaclab",
   "package": "robots/andy-xiong6__bipedal_locomotion_isaaclab",
   "mhs_package": "mhs/MHS/drivers/robots/andy-xiong6__bipedal_locomotion_isaaclab",
-  "website": "https://mhs.openai4s.org",
+  "title": "Pointfoot blind flat locomotion task (Isaac Lab / Isaac Sim)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Pointfoot blind flat locomotion task (Isaac Lab / Isaac Sim), adapted from andy-xiong6/bipedal_locomotion_isaaclab. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/andy-xiong6__bipedal_locomotion_isaaclab/",
   "upstream": {
     "repo_url": "https://github.com/andy-xiong6/bipedal_locomotion_isaaclab",
     "commit": "748f879e099aaa3d3d19437a7eed48c9a72b1e28",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/andy-xiong6__bipedal_locomotion_isaaclab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andy-xiong6__bipedal_locomotion_isaaclab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andy-xiong6__bipedal_locomotion_isaaclab --backend fake --mcp"
 }

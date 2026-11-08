@@ -2,7 +2,11 @@
   "name": "labs/kletternaut__scopemcp",
   "package": "labs/kletternaut__scopemcp",
   "mhs_package": "mhs/MHS/drivers/labs/kletternaut__scopemcp",
-  "website": "https://mhs.openai4s.org",
+  "title": "Owon/Abestop DS1102 oscilloscope (ds1102_mcp.ScopeController)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Owon/Abestop DS1102 oscilloscope (ds1102_mcp.ScopeController), adapted from kletternaut/scopemcp. It reads `instrument_model`, `run_status`, `channel1_frequency_hz`, `channel1_offset_raw` and 4 more; sets `channel1_scale`, `channel1_coupling`, `channel1_offset_v`, `horizontal_scale` and 4 more; runs `autoset`, `run` and `stop_acquisition`. `autoset`: run the scope's automatic setup (:AUToset on). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/kletternaut__scopemcp/",
   "upstream": {
     "repo_url": "https://github.com/kletternaut/scopemcp",
     "commit": "a932b777694d7bfc48c821c3afef7e3eb2da3f0e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/kletternaut__scopemcp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kletternaut__scopemcp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kletternaut__scopemcp --backend fake --mcp"
 }

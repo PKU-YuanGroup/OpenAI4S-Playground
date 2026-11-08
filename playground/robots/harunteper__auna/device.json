@@ -2,7 +2,11 @@
   "name": "robots/harunteper__auna",
   "package": "robots/harunteper__auna",
   "mhs_package": "mhs/MHS/drivers/robots/harunteper__auna",
-  "website": "https://mhs.openai4s.org",
+  "title": "AuNa Gazebo Ackermann race car",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "AuNa Gazebo Ackermann race car, adapted from harunteper/auna. It reads `read_velocity_source`; runs `select_velocity_source`, `publish_teleop_velocity` and `stop_velocity_source`. `select_velocity_source`: select one configured multiplexer input source. Selecting OFF stops forwarding and makes the timer publish zero commands; selecting a motion source can immediately re-publish that source's cached last command. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/harunteper__auna/",
   "upstream": {
     "repo_url": "https://github.com/harunteper/auna",
     "commit": "1d8bb13d574deca84c42e0bc9a0ff04d470d371f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/harunteper__auna",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/harunteper__auna --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/harunteper__auna --backend fake --mcp"
 }

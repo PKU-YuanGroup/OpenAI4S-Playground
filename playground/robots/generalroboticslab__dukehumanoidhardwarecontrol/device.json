@@ -2,7 +2,11 @@
   "name": "robots/generalroboticslab__dukehumanoidhardwarecontrol",
   "package": "robots/generalroboticslab__dukehumanoidhardwarecontrol",
   "mhs_package": "mhs/MHS/drivers/robots/generalroboticslab__dukehumanoidhardwarecontrol",
-  "website": "https://mhs.openai4s.org",
+  "title": "Duke Humanoid V1 (biped_controller.BipedController)",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "Duke Humanoid V1 (biped_controller.BipedController), adapted from generalroboticslab/dukehumanoidhardwarecontrol. It reads `joint_positions`, `joint_velocities`, `joint_currents`, `dof_position_target` and 6 more; sets `command_forward`, `command_lateral` and `command_yaw`; runs `control_step` and `halt`. `control_step`: run one closed-loop control step: update the command, refresh the observation, compute the policy action and write the motor target. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/generalroboticslab__dukehumanoidhardwarecontrol/",
   "upstream": {
     "repo_url": "https://github.com/generalroboticslab/dukehumanoidhardwarecontrol",
     "commit": "3a9c3cd4c8daf6b3ffe2e41768360d0515f2df55",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/generalroboticslab__dukehumanoidhardwarecontrol",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/generalroboticslab__dukehumanoidhardwarecontrol --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/generalroboticslab__dukehumanoidhardwarecontrol --backend fake --mcp"
 }

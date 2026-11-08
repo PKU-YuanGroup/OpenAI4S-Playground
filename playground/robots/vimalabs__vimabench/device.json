@@ -2,7 +2,11 @@
   "name": "robots/vimalabs__vimabench",
   "package": "robots/vimalabs__vimabench",
   "mhs_package": "mhs/MHS/drivers/robots/vimalabs__vimabench",
-  "website": "https://mhs.openai4s.org",
+  "title": "VIMA-Bench multimodal robot manipulation benchmark (PyBullet)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "VIMA-Bench multimodal robot manipulation benchmark (PyBullet), adapted from vimalabs/vimabench. It reads `observation`, `reward`, `terminated`, `truncated` and 3 more; runs `step`, `reset_world` and `seed_world`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/vimalabs__vimabench/",
   "upstream": {
     "repo_url": "https://github.com/vimalabs/vimabench",
     "commit": "97e0af11e126fd477c9d81eeabfb6c739021c680",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/vimalabs__vimabench",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vimalabs__vimabench --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vimalabs__vimabench --backend fake --mcp"
 }

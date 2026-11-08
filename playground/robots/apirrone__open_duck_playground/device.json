@@ -2,7 +2,11 @@
   "name": "robots/apirrone__open_duck_playground",
   "package": "robots/apirrone__open_duck_playground",
   "mhs_package": "mhs/MHS/drivers/robots/apirrone__open_duck_playground",
-  "website": "https://mhs.openai4s.org",
+  "title": "Open Duck Mini V2 (MuJoCo rough terrain, backlash)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Open Duck Mini V2 (MuJoCo rough terrain, backlash), adapted from apirrone/open_duck_playground. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/apirrone__open_duck_playground/",
   "upstream": {
     "repo_url": "https://github.com/apirrone/open_duck_playground",
     "commit": "b9be205ac64488c23504ca42e5ec790337adeec3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/apirrone__open_duck_playground",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/apirrone__open_duck_playground --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/apirrone__open_duck_playground --backend fake --mcp"
 }

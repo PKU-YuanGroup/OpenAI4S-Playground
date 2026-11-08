@@ -2,7 +2,11 @@
   "name": "labs/charkster__lecroy",
   "package": "labs/charkster__lecroy",
   "mhs_package": "mhs/MHS/drivers/labs/charkster__lecroy",
-  "website": "https://mhs.openai4s.org",
+  "title": "LeCroy oscilloscope (lecroy.lecroy)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "LeCroy oscilloscope (lecroy.lecroy), adapted from charkster/lecroy. It reads `trigger_source`, `trigger_type`, `analog_channels`, `digital_channels` and 1 more; sets `horizontal_scale`, `trigger_level`, `trigger_horizontal_offset`, `trigger_slope` and 1 more; runs `trigger`, `force`, `reset_instrument`, `measure` and 1 more. `trigger`: configure the edge trigger level, horizontal offset, slope and mode. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/charkster__lecroy/",
   "upstream": {
     "repo_url": "https://github.com/charkster/lecroy",
     "commit": "da08c5168d8c63809d60b4c8b4b3529cbaf3de18",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/charkster__lecroy",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/charkster__lecroy --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/charkster__lecroy --backend fake --mcp"
 }

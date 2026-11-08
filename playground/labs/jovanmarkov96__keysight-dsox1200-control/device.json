@@ -2,7 +2,11 @@
   "name": "labs/jovanmarkov96__keysight-dsox1200-control",
   "package": "labs/jovanmarkov96__keysight-dsox1200-control",
   "mhs_package": "mhs/MHS/drivers/labs/jovanmarkov96__keysight-dsox1200-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keysight InfiniiVision 1200 X-Series oscilloscope (keysight_dsox1200.DSOX1200)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keysight InfiniiVision 1200 X-Series oscilloscope (keysight_dsox1200.DSOX1200), adapted from jovanmarkov96/keysight-dsox1200-control. It reads `identity`, `channel1_probe_ratio`, `channel1_invert`, `timebase_mode` and 7 more; sets `channel1_display`, `channel1_coupling`, `channel1_scale_v_per_div`, `channel1_offset_v` and 4 more; runs `measure`, `run`, `single`, `autoscale` and 1 more. `measure`: read one scalar automatic measurement from the scope's current measurement source. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/jovanmarkov96__keysight-dsox1200-control/",
   "upstream": {
     "repo_url": "https://github.com/jovanmarkov96/keysight-dsox1200-control",
     "commit": "34ba50a758b9f4e8773dee788c3f9a4c04455f8f",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/jovanmarkov96__keysight-dsox1200-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jovanmarkov96__keysight-dsox1200-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jovanmarkov96__keysight-dsox1200-control --backend fake --mcp"
 }

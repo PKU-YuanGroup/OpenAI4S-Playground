@@ -2,7 +2,11 @@
   "name": "labs/xzf89718__oscilloscope_scripts",
   "package": "labs/xzf89718__oscilloscope_scripts",
   "mhs_package": "mhs/MHS/drivers/labs/xzf89718__oscilloscope_scripts",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tektronix TBS2000B oscilloscope",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Tektronix TBS2000B oscilloscope, adapted from xzf89718/oscilloscope_scripts. It reads `frequency`, `amplitude` and `high`; sets `channel`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/xzf89718__oscilloscope_scripts/",
   "upstream": {
     "repo_url": "https://github.com/xzf89718/oscilloscope_scripts",
     "commit": "105e6021650f5b4f6557e733451612e4696a860d",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/xzf89718__oscilloscope_scripts",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/xzf89718__oscilloscope_scripts --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/xzf89718__oscilloscope_scripts --backend fake --mcp"
 }

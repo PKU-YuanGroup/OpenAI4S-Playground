@@ -2,7 +2,11 @@
   "name": "labs/freespace__pyapt",
   "package": "labs/freespace__pyapt",
   "mhs_package": "mhs/MHS/drivers/labs/freespace__pyapt",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs APT stage controller (pyapt)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs APT stage controller (pyapt), adapted from freespace/pyapt. It reads `velocity`, `moving`, `homed`, `forward_limit_active` and 4 more; sets `position`, `soft_limits`, `maximum_velocity` and `acceleration`; runs `home`, `move_relative` and `stop_motion`. `home`: drive axes to their declared home position or reference switch, establishing the coordinate reference needed by other motion capabilities. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/freespace__pyapt/",
   "upstream": {
     "repo_url": "https://github.com/freespace/pyapt",
     "commit": "914a6f618cacce6aa9ce42d371a895989e092b59",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/freespace__pyapt",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/freespace__pyapt --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/freespace__pyapt --backend fake --mcp"
 }

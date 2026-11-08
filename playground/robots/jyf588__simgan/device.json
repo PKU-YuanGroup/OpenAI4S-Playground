@@ -2,7 +2,11 @@
   "name": "robots/jyf588__simgan",
   "package": "robots/jyf588__simgan",
   "mhs_package": "mhs/MHS/drivers/robots/jyf588__simgan",
-  "website": "https://mhs.openai4s.org",
+  "title": "SimGAN HopperURDFEnv-v3 (PyBullet hopper)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "SimGAN HopperURDFEnv-v3 (PyBullet hopper), adapted from jyf588/simgan. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/jyf588__simgan/",
   "upstream": {
     "repo_url": "https://github.com/jyf588/simgan",
     "commit": "23283d7b5629f1653567b2437bb28aac1cc17169",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jyf588__simgan",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jyf588__simgan --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jyf588__simgan --backend fake --mcp"
 }

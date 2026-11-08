@@ -2,7 +2,11 @@
   "name": "labs/idc-milab__openlh",
   "package": "labs/idc-milab__openlh",
   "mhs_package": "mhs/MHS/drivers/labs/idc-milab__openlh",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenLH liquid handler (uArm Swift Pro)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "OpenLH liquid handler (uArm Swift Pro), adapted from idc-milab/openlh. It reads `position_x`, `position_y`, `position_z`, `polar_rotation` and 5 more; sets `base_angle`, `left_angle`, `right_angle`, `hand_angle` and 2 more; runs `move_to_position` and `tool_off`. `move_to_position`: move the tool centre point to a Cartesian position and orientation in a named frame. The endpoint solves inverse kinematics; an unreachable target is rejected before motion. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/idc-milab__openlh/",
   "upstream": {
     "repo_url": "https://github.com/idc-milab/openlh",
     "commit": "6a7562c61656362bc70ce58b7f685090cceebda4",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/idc-milab__openlh",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/idc-milab__openlh --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/idc-milab__openlh --backend fake --mcp"
 }

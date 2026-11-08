@@ -2,7 +2,11 @@
   "name": "labs/nsls-ii-sst__caproto_cryostat",
   "package": "labs/nsls-ii-sst__caproto_cryostat",
   "mhs_package": "mhs/MHS/drivers/labs/nsls-ii-sst__caproto_cryostat",
-  "website": "https://mhs.openai4s.org",
+  "title": "NSLS-II SST ADR cryostat (caproto EPICS IOC, read only)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "NSLS-II SST ADR cryostat (caproto EPICS IOC, read only), adapted from nsls-ii-sst/caproto_cryostat. It reads `temperature`, `setpoint_readback`, `temperature_rms`, `alternate_temperature` and 4 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/nsls-ii-sst__caproto_cryostat/",
   "upstream": {
     "repo_url": "https://github.com/nsls-ii-sst/caproto_cryostat",
     "commit": "bc89595479d634106426f698eef27a993a5cb99a",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/nsls-ii-sst__caproto_cryostat",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-sst__caproto_cryostat --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-sst__caproto_cryostat --backend fake --mcp"
 }

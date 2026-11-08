@@ -2,7 +2,11 @@
   "name": "robots/oceanworldlabs__oceanscale",
   "package": "robots/oceanworldlabs__oceanscale",
   "mhs_package": "mhs/MHS/drivers/robots/oceanworldlabs__oceanscale",
-  "website": "https://mhs.openai4s.org",
+  "title": "OceanScale ROVEnv (GPU-batched station keeping)",
+  "category": "Simulation",
+  "topic": "underwater robotics",
+  "intro": "OceanScale ROVEnv (GPU-batched station keeping), adapted from oceanworldlabs/oceanscale. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/oceanworldlabs__oceanscale/",
   "upstream": {
     "repo_url": "https://github.com/oceanworldlabs/oceanscale",
     "commit": "84f6cc4ce3dcf7cb4a53e2e9d2e81f541b0c63f2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/oceanworldlabs__oceanscale",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/oceanworldlabs__oceanscale --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/oceanworldlabs__oceanscale --backend fake --mcp"
 }

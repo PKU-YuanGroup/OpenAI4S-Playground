@@ -2,7 +2,11 @@
   "name": "labs/lando1784__pyagilis",
   "package": "labs/lando1784__pyagilis",
   "mhs_package": "mhs/MHS/drivers/labs/lando1784__pyagilis",
-  "website": "https://mhs.openai4s.org",
+  "title": "Newport Agilis agUC2",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Newport Agilis agUC2, adapted from lando1784/pyagilis. It reads `x_steps`, `y_steps`, `x_at_limit`, `y_at_limit` and 2 more; runs `jog`, `go_to_zero`, `set_zero` and `stop_motion`. `jog`: jog axis 1 and axis 2 by signed step counts (relative motion). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/lando1784__pyagilis/",
   "upstream": {
     "repo_url": "https://github.com/lando1784/pyagilis",
     "commit": "7d27bd1571aa6b4187e2e0d40c9f34feb45456f2",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/lando1784__pyagilis",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/lando1784__pyagilis --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/lando1784__pyagilis --backend fake --mcp"
 }

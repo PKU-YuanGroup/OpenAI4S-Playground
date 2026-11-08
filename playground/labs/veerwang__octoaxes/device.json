@@ -2,7 +2,11 @@
   "name": "labs/veerwang__octoaxes",
   "package": "labs/veerwang__octoaxes",
   "mhs_package": "mhs/MHS/drivers/labs/veerwang__octoaxes",
-  "website": "https://mhs.openai4s.org",
+  "title": "Octoaxes 7-axis microscope stage",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Octoaxes 7-axis microscope stage, adapted from veerwang/octoaxes. It reads `x_position_um`, `y_position_um`, `z_steps`, `moving` and 2 more; runs `move_xy`, `set_illumination` and `deenergise`. `move_xy`: move the X and Y stage axes to absolute positions in micrometres. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/veerwang__octoaxes/",
   "upstream": {
     "repo_url": "https://github.com/veerwang/octoaxes",
     "commit": "77cb47e0fdf83bde33c85d24be4d4b3723e74e15",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/veerwang__octoaxes",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/veerwang__octoaxes --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/veerwang__octoaxes --backend fake --mcp"
 }

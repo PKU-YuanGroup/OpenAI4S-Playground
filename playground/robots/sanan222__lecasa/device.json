@@ -2,7 +2,11 @@
   "name": "robots/sanan222__lecasa",
   "package": "robots/sanan222__lecasa",
   "mhs_package": "mhs/MHS/drivers/robots/sanan222__lecasa",
-  "website": "https://mhs.openai4s.org",
+  "title": "LeCasa SO101 arm (MuJoCo)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "LeCasa SO101 arm (MuJoCo), adapted from sanan222/lecasa. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/sanan222__lecasa/",
   "upstream": {
     "repo_url": "https://github.com/sanan222/lecasa",
     "commit": "7dc0f63c0fc1519226262f0cc8cf48c6343043c0",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/sanan222__lecasa",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sanan222__lecasa --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sanan222__lecasa --backend fake --mcp"
 }

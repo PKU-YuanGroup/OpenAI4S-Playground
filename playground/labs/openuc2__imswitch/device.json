@@ -2,7 +2,11 @@
   "name": "labs/openuc2__imswitch",
   "package": "labs/openuc2__imswitch",
   "mhs_package": "mhs/MHS/drivers/labs/openuc2__imswitch",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenUC2 ESP32 microscope stage",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "OpenUC2 ESP32 microscope stage, adapted from openuc2/imswitch. It reads `x_um`, `y_um` and `z_um`; runs `move_xyz` and `stop_motion`. `move_xyz`: move the X, Y and Z stage axes to absolute positions in micrometres with the coordinated upstream XYZ move, and report the position a device query returns afterwards; a move whose native call raises or whose position query fails ends unknown. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/openuc2__imswitch/",
   "upstream": {
     "repo_url": "https://github.com/openuc2/imswitch",
     "commit": "e5db60f1021b0d7b72f171069258768127880ac5",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/openuc2__imswitch",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/openuc2__imswitch --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/openuc2__imswitch --backend fake --mcp"
 }

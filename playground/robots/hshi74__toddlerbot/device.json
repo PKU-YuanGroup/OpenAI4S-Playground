@@ -2,7 +2,11 @@
   "name": "robots/hshi74__toddlerbot",
   "package": "robots/hshi74__toddlerbot",
   "mhs_package": "mhs/MHS/drivers/robots/hshi74__toddlerbot",
-  "website": "https://mhs.openai4s.org",
+  "title": "ToddlerBot 2XC scene (MuJoCo)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "ToddlerBot 2XC scene (MuJoCo), adapted from hshi74/toddlerbot. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/hshi74__toddlerbot/",
   "upstream": {
     "repo_url": "https://github.com/hshi74/toddlerbot",
     "commit": "e337f3b177b4b53abff70b31d1695a7b66cc6d2e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/hshi74__toddlerbot",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hshi74__toddlerbot --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hshi74__toddlerbot --backend fake --mcp"
 }

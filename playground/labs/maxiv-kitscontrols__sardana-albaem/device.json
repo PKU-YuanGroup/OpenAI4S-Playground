@@ -2,7 +2,11 @@
   "name": "labs/maxiv-kitscontrols__sardana-albaem",
   "package": "labs/maxiv-kitscontrols__sardana-albaem",
   "mhs_package": "mhs/MHS/drivers/labs/maxiv-kitscontrols__sardana-albaem",
-  "website": "https://mhs.openai4s.org",
+  "title": "ALBA EM2 four-channel electrometer",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "ALBA EM2 four-channel electrometer, adapted from maxiv-kitscontrols/sardana-albaem. It reads `identity`, `acquisition_state`, `nb_points_ready`, `current_ch1` and 11 more; sets `acquisition_mode`, `integration_time`, `nb_points`, `trigger_mode` and 5 more; runs `measure_current`, `configure_channel`, `start_acquisition`, `software_trigger` and 1 more. `measure_current`: measure current on a declared channel and return the value with its timestamp and range. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/maxiv-kitscontrols__sardana-albaem/",
   "upstream": {
     "repo_url": "https://github.com/maxiv-kitscontrols/sardana-albaem",
     "commit": "99e701a5101781fbd7855a03b5ec3a755e8c6d46",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/maxiv-kitscontrols__sardana-albaem",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/maxiv-kitscontrols__sardana-albaem --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/maxiv-kitscontrols__sardana-albaem --backend fake --mcp"
 }

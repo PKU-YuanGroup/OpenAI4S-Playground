@@ -2,7 +2,11 @@
   "name": "robots/renforce-dynamics__genesislab",
   "package": "robots/renforce-dynamics__genesislab",
   "mhs_package": "mhs/MHS/drivers/robots/renforce-dynamics__genesislab",
-  "website": "https://mhs.openai4s.org",
+  "title": "GenesisLab Unitree G1 human velocity (flat)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "GenesisLab Unitree G1 human velocity (flat), adapted from renforce-dynamics/genesislab. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/renforce-dynamics__genesislab/",
   "upstream": {
     "repo_url": "https://github.com/renforce-dynamics/genesislab",
     "commit": "0f2e4d96df9b24bcce66f8bdf7a1884a1363a5bb",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/renforce-dynamics__genesislab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/renforce-dynamics__genesislab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/renforce-dynamics__genesislab --backend fake --mcp"
 }

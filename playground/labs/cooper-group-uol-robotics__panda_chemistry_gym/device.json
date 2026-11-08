@@ -2,7 +2,11 @@
   "name": "labs/cooper-group-uol-robotics__panda_chemistry_gym",
   "package": "labs/cooper-group-uol-robotics__panda_chemistry_gym",
   "mhs_package": "mhs/MHS/drivers/labs/cooper-group-uol-robotics__panda_chemistry_gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "panda_chemistry_gym Capping-v1 (PyBullet Franka Panda)",
+  "category": "Simulation",
+  "topic": "wet-lab automation and chemistry",
+  "intro": "panda_chemistry_gym Capping-v1 (PyBullet Franka Panda), adapted from cooper-group-uol-robotics/panda_chemistry_gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/cooper-group-uol-robotics__panda_chemistry_gym/",
   "upstream": {
     "repo_url": "https://github.com/cooper-group-uol-robotics/panda_chemistry_gym",
     "commit": "10e82317010f662f5f8f0602e068447d170d9bb0",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/cooper-group-uol-robotics__panda_chemistry_gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cooper-group-uol-robotics__panda_chemistry_gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cooper-group-uol-robotics__panda_chemistry_gym --backend fake --mcp"
 }

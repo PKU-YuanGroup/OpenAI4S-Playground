@@ -2,7 +2,11 @@
   "name": "robots/avisingh599__roboverse",
   "package": "robots/avisingh599__roboverse",
   "mhs_package": "mhs/MHS/drivers/robots/avisingh599__roboverse",
-  "website": "https://mhs.openai4s.org",
+  "title": "Roboverse Widow250Grasp-v0 (PyBullet WidowX 250 simulation)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "Roboverse Widow250Grasp-v0 (PyBullet WidowX 250 simulation), adapted from avisingh599/roboverse. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/avisingh599__roboverse/",
   "upstream": {
     "repo_url": "https://github.com/avisingh599/roboverse",
     "commit": "a443f79af67529158ba409889fd7b8006b1d3f88",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/avisingh599__roboverse",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/avisingh599__roboverse --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/avisingh599__roboverse --backend fake --mcp"
 }

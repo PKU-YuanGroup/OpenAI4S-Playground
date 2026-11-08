@@ -2,7 +2,11 @@
   "name": "robots/emb-ai__robobenchmart",
   "package": "robots/emb-ai__robobenchmart",
   "mhs_package": "mhs/MHS/drivers/robots/emb-ai__robobenchmart",
-  "website": "https://mhs.openai4s.org",
+  "title": "RoboBenchMart MoveFromBoardToBoardVanishContEnv (fake stand-in)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "RoboBenchMart MoveFromBoardToBoardVanishContEnv (fake stand-in), adapted from emb-ai/robobenchmart. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/emb-ai__robobenchmart/",
   "upstream": {
     "repo_url": "https://github.com/emb-ai/robobenchmart",
     "commit": "33ca547ffeb4e4aac9af53bd685b17c05b971fc8",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/emb-ai__robobenchmart",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/emb-ai__robobenchmart --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/emb-ai__robobenchmart --backend fake --mcp"
 }

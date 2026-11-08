@@ -2,7 +2,11 @@
   "name": "labs/picoquant__lumipy",
   "package": "labs/picoquant__lumipy",
   "mhs_package": "mhs/MHS/drivers/labs/picoquant__lumipy",
-  "website": "https://mhs.openai4s.org",
+  "title": "PicoQuant Luminosa through LumiPy Measurement",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "PicoQuant Luminosa through LumiPy Measurement, adapted from picoquant/lumipy. It reads `version`, `analysis_names`, `running`, `elapsed_meas_time` and 16 more; sets `scan_range_left`, `scan_range_top`, `scan_range_width`, `scan_range_height` and 2 more; runs `configure_image_stop`, `configure_point_stop`, `set_ptu_output`, `start_measurement` and 7 more. `configure_image_stop`: configure the image stop conditions (frame count, photon threshold, time). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/picoquant__lumipy/",
   "upstream": {
     "repo_url": "https://github.com/picoquant/lumipy",
     "commit": "dc0fe266a55219811d171ccfc99a742e4eb4fffd",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/picoquant__lumipy",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/picoquant__lumipy --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/picoquant__lumipy --backend fake --mcp"
 }

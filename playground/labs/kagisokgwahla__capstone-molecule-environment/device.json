@@ -2,7 +2,11 @@
   "name": "labs/kagisokgwahla__capstone-molecule-environment",
   "package": "labs/kagisokgwahla__capstone-molecule-environment",
   "mhs_package": "mhs/MHS/drivers/labs/kagisokgwahla__capstone-molecule-environment",
-  "website": "https://mhs.openai4s.org",
+  "title": "molecule-v0 molecular editing environment",
+  "category": "Simulation",
+  "topic": "chemistry",
+  "intro": "molecule-v0 molecular editing environment, adapted from kagisokgwahla/capstone-molecule-environment. It reads `observation`, `tick` and `episode`; runs `step` and `reset_world`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/kagisokgwahla__capstone-molecule-environment/",
   "upstream": {
     "repo_url": "https://github.com/kagisokgwahla/capstone-molecule-environment",
     "commit": "8c1bb00fcec88b366ba3947623fa3d52990be0d2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/kagisokgwahla__capstone-molecule-environment",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kagisokgwahla__capstone-molecule-environment --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kagisokgwahla__capstone-molecule-environment --backend fake --mcp"
 }

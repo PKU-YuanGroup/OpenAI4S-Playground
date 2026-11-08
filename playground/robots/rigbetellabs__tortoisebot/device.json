@@ -2,7 +2,11 @@
   "name": "robots/rigbetellabs__tortoisebot",
   "package": "robots/rigbetellabs__tortoisebot",
   "mhs_package": "mhs/MHS/drivers/robots/rigbetellabs__tortoisebot",
-  "website": "https://mhs.openai4s.org",
+  "title": "TortoiseBot Ignition simulation environment",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "TortoiseBot Ignition simulation environment, adapted from rigbetellabs/tortoisebot. It reads `read_odometry`, `read_clock` and `read_scan`; runs `publish_velocity` and `resume_simulation`. `publish_velocity`: publish one geometry_msgs/Twist velocity command on /cmd_vel; the publication is transmission only and returns no motion or stop confirmation. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/rigbetellabs__tortoisebot/",
   "upstream": {
     "repo_url": "https://github.com/rigbetellabs/tortoisebot",
     "commit": "eae9f74a17213adb4dcc8552d65236d5549ebf62",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/rigbetellabs__tortoisebot",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rigbetellabs__tortoisebot --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rigbetellabs__tortoisebot --backend fake --mcp"
 }

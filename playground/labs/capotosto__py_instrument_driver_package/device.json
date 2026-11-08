@@ -2,7 +2,11 @@
   "name": "labs/capotosto__py_instrument_driver_package",
   "package": "labs/capotosto__py_instrument_driver_package",
   "mhs_package": "mhs/MHS/drivers/labs/capotosto__py_instrument_driver_package",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keysight E4980A precision LCR meter",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keysight E4980A precision LCR meter, adapted from capotosto/py_instrument_driver_package. It reads `aperture_mode`, `aperture_averages`, `dc_bias_autorange`, `correction_method` and 7 more; sets `measurement_function`, `frequency`, `voltage_level`, `current_level` and 5 more; runs `fetch_formatted`, `fetch_impedance`, `fetch_vac`, `fetch_iac` and 4 more. `fetch_formatted`: fetch the latest formatted measurement: primary value, secondary value and status code. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/capotosto__py_instrument_driver_package/",
   "upstream": {
     "repo_url": "https://github.com/capotosto/py_instrument_driver_package",
     "commit": "1512bb3c1d76a16ada54cf042019a88710b7e12f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/capotosto__py_instrument_driver_package",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/capotosto__py_instrument_driver_package --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/capotosto__py_instrument_driver_package --backend fake --mcp"
 }

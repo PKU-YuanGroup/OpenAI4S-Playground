@@ -2,7 +2,11 @@
   "name": "robots/erlerobot__gym-gazebo",
   "package": "robots/erlerobot__gym-gazebo",
   "mhs_package": "mhs/MHS/drivers/robots/erlerobot__gym-gazebo",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-gazebo GazeboCircuitTurtlebotLidar-v0",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "gym-gazebo GazeboCircuitTurtlebotLidar-v0, adapted from erlerobot/gym-gazebo. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/erlerobot__gym-gazebo/",
   "upstream": {
     "repo_url": "https://github.com/erlerobot/gym-gazebo",
     "commit": "ade82b627839f816c1f4be6cea77b56eb21abc81",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/erlerobot__gym-gazebo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erlerobot__gym-gazebo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erlerobot__gym-gazebo --backend fake --mcp"
 }

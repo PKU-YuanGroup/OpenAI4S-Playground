@@ -2,7 +2,11 @@
   "name": "robots/damat-le__gym-simplegrid",
   "package": "robots/damat-le__gym-simplegrid",
   "mhs_package": "mhs/MHS/drivers/robots/damat-le__gym-simplegrid",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-simplegrid SimpleGrid-4x4-v0 (grid world, simulated)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "gym-simplegrid SimpleGrid-4x4-v0 (grid world, simulated), adapted from damat-le/gym-simplegrid. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/damat-le__gym-simplegrid/",
   "upstream": {
     "repo_url": "https://github.com/damat-le/gym-simplegrid",
     "commit": "6ded2fcf684727b27b5569688cad6f92bc3bc52b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/damat-le__gym-simplegrid",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/damat-le__gym-simplegrid --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/damat-le__gym-simplegrid --backend fake --mcp"
 }

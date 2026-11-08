@@ -2,7 +2,11 @@
   "name": "labs/norlovs__ot2-robotics-cv-control",
   "package": "labs/norlovs__ot2-robotics-cv-control",
   "mhs_package": "mhs/MHS/drivers/labs/norlovs__ot2-robotics-cv-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "OT-2 pipetting-robot digital twin (OT2Env)",
+  "category": "Simulation",
+  "topic": "wet-lab automation and chemistry",
+  "intro": "OT-2 pipetting-robot digital twin (OT2Env), adapted from norlovs/ot2-robotics-cv-control. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/norlovs__ot2-robotics-cv-control/",
   "upstream": {
     "repo_url": "https://github.com/norlovs/ot2-robotics-cv-control",
     "commit": "a0a621e5a79c32e70c8c97864d256693d3b3eac0",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/norlovs__ot2-robotics-cv-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/norlovs__ot2-robotics-cv-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/norlovs__ot2-robotics-cv-control --backend fake --mcp"
 }

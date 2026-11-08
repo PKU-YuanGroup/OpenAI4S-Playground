@@ -2,7 +2,11 @@
   "name": "labs/jrafolsr__pyinstruments",
   "package": "labs/jrafolsr__pyinstruments",
   "mhs_package": "mhs/MHS/drivers/labs/jrafolsr__pyinstruments",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keysight 33210A function generator",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keysight 33210A function generator, adapted from jrafolsr/pyinstruments. It sets `frequency`, `amplitude`, `offset`, `function` and 2 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/jrafolsr__pyinstruments/",
   "upstream": {
     "repo_url": "https://github.com/jrafolsr/pyinstruments",
     "commit": "631eb6fe6e61ca83e0d065aa3e36b04244c952b4",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/jrafolsr__pyinstruments",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jrafolsr__pyinstruments --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jrafolsr__pyinstruments --backend fake --mcp"
 }

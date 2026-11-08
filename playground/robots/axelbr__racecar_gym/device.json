@@ -2,7 +2,11 @@
   "name": "robots/axelbr__racecar_gym",
   "package": "robots/axelbr__racecar_gym",
   "mhs_package": "mhs/MHS/drivers/robots/axelbr__racecar_gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "racecar_gym single-agent race environment",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "racecar_gym single-agent race environment, adapted from axelbr/racecar_gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/axelbr__racecar_gym/",
   "upstream": {
     "repo_url": "https://github.com/axelbr/racecar_gym",
     "commit": "70496767d80397010ac9b5ba722647ca67e3f85c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/axelbr__racecar_gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/axelbr__racecar_gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/axelbr__racecar_gym --backend fake --mcp"
 }

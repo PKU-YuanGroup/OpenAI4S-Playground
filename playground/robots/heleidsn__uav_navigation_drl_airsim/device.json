@@ -2,7 +2,11 @@
   "name": "robots/heleidsn__uav_navigation_drl_airsim",
   "package": "robots/heleidsn__uav_navigation_drl_airsim",
   "mhs_package": "mhs/MHS/drivers/robots/heleidsn__uav_navigation_drl_airsim",
-  "website": "https://mhs.openai4s.org",
+  "title": "UAV Navigation DRL AirSim (NH_center, SimpleMultirotor 3D)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "UAV Navigation DRL AirSim (NH_center, SimpleMultirotor 3D), adapted from heleidsn/uav_navigation_drl_airsim. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/heleidsn__uav_navigation_drl_airsim/",
   "upstream": {
     "repo_url": "https://github.com/heleidsn/uav_navigation_drl_airsim",
     "commit": "389e5220595361dc26a0b84c75bc4e6cde3a3112",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/heleidsn__uav_navigation_drl_airsim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/heleidsn__uav_navigation_drl_airsim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/heleidsn__uav_navigation_drl_airsim --backend fake --mcp"
 }

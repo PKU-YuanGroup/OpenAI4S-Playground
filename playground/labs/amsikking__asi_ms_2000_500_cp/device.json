@@ -2,7 +2,11 @@
   "name": "labs/amsikking__asi_ms_2000_500_cp",
   "package": "labs/amsikking__asi_ms_2000_500_cp",
   "mhs_package": "mhs/MHS/drivers/labs/amsikking__asi_ms_2000_500_cp",
-  "website": "https://mhs.openai4s.org",
+  "title": "ASI MS-2000-500-CP stage controller (asi_MS_2000_500_CP.Controller)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "ASI MS-2000-500-CP stage controller (asi_MS_2000_500_CP.Controller), adapted from amsikking/asi_ms_2000_500_cp. It reads `position_x`, `position_y`, `position_z` and `motor_moving`; sets `pwm_intensity` and `pwm_state`; runs `move_stage`. `move_stage`: move the X, Y and Z stage axes to absolute positions in micrometres and wait for the controller to verify the target. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/amsikking__asi_ms_2000_500_cp/",
   "upstream": {
     "repo_url": "https://github.com/amsikking/asi_ms_2000_500_cp",
     "commit": "5f1f6d2cad545d5ae20359fd01e014dfdd21f11f",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/amsikking__asi_ms_2000_500_cp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/amsikking__asi_ms_2000_500_cp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/amsikking__asi_ms_2000_500_cp --backend fake --mcp"
 }

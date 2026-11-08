@@ -2,7 +2,11 @@
   "name": "robots/lifelong-robot-learning__libero",
   "package": "robots/lifelong-robot-learning__libero",
   "mhs_package": "mhs/MHS/drivers/robots/lifelong-robot-learning__libero",
-  "website": "https://mhs.openai4s.org",
+  "title": "LIBERO OffScreenRenderEnv tabletop manipulation",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "LIBERO OffScreenRenderEnv tabletop manipulation, adapted from lifelong-robot-learning/libero. It reads `observation`, `reward`, `terminated`, `truncated` and 3 more; runs `reset` and `step`. `reset`: reset the simulated world to a scenario start state and return the initial observation. When a seed is supplied the endpoint records it in the receipt; otherwise the endpoint's declared default seed applies. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/lifelong-robot-learning__libero/",
   "upstream": {
     "repo_url": "https://github.com/lifelong-robot-learning/libero",
     "commit": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/lifelong-robot-learning__libero",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lifelong-robot-learning__libero --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lifelong-robot-learning__libero --backend fake --mcp"
 }

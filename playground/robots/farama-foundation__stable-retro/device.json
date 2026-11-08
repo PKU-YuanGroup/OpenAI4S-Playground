@@ -2,7 +2,11 @@
   "name": "robots/farama-foundation__stable-retro",
   "package": "robots/farama-foundation__stable-retro",
   "mhs_package": "mhs/MHS/drivers/robots/farama-foundation__stable-retro",
-  "website": "https://mhs.openai4s.org",
+  "title": "Stable Retro (Gymnasium console emulation)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Stable Retro (Gymnasium console emulation), adapted from farama-foundation/stable-retro. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/farama-foundation__stable-retro/",
   "upstream": {
     "repo_url": "https://github.com/farama-foundation/stable-retro",
     "commit": "e2fdb2a6d39f942d21d5b7f4b3b9929808739eab",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/farama-foundation__stable-retro",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__stable-retro --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__stable-retro --backend fake --mcp"
 }

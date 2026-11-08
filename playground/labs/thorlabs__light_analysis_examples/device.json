@@ -2,7 +2,11 @@
   "name": "labs/thorlabs__light_analysis_examples",
   "package": "labs/thorlabs__light_analysis_examples",
   "mhs_package": "mhs/MHS/drivers/labs/thorlabs__light_analysis_examples",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs BC207/BC210 beam profiler (TLBC2.py)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Thorlabs BC207/BC210 beam profiler (TLBC2.py), adapted from thorlabs/light_analysis_examples. It reads `sensor_pixels_x`, `sensor_pixels_y`, `pixel_pitch_horizontal`, `pixel_pitch_vertical` and 5 more; sets `exposure_time`, `wavelength`, `precision_mode` and `binning`; runs `capture` and `measure_beam`. `capture`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/thorlabs__light_analysis_examples/",
   "upstream": {
     "repo_url": "https://github.com/thorlabs/light_analysis_examples",
     "commit": "1e7f3aa6fe29ca9739c582464bf870232232567b",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/thorlabs__light_analysis_examples",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/thorlabs__light_analysis_examples --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/thorlabs__light_analysis_examples --backend fake --mcp"
 }

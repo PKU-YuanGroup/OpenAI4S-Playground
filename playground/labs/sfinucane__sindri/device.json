@@ -2,7 +2,11 @@
   "name": "labs/sfinucane__sindri",
   "package": "labs/sfinucane__sindri",
   "mhs_package": "mhs/MHS/drivers/labs/sfinucane__sindri",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tektronix BERTScope bit error rate analyzer (sindri.tektronix.bertscope:BERTScope_TCP)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Tektronix BERTScope bit error rate analyzer (sindri.tektronix.bertscope:BERTScope_TCP), adapted from sfinucane/sindri. It reads `identity`, `internal_temperature`, `running`, `detector_bit_count` and 6 more; sets `run_duration`; runs `start_run`, `halt_run`, `factory_reset` and `reset_detector_results`. `start_run`: start all systems within the BERTScope mainframe (RST 1). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/sfinucane__sindri/",
   "upstream": {
     "repo_url": "https://github.com/sfinucane/sindri",
     "commit": "d560635a28a57230f1fa32cea3b9d4df0c8af8e7",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/sfinucane__sindri",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/sfinucane__sindri --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/sfinucane__sindri --backend fake --mcp"
 }

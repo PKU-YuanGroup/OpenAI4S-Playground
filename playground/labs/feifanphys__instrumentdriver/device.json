@@ -2,7 +2,11 @@
   "name": "labs/feifanphys__instrumentdriver",
   "package": "labs/feifanphys__instrumentdriver",
   "mhs_package": "mhs/MHS/drivers/labs/feifanphys__instrumentdriver",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keysight N5182B signal generator",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keysight N5182B signal generator, adapted from feifanphys/instrumentdriver. It sets `frequency`, `power` and `output`; runs `reset`. `reset`: reset the signal generator (SCPI *RST). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/feifanphys__instrumentdriver/",
   "upstream": {
     "repo_url": "https://github.com/feifanphys/instrumentdriver",
     "commit": "749c845066b5a0e5ac30a1f9f55ff36e76ca24e1",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/feifanphys__instrumentdriver",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/feifanphys__instrumentdriver --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/feifanphys__instrumentdriver --backend fake --mcp"
 }

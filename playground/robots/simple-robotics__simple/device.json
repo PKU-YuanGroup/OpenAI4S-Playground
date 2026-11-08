@@ -2,7 +2,11 @@
   "name": "robots/simple-robotics__simple",
   "package": "robots/simple-robotics__simple",
   "mhs_package": "mhs/MHS/drivers/robots/simple-robotics__simple",
-  "website": "https://mhs.openai4s.org",
+  "title": "Simple Humanoid (MuJoCo MJCF model)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Simple Humanoid (MuJoCo MJCF model), adapted from simple-robotics/simple. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/simple-robotics__simple/",
   "upstream": {
     "repo_url": "https://github.com/simple-robotics/simple",
     "commit": "03d4784ed87b2b4986c74564d20ef5544b30936d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/simple-robotics__simple",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/simple-robotics__simple --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/simple-robotics__simple --backend fake --mcp"
 }

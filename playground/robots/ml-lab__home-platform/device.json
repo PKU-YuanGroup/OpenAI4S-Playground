@@ -2,7 +2,11 @@
   "name": "robots/ml-lab__home-platform",
   "package": "robots/ml-lab__home-platform",
   "mhs_package": "mhs/MHS/drivers/robots/ml-lab__home-platform",
-  "website": "https://mhs.openai4s.org",
+  "title": "HoME Home-v0 household simulator",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "HoME Home-v0 household simulator, adapted from ml-lab/home-platform. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ml-lab__home-platform/",
   "upstream": {
     "repo_url": "https://github.com/ml-lab/home-platform",
     "commit": "cbd373f270faaf19f21ed88f0e3bd272a1cbdaa6",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ml-lab__home-platform",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ml-lab__home-platform --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ml-lab__home-platform --backend fake --mcp"
 }

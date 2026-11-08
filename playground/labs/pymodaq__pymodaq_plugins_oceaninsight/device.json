@@ -2,7 +2,11 @@
   "name": "labs/pymodaq__pymodaq_plugins_oceaninsight",
   "package": "labs/pymodaq__pymodaq_plugins_oceaninsight",
   "mhs_package": "mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_oceaninsight",
-  "website": "https://mhs.openai4s.org",
+  "title": "Ocean Insight spectrometer (PyMoDAQ Omnidriver plugin)",
+  "category": "Spectroscopy",
+  "topic": null,
+  "intro": "Ocean Insight spectrometer (PyMoDAQ Omnidriver plugin), adapted from pymodaq/pymodaq_plugins_oceaninsight. It reads `wavelength_min_nm`, `wavelength_max_nm` and `pixel_count`; sets `integration_time_ms`; runs `measure_intensity`. `measure_intensity`: measure optical or radiant intensity at a declared wavelength or channel and return the value with its unit and integration time. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pymodaq__pymodaq_plugins_oceaninsight/",
   "upstream": {
     "repo_url": "https://github.com/pymodaq/pymodaq_plugins_oceaninsight",
     "commit": "298f768a2f2c5643a45e61f416300b3805b8c893",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pymodaq__pymodaq_plugins_oceaninsight",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_oceaninsight --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_oceaninsight --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/samdejong86__tektronix-serial-daq-python",
   "package": "labs/samdejong86__tektronix-serial-daq-python",
   "mhs_package": "mhs/MHS/drivers/labs/samdejong86__tektronix-serial-daq-python",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tektronix TDS 3052 oscilloscope",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Tektronix TDS 3052 oscilloscope, adapted from samdejong86/tektronix-serial-daq-python. It sets `ch1_scale`, `ch2_scale`, `coupling_ch1`, `coupling_ch2` and 8 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/samdejong86__tektronix-serial-daq-python/",
   "upstream": {
     "repo_url": "https://github.com/samdejong86/tektronix-serial-daq-python",
     "commit": "e7728bc44030b530d76ea3dbd66904237c12e180",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/samdejong86__tektronix-serial-daq-python",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/samdejong86__tektronix-serial-daq-python --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/samdejong86__tektronix-serial-daq-python --backend fake --mcp"
 }

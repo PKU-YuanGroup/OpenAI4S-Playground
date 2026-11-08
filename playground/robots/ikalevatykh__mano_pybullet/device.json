@@ -2,7 +2,11 @@
   "name": "robots/ikalevatykh__mano_pybullet",
   "package": "robots/ikalevatykh__mano_pybullet",
   "mhs_package": "mhs/MHS/drivers/robots/ikalevatykh__mano_pybullet",
-  "website": "https://mhs.openai4s.org",
+  "title": "mano_pybullet HandLiftEnv-v1 (PyBullet MANO hand lifting an object)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "mano_pybullet HandLiftEnv-v1 (PyBullet MANO hand lifting an object), adapted from ikalevatykh/mano_pybullet. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ikalevatykh__mano_pybullet/",
   "upstream": {
     "repo_url": "https://github.com/ikalevatykh/mano_pybullet",
     "commit": "960c257cf465f8966e770562b66150beaa359230",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ikalevatykh__mano_pybullet",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ikalevatykh__mano_pybullet --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ikalevatykh__mano_pybullet --backend fake --mcp"
 }

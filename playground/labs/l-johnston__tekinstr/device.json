@@ -2,7 +2,11 @@
   "name": "labs/l-johnston__tekinstr",
   "package": "labs/l-johnston__tekinstr",
   "mhs_package": "mhs/MHS/drivers/labs/l-johnston__tekinstr",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tektronix MDO3000 series oscilloscope (tekinstr.Oscilloscope)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Tektronix MDO3000 series oscilloscope (tekinstr.Oscilloscope), adapted from l-johnston/tekinstr. It reads `sample_rate`, `acquisition_count` and `trigger_state`; sets `record_length`, `horizontal_scale`, `horizontal_delay_mode`, `acquisition_mode` and 3 more; runs `force_trigger`. `force_trigger`: force a trigger event and report the trigger state afterwards. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/l-johnston__tekinstr/",
   "upstream": {
     "repo_url": "https://github.com/l-johnston/tekinstr",
     "commit": "7949430c1a6818d30aec152663c18dde85f2a7d7",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/l-johnston__tekinstr",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/l-johnston__tekinstr --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/l-johnston__tekinstr --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/aics-int__microscope_automation",
   "package": "labs/aics-int__microscope_automation",
   "mhs_package": "mhs/MHS/drivers/labs/aics-int__microscope_automation",
-  "website": "https://mhs.openai4s.org",
+  "title": "Zeiss ZEN blue microscope (microscope_automation ConnectMicroscope)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Zeiss ZEN blue microscope (microscope_automation ConnectMicroscope), adapted from aics-int/microscope_automation. It reads `stage_x`, `stage_y`, `objective_name`, `objective_position` and 2 more; runs `live_mode_start`, `live_mode_stop` and `snap_image`. `live_mode_start`: start ZEN live mode for an experiment (the active experiment when none is named). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/aics-int__microscope_automation/",
   "upstream": {
     "repo_url": "https://github.com/aics-int/microscope_automation",
     "commit": "cdac7bdb191ea2d85965574b32ec65e3c2a7e22d",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/aics-int__microscope_automation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aics-int__microscope_automation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aics-int__microscope_automation --backend fake --mcp"
 }

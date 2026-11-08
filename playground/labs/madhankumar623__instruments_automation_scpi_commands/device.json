@@ -2,7 +2,11 @@
   "name": "labs/madhankumar623__instruments_automation_scpi_commands",
   "package": "labs/madhankumar623__instruments_automation_scpi_commands",
   "mhs_package": "mhs/MHS/drivers/labs/madhankumar623__instruments_automation_scpi_commands",
-  "website": "https://mhs.openai4s.org",
+  "title": "Programmable DC power supply (PowerSupply_Automation.py, DCsupply_1)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Programmable DC power supply (PowerSupply_Automation.py, DCsupply_1), adapted from madhankumar623/instruments_automation_scpi_commands. It reads `voltage_ch2`, `current_ch2`, `voltage_ch3` and `current_ch3`; sets `voltage_setpoint_ch2`, `current_setpoint_ch2`, `output_enabled_ch2`, `voltage_setpoint_ch3` and 2 more; runs `output_off`. `output_off`: switch both controlled channel outputs of DCsupply_1 off (INST:NSEL 2;OUTP OFF and INST:NSEL 3;OUTP OFF); it takes no input and is the declared safe state. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/madhankumar623__instruments_automation_scpi_commands/",
   "upstream": {
     "repo_url": "https://github.com/madhankumar623/instruments_automation_scpi_commands",
     "commit": "2080effa969d0a911188f24e92f5d9551f1b22c9",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/madhankumar623__instruments_automation_scpi_commands",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/madhankumar623__instruments_automation_scpi_commands --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/madhankumar623__instruments_automation_scpi_commands --backend fake --mcp"
 }

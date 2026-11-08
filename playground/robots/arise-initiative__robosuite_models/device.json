@@ -2,7 +2,11 @@
   "name": "robots/arise-initiative__robosuite_models",
   "package": "robots/arise-initiative__robosuite_models",
   "mhs_package": "mhs/MHS/drivers/robots/arise-initiative__robosuite_models",
-  "website": "https://mhs.openai4s.org",
+  "title": "robosuite_models Aloha bimanual arm (MuJoCo model)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "robosuite_models Aloha bimanual arm (MuJoCo model), adapted from arise-initiative/robosuite_models. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/arise-initiative__robosuite_models/",
   "upstream": {
     "repo_url": "https://github.com/arise-initiative/robosuite_models",
     "commit": "2d63a6b4319bda772420daf10594ce0de5bd793d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/arise-initiative__robosuite_models",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/arise-initiative__robosuite_models --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/arise-initiative__robosuite_models --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/novog93__sjtu_drone",
   "package": "robots/novog93__sjtu_drone",
   "mhs_package": "mhs/MHS/drivers/robots/novog93__sjtu_drone",
-  "website": "https://mhs.openai4s.org",
+  "title": "sjtu_drone Gazebo quadrotor simulation",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "sjtu_drone Gazebo quadrotor simulation, adapted from novog93/sjtu_drone. It reads `read_last_cmd_vel`, `read_state`, `read_pose` and `read_mode`; runs `takeoff`, `land`, `reset`, `publish_cmd_vel` and 3 more. `takeoff`: publish one std_msgs/Empty on /simple_drone/takeoff. The callback only moves the state machine from LANDED_MODEL to TAKINGOFF_MODEL; the receipt proves the publication, not that the simulated drone left the ground. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/novog93__sjtu_drone/",
   "upstream": {
     "repo_url": "https://github.com/novog93/sjtu_drone",
     "commit": "3f8627ebddf390fd35ffb84b8654b62e0b66fca2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/novog93__sjtu_drone",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/novog93__sjtu_drone --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/novog93__sjtu_drone --backend fake --mcp"
 }

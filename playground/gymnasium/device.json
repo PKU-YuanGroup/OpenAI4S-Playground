@@ -2,7 +2,11 @@
   "name": "gymnasium",
   "package": "robots/farama-foundation__gymnasium",
   "mhs_package": "mhs/MHS/drivers/robots/farama-foundation__gymnasium",
-  "website": "https://mhs.openai4s.org",
+  "title": "Gymnasium CartPole-v1 (classic control)",
+  "category": "Simulation",
+  "topic": "shared access and protocol infrastructure",
+  "intro": "Gymnasium CartPole-v1 (classic control), adapted from farama-foundation/gymnasium. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/farama-foundation__gymnasium/",
   "upstream": {
     "repo_url": "https://github.com/farama-foundation/gymnasium",
     "commit": "d77197c284406e6094c9d1a74d4988a8749ce849",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/farama-foundation__gymnasium",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__gymnasium --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__gymnasium --backend fake --mcp"
 }

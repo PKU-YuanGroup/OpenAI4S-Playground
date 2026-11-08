@@ -2,7 +2,11 @@
   "name": "robots/luckyrobots__g1-manipulation-challenge",
   "package": "robots/luckyrobots__g1-manipulation-challenge",
   "mhs_package": "mhs/MHS/drivers/robots/luckyrobots__g1-manipulation-challenge",
-  "website": "https://mhs.openai4s.org",
+  "title": "Lucky Robots G1 pick-and-place scene (MuJoCo model)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "Lucky Robots G1 pick-and-place scene (MuJoCo model), adapted from luckyrobots/g1-manipulation-challenge. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/luckyrobots__g1-manipulation-challenge/",
   "upstream": {
     "repo_url": "https://github.com/luckyrobots/g1-manipulation-challenge",
     "commit": "0e9d1f9b61772905c9f7997b527f221dc7800fc9",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/luckyrobots__g1-manipulation-challenge",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/luckyrobots__g1-manipulation-challenge --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/luckyrobots__g1-manipulation-challenge --backend fake --mcp"
 }

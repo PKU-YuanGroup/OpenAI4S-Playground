@@ -2,7 +2,11 @@
   "name": "robots/iit-dlslab__gym-quadruped",
   "package": "robots/iit-dlslab__gym-quadruped",
   "mhs_package": "mhs/MHS/drivers/robots/iit-dlslab__gym-quadruped",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-quadruped MuJoCo quadruped locomotion environment",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "gym-quadruped MuJoCo quadruped locomotion environment, adapted from iit-dlslab/gym-quadruped. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/iit-dlslab__gym-quadruped/",
   "upstream": {
     "repo_url": "https://github.com/iit-dlslab/gym-quadruped",
     "commit": "097a8d649ae2232d3c0ed5eb83dc0e4f77483019",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/iit-dlslab__gym-quadruped",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/iit-dlslab__gym-quadruped --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/iit-dlslab__gym-quadruped --backend fake --mcp"
 }

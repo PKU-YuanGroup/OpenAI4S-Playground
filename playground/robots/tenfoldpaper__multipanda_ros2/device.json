@@ -2,7 +2,11 @@
   "name": "robots/tenfoldpaper__multipanda_ros2",
   "package": "robots/tenfoldpaper__multipanda_ros2",
   "mhs_package": "mhs/MHS/drivers/robots/tenfoldpaper__multipanda_ros2",
-  "website": "https://mhs.openai4s.org",
+  "title": "multipanda_ros2 dual Panda MuJoCo scene",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "multipanda_ros2 dual Panda MuJoCo scene, adapted from tenfoldpaper/multipanda_ros2. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/tenfoldpaper__multipanda_ros2/",
   "upstream": {
     "repo_url": "https://github.com/tenfoldpaper/multipanda_ros2",
     "commit": "9a30ca04b4d72e832934f19b35f540931874ec7e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/tenfoldpaper__multipanda_ros2",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tenfoldpaper__multipanda_ros2 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tenfoldpaper__multipanda_ros2 --backend fake --mcp"
 }

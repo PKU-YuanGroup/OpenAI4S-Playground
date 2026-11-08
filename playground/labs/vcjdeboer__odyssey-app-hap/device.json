@@ -2,7 +2,11 @@
   "name": "labs/vcjdeboer__odyssey-app-hap",
   "package": "labs/vcjdeboer__odyssey-app-hap",
   "mhs_package": "mhs/MHS/drivers/labs/vcjdeboer__odyssey-app-hap",
-  "website": "https://mhs.openai4s.org",
+  "title": "LI-COR Odyssey Classic 9120 infrared imager (CGI over HTTP)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "LI-COR Odyssey Classic 9120 infrared imager (CGI over HTTP), adapted from vcjdeboer/odyssey-app-hap. It reads `state`, `progress_percent`, `time_remaining`, `current_user` and 2 more; sets `scan_name`, `scan_group`, `resolution`, `quality` and 9 more; runs `control_scan`, `safe_stop` and `capture`. `control_scan`: start, pause, stop or cancel the configured scan through command.pl. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/vcjdeboer__odyssey-app-hap/",
   "upstream": {
     "repo_url": "https://github.com/vcjdeboer/odyssey-app-hap",
     "commit": "4dffe3a3ed0b32153c50b398ccac3fc7d30db7d1",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/vcjdeboer__odyssey-app-hap",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/vcjdeboer__odyssey-app-hap --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/vcjdeboer__odyssey-app-hap --backend fake --mcp"
 }

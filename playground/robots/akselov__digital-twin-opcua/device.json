@@ -2,7 +2,11 @@
   "name": "robots/akselov__digital-twin-opcua",
   "package": "robots/akselov__digital-twin-opcua",
   "mhs_package": "mhs/MHS/drivers/robots/akselov__digital-twin-opcua",
-  "website": "https://mhs.openai4s.org",
+  "title": "KUKA KR 16-2 via KUKAVARPROXY (KUKAVARPROXY_communication.KUKA)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "KUKA KR 16-2 via KUKAVARPROXY (KUKAVARPROXY_communication.KUKA), adapted from akselov/digital-twin-opcua. It reads `joint_positions`, `motor_velocities`, `motor_torques` and `motor_currents`; runs `move_joints`. `move_joints`: write the six axis values to TARGET_AXIS as an E6AXIS string; the KRL program moves to it. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/akselov__digital-twin-opcua/",
   "upstream": {
     "repo_url": "https://github.com/akselov/digital-twin-opcua",
     "commit": "adc30f46466595a278f87f23a304a3630deca4da",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/akselov__digital-twin-opcua",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/akselov__digital-twin-opcua --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/akselov__digital-twin-opcua --backend fake --mcp"
 }

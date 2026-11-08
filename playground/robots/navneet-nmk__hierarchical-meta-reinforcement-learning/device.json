@@ -2,7 +2,11 @@
   "name": "robots/navneet-nmk__hierarchical-meta-reinforcement-learning",
   "package": "robots/navneet-nmk__hierarchical-meta-reinforcement-learning",
   "mhs_package": "mhs/MHS/drivers/robots/navneet-nmk__hierarchical-meta-reinforcement-learning",
-  "website": "https://mhs.openai4s.org",
+  "title": "MAML-RL TabularMDP-v0 (tabular MDP)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "MAML-RL TabularMDP-v0 (tabular MDP), adapted from navneet-nmk/hierarchical-meta-reinforcement-learning. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/navneet-nmk__hierarchical-meta-reinforcement-learning/",
   "upstream": {
     "repo_url": "https://github.com/navneet-nmk/hierarchical-meta-reinforcement-learning",
     "commit": "4ef92cebfa11760d9de55d54fc8e827271982a63",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/navneet-nmk__hierarchical-meta-reinforcement-learning",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/navneet-nmk__hierarchical-meta-reinforcement-learning --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/navneet-nmk__hierarchical-meta-reinforcement-learning --backend fake --mcp"
 }

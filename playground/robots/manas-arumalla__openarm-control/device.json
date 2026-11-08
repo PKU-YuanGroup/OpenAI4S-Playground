@@ -2,7 +2,11 @@
   "name": "robots/manas-arumalla__openarm-control",
   "package": "robots/manas-arumalla__openarm-control",
   "mhs_package": "mhs/MHS/drivers/robots/manas-arumalla__openarm-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenArm v2 unscrew scene (MuJoCo)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "OpenArm v2 unscrew scene (MuJoCo), adapted from manas-arumalla/openarm-control. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/manas-arumalla__openarm-control/",
   "upstream": {
     "repo_url": "https://github.com/manas-arumalla/openarm-control",
     "commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/manas-arumalla__openarm-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/manas-arumalla__openarm-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/manas-arumalla__openarm-control --backend fake --mcp"
 }

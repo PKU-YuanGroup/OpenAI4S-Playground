@@ -2,7 +2,11 @@
   "name": "robots/robodojo-benchmark__robodojo",
   "package": "robots/robodojo-benchmark__robodojo",
   "mhs_package": "mhs/MHS/drivers/robots/robodojo-benchmark__robodojo",
-  "website": "https://mhs.openai4s.org",
+  "title": "RoboDojo task environment (dual X5)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "RoboDojo task environment (dual X5), adapted from robodojo-benchmark/robodojo. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robodojo-benchmark__robodojo/",
   "upstream": {
     "repo_url": "https://github.com/robodojo-benchmark/robodojo",
     "commit": "09bd5f5e762b949f5858ece31347ce62057b3a5e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robodojo-benchmark__robodojo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robodojo-benchmark__robodojo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robodojo-benchmark__robodojo --backend fake --mcp"
 }

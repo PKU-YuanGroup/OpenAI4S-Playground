@@ -2,7 +2,11 @@
   "name": "robots/omarrayyann__mjlab_manipulation",
   "package": "robots/omarrayyann__mjlab_manipulation",
   "mhs_package": "mhs/MHS/drivers/robots/omarrayyann__mjlab_manipulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "mjlab manipulation Droid (MuJoCo simulation)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "mjlab manipulation Droid (MuJoCo simulation), adapted from omarrayyann/mjlab_manipulation. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/omarrayyann__mjlab_manipulation/",
   "upstream": {
     "repo_url": "https://github.com/omarrayyann/mjlab_manipulation",
     "commit": "7564cd633f4e13bb20a11b0c9f2ff187231cef8a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/omarrayyann__mjlab_manipulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/omarrayyann__mjlab_manipulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/omarrayyann__mjlab_manipulation --backend fake --mcp"
 }

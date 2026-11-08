@@ -2,7 +2,11 @@
   "name": "labs/qte77__i3mega-pipettebot",
   "package": "labs/qte77__i3mega-pipettebot",
   "mhs_package": "mhs/MHS/drivers/labs/qte77__i3mega-pipettebot",
-  "website": "https://mhs.openai4s.org",
+  "title": "Anycubic i3 Mega pipettebot gantry",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Anycubic i3 Mega pipettebot gantry, adapted from qte77/i3mega-pipettebot. It reads `x`, `y` and `z`; runs `move_to`, `home` and `emergency_stop`. `move_to`: move the tool centre point to a Cartesian position and orientation in a named frame. The endpoint solves inverse kinematics; an unreachable target is rejected before motion. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/qte77__i3mega-pipettebot/",
   "upstream": {
     "repo_url": "https://github.com/qte77/i3mega-pipettebot",
     "commit": "99dc2e0a8c15067f3d994e6484507fa2be2301d7",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/qte77__i3mega-pipettebot",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/qte77__i3mega-pipettebot --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/qte77__i3mega-pipettebot --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/steinkohl__korad_powersupply",
   "package": "labs/steinkohl__korad_powersupply",
   "mhs_package": "mhs/MHS/drivers/labs/steinkohl__korad_powersupply",
-  "website": "https://mhs.openai4s.org",
+  "title": "Korad KC3405P power supply (korad.KC3405P)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Korad KC3405P power supply (korad.KC3405P), adapted from steinkohl/korad_powersupply. It reads `channel`, `voltage`, `current`, `regulation_mode` and 4 more; sets `voltage_setpoint`, `current_setpoint`, `overvoltage_protection_setpoint`, `overcurrent_protection_setpoint` and 3 more; runs `output_off`. `output_off`: send OUT1234:0 to all four outputs through the native send path (the safe state); it takes no input and does not wait for a status reply. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/steinkohl__korad_powersupply/",
   "upstream": {
     "repo_url": "https://github.com/steinkohl/korad_powersupply",
     "commit": "fd2e8b7c59a4dd9f9e609bdacf15b3d7bc1b3d5e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/steinkohl__korad_powersupply",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/steinkohl__korad_powersupply --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/steinkohl__korad_powersupply --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/matteobroketa__harvard_pump_diy_control",
   "package": "labs/matteobroketa__harvard_pump_diy_control",
   "mhs_package": "mhs/MHS/drivers/labs/matteobroketa__harvard_pump_diy_control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Harvard PHD 2000 syringe pump (Model 44)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Harvard PHD 2000 syringe pump (Model 44), adapted from matteobroketa/harvard_pump_diy_control. It reads `running`, `status` and `address`; sets `flow_rate`, `direction` and `syringe_diameter_mm`; runs `run_pump`, `pause_pump`, `resume_pump` and `stop_pump`. `run_pump`: start the pump in the configured direction (RUN). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/matteobroketa__harvard_pump_diy_control/",
   "upstream": {
     "repo_url": "https://github.com/matteobroketa/harvard_pump_diy_control",
     "commit": "d4a888432a81d69dad963fddb9df5adf3bc94633",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/matteobroketa__harvard_pump_diy_control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/matteobroketa__harvard_pump_diy_control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/matteobroketa__harvard_pump_diy_control --backend fake --mcp"
 }

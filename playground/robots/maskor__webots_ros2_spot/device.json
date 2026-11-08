@@ -2,7 +2,11 @@
   "name": "robots/maskor__webots_ros2_spot",
   "package": "robots/maskor__webots_ros2_spot",
   "mhs_package": "mhs/MHS/drivers/robots/maskor__webots_ros2_spot",
-  "website": "https://mhs.openai4s.org",
+  "title": "Webots ROS 2 Spot simulation",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "Webots ROS 2 Spot simulation, adapted from maskor/webots_ros2_spot. It reads `joint_positions`, `odom_position`, `odom_orientation` and `odom_twist`; runs `publish_velocity`, `stand_up`, `sit_down`, `lie_down` and 1 more. `publish_velocity`: publish one geometry_msgs/Twist to the upstream /cmd_vel subscription; the receipt confirms only that rosbridge accepted the publication, not motion, arrival or stopping. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/maskor__webots_ros2_spot/",
   "upstream": {
     "repo_url": "https://github.com/maskor/webots_ros2_spot",
     "commit": "1245900385c5f0a8f7d153a047886b06010c0524",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/maskor__webots_ros2_spot",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/maskor__webots_ros2_spot --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/maskor__webots_ros2_spot --backend fake --mcp"
 }

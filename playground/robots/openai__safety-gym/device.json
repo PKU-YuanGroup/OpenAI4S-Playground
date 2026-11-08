@@ -2,7 +2,11 @@
   "name": "robots/openai__safety-gym",
   "package": "robots/openai__safety-gym",
   "mhs_package": "mhs/MHS/drivers/robots/openai__safety-gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "Safety Gym car robot (MuJoCo)",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "Safety Gym car robot (MuJoCo), adapted from openai/safety-gym. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/openai__safety-gym/",
   "upstream": {
     "repo_url": "https://github.com/openai/safety-gym",
     "commit": "f31042f2f9ee61b9034dd6a416955972911544f5",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/openai__safety-gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__safety-gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__safety-gym --backend fake --mcp"
 }

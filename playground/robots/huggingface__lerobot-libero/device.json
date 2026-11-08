@@ -2,7 +2,11 @@
   "name": "robots/huggingface__lerobot-libero",
   "package": "robots/huggingface__lerobot-libero",
   "mhs_package": "mhs/MHS/drivers/robots/huggingface__lerobot-libero",
-  "website": "https://mhs.openai4s.org",
+  "title": "LIBERO coffee-table manipulation environment",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "LIBERO coffee-table manipulation environment, adapted from huggingface/lerobot-libero. It reads `observation`, `tick`, `seed`, `reward` and 1 more; runs `reset_world` and `step`. `reset_world`: reset the simulated world to a scenario start state and return the initial observation. When a seed is supplied the endpoint records it in the receipt; otherwise the endpoint's declared default seed applies. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/huggingface__lerobot-libero/",
   "upstream": {
     "repo_url": "https://github.com/huggingface/lerobot-libero",
     "commit": "14fd6f022ff6647defc24e73563b95aa36670f43",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/huggingface__lerobot-libero",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__lerobot-libero --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__lerobot-libero --backend fake --mcp"
 }

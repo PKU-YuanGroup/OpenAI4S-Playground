@@ -2,7 +2,11 @@
   "name": "labs/sanket7941__pyinstrument",
   "package": "labs/sanket7941__pyinstrument",
   "mhs_package": "mhs/MHS/drivers/labs/sanket7941__pyinstrument",
-  "website": "https://mhs.openai4s.org",
+  "title": "pyinstrument PSupply power supply",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "pyinstrument PSupply power supply, adapted from sanket7941/pyinstrument. It reads `voltage`, `current`, `measure_voltage` and `measure_current`; sets `voltage_setpoint`, `current_setpoint` and `output_enabled`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/sanket7941__pyinstrument/",
   "upstream": {
     "repo_url": "https://github.com/sanket7941/pyinstrument",
     "commit": "74278e53b075418f155d0567410e03a8503f347f",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/sanket7941__pyinstrument",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/sanket7941__pyinstrument --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/sanket7941__pyinstrument --backend fake --mcp"
 }

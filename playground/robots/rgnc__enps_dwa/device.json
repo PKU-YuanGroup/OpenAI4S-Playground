@@ -2,7 +2,11 @@
   "name": "robots/rgnc__enps_dwa",
   "package": "robots/rgnc__enps_dwa",
   "mhs_package": "mhs/MHS/drivers/robots/rgnc__enps_dwa",
-  "website": "https://mhs.openai4s.org",
+  "title": "ENPS-DWA social navigation simulator",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "ENPS-DWA social navigation simulator, adapted from rgnc/enps_dwa. It reads `read_odometry` and `read_laser_scan`. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/rgnc__enps_dwa/",
   "upstream": {
     "repo_url": "https://github.com/rgnc/enps_dwa",
     "commit": "ce876244db34e9684b0517253d5adf83bc04cc7c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/rgnc__enps_dwa",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rgnc__enps_dwa --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rgnc__enps_dwa --backend fake --mcp"
 }

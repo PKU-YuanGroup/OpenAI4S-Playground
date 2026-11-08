@@ -2,7 +2,11 @@
   "name": "robots/goanywherenus__sim_igibson_ros",
   "package": "robots/goanywherenus__sim_igibson_ros",
   "mhs_package": "mhs/MHS/drivers/robots/goanywherenus__sim_igibson_ros",
-  "website": "https://mhs.openai4s.org",
+  "title": "iGibson TurtleBot RGB camera",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "iGibson TurtleBot RGB camera, adapted from goanywherenus/sim_igibson_ros. It runs `capture`. `capture`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/goanywherenus__sim_igibson_ros/",
   "upstream": {
     "repo_url": "https://github.com/goanywherenus/sim_igibson_ros",
     "commit": "cf9a546437e00bce59237571e0a1b5b7e2ba3e05",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/goanywherenus__sim_igibson_ros",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/goanywherenus__sim_igibson_ros --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/goanywherenus__sim_igibson_ros --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/edvardsz__ur5_gym",
   "package": "robots/edvardsz__ur5_gym",
   "mhs_package": "mhs/MHS/drivers/robots/edvardsz__ur5_gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "UR5/RG2 Reach (Ignition Gazebo simulation)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "UR5/RG2 Reach (Ignition Gazebo simulation), adapted from edvardsz/ur5_gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `reset_world`, `seed_world` and `step`. `reset_world`: reset the simulated world to a scenario start state and return the initial observation. When a seed is supplied the endpoint records it in the receipt; otherwise the endpoint's declared default seed applies. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/edvardsz__ur5_gym/",
   "upstream": {
     "repo_url": "https://github.com/edvardsz/ur5_gym",
     "commit": "d059332a01d320a48617d5a46edb9856f3a4c86d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/edvardsz__ur5_gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/edvardsz__ur5_gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/edvardsz__ur5_gym --backend fake --mcp"
 }

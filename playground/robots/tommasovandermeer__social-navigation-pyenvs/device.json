@@ -2,7 +2,11 @@
   "name": "robots/tommasovandermeer__social-navigation-pyenvs",
   "package": "robots/tommasovandermeer__social-navigation-pyenvs",
   "mhs_package": "mhs/MHS/drivers/robots/tommasovandermeer__social-navigation-pyenvs",
-  "website": "https://mhs.openai4s.org",
+  "title": "Social Navigation Gym SocialGym-v0",
+  "category": "Simulation",
+  "topic": "mobile navigation",
+  "intro": "Social Navigation Gym SocialGym-v0, adapted from tommasovandermeer/social-navigation-pyenvs. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/tommasovandermeer__social-navigation-pyenvs/",
   "upstream": {
     "repo_url": "https://github.com/tommasovandermeer/social-navigation-pyenvs",
     "commit": "f9cd244d3e529247ca1031364de22954717b9493",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/tommasovandermeer__social-navigation-pyenvs",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tommasovandermeer__social-navigation-pyenvs --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tommasovandermeer__social-navigation-pyenvs --backend fake --mcp"
 }

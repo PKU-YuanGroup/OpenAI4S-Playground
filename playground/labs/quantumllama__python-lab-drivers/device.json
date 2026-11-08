@@ -2,7 +2,11 @@
   "name": "labs/quantumllama__python-lab-drivers",
   "package": "labs/quantumllama__python-lab-drivers",
   "mhs_package": "mhs/MHS/drivers/labs/quantumllama__python-lab-drivers",
-  "website": "https://mhs.openai4s.org",
+  "title": "Siglent SDG 2042X function/arbitrary waveform generator",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Siglent SDG 2042X function/arbitrary waveform generator, adapted from quantumllama/python-lab-drivers. It sets `output`, `waveform`, `frequency`, `amplitude` and 2 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/quantumllama__python-lab-drivers/",
   "upstream": {
     "repo_url": "https://github.com/quantumllama/python-lab-drivers",
     "commit": "3fee8226c25d749e86f9108c0c9df2051a4aceb8",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/quantumllama__python-lab-drivers",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/quantumllama__python-lab-drivers --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/quantumllama__python-lab-drivers --backend fake --mcp"
 }

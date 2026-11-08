@@ -2,7 +2,11 @@
   "name": "robots/kjell-k__airgym",
   "package": "robots/kjell-k__airgym",
   "mhs_package": "mhs/MHS/drivers/robots/kjell-k__airgym",
-  "website": "https://mhs.openai4s.org",
+  "title": "AirGym AirSim quadrotor environment (simulated)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "AirGym AirSim quadrotor environment (simulated), adapted from kjell-k/airgym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/kjell-k__airgym/",
   "upstream": {
     "repo_url": "https://github.com/kjell-k/airgym",
     "commit": "818749ab1e93f41e1f1cf62a98f15ee9e4461568",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/kjell-k__airgym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kjell-k__airgym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kjell-k__airgym --backend fake --mcp"
 }

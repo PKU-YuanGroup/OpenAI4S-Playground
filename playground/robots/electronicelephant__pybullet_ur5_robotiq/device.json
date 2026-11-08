@@ -2,7 +2,11 @@
   "name": "robots/electronicelephant__pybullet_ur5_robotiq",
   "package": "robots/electronicelephant__pybullet_ur5_robotiq",
   "mhs_package": "mhs/MHS/drivers/robots/electronicelephant__pybullet_ur5_robotiq",
-  "website": "https://mhs.openai4s.org",
+  "title": "UR5 arm with Robotiq-85/140 gripper in a PyBullet push-and-grasp scene",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "UR5 arm with Robotiq-85/140 gripper in a PyBullet push-and-grasp scene, adapted from electronicelephant/pybullet_ur5_robotiq. It reads `observation`, `tick`, `episode` and `info`; runs `step` and `reset_world`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/electronicelephant__pybullet_ur5_robotiq/",
   "upstream": {
     "repo_url": "https://github.com/electronicelephant/pybullet_ur5_robotiq",
     "commit": "37f7d66d3196490618bf89ffe2b49dcb7e07aec3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/electronicelephant__pybullet_ur5_robotiq",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/electronicelephant__pybullet_ur5_robotiq --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/electronicelephant__pybullet_ur5_robotiq --backend fake --mcp"
 }

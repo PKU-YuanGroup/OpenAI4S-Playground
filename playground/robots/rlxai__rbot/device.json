@@ -2,7 +2,11 @@
   "name": "robots/rlxai__rbot",
   "package": "robots/rlxai__rbot",
   "mhs_package": "mhs/MHS/drivers/robots/rlxai__rbot",
-  "website": "https://mhs.openai4s.org",
+  "title": "rbot simulated 2-D LiDAR",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "rbot simulated 2-D LiDAR, adapted from rlxai/rbot. It reads `read_scan`. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/rlxai__rbot/",
   "upstream": {
     "repo_url": "https://github.com/rlxai/rbot",
     "commit": "47af3fc3780bd582837f48ce3785d3d68834a1b7",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/rlxai__rbot",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rlxai__rbot --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rlxai__rbot --backend fake --mcp"
 }

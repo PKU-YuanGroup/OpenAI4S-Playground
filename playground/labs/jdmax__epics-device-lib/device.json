@@ -2,7 +2,11 @@
   "name": "labs/jdmax__epics-device-lib",
   "package": "labs/jdmax__epics-device-lib",
   "mhs_package": "mhs/MHS/drivers/labs/jdmax__epics-device-lib",
-  "website": "https://mhs.openai4s.org",
+  "title": "Lake Shore 336 temperature controller (epics-device-lib ls336 DeviceConnection)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "Lake Shore 336 temperature controller (epics-device-lib ls336 DeviceConnection), adapted from jdmax/epics-device-lib. It reads `temperature`, `temperatures`, `heater_output`, `pid` and 1 more; sets `setpoint`, `manual_heater` and `heater_range`; runs `set_temperature`, `heater_off` and `enable_heater`. `set_temperature`: set the target temperature of a thermal zone and optionally wait for the zone to reach the setpoint within a declared tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/jdmax__epics-device-lib/",
   "upstream": {
     "repo_url": "https://github.com/jdmax/epics-device-lib",
     "commit": "370b8e3d94224db70ee2a1f51bd28c5d305daefe",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/jdmax__epics-device-lib",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jdmax__epics-device-lib --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jdmax__epics-device-lib --backend fake --mcp"
 }

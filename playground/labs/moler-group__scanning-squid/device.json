@@ -2,7 +2,11 @@
   "name": "labs/moler-group__scanning-squid",
   "package": "labs/moler-group__scanning-squid",
   "mhs_package": "mhs/MHS/drivers/labs/moler-group__scanning-squid",
-  "website": "https://mhs.openai4s.org",
+  "title": "Scanning SQUID microscope: Attocube coarse positioning (scanning-squid)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Scanning SQUID microscope: Attocube coarse positioning (scanning-squid), adapted from moler-group/scanning-squid. It reads `scanner_position` and `attocube_modes`; runs `step` and `ground`. `step`: step one Attocube axis with atto.step: mode stp, stepu or stepd with the count (the upstream writes it twice, atto.py:109-124, 169, so the steps made are not known from the source), stepw, a wait, mode gnd. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/moler-group__scanning-squid/",
   "upstream": {
     "repo_url": "https://github.com/moler-group/scanning-squid",
     "commit": "32a61e8f8f4f6671f04e583752e361cb00276188",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/moler-group__scanning-squid",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/moler-group__scanning-squid --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/moler-group__scanning-squid --backend fake --mcp"
 }

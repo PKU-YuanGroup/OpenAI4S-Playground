@@ -2,7 +2,11 @@
   "name": "labs/pangea567__gnsdo-scpi-simulator",
   "package": "labs/pangea567__gnsdo-scpi-simulator",
   "mhs_package": "mhs/MHS/drivers/labs/pangea567__gnsdo-scpi-simulator",
-  "website": "https://mhs.openai4s.org",
+  "title": "Jackson Labs Low Noise Rubidium GNSDO",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Jackson Labs Low Noise Rubidium GNSDO, adapted from pangea567/gnsdo-scpi-simulator. It reads `identity`, `sync_locked`, `tint`, `health` and 14 more; runs `start_holdover`, `recover_from_holdover`, `set_sync_source` and `set_ptime_output`. `start_holdover`: put the oscillator into holdover (the device keeps the last known frequency without GPS). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pangea567__gnsdo-scpi-simulator/",
   "upstream": {
     "repo_url": "https://github.com/pangea567/gnsdo-scpi-simulator",
     "commit": "a2d57a9759ab72fcfa42578a505d8ca4248bc0a4",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pangea567__gnsdo-scpi-simulator",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pangea567__gnsdo-scpi-simulator --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pangea567__gnsdo-scpi-simulator --backend fake --mcp"
 }

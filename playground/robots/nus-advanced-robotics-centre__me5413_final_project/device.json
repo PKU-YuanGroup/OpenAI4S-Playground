@@ -2,7 +2,11 @@
   "name": "robots/nus-advanced-robotics-centre__me5413_final_project",
   "package": "robots/nus-advanced-robotics-centre__me5413_final_project",
   "mhs_package": "mhs/MHS/drivers/robots/nus-advanced-robotics-centre__me5413_final_project",
-  "website": "https://mhs.openai4s.org",
+  "title": "ME5413 Gazebo course world",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "ME5413 Gazebo course world, adapted from nus-advanced-robotics-centre/me5413_final_project. It runs `remove_moving_obstacle`, `clear_objects`, `regenerate_objects`, `open_exit` and 3 more. `remove_moving_obstacle`: delete the moving planar_box obstacle once with the acknowledged DeleteModel service; this is not a stop. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/nus-advanced-robotics-centre__me5413_final_project/",
   "upstream": {
     "repo_url": "https://github.com/nus-advanced-robotics-centre/me5413_final_project",
     "commit": "9fd6ce2643f7dc9ed6e074ea559d3af29ef4968b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/nus-advanced-robotics-centre__me5413_final_project",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nus-advanced-robotics-centre__me5413_final_project --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nus-advanced-robotics-centre__me5413_final_project --backend fake --mcp"
 }

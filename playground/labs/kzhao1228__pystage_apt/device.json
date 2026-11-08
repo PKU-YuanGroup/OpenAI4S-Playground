@@ -2,7 +2,11 @@
   "name": "labs/kzhao1228__pystage_apt",
   "package": "labs/kzhao1228__pystage_apt",
   "mhs_package": "mhs/MHS/drivers/labs/kzhao1228__pystage_apt",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs APT stage controller (pystage-apt)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs APT stage controller (pystage-apt), adapted from kzhao1228/pystage_apt. It reads `in_motion`, `homed`, `channel_enabled`, `forward_limit_active` and 6 more; sets `position`, `maximum_velocity`, `acceleration`, `home_direction` and 1 more; runs `home`, `move_relative` and `stop_motion`. `home`: drive axes to their declared home position or reference switch, establishing the coordinate reference needed by other motion capabilities. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/kzhao1228__pystage_apt/",
   "upstream": {
     "repo_url": "https://github.com/kzhao1228/pystage_apt",
     "commit": "34bf8886ae996f30469338be3b02c42455ffea65",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/kzhao1228__pystage_apt",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kzhao1228__pystage_apt --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kzhao1228__pystage_apt --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/ccrprepo__robomimic_deploy",
   "package": "robots/ccrprepo__robomimic_deploy",
   "mhs_package": "mhs/MHS/drivers/robots/ccrprepo__robomimic_deploy",
-  "website": "https://mhs.openai4s.org",
+  "title": "RoboMimic Deploy Unitree G1 29-DoF (MuJoCo scene)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "RoboMimic Deploy Unitree G1 29-DoF (MuJoCo scene), adapted from ccrprepo/robomimic_deploy. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ccrprepo__robomimic_deploy/",
   "upstream": {
     "repo_url": "https://github.com/ccrprepo/robomimic_deploy",
     "commit": "3a72ec1a55dcf155be88c9dcc4a32ecb5c11e313",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ccrprepo__robomimic_deploy",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ccrprepo__robomimic_deploy --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ccrprepo__robomimic_deploy --backend fake --mcp"
 }

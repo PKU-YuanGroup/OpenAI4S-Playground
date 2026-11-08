@@ -2,7 +2,11 @@
   "name": "labs/zhangxp93__pyinsts",
   "package": "labs/zhangxp93__pyinsts",
   "mhs_package": "mhs/MHS/drivers/labs/zhangxp93__pyinsts",
-  "website": "https://mhs.openai4s.org",
+  "title": "Rohde & Schwarz FSV3030 spectrum analyzer",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Rohde & Schwarz FSV3030 spectrum analyzer, adapted from zhangxp93/pyinsts. It reads `marker_level`, `delta_marker_frequency` and `delta_marker_level`; sets `center_frequency`, `span`, `marker_frequency`, `error_display` and 1 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/zhangxp93__pyinsts/",
   "upstream": {
     "repo_url": "https://github.com/zhangxp93/pyinsts",
     "commit": "3bcaa2acbea14bb3ed30de140808e9d0de70c96a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/zhangxp93__pyinsts",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/zhangxp93__pyinsts --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/zhangxp93__pyinsts --backend fake --mcp"
 }

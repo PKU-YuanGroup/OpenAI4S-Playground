@@ -2,7 +2,11 @@
   "name": "robots/enactic__openarm_mujoco",
   "package": "robots/enactic__openarm_mujoco",
   "mhs_package": "mhs/MHS/drivers/robots/enactic__openarm_mujoco",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenArm v1 bimanual scene (MuJoCo)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "OpenArm v1 bimanual scene (MuJoCo), adapted from enactic/openarm_mujoco. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/enactic__openarm_mujoco/",
   "upstream": {
     "repo_url": "https://github.com/enactic/openarm_mujoco",
     "commit": "0e050bb5d3472b75c6bfa00b310a77c7c2c5be79",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/enactic__openarm_mujoco",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/enactic__openarm_mujoco --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/enactic__openarm_mujoco --backend fake --mcp"
 }

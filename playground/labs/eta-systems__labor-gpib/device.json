@@ -2,7 +2,11 @@
   "name": "labs/eta-systems__labor-gpib",
   "package": "labs/eta-systems__labor-gpib",
   "mhs_package": "mhs/MHS/drivers/labs/eta-systems__labor-gpib",
-  "website": "https://mhs.openai4s.org",
+  "title": "Rohde & Schwarz NGMO2 channel A",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Rohde & Schwarz NGMO2 channel A, adapted from eta-systems/labor-gpib. It reads `identity` and `status_byte`; sets `voltage_setpoint`, `current_limit`, `measurement_interval`, `averaging_samples` and 5 more; runs `measure_voltage`, `measure_current`, `output_off` and `scpi_rst`. `measure_voltage`: measure a DC or RMS voltage on a declared channel or terminal pair and return the value with its sampling timestamp and measurement range. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/eta-systems__labor-gpib/",
   "upstream": {
     "repo_url": "https://github.com/eta-systems/labor-gpib",
     "commit": "d5fe1b230344452bc32b756fc14567acde683c74",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/eta-systems__labor-gpib",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/eta-systems__labor-gpib --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/eta-systems__labor-gpib --backend fake --mcp"
 }

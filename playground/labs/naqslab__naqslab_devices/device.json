@@ -2,7 +2,11 @@
   "name": "labs/naqslab__naqslab_devices",
   "package": "labs/naqslab__naqslab_devices",
   "mhs_package": "mhs/MHS/drivers/labs/naqslab__naqslab_devices",
-  "website": "https://mhs.openai4s.org",
+  "title": "SRS SR865 lock-in amplifier",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "SRS SR865 lock-in amplifier, adapted from naqslab/naqslab_devices. It reads `tau_index` and `sens_index`; sets `time_constant`, `sensitivity` and `phase`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/naqslab__naqslab_devices/",
   "upstream": {
     "repo_url": "https://github.com/naqslab/naqslab_devices",
     "commit": "2c0ac4fb715ec7ad71c6f0061cd3c7e3d6583b69",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/naqslab__naqslab_devices",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/naqslab__naqslab_devices --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/naqslab__naqslab_devices --backend fake --mcp"
 }

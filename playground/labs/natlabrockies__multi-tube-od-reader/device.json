@@ -2,7 +2,11 @@
   "name": "labs/natlabrockies__multi-tube-od-reader",
   "package": "labs/natlabrockies__multi-tube-od-reader",
   "mhs_package": "mhs/MHS/drivers/labs/natlabrockies__multi-tube-od-reader",
-  "website": "https://mhs.openai4s.org",
+  "title": "Multi-Tube-OD-Reader (my_app.classes.device.Device)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Multi-Tube-OD-Reader (my_app.classes.device.Device), adapted from natlabrockies/multi-tube-od-reader. It reads `serial_number`, `port_positions` and `port_usage`; sets `name`; runs `measure_voltage` and `blink`. `measure_voltage`: measure a DC or RMS voltage on a declared channel or terminal pair and return the value with its sampling timestamp and measurement range. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/natlabrockies__multi-tube-od-reader/",
   "upstream": {
     "repo_url": "https://github.com/natlabrockies/multi-tube-od-reader",
     "commit": "e3948da8586d40093ffb7cc64706f4c6defa6326",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/natlabrockies__multi-tube-od-reader",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/natlabrockies__multi-tube-od-reader --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/natlabrockies__multi-tube-od-reader --backend fake --mcp"
 }

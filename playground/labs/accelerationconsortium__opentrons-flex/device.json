@@ -2,7 +2,11 @@
   "name": "labs/accelerationconsortium__opentrons-flex",
   "package": "labs/accelerationconsortium__opentrons-flex",
   "mhs_package": "mhs/MHS/drivers/labs/accelerationconsortium__opentrons-flex",
-  "website": "https://mhs.openai4s.org",
+  "title": "Opentrons Flex motion controller (FlexMotionController)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Opentrons Flex motion controller (FlexMotionController), adapted from accelerationconsortium/opentrons-flex. It reads `simulating` and `machine_status`; sets `lights_button` and `lights_rails`; runs `home`, `cartesian_pose` and `stop`. `home`: home every Flex axis with FlexMotionController.home(); the declared re-enable: after a halt or an e-stop the connector refuses every other actuation until this full home completes. The latch refuses it and a safety reset never runs it. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/accelerationconsortium__opentrons-flex/",
   "upstream": {
     "repo_url": "https://github.com/accelerationconsortium/opentrons-flex",
     "commit": "2639016ee9f234949aaf596c2ab2b93694eb0e0b",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/accelerationconsortium__opentrons-flex",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/accelerationconsortium__opentrons-flex --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/accelerationconsortium__opentrons-flex --backend fake --mcp"
 }

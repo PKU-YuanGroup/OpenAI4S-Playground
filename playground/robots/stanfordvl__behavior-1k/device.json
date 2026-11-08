@@ -2,7 +2,11 @@
   "name": "robots/stanfordvl__behavior-1k",
   "package": "robots/stanfordvl__behavior-1k",
   "mhs_package": "mhs/MHS/drivers/robots/stanfordvl__behavior-1k",
-  "website": "https://mhs.openai4s.org",
+  "title": "BEHAVIOR-1K OmniGibson environment (simulated)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "BEHAVIOR-1K OmniGibson environment (simulated), adapted from stanfordvl/behavior-1k. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/stanfordvl__behavior-1k/",
   "upstream": {
     "repo_url": "https://github.com/stanfordvl/behavior-1k",
     "commit": "cd484e0477e79bf1f17d373af232c53431ccc660",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/stanfordvl__behavior-1k",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stanfordvl__behavior-1k --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stanfordvl__behavior-1k --backend fake --mcp"
 }

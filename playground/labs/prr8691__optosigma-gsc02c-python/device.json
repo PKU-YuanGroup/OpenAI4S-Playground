@@ -2,7 +2,11 @@
   "name": "labs/prr8691__optosigma-gsc02c-python",
   "package": "labs/prr8691__optosigma-gsc02c-python",
   "mhs_package": "mhs/MHS/drivers/labs/prr8691__optosigma-gsc02c-python",
-  "website": "https://mhs.openai4s.org",
+  "title": "OptoSigma GSC-02C delay stage (optosigma_gsc02c.GSC02C)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "OptoSigma GSC-02C delay stage (optosigma_gsc02c.GSC02C), adapted from prr8691/optosigma-gsc02c-python. It reads `position_mm`, `position_pulses`, `busy` and `status`; runs `configure_motion`, `move_absolute_mm`, `move_relative_mm`, `move_absolute_pulses` and 3 more. `configure_motion`: set the D: motion ramp used by later moves. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/prr8691__optosigma-gsc02c-python/",
   "upstream": {
     "repo_url": "https://github.com/prr8691/optosigma-gsc02c-python",
     "commit": "d3403dc83f62fd39a3b437c13076ee676122e760",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/prr8691__optosigma-gsc02c-python",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/prr8691__optosigma-gsc02c-python --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/prr8691__optosigma-gsc02c-python --backend fake --mcp"
 }

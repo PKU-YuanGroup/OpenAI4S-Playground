@@ -2,7 +2,11 @@
   "name": "labs/iherrbenza__ad9959_python",
   "package": "labs/iherrbenza__ad9959_python",
   "mhs_package": "mhs/MHS/drivers/labs/iherrbenza__ad9959_python",
-  "website": "https://mhs.openai4s.org",
+  "title": "AD9959 four-channel DDS (DDS_ESP32_lab.DDS_ESP32)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "AD9959 four-channel DDS (DDS_ESP32_lab.DDS_ESP32), adapted from iherrbenza/ad9959_python. It sets `frequency`, `amplitude` and `phase`; runs `mute`. `mute`: set every channel amplitude word to 0 (the safe state); it takes no input. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/iherrbenza__ad9959_python/",
   "upstream": {
     "repo_url": "https://github.com/iherrbenza/ad9959_python",
     "commit": "cd5298ec17fe7994a2c07ce9783ac88a3d194f8c",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/iherrbenza__ad9959_python",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/iherrbenza__ad9959_python --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/iherrbenza__ad9959_python --backend fake --mcp"
 }

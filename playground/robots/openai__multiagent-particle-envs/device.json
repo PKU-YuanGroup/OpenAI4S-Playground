@@ -2,7 +2,11 @@
   "name": "robots/openai__multiagent-particle-envs",
   "package": "robots/openai__multiagent-particle-envs",
   "mhs_package": "mhs/MHS/drivers/robots/openai__multiagent-particle-envs",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenAI Multi-Agent Particle Environment (simple world)",
+  "category": "Simulation",
+  "topic": "multi-robot systems",
+  "intro": "OpenAI Multi-Agent Particle Environment (simple world), adapted from openai/multiagent-particle-envs. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/openai__multiagent-particle-envs/",
   "upstream": {
     "repo_url": "https://github.com/openai/multiagent-particle-envs",
     "commit": "83ba4d1aeb00282f7c4acd6912435b3ca642c227",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/openai__multiagent-particle-envs",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__multiagent-particle-envs --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__multiagent-particle-envs --backend fake --mcp"
 }

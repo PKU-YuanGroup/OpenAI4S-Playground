@@ -2,7 +2,11 @@
   "name": "robots/inria-paris-robotics-lab__unitree_simulation",
   "package": "robots/inria-paris-robotics-lab__unitree_simulation",
   "mhs_package": "mhs/MHS/drivers/robots/inria-paris-robotics-lab__unitree_simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree Go2 ROS 2 pybullet simulation",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Unitree Go2 ROS 2 pybullet simulation, adapted from inria-paris-robotics-lab/unitree_simulation. It reads `pose`, `twist`, `motor_state` and `read_lowstate`; runs `publish_lowcmd`, `reset_simulation` and `unlock_base`. `publish_lowcmd`: publish one unitree_go/LowCmd on /lowcmd; the node applies it on its next timer tick. Transmission only: no execution, arrival or stop acknowledgement. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/inria-paris-robotics-lab__unitree_simulation/",
   "upstream": {
     "repo_url": "https://github.com/inria-paris-robotics-lab/unitree_simulation",
     "commit": "b53b31bc0757e3ff48ac1199227e0b144d4008d2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/inria-paris-robotics-lab__unitree_simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/inria-paris-robotics-lab__unitree_simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/inria-paris-robotics-lab__unitree_simulation --backend fake --mcp"
 }

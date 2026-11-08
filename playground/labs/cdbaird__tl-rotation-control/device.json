@@ -2,7 +2,11 @@
   "name": "labs/cdbaird__tl-rotation-control",
   "package": "labs/cdbaird__tl-rotation-control",
   "mhs_package": "mhs/MHS/drivers/labs/cdbaird__tl-rotation-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs Elliptec rotation stage (elliptec.rotation.Motor)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs Elliptec rotation stage (elliptec.rotation.Motor), adapted from cdbaird/tl-rotation-control. It reads `status_code` and `serial_number`; sets `position` and `step_size`; runs `home`. `home`: home the rotation stage. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/cdbaird__tl-rotation-control/",
   "upstream": {
     "repo_url": "https://github.com/cdbaird/tl-rotation-control",
     "commit": "759dc3fc58efd975c37c7ee954fa6152618cd58e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/cdbaird__tl-rotation-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cdbaird__tl-rotation-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cdbaird__tl-rotation-control --backend fake --mcp"
 }

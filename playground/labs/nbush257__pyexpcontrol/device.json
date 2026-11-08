@@ -2,7 +2,11 @@
   "name": "labs/nbush257__pyexpcontrol",
   "package": "labs/nbush257__pyexpcontrol",
   "mhs_package": "mhs/MHS/drivers/labs/nbush257__pyexpcontrol",
-  "website": "https://mhs.openai4s.org",
+  "title": "nebPod NPX rig controller (nebPod.Controller)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "nebPod NPX rig controller (nebPod.Controller), adapted from nbush257/pyexpcontrol. It reads `valves`, `gpio` and `camera_triggering`; sets `laser_amplitude`; runs `set_valve`, `set_all_valves`, `set_gpio`, `start_camera_trigger` and 2 more. `set_valve`: open or close one olfactometer valve. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/nbush257__pyexpcontrol/",
   "upstream": {
     "repo_url": "https://github.com/nbush257/pyexpcontrol",
     "commit": "06e94c4d22ac2d9fc542a3ebee035a8b9e360ea7",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/nbush257__pyexpcontrol",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nbush257__pyexpcontrol --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nbush257__pyexpcontrol --backend fake --mcp"
 }

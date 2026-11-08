@@ -2,7 +2,11 @@
   "name": "labs/ap--__python-oceanoptics",
   "package": "labs/ap--__python-oceanoptics",
   "mhs_package": "mhs/MHS/drivers/labs/ap--__python-oceanoptics",
-  "website": "https://mhs.openai4s.org",
+  "title": "Ocean Optics QE65000/QE65Pro TEC",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "Ocean Optics QE65000/QE65Pro TEC, adapted from ap--/python-oceanoptics. It reads `tec_temperature`, `pcb_temperature`, `heatsink_temperature`, `tec_enabled` and 1 more; sets `setpoint`; runs `set_temperature` and `tec_safe_off`. `set_temperature`: set the target temperature of a thermal zone and optionally wait for the zone to reach the setpoint within a declared tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/ap--__python-oceanoptics/",
   "upstream": {
     "repo_url": "https://github.com/ap--/python-oceanoptics",
     "commit": "3df0c263e47c374dcd569681780cf5fc5faa2029",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ap--__python-oceanoptics",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ap--__python-oceanoptics --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ap--__python-oceanoptics --backend fake --mcp"
 }

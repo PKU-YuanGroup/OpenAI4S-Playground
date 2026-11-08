@@ -2,7 +2,11 @@
   "name": "robots/ut-austin-robin__oopsieverse",
   "package": "robots/ut-austin-robin__oopsieverse",
   "mhs_package": "mhs/MHS/drivers/robots/ut-austin-robin__oopsieverse",
-  "website": "https://mhs.openai4s.org",
+  "title": "OopsieVerse DamageableCloseDrawer (RoboCasa / MuJoCo)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "OopsieVerse DamageableCloseDrawer (RoboCasa / MuJoCo), adapted from ut-austin-robin/oopsieverse. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ut-austin-robin__oopsieverse/",
   "upstream": {
     "repo_url": "https://github.com/ut-austin-robin/oopsieverse",
     "commit": "a739f99e94f32c3229ae6932299e2e0e8c065480",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ut-austin-robin__oopsieverse",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ut-austin-robin__oopsieverse --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ut-austin-robin__oopsieverse --backend fake --mcp"
 }

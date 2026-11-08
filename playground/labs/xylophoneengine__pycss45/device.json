@@ -2,7 +2,11 @@
   "name": "labs/xylophoneengine__pycss45",
   "package": "labs/xylophoneengine__pycss45",
   "mhs_package": "mhs/MHS/drivers/labs/xylophoneengine__pycss45",
-  "website": "https://mhs.openai4s.org",
+  "title": "Gigahertz-Optik CSS45 spectral sensor (pycss45.CSS45)",
+  "category": "Spectroscopy",
+  "topic": null,
+  "intro": "Gigahertz-Optik CSS45 spectral sensor (pycss45.CSS45), adapted from xylophoneengine/pycss45. It reads `serial_number`, `firmware_version`, `status`, `temperature` and 7 more; runs `measure_spectrum`. `measure_spectrum`: acquire an optical or mass spectrum over a declared wavelength or mass range and return the axis and intensity arrays, or an artifact reference for large spectra. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/xylophoneengine__pycss45/",
   "upstream": {
     "repo_url": "https://github.com/xylophoneengine/pycss45",
     "commit": "e4364bae4d889efd579ffb3c4947099405becb27",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/xylophoneengine__pycss45",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/xylophoneengine__pycss45 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/xylophoneengine__pycss45 --backend fake --mcp"
 }

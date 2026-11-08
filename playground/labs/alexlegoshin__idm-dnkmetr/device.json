@@ -2,7 +2,11 @@
   "name": "labs/alexlegoshin__idm-dnkmetr",
   "package": "labs/alexlegoshin__idm-dnkmetr",
   "mhs_package": "mhs/MHS/drivers/labs/alexlegoshin__idm-dnkmetr",
-  "website": "https://mhs.openai4s.org",
+  "title": "GW Instek GPP-4323 DC power supply",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "GW Instek GPP-4323 DC power supply, adapted from alexlegoshin/idm-dnkmetr. It reads `identity`, `voltage` and `current`; sets `voltage_setpoint` and `current_limit`; runs `enable_output`. `enable_output`: close or open the power-supply output (ALLOUTON/ALLOUTOFF). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/alexlegoshin__idm-dnkmetr/",
   "upstream": {
     "repo_url": "https://github.com/alexlegoshin/idm-dnkmetr",
     "commit": "8f69873e51d2dce10c292feda3a44f745f1af5c1",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/alexlegoshin__idm-dnkmetr",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alexlegoshin__idm-dnkmetr --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alexlegoshin__idm-dnkmetr --backend fake --mcp"
 }

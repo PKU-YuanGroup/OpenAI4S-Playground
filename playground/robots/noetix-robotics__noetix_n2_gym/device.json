@@ -2,7 +2,11 @@
   "name": "robots/noetix-robotics__noetix_n2_gym",
   "package": "robots/noetix-robotics__noetix_n2_gym",
   "mhs_package": "mhs/MHS/drivers/robots/noetix-robotics__noetix_n2_gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "Noetix N2 humanoid, 18-DoF MuJoCo model",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "Noetix N2 humanoid, 18-DoF MuJoCo model, adapted from noetix-robotics/noetix_n2_gym. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/noetix-robotics__noetix_n2_gym/",
   "upstream": {
     "repo_url": "https://github.com/noetix-robotics/noetix_n2_gym",
     "commit": "153aad12dcc44aeafe378efe2f652873b02e0d89",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/noetix-robotics__noetix_n2_gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/noetix-robotics__noetix_n2_gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/noetix-robotics__noetix_n2_gym --backend fake --mcp"
 }

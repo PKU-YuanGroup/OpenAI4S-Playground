@@ -2,7 +2,11 @@
   "name": "robots/mindspaceinc__spot-mujoco-ros2",
   "package": "robots/mindspaceinc__spot-mujoco-ros2",
   "mhs_package": "mhs/MHS/drivers/robots/mindspaceinc__spot-mujoco-ros2",
-  "website": "https://mhs.openai4s.org",
+  "title": "MindSpaceInc Spot Mini MuJoCo ROS 2 simulator",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "MindSpaceInc Spot Mini MuJoCo ROS 2 simulator, adapted from mindspaceinc/spot-mujoco-ros2. It reads `joint_positions` and `read_joint_states`; runs `publish_actuator_cmds`, `reset_simulation` and `reset_safe_state`. `publish_actuator_cmds`: publish one communication/msg/ActuatorCmds message on /simulation/actuators_cmds with the 12 actuator names fixed in MJCF order. The node applies the PD expression and clamps each resulting ctrl to [-100, 100]; a publication receipt is transmission only, not motion. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/mindspaceinc__spot-mujoco-ros2/",
   "upstream": {
     "repo_url": "https://github.com/mindspaceinc/spot-mujoco-ros2",
     "commit": "1e07b87745ab623dab7ab79c4fbc61e62e4e829e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/mindspaceinc__spot-mujoco-ros2",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mindspaceinc__spot-mujoco-ros2 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mindspaceinc__spot-mujoco-ros2 --backend fake --mcp"
 }

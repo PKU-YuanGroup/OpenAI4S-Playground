@@ -2,7 +2,11 @@
   "name": "robots/openquadruped__spot_mini_mini",
   "package": "robots/openquadruped__spot_mini_mini",
   "mhs_package": "mhs/MHS/drivers/robots/openquadruped__spot_mini_mini",
-  "website": "https://mhs.openai4s.org",
+  "title": "openquadruped spot_mini_mini SpotMicroEnv-v0 (PyBullet quadruped)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "openquadruped spot_mini_mini SpotMicroEnv-v0 (PyBullet quadruped), adapted from openquadruped/spot_mini_mini. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/openquadruped__spot_mini_mini/",
   "upstream": {
     "repo_url": "https://github.com/openquadruped/spot_mini_mini",
     "commit": "c7e4905be176c63fa0e68a09c177b937e916fa60",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/openquadruped__spot_mini_mini",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openquadruped__spot_mini_mini --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openquadruped__spot_mini_mini --backend fake --mcp"
 }

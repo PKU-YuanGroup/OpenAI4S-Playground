@@ -2,7 +2,11 @@
   "name": "robots/angel-ayala__gym-webots-drone",
   "package": "robots/angel-ayala__gym-webots-drone",
   "mhs_package": "mhs/MHS/drivers/robots/angel-ayala__gym-webots-drone",
-  "website": "https://mhs.openai4s.org",
+  "title": "Webots drone fire-scenario environment (vector observation)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "Webots drone fire-scenario environment (vector observation), adapted from angel-ayala/gym-webots-drone. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/angel-ayala__gym-webots-drone/",
   "upstream": {
     "repo_url": "https://github.com/angel-ayala/gym-webots-drone",
     "commit": "24eb199041403d108bc94fac0f522cb33a544c9c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/angel-ayala__gym-webots-drone",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/angel-ayala__gym-webots-drone --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/angel-ayala__gym-webots-drone --backend fake --mcp"
 }

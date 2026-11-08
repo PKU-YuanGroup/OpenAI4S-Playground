@@ -2,7 +2,11 @@
   "name": "robots/ebim-benchmark__benchmark",
   "package": "robots/ebim-benchmark__benchmark",
   "mhs_package": "mhs/MHS/drivers/robots/ebim-benchmark__benchmark",
-  "website": "https://mhs.openai4s.org",
+  "title": "EBiM Benchmark Task 1 cable routing (MuJoCo)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "EBiM Benchmark Task 1 cable routing (MuJoCo), adapted from ebim-benchmark/benchmark. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ebim-benchmark__benchmark/",
   "upstream": {
     "repo_url": "https://github.com/ebim-benchmark/benchmark",
     "commit": "161db49e9eafd34be31e5bdada72d8e2f796c16a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ebim-benchmark__benchmark",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ebim-benchmark__benchmark --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ebim-benchmark__benchmark --backend fake --mcp"
 }

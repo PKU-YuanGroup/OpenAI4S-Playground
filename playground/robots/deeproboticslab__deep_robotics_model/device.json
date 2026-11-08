@@ -2,7 +2,11 @@
   "name": "robots/deeproboticslab__deep_robotics_model",
   "package": "robots/deeproboticslab__deep_robotics_model",
   "mhs_package": "mhs/MHS/drivers/robots/deeproboticslab__deep_robotics_model",
-  "website": "https://mhs.openai4s.org",
+  "title": "Deep Robotics Lite3 (MuJoCo)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Deep Robotics Lite3 (MuJoCo), adapted from deeproboticslab/deep_robotics_model. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/deeproboticslab__deep_robotics_model/",
   "upstream": {
     "repo_url": "https://github.com/deeproboticslab/deep_robotics_model",
     "commit": "75824b516ecc8fa3f8f7ce5d6577e1e86d6b614f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/deeproboticslab__deep_robotics_model",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/deeproboticslab__deep_robotics_model --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/deeproboticslab__deep_robotics_model --backend fake --mcp"
 }

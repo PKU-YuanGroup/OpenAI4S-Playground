@@ -2,7 +2,11 @@
   "name": "labs/festo-se__festo-dev-fluid-control",
   "package": "labs/festo-se__festo-dev-fluid-control",
   "mhs_package": "mhs/MHS/drivers/labs/festo-se__festo-dev-fluid-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Festo pressure-over-liquid instrument (FluidControlSession)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Festo pressure-over-liquid instrument (FluidControlSession), adapted from festo-se/festo-dev-fluid-control. It reads `channels`, `liquid_classes` and `fluid_status`; sets `pressure`; runs `aspirate`, `dispense`, `mix` and `deactivate`. `aspirate`: aspirate a volume on one valve channel with a configured liquid class. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/festo-se__festo-dev-fluid-control/",
   "upstream": {
     "repo_url": "https://github.com/festo-se/festo-dev-fluid-control",
     "commit": "2da14c5d6b202d3aca1ca1ca6e173f68eaf266c3",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/festo-se__festo-dev-fluid-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/festo-se__festo-dev-fluid-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/festo-se__festo-dev-fluid-control --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/amsikking__zaber_x_adr130",
   "package": "labs/amsikking__zaber_x_adr130",
   "mhs_package": "mhs/MHS/drivers/labs/amsikking__zaber_x_adr130",
-  "website": "https://mhs.openai4s.org",
+  "title": "Zaber X-ADR130 XY microscope stage",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Zaber X-ADR130 XY microscope stage, adapted from amsikking/zaber_x_adr130. It reads `x_mm` and `y_mm`; sets `x_maxspeed` and `y_maxspeed`; runs `move_xy`. `move_xy`: move both axes to absolute positions in millimetres and wait for the move to finish. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/amsikking__zaber_x_adr130/",
   "upstream": {
     "repo_url": "https://github.com/amsikking/zaber_x_adr130",
     "commit": "7c5926e07929b5c40ea6049ea5bceab28609bb0e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/amsikking__zaber_x_adr130",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/amsikking__zaber_x_adr130 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/amsikking__zaber_x_adr130 --backend fake --mcp"
 }

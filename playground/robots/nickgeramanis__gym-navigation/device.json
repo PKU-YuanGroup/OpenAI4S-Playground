@@ -2,7 +2,11 @@
   "name": "robots/nickgeramanis__gym-navigation",
   "package": "robots/nickgeramanis__gym-navigation",
   "mhs_package": "mhs/MHS/drivers/robots/nickgeramanis__gym-navigation",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-navigation NavigationTrack-v0 (2-D navigation simulation)",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "gym-navigation NavigationTrack-v0 (2-D navigation simulation), adapted from nickgeramanis/gym-navigation. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/nickgeramanis__gym-navigation/",
   "upstream": {
     "repo_url": "https://github.com/nickgeramanis/gym-navigation",
     "commit": "98be757c6aa2b2834cecbb7dde3c2c05e5f1b57b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/nickgeramanis__gym-navigation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nickgeramanis__gym-navigation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nickgeramanis__gym-navigation --backend fake --mcp"
 }

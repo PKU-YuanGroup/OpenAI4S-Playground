@@ -2,7 +2,11 @@
   "name": "robots/liorbenhorin__lerobot_so101_teleop",
   "package": "robots/liorbenhorin__lerobot_so101_teleop",
   "mhs_package": "mhs/MHS/drivers/robots/liorbenhorin__lerobot_so101_teleop",
-  "website": "https://mhs.openai4s.org",
+  "title": "LeRobot SO-101 teleoperation in Isaac Lab: Rock-A-Stack Simple",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "LeRobot SO-101 teleoperation in Isaac Lab: Rock-A-Stack Simple, adapted from liorbenhorin/lerobot_so101_teleop. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/liorbenhorin__lerobot_so101_teleop/",
   "upstream": {
     "repo_url": "https://github.com/liorbenhorin/lerobot_so101_teleop",
     "commit": "9ea18b2c77df29e05c1c45bb1915dfd95514c470",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/liorbenhorin__lerobot_so101_teleop",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/liorbenhorin__lerobot_so101_teleop --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/liorbenhorin__lerobot_so101_teleop --backend fake --mcp"
 }

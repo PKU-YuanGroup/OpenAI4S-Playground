@@ -2,7 +2,11 @@
   "name": "labs/vadter__hantek1008c",
   "package": "labs/vadter__hantek1008c",
   "mhs_package": "mhs/MHS/drivers/labs/vadter__hantek1008c",
-  "website": "https://mhs.openai4s.org",
+  "title": "Hantek 1008C eight-channel USB instrument (pyhantek1008C.Hantek1008)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Hantek 1008C eight-channel USB instrument (pyhantek1008C.Hantek1008), adapted from vadter/hantek1008c. It reads `active_channels`, `time`, `vscales`, `generator_waveform_max_length` and 1 more; sets `generator_on` and `generator_speed`; runs `set_generator_waveform`, `pause`, `resume` and `generator_off`. `set_generator_waveform`: send a generator waveform: one byte per part of the wave, each bit an output. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/vadter__hantek1008c/",
   "upstream": {
     "repo_url": "https://github.com/vadter/hantek1008c",
     "commit": "178773a7a7161e8ddf68a9230e944bb4c5205884",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/vadter__hantek1008c",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/vadter__hantek1008c --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/vadter__hantek1008c --backend fake --mcp"
 }

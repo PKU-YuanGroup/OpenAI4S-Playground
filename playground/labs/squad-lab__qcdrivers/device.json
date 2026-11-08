@@ -2,7 +2,11 @@
   "name": "labs/squad-lab__qcdrivers",
   "package": "labs/squad-lab__qcdrivers",
   "mhs_package": "mhs/MHS/drivers/labs/squad-lab__qcdrivers",
-  "website": "https://mhs.openai4s.org",
+  "title": "SQUAD Lab AD75019 crosspoint switch (qcdrivers Muxi)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "SQUAD Lab AD75019 crosspoint switch (qcdrivers Muxi), adapted from squad-lab/qcdrivers. It reads `identity`; runs `connect`, `status` and `reset_matrix`. `connect`: close one crosspoint with SWITCH32 x,y and read it back with STAT? x,y. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/squad-lab__qcdrivers/",
   "upstream": {
     "repo_url": "https://github.com/squad-lab/qcdrivers",
     "commit": "6704e1c1794eff30811b8db62593673b2e39b6b4",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/squad-lab__qcdrivers",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/squad-lab__qcdrivers --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/squad-lab__qcdrivers --backend fake --mcp"
 }

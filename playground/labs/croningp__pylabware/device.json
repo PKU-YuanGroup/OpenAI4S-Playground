@@ -2,7 +2,11 @@
   "name": "labs/croningp__pylabware",
   "package": "labs/croningp__pylabware",
   "mhs_package": "mhs/MHS/drivers/labs/croningp__pylabware",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tricontinent C3000 syringe pump (PyLabware)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Tricontinent C3000 syringe pump (PyLabware), adapted from croningp/pylabware. It reads `plunger_position`, `initialized`, `idle` and `connected`; sets `valve_position`; runs `transfer`, `move_plunger`, `move_home`, `set_speed` and 6 more. `transfer`: dispense or withdraw a number of plunger increments. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/croningp__pylabware/",
   "upstream": {
     "repo_url": "https://github.com/croningp/pylabware",
     "commit": "fbf287c7866ad3ac1e1a3bc44845035b8ae4a7b9",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/croningp__pylabware",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/croningp__pylabware --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/croningp__pylabware --backend fake --mcp"
 }

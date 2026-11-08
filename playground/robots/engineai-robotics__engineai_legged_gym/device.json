@@ -2,7 +2,11 @@
   "name": "robots/engineai-robotics__engineai_legged_gym",
   "package": "robots/engineai-robotics__engineai_legged_gym",
   "mhs_package": "mhs/MHS/drivers/robots/engineai-robotics__engineai_legged_gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "EngineAI ZqSA01 humanoid (MuJoCo model)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "EngineAI ZqSA01 humanoid (MuJoCo model), adapted from engineai-robotics/engineai_legged_gym. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/engineai-robotics__engineai_legged_gym/",
   "upstream": {
     "repo_url": "https://github.com/engineai-robotics/engineai_legged_gym",
     "commit": "1a659aa0aa77445766ecea6d95708a5812e9f290",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/engineai-robotics__engineai_legged_gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/engineai-robotics__engineai_legged_gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/engineai-robotics__engineai_legged_gym --backend fake --mcp"
 }

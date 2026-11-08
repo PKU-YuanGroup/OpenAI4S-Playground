@@ -2,7 +2,11 @@
   "name": "labs/tektronix__curvequery",
   "package": "labs/tektronix__curvequery",
   "mhs_package": "mhs/MHS/drivers/labs/tektronix__curvequery",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tektronix 4/5/6 Series MSO waveform download (curvequery)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Tektronix 4/5/6 Series MSO waveform download (curvequery), adapted from tektronix/curvequery. It runs `download_curves`. `download_curves`: download every displayed waveform source through the curvequery feature and return the traces. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/tektronix__curvequery/",
   "upstream": {
     "repo_url": "https://github.com/tektronix/curvequery",
     "commit": "57e59cc076eb41feaa3c606dcc5a68d447b44026",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/tektronix__curvequery",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tektronix__curvequery --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tektronix__curvequery --backend fake --mcp"
 }

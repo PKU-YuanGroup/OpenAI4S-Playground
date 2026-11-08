@@ -2,7 +2,11 @@
   "name": "labs/asvela__keyoscacquire",
   "package": "labs/asvela__keyoscacquire",
   "mhs_package": "mhs/MHS/drivers/labs/asvela__keyoscacquire",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keysight InfiniiVision oscilloscope",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keysight InfiniiVision oscilloscope, adapted from asvela/keyoscacquire. It reads `operation_condition`; sets `acq_type`, `num_averages`, `p_mode`, `num_points` and 1 more; runs `read_error`. `read_error`: read and remove the oldest entry of the instrument error queue (:SYSTem:ERRor?). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/asvela__keyoscacquire/",
   "upstream": {
     "repo_url": "https://github.com/asvela/keyoscacquire",
     "commit": "1d093470ab99769c9b149816d7faa4b61a4837d2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/asvela__keyoscacquire",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/asvela__keyoscacquire --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/asvela__keyoscacquire --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/msuarezrodriguez__python-instrument-control",
   "package": "labs/msuarezrodriguez__python-instrument-control",
   "mhs_package": "mhs/MHS/drivers/labs/msuarezrodriguez__python-instrument-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Lake Shore 336 temperature controller (QCoDeS VisaInstrument)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "Lake Shore 336 temperature controller (QCoDeS VisaInstrument), adapted from msuarezrodriguez/python-instrument-control. It reads `identity`, `temperature` and `sensor_units`; sets `setpoint`, `ramp_rate`, `ramp_enabled`, `heater_range` and 4 more; runs `heaters_off`. `heaters_off`: turn both heater outputs off (RANGE n,0 and OUTMODE n,0,0,0) and read the ranges and modes back; this is the safe-state action. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/msuarezrodriguez__python-instrument-control/",
   "upstream": {
     "repo_url": "https://github.com/msuarezrodriguez/python-instrument-control",
     "commit": "e56156e1ba6a2e5469094291fef91945ca9ee069",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/msuarezrodriguez__python-instrument-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/msuarezrodriguez__python-instrument-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/msuarezrodriguez__python-instrument-control --backend fake --mcp"
 }

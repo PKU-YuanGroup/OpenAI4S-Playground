@@ -2,7 +2,11 @@
   "name": "labs/ymzds__niscope-mcp",
   "package": "labs/ymzds__niscope-mcp",
   "mhs_package": "mhs/MHS/drivers/labs/ymzds__niscope-mcp",
-  "website": "https://mhs.openai4s.org",
+  "title": "NI PXIe oscilloscope (niscope DirectBackend)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "NI PXIe oscilloscope (niscope DirectBackend), adapted from ymzds/niscope-mcp. It reads `device_model`; sets `channel_enabled`, `vertical_range`, `vertical_offset`, `vertical_coupling` and 7 more; runs `measure_waveform` and `auto_setup`. `measure_waveform`: acquire one channel and return its scalar waveform measurements. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/ymzds__niscope-mcp/",
   "upstream": {
     "repo_url": "https://github.com/ymzds/niscope-mcp",
     "commit": "75a3a09bb6eab9b1b0dd9e48ecdb30e93bbac6ed",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ymzds__niscope-mcp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ymzds__niscope-mcp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ymzds__niscope-mcp --backend fake --mcp"
 }

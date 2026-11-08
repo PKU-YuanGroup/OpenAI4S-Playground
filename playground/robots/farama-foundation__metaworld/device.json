@@ -2,7 +2,11 @@
   "name": "robots/farama-foundation__metaworld",
   "package": "robots/farama-foundation__metaworld",
   "mhs_package": "mhs/MHS/drivers/robots/farama-foundation__metaworld",
-  "website": "https://mhs.openai4s.org",
+  "title": "Meta-World assembly-v3 (Sawyer nut assembly, simulated)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "Meta-World assembly-v3 (Sawyer nut assembly, simulated), adapted from farama-foundation/metaworld. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/farama-foundation__metaworld/",
   "upstream": {
     "repo_url": "https://github.com/farama-foundation/metaworld",
     "commit": "c0dafaf1557f31cad3b96ba2b62462f45638f5a5",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/farama-foundation__metaworld",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__metaworld --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__metaworld --backend fake --mcp"
 }

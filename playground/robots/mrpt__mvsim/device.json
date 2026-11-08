@@ -2,7 +2,11 @@
   "name": "robots/mrpt__mvsim",
   "package": "robots/mrpt__mvsim",
   "mhs_package": "mhs/MHS/drivers/robots/mrpt__mvsim",
-  "website": "https://mhs.openai4s.org",
+  "title": "MVSim vehicle through MVSim's services",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "MVSim vehicle through MVSim's services, adapted from mrpt/mvsim. It reads `read_pose`; runs `set_twist`. `set_twist`: hand one twist setpoint (vx, wz) to the vehicle's controller through MVSim's set_controller_twist service; the setpoint persists until another command. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/mrpt__mvsim/",
   "upstream": {
     "repo_url": "https://github.com/mrpt/mvsim",
     "commit": "cfaf9f28f57fe5798a6b1defa65a435402bd38d0",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/mrpt__mvsim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mrpt__mvsim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mrpt__mvsim --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/barisyazici__libfranka-sim",
   "package": "robots/barisyazici__libfranka-sim",
   "mhs_package": "mhs/MHS/drivers/robots/barisyazici__libfranka-sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "Franka Hand (libfranka-sim)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Franka Hand (libfranka-sim), adapted from barisyazici/libfranka-sim. It reads `width_mm`, `max_width_mm`, `is_grasped`, `is_stuck` and 1 more; runs `grasp`, `release`, `hand_home`, `hand_move` and 1 more. `grasp`: close the gripper on a target object with a bounded force and report the achieved grasp width. A failed grasp is a completed operation with grasped=false, not a silent success. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/barisyazici__libfranka-sim/",
   "upstream": {
     "repo_url": "https://github.com/barisyazici/libfranka-sim",
     "commit": "d893e17dc77a338a92a1673a8e616c8b251cc5a9",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/barisyazici__libfranka-sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/barisyazici__libfranka-sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/barisyazici__libfranka-sim --backend fake --mcp"
 }

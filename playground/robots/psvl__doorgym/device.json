@@ -2,7 +2,11 @@
   "name": "robots/psvl__doorgym",
   "package": "robots/psvl__doorgym",
   "mhs_package": "mhs/MHS/drivers/robots/psvl__doorgym",
-  "website": "https://mhs.openai4s.org",
+  "title": "DoorGym BLUE door opening (blue-doorenv-v1)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "DoorGym BLUE door opening (blue-doorenv-v1), adapted from psvl/doorgym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/psvl__doorgym/",
   "upstream": {
     "repo_url": "https://github.com/psvl/doorgym",
     "commit": "903493a6bd518bed5452c683c3857f1bfc5a209d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/psvl__doorgym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/psvl__doorgym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/psvl__doorgym --backend fake --mcp"
 }

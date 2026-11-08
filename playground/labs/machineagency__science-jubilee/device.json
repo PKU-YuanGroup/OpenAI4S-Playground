@@ -2,7 +2,11 @@
   "name": "labs/machineagency__science-jubilee",
   "package": "labs/machineagency__science-jubilee",
   "mhs_package": "mhs/MHS/drivers/labs/machineagency__science-jubilee",
-  "website": "https://mhs.openai4s.org",
+  "title": "Science Jubilee motion platform (science_jubilee.Machine.Machine)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Science Jubilee motion platform (science_jubilee.Machine.Machine), adapted from machineagency/science-jubilee. It reads `x_position`, `y_position` and `z_position`; runs `move_to`, `home` and `set_tool_offset`. `move_to`: move the tool centre point to a Cartesian position and orientation in a named frame. The endpoint solves inverse kinematics; an unreachable target is rejected before motion. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/machineagency__science-jubilee/",
   "upstream": {
     "repo_url": "https://github.com/machineagency/science-jubilee",
     "commit": "bb918fa78f300f57cc379a80731cfca7bdb55c66",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/machineagency__science-jubilee",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/machineagency__science-jubilee --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/machineagency__science-jubilee --backend fake --mcp"
 }

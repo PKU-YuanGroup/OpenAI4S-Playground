@@ -2,7 +2,11 @@
   "name": "labs/martinhjelmare__leicacam",
   "package": "labs/martinhjelmare__leicacam",
   "mhs_package": "mhs/MHS/drivers/labs/martinhjelmare__leicacam",
-  "website": "https://mhs.openai4s.org",
+  "title": "Leica LASAF CAM server (leicacam.CAM)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Leica LASAF CAM server (leicacam.CAM), adapted from martinhjelmare/leicacam. It reads `stage_information`; runs `start_matrix_scan`, `stop_matrix_scan`, `pause_matrix_scan`, `autofocus_scan` and 4 more. `start_matrix_scan`: start the matrix scan (the CAM startscan command). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/martinhjelmare__leicacam/",
   "upstream": {
     "repo_url": "https://github.com/martinhjelmare/leicacam",
     "commit": "5c33a0d6daa179377390eccf40f1fc3e584b2dad",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/martinhjelmare__leicacam",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/martinhjelmare__leicacam --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/martinhjelmare__leicacam --backend fake --mcp"
 }

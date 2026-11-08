@@ -2,7 +2,11 @@
   "name": "robots/gsilano__crazys",
   "package": "robots/gsilano__crazys",
   "mhs_package": "mhs/MHS/drivers/robots/gsilano__crazys",
-  "website": "https://mhs.openai4s.org",
+  "title": "CrazyS Crazyflie 2.0 simulator",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "CrazyS Crazyflie 2.0 simulator, adapted from gsilano/crazys. It reads `read_odometry`; runs `publish_attitude_thrust`. `publish_attitude_thrust`: publish a roll/pitch/yaw-rate/thrust setpoint on the Crazyflie command topic; publication is fire-and-forget and does not confirm flight or stopping. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/gsilano__crazys/",
   "upstream": {
     "repo_url": "https://github.com/gsilano/crazys",
     "commit": "c7ee25a7c6f89d41468e33c857ded99f3e804e70",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/gsilano__crazys",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/gsilano__crazys --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/gsilano__crazys --backend fake --mcp"
 }

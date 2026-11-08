@@ -2,7 +2,11 @@
   "name": "robots/stevemacenski__ros2_ouster_drivers",
   "package": "robots/stevemacenski__ros2_ouster_drivers",
   "mhs_package": "mhs/MHS/drivers/robots/stevemacenski__ros2_ouster_drivers",
-  "website": "https://mhs.openai4s.org",
+  "title": "Ouster OS-x lidar ROS 2 driver",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Ouster OS-x lidar ROS 2 driver, adapted from stevemacenski/ros2_ouster_drivers. It runs `capture_point_cloud`. `capture_point_cloud`: capture a depth point cloud over a declared range and return a point-cloud artifact reference with the point count and coordinate frame. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/stevemacenski__ros2_ouster_drivers/",
   "upstream": {
     "repo_url": "https://github.com/stevemacenski/ros2_ouster_drivers",
     "commit": "19c2523025e3e55a2fa803581e4e830e467a9d47",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/stevemacenski__ros2_ouster_drivers",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stevemacenski__ros2_ouster_drivers --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stevemacenski__ros2_ouster_drivers --backend fake --mcp"
 }

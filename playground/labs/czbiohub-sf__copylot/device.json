@@ -2,7 +2,11 @@
   "name": "labs/czbiohub-sf__copylot",
   "package": "labs/czbiohub-sf__copylot",
   "mhs_package": "mhs/MHS/drivers/labs/czbiohub-sf__copylot",
-  "website": "https://mhs.openai4s.org",
+  "title": "Vortran Stradus laser (copylot VortranLaser)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Vortran Stradus laser (copylot VortranLaser), adapted from czbiohub-sf/copylot. It reads `emission`, `maximum_power`, `fault_code` and `fault_description`; sets `power`, `emission_delay` and `pulse_mode`; runs `emission_on` and `emission_off`. `emission_on`: switch the laser emission on (the upstream turn_on alias, LE=1). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/czbiohub-sf__copylot/",
   "upstream": {
     "repo_url": "https://github.com/czbiohub-sf/copylot",
     "commit": "eac4fdbf6ee49130d25764a486acb35a48d999db",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/czbiohub-sf__copylot",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/czbiohub-sf__copylot --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/czbiohub-sf__copylot --backend fake --mcp"
 }

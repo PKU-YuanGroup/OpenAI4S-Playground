@@ -2,7 +2,11 @@
   "name": "robots/opengalaxea__galaxeamanipsim",
   "package": "robots/opengalaxea__galaxeamanipsim",
   "mhs_package": "mhs/MHS/drivers/robots/opengalaxea__galaxeamanipsim",
-  "website": "https://mhs.openai4s.org",
+  "title": "Galaxea R1Base-v0 bimanual manipulation (Sapien)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "Galaxea R1Base-v0 bimanual manipulation (Sapien), adapted from opengalaxea/galaxeamanipsim. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/opengalaxea__galaxeamanipsim/",
   "upstream": {
     "repo_url": "https://github.com/opengalaxea/galaxeamanipsim",
     "commit": "abe7f5161eeaa150e6eaffdf443af5df7f23f356",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/opengalaxea__galaxeamanipsim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/opengalaxea__galaxeamanipsim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/opengalaxea__galaxeamanipsim --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/facebookresearch__house3d",
   "package": "robots/facebookresearch__house3d",
   "mhs_package": "mhs/MHS/drivers/robots/facebookresearch__house3d",
-  "website": "https://mhs.openai4s.org",
+  "title": "House3D RoomNav (discrete actions)",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "House3D RoomNav (discrete actions), adapted from facebookresearch/house3d. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/facebookresearch__house3d/",
   "upstream": {
     "repo_url": "https://github.com/facebookresearch/house3d",
     "commit": "e616837a99c2a209212d5556bdbb3dda75298ca9",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/facebookresearch__house3d",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/facebookresearch__house3d --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/facebookresearch__house3d --backend fake --mcp"
 }

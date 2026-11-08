@@ -2,7 +2,11 @@
   "name": "labs/tiagocoutinho__vacuubrand",
   "package": "labs/tiagocoutinho__vacuubrand",
   "mhs_package": "mhs/MHS/drivers/labs/tiagocoutinho__vacuubrand",
-  "website": "https://mhs.openai4s.org",
+  "title": "Vacuubrand DCP 3000 vacuum controller",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Vacuubrand DCP 3000 vacuum controller, adapted from tiagocoutinho/vacuubrand. It reads `pressure`, `transducer_pressures`, `configuration`, `errors` and 2 more; sets `event_time_interval`, `on_setpoint_1`, `off_setpoint_1`, `on_setpoint_2` and 5 more; runs `measure_pressure`, `switch_on`, `switch_off`, `open_venting_valve` and 2 more. `measure_pressure`: measure absolute, gauge or differential pressure at a declared port and return the value with its reference and timestamp. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/tiagocoutinho__vacuubrand/",
   "upstream": {
     "repo_url": "https://github.com/tiagocoutinho/vacuubrand",
     "commit": "12b2e12aa43866ffa2ab986fc466c5548a7aba07",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/tiagocoutinho__vacuubrand",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__vacuubrand --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__vacuubrand --backend fake --mcp"
 }

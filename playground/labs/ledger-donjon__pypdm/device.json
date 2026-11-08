@@ -2,7 +2,11 @@
   "name": "labs/ledger-donjon__pypdm",
   "package": "labs/ledger-donjon__pypdm",
   "mhs_package": "mhs/MHS/drivers/labs/ledger-donjon__pypdm",
-  "website": "https://mhs.openai4s.org",
+  "title": "AlphANOV PDM laser source (pypdm.pdm:PDM)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "AlphANOV PDM laser source (pypdm.pdm:PDM), adapted from ledger-donjon/pypdm. It reads `address`, `protocol_version`, `activation`, `interlock_closed` and 13 more; runs `configure_pulse` and `disable_emission`. `configure_pulse`: write the pulse frequency and the diode current instructions and apply them to the device. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/ledger-donjon__pypdm/",
   "upstream": {
     "repo_url": "https://github.com/ledger-donjon/pypdm",
     "commit": "a059c30e5054a9e1276769c18c4f13e56a404a6a",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ledger-donjon__pypdm",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ledger-donjon__pypdm --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ledger-donjon__pypdm --backend fake --mcp"
 }

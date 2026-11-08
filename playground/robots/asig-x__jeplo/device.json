@@ -2,7 +2,11 @@
   "name": "robots/asig-x__jeplo",
   "package": "robots/asig-x__jeplo",
   "mhs_package": "mhs/MHS/drivers/robots/asig-x__jeplo",
-  "website": "https://mhs.openai4s.org",
+  "title": "JEPLO Unitree Go2 locomotion (Isaac Lab)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "JEPLO Unitree Go2 locomotion (Isaac Lab), adapted from asig-x/jeplo. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/asig-x__jeplo/",
   "upstream": {
     "repo_url": "https://github.com/asig-x/jeplo",
     "commit": "460e2272907af053d6e66b57fec71fdbe6ca1774",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/asig-x__jeplo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/asig-x__jeplo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/asig-x__jeplo --backend fake --mcp"
 }
