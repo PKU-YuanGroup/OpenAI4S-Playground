@@ -2,7 +2,11 @@
   "name": "robots/princeton-robot-planning-and-learning__kindergarden",
   "package": "robots/princeton-robot-planning-and-learning__kindergarden",
   "mhs_package": "mhs/MHS/drivers/robots/princeton-robot-planning-and-learning__kindergarden",
-  "website": "https://mhs.openai4s.org",
+  "title": "KinDER RBY1A mobile manipulator (MuJoCo model)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "KinDER RBY1A mobile manipulator (MuJoCo model), adapted from princeton-robot-planning-and-learning/kindergarden. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/princeton-robot-planning-and-learning__kindergarden/",
   "upstream": {
     "repo_url": "https://github.com/princeton-robot-planning-and-learning/kindergarden",
     "commit": "5b2dbac482142b879b48449b3fa2af63f641aed3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/princeton-robot-planning-and-learning__kindergarden",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/princeton-robot-planning-and-learning__kindergarden --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/princeton-robot-planning-and-learning__kindergarden --backend fake --mcp"
 }

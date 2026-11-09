@@ -2,7 +2,11 @@
   "name": "robots/karthik0497__ros2-amr-simulation",
   "package": "robots/karthik0497__ros2-amr-simulation",
   "mhs_package": "mhs/MHS/drivers/robots/karthik0497__ros2-amr-simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "ros2-amr-simulation differential-drive base",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "ros2-amr-simulation differential-drive base, adapted from karthik0497/ros2-amr-simulation. It reads `pose`, `twist`, `read_sim_clock` and `read_joint_states`; runs `publish_cmd_vel`. `publish_cmd_vel`: publish one geometry_msgs/Twist velocity setpoint to /cmd_vel for the gz-sim DiffDrive plugin. The receipt confirms only that rosbridge accepted the publication, not motion, arrival or stopping. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/karthik0497__ros2-amr-simulation/",
   "upstream": {
     "repo_url": "https://github.com/karthik0497/ros2-amr-simulation",
     "commit": "202aad5cac8842dcf94385be4ed186fdd8b29718",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/karthik0497__ros2-amr-simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/karthik0497__ros2-amr-simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/karthik0497__ros2-amr-simulation --backend fake --mcp"
 }

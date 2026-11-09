@@ -2,7 +2,11 @@
   "name": "labs/aaronslaff__tecan_fluentcontrol",
   "package": "labs/aaronslaff__tecan_fluentcontrol",
   "mhs_package": "mhs/MHS/drivers/labs/aaronslaff__tecan_fluentcontrol",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tecan FluentControl liquid handler (fluent_control_automation.FluentControlClient)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Tecan FluentControl liquid handler (fluent_control_automation.FluentControlClient), adapted from aaronslaff/tecan_fluentcontrol. It reads `instrument_status`, `deck_layout` and `transfer_status`; runs `post_transfer_session`, `start_transfer_session`, `get_transfer_status`, `cancel_transfer_session` and 1 more. `post_transfer_session`: post one source-to-destination transfer and create a transfer session. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/aaronslaff__tecan_fluentcontrol/",
   "upstream": {
     "repo_url": "https://github.com/aaronslaff/tecan_fluentcontrol",
     "commit": "5bbff1713f97e75eab6f8b204f293b79a4104a33",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/aaronslaff__tecan_fluentcontrol",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aaronslaff__tecan_fluentcontrol --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aaronslaff__tecan_fluentcontrol --backend fake --mcp"
 }

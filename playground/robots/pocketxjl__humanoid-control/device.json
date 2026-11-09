@@ -2,7 +2,11 @@
   "name": "robots/pocketxjl__humanoid-control",
   "package": "robots/pocketxjl__humanoid-control",
   "mhs_package": "mhs/MHS/drivers/robots/pocketxjl__humanoid-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "pocketxjl humanoid legged MuJoCo model",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "pocketxjl humanoid legged MuJoCo model, adapted from pocketxjl/humanoid-control. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/pocketxjl__humanoid-control/",
   "upstream": {
     "repo_url": "https://github.com/pocketxjl/humanoid-control",
     "commit": "3b5ffec98d29827730194b0dbf2f119fb7b265ca",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/pocketxjl__humanoid-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pocketxjl__humanoid-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pocketxjl__humanoid-control --backend fake --mcp"
 }

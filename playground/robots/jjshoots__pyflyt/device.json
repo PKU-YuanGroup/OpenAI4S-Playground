@@ -2,7 +2,11 @@
   "name": "robots/jjshoots__pyflyt",
   "package": "robots/jjshoots__pyflyt",
   "mhs_package": "mhs/MHS/drivers/robots/jjshoots__pyflyt",
-  "website": "https://mhs.openai4s.org",
+  "title": "PyFlyt QuadX Hover (Gymnasium environment)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "PyFlyt QuadX Hover (Gymnasium environment), adapted from jjshoots/pyflyt. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/jjshoots__pyflyt/",
   "upstream": {
     "repo_url": "https://github.com/jjshoots/pyflyt",
     "commit": "9095d41f6fc5f07fe711346b747b4f7fd475b424",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jjshoots__pyflyt",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jjshoots__pyflyt --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jjshoots__pyflyt --backend fake --mcp"
 }

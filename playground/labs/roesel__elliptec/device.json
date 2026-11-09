@@ -2,7 +2,11 @@
   "name": "labs/roesel__elliptec",
   "package": "labs/roesel__elliptec",
   "mhs_package": "mhs/MHS/drivers/labs/roesel__elliptec",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs Elliptec shutter (elliptec.Shutter)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Thorlabs Elliptec shutter (elliptec.Shutter), adapted from roesel/elliptec. It reads `is_open`, `is_closed` and `slot`; runs `set_state`, `home_shutter`, `move_to_slot` and `close_shutter`. `set_state`: open or close a mechanical or electronic shutter in the optical path, reporting the resulting state and, for an open shutter, the open duration. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/roesel__elliptec/",
   "upstream": {
     "repo_url": "https://github.com/roesel/elliptec",
     "commit": "5f86ca595f80397bca280347830339c832a7b0bc",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/roesel__elliptec",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/roesel__elliptec --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/roesel__elliptec --backend fake --mcp"
 }

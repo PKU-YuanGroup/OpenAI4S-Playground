@@ -2,7 +2,11 @@
   "name": "robots/lachlanhurst__so100-mujoco-rl",
   "package": "robots/lachlanhurst__so100-mujoco-rl",
   "mhs_package": "mhs/MHS/drivers/robots/lachlanhurst__so100-mujoco-rl",
-  "website": "https://mhs.openai4s.org",
+  "title": "SO-100 MuJoCo Env01-v1 (reach the block)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "SO-100 MuJoCo Env01-v1 (reach the block), adapted from lachlanhurst/so100-mujoco-rl. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/lachlanhurst__so100-mujoco-rl/",
   "upstream": {
     "repo_url": "https://github.com/lachlanhurst/so100-mujoco-rl",
     "commit": "057ccecbb5c2bb06aa526714f300e801c19d3cf7",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/lachlanhurst__so100-mujoco-rl",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lachlanhurst__so100-mujoco-rl --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/lachlanhurst__so100-mujoco-rl --backend fake --mcp"
 }

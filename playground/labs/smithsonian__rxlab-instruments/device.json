@@ -2,7 +2,11 @@
   "name": "labs/smithsonian__rxlab-instruments",
   "package": "labs/smithsonian__rxlab-instruments",
   "mhs_package": "mhs/MHS/drivers/labs/smithsonian__rxlab-instruments",
-  "website": "https://mhs.openai4s.org",
+  "title": "Agilent E8257D PSG signal generator",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Agilent E8257D PSG signal generator, adapted from smithsonian/rxlab-instruments. It reads `identity`; sets `frequency`, `power` and `output_enabled`; runs `scpi_rst`. `scpi_rst`: call GenericInstrument.reset, which writes '*RST' (labinstruments/generic.py:65-68). The docstring says only 'Reset instrument' and does not state the effect on the RF output, the frequency or the power. An ordinary command: the safety reset does not call it, and it is not a re-enable or a safe-state action. A later read returns the instrument's reply and does not state what '*RST' set. The operator confirms the instrument, including whether the RF output is enabled. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/smithsonian__rxlab-instruments/",
   "upstream": {
     "repo_url": "https://github.com/smithsonian/rxlab-instruments",
     "commit": "2fbf8e6913e9eb2143088ed3a0b49d01a22fb93c",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/smithsonian__rxlab-instruments",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/smithsonian__rxlab-instruments --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/smithsonian__rxlab-instruments --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/mortezaaliyari__multi-robot-gazebo-navistack",
   "package": "robots/mortezaaliyari__multi-robot-gazebo-navistack",
   "mhs_package": "mhs/MHS/drivers/robots/mortezaaliyari__multi-robot-gazebo-navistack",
-  "website": "https://mhs.openai4s.org",
+  "title": "Multi-robot TurtleBot3 Gazebo/Nav stack",
+  "category": "Simulation",
+  "topic": "multi-robot systems",
+  "intro": "Multi-robot TurtleBot3 Gazebo/Nav stack, adapted from mortezaaliyari/multi-robot-gazebo-navistack. It reads `read_tb3_0_odom`, `read_tb3_0_scan`, `read_tb3_1_odom` and `read_tb3_1_scan`; runs `publish_tb30_cmd_vel`, `publish_tb31_cmd_vel` and `resume_simulation`. `publish_tb30_cmd_vel`: publish one geometry_msgs/Twist velocity setpoint to the tb3_0 Gazebo cmd_vel topic; the receipt confirms only that rosbridge accepted the publication, not motion, arrival or stopping. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/mortezaaliyari__multi-robot-gazebo-navistack/",
   "upstream": {
     "repo_url": "https://github.com/mortezaaliyari/multi-robot-gazebo-navistack",
     "commit": "afcc20c73158370f32cf123a0d73a698f9d02579",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/mortezaaliyari__multi-robot-gazebo-navistack",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mortezaaliyari__multi-robot-gazebo-navistack --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mortezaaliyari__multi-robot-gazebo-navistack --backend fake --mcp"
 }

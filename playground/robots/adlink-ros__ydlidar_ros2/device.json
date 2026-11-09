@@ -2,7 +2,11 @@
   "name": "robots/adlink-ros__ydlidar_ros2",
   "package": "robots/adlink-ros__ydlidar_ros2",
   "mhs_package": "mhs/MHS/drivers/robots/adlink-ros__ydlidar_ros2",
-  "website": "https://mhs.openai4s.org",
+  "title": "YDLIDAR ROS 2 laser scanner",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "YDLIDAR ROS 2 laser scanner, adapted from adlink-ros/ydlidar_ros2. It reads `read_scan`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/adlink-ros__ydlidar_ros2/",
   "upstream": {
     "repo_url": "https://github.com/adlink-ros/ydlidar_ros2",
     "commit": "482c76acf5c0a563909e1249051c751011ae74c1",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/adlink-ros__ydlidar_ros2",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/adlink-ros__ydlidar_ros2 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/adlink-ros__ydlidar_ros2 --backend fake --mcp"
 }

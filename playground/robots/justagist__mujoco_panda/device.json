@@ -2,7 +2,11 @@
   "name": "robots/justagist__mujoco_panda",
   "package": "robots/justagist__mujoco_panda",
   "mhs_package": "mhs/MHS/drivers/robots/justagist__mujoco_panda",
-  "website": "https://mhs.openai4s.org",
+  "title": "Franka Emika Panda MJCF scene (mujoco_panda)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Franka Emika Panda MJCF scene (mujoco_panda), adapted from justagist/mujoco_panda. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/justagist__mujoco_panda/",
   "upstream": {
     "repo_url": "https://github.com/justagist/mujoco_panda",
     "commit": "207938fbc99bd3f8a4b05d35c18dd999b7a8dd7f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/justagist__mujoco_panda",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justagist__mujoco_panda --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justagist__mujoco_panda --backend fake --mcp"
 }

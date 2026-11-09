@@ -2,7 +2,11 @@
   "name": "labs/ethanjli__liquid-handling-robotics",
   "package": "labs/ethanjli__liquid-handling-robotics",
   "mhs_package": "mhs/MHS/drivers/labs/ethanjli__liquid-handling-robotics",
-  "website": "https://mhs.openai4s.org",
+  "title": "Liquid-handling robot x-axis (sample stage)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Liquid-handling robot x-axis (sample stage), adapted from ethanjli/liquid-handling-robotics. It reads `physical_position` and `sensor_position`; runs `move_by_physical_delta` and `stop_axis`. `move_by_physical_delta`: move the x-axis by a relative physical displacement along its travel. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/ethanjli__liquid-handling-robotics/",
   "upstream": {
     "repo_url": "https://github.com/ethanjli/liquid-handling-robotics",
     "commit": "fc7043558072e77981206ae123dfd3a24ef89029",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ethanjli__liquid-handling-robotics",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ethanjli__liquid-handling-robotics --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ethanjli__liquid-handling-robotics --backend fake --mcp"
 }

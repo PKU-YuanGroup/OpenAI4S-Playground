@@ -2,7 +2,11 @@
   "name": "labs/rk-exxec__pymupump",
   "package": "labs/rk-exxec__pymupump",
   "mhs_package": "mhs/MHS/drivers/labs/rk-exxec__pymupump",
-  "website": "https://mhs.openai4s.org",
+  "title": "Harvard Apparatus Microliter OEM syringe pump (pymupump.Microliter)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Harvard Apparatus Microliter OEM syringe pump (pymupump.Microliter), adapted from rk-exxec/pymupump. It sets `diameter`, `flowrate` and `targetvolume`; runs `pump` and `stop_pump`. `pump`: run a pump at a declared flow rate for a declared duration or volume in a declared direction, reporting the volume moved. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/rk-exxec__pymupump/",
   "upstream": {
     "repo_url": "https://github.com/rk-exxec/pymupump",
     "commit": "2de8fb492bbf11b44ad30f571ebb5e64239c6176",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/rk-exxec__pymupump",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/rk-exxec__pymupump --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/rk-exxec__pymupump --backend fake --mcp"
 }

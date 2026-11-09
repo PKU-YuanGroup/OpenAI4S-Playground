@@ -2,7 +2,11 @@
   "name": "labs/graysonbellamy__sartoriuslib",
   "package": "labs/graysonbellamy__sartoriuslib",
   "mhs_package": "mhs/MHS/drivers/labs/graysonbellamy__sartoriuslib",
-  "website": "https://mhs.openai4s.org",
+  "title": "Sartorius balance via sartoriuslib",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Sartorius balance via sartoriuslib, adapted from graysonbellamy/sartoriuslib. It reads `net_weight`, `gross_weight`, `tare_value`, `stable` and 4 more; sets `display_unit`, `filter_mode`, `auto_zero`, `isocal_mode` and 2 more; runs `measure_mass`. `measure_mass`: measure the mass on a balance or load cell and report the value and stability flag. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/graysonbellamy__sartoriuslib/",
   "upstream": {
     "repo_url": "https://github.com/graysonbellamy/sartoriuslib",
     "commit": "52f520767051ecee5af2ef5339e1cddc5c406a60",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/graysonbellamy__sartoriuslib",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/graysonbellamy__sartoriuslib --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/graysonbellamy__sartoriuslib --backend fake --mcp"
 }

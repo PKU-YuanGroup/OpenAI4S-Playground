@@ -2,7 +2,11 @@
   "name": "labs/python-ivi__python-ivi",
   "package": "labs/python-ivi__python-ivi",
   "mhs_package": "mhs/MHS/drivers/labs/python-ivi__python-ivi",
-  "website": "https://mhs.openai4s.org",
+  "title": "LeCroy WaveRunner 104MXi-A oscilloscope",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "LeCroy WaveRunner 104MXi-A oscilloscope, adapted from python-ivi/python-ivi. It reads `measurement_frequency`, `measurement_period` and `measurement_vpp`; sets `trigger_mode`, `acquisition_type`, `sample_mode`, `acquisition_averages` and 2 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/python-ivi__python-ivi/",
   "upstream": {
     "repo_url": "https://github.com/python-ivi/python-ivi",
     "commit": "cfa45ceade0758debe4bc24ba4c8195222cad1e2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/python-ivi__python-ivi",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/python-ivi__python-ivi --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/python-ivi__python-ivi --backend fake --mcp"
 }

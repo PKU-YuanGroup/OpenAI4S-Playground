@@ -2,7 +2,11 @@
   "name": "labs/gregmoille__instrumentcontrol",
   "package": "labs/gregmoille__instrumentcontrol",
   "mhs_package": "mhs/MHS/drivers/labs/gregmoille__instrumentcontrol",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tektronix DPO70000 oscilloscope",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Tektronix DPO70000 oscilloscope, adapted from gregmoille/instrumentcontrol. It reads `acquisition_mode_actual`, `acquisition_num_acquisitions`, `acquisition_num_averages`, `acquisition_num_envelopes` and 2 more; sets `acquisition_mode`, `acquisition_num_samples`, `acquisition_sampling_mode`, `acquisition_state` and 5 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/gregmoille__instrumentcontrol/",
   "upstream": {
     "repo_url": "https://github.com/gregmoille/instrumentcontrol",
     "commit": "2cf8c78dea007c636fff1f3d006a039fc1876055",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/gregmoille__instrumentcontrol",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/gregmoille__instrumentcontrol --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/gregmoille__instrumentcontrol --backend fake --mcp"
 }

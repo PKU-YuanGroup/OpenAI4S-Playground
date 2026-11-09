@@ -2,7 +2,11 @@
   "name": "labs/qpit__thorlabs_apt",
   "package": "labs/qpit__thorlabs_apt",
   "mhs_package": "mhs/MHS/drivers/labs/qpit__thorlabs_apt",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs APT motor (thorlabs_apt.Motor)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs APT motor (thorlabs_apt.Motor), adapted from qpit/thorlabs_apt. It reads `position`, `serial_number`, `in_motion`, `homing_completed` and 9 more; sets `velocity_maximum`, `acceleration`, `reverse_limit_switch`, `forward_limit_switch` and 2 more; runs `move_to`, `move_by`, `move_home`, `move_velocity` and 3 more. `move_to`: move to an absolute position in the native stage units (mm or degrees). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/qpit__thorlabs_apt/",
   "upstream": {
     "repo_url": "https://github.com/qpit/thorlabs_apt",
     "commit": "7b5c84607c22684cc896e3c337045b9358ee7c47",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/qpit__thorlabs_apt",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/qpit__thorlabs_apt --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/qpit__thorlabs_apt --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/alphatra__vacuum-instrument-monitor",
   "package": "labs/alphatra__vacuum-instrument-monitor",
   "mhs_package": "mhs/MHS/drivers/labs/alphatra__vacuum-instrument-monitor",
-  "website": "https://mhs.openai4s.org",
+  "title": "Granville-Phillips 350 ion gauge controller",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Granville-Phillips 350 ion gauge controller, adapted from alphatra/vacuum-instrument-monitor. It reads `pressure`; sets `filament_1`, `filament_2` and `degas`; runs `all_off`. `all_off`: switch both ion-gauge filaments and the degas cycle off. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/alphatra__vacuum-instrument-monitor/",
   "upstream": {
     "repo_url": "https://github.com/alphatra/vacuum-instrument-monitor",
     "commit": "838275818a2f48b0fbb46ea5a35cbaa857396a7e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/alphatra__vacuum-instrument-monitor",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alphatra__vacuum-instrument-monitor --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alphatra__vacuum-instrument-monitor --backend fake --mcp"
 }

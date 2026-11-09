@@ -2,7 +2,11 @@
   "name": "labs/aaron-mott__keithley-2230g",
   "package": "labs/aaron-mott__keithley-2230g",
   "mhs_package": "mhs/MHS/drivers/labs/aaron-mott__keithley-2230g",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keithley 2230G multi-channel power supply",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keithley 2230G multi-channel power supply, adapted from aaron-mott/keithley-2230g. It reads `measured_voltage_ch1`, `measured_voltage_ch2`, `measured_voltage_ch3`, `measured_current_ch1` and 2 more; sets `voltage_setpoint_ch1`, `voltage_setpoint_ch2`, `voltage_setpoint_ch3`, `current_limit_ch1` and 5 more; runs `output_off`. `output_off`: disable all three channel outputs (safe state). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/aaron-mott__keithley-2230g/",
   "upstream": {
     "repo_url": "https://github.com/aaron-mott/keithley-2230g",
     "commit": "4c4d9024808f33b20d9148183b006225cced7936",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/aaron-mott__keithley-2230g",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aaron-mott__keithley-2230g --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aaron-mott__keithley-2230g --backend fake --mcp"
 }

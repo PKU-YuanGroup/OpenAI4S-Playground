@@ -2,7 +2,11 @@
   "name": "robots/unitreerobotics__unitree_sim_isaaclab",
   "package": "robots/unitreerobotics__unitree_sim_isaaclab",
   "mhs_package": "mhs/MHS/drivers/robots/unitreerobotics__unitree_sim_isaaclab",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree G1 29-DOF Dex1 whole-body cylinder task (Isaac Lab)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "Unitree G1 29-DOF Dex1 whole-body cylinder task (Isaac Lab), adapted from unitreerobotics/unitree_sim_isaaclab. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/unitreerobotics__unitree_sim_isaaclab/",
   "upstream": {
     "repo_url": "https://github.com/unitreerobotics/unitree_sim_isaaclab",
     "commit": "e30c25b1dffdf92ada1d6c8c1fe9a47bdde0fecc",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/unitreerobotics__unitree_sim_isaaclab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unitreerobotics__unitree_sim_isaaclab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unitreerobotics__unitree_sim_isaaclab --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/cleanit__chemistrygym",
   "package": "labs/cleanit__chemistrygym",
   "mhs_package": "mhs/MHS/drivers/labs/cleanit__chemistrygym",
-  "website": "https://mhs.openai4s.org",
+  "title": "ChemistryLab ExtractWorld_0-v1",
+  "category": "Simulation",
+  "topic": "chemistry",
+  "intro": "ChemistryLab ExtractWorld_0-v1, adapted from cleanit/chemistrygym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/cleanit__chemistrygym/",
   "upstream": {
     "repo_url": "https://github.com/cleanit/chemistrygym",
     "commit": "f6536cbc30f06c8d326107a68725f46bb53cff15",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/cleanit__chemistrygym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cleanit__chemistrygym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cleanit__chemistrygym --backend fake --mcp"
 }

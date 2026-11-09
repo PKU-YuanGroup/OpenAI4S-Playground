@@ -2,7 +2,11 @@
   "name": "robots/yizhengzhang1__robomaster-simulator",
   "package": "robots/yizhengzhang1__robomaster-simulator",
   "mhs_package": "mhs/MHS/drivers/robots/yizhengzhang1__robomaster-simulator",
-  "website": "https://mhs.openai4s.org",
+  "title": "ICRA RoboMaster AI Challenge simulator",
+  "category": "Simulation",
+  "topic": "multi-robot systems",
+  "intro": "ICRA RoboMaster AI Challenge simulator, adapted from yizhengzhang1/robomaster-simulator. It reads `read_referee_state`; runs `pause_physics`, `unpause_physics`, `start_game`, `command_turret` and 1 more. `pause_physics`: pause Gazebo physics with the acknowledged /gazebo/pause_physics service. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/yizhengzhang1__robomaster-simulator/",
   "upstream": {
     "repo_url": "https://github.com/yizhengzhang1/robomaster-simulator",
     "commit": "ff085e4109a980e482a388f135e9fefcee92becc",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/yizhengzhang1__robomaster-simulator",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/yizhengzhang1__robomaster-simulator --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/yizhengzhang1__robomaster-simulator --backend fake --mcp"
 }

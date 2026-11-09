@@ -2,7 +2,11 @@
   "name": "labs/unine-chyn__thorpy",
   "package": "labs/unine-chyn__thorpy",
   "mhs_package": "mhs/MHS/drivers/labs/unine-chyn__thorpy",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs APT stage (Thorpy)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs APT stage (Thorpy), adapted from unine-chyn/thorpy. It reads `homed`; sets `position`, `max_velocity` and `acceleration`; runs `home` and `stop_motion`. `home`: start a home move and wait until the controller reports homed. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/unine-chyn__thorpy/",
   "upstream": {
     "repo_url": "https://github.com/unine-chyn/thorpy",
     "commit": "e8f000bd8a5bcc5a11b52f59742024d929751827",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/unine-chyn__thorpy",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/unine-chyn__thorpy --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/unine-chyn__thorpy --backend fake --mcp"
 }

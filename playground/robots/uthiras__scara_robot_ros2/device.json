@@ -2,7 +2,11 @@
   "name": "robots/uthiras__scara_robot_ros2",
   "package": "robots/uthiras__scara_robot_ros2",
   "mhs_package": "mhs/MHS/drivers/robots/uthiras__scara_robot_ros2",
-  "website": "https://mhs.openai4s.org",
+  "title": "Uthira SCARA/RRP robot simulation",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Uthira SCARA/RRP robot simulation, adapted from uthiras/scara_robot_ros2. It reads `read_joint_states` and `read_forward_kinematics_matrix`; runs `command_joint_efforts` and `forward_velocity_kinematics`. `command_joint_efforts`: publish one three-element joint effort command on the controller's command topic; the receipt confirms only that rosbridge accepted the publication and reports the efforts sent, not that a controller applied them, that the arm moved, or that it can stop. After an e-stop and reset the world stays paused, and a command sent then acts only when the operator unpauses it. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/uthiras__scara_robot_ros2/",
   "upstream": {
     "repo_url": "https://github.com/uthiras/scara_robot_ros2",
     "commit": "ece3e91727b0922b336dadf803afaefbcc405e28",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/uthiras__scara_robot_ros2",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/uthiras__scara_robot_ros2 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/uthiras__scara_robot_ros2 --backend fake --mcp"
 }

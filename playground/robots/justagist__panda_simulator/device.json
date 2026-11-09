@@ -2,7 +2,11 @@
   "name": "robots/justagist__panda_simulator",
   "package": "robots/justagist__panda_simulator",
   "mhs_package": "mhs/MHS/drivers/robots/justagist__panda_simulator",
-  "website": "https://mhs.openai4s.org",
+  "title": "Franka Emika Panda simulated hand",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Franka Emika Panda simulated hand, adapted from justagist/panda_simulator. It reads `finger_positions`; runs `move_gripper`, `grasp_gripper` and `stop_gripper`. `move_gripper`: send one franka_gripper/MoveAction goal with a finger opening and speed; the receipt reports the upstream action's terminal success, not a separately measured contact force. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/justagist__panda_simulator/",
   "upstream": {
     "repo_url": "https://github.com/justagist/panda_simulator",
     "commit": "6cec91dcc739df105a845e2f29e361b6c608bb48",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/justagist__panda_simulator",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justagist__panda_simulator --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/justagist__panda_simulator --backend fake --mcp"
 }

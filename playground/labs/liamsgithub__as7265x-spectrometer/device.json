@@ -2,7 +2,11 @@
   "name": "labs/liamsgithub__as7265x-spectrometer",
   "package": "labs/liamsgithub__as7265x-spectrometer",
   "mhs_package": "mhs/MHS/drivers/labs/liamsgithub__as7265x-spectrometer",
-  "website": "https://mhs.openai4s.org",
+  "title": "SparkFun Triad AS7265x spectrometer",
+  "category": "Spectroscopy",
+  "topic": null,
+  "intro": "SparkFun Triad AS7265x spectrometer, adapted from liamsgithub/as7265x-spectrometer. It reads `board_present`, `hardware_version`, `temperatures` and `measure_intensity`; sets `integration_time_register`, `gain`, `led_drive_current`, `blue_led` and 1 more; runs `read_spectrum`, `factory_reset` and `leds_off`. `read_spectrum`: read all 18 raw and all 18 calibrated channel values in the ascending-frequency order of the clone. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/liamsgithub__as7265x-spectrometer/",
   "upstream": {
     "repo_url": "https://github.com/liamsgithub/as7265x-spectrometer",
     "commit": "9b0ce11be6b904a89e907dc18dd10b03620cc90f",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/liamsgithub__as7265x-spectrometer",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/liamsgithub__as7265x-spectrometer --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/liamsgithub__as7265x-spectrometer --backend fake --mcp"
 }

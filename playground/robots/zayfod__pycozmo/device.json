@@ -2,7 +2,11 @@
   "name": "robots/zayfod__pycozmo",
   "package": "robots/zayfod__pycozmo",
   "mhs_package": "mhs/MHS/drivers/robots/zayfod__pycozmo",
-  "website": "https://mhs.openai4s.org",
+  "title": "Digital Dream Labs Cozmo (pycozmo.Client)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Digital Dream Labs Cozmo (pycozmo.Client), adapted from zayfod/pycozmo. It reads `head_angle`, `lift_height`, `lift_angle`, `battery_voltage` and 2 more; runs `move_joints`. `move_joints`: command one or more actuated joints to target positions in joint space, optionally over a declared duration, and report whether the target was reached within tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/zayfod__pycozmo/",
   "upstream": {
     "repo_url": "https://github.com/zayfod/pycozmo",
     "commit": "1b6dcd9b869a3784f1d8b02e820bb033f95fd13a",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/zayfod__pycozmo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zayfod__pycozmo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zayfod__pycozmo --backend fake --mcp"
 }

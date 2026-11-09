@@ -2,7 +2,11 @@
   "name": "labs/f9r__ihcpmslib-wrappers",
   "package": "labs/f9r__ihcpmslib-wrappers",
   "mhs_package": "mhs/MHS/drivers/labs/f9r__ihcpmslib-wrappers",
-  "website": "https://mhs.openai4s.org",
+  "title": "INHECO SCILA CO2 incubator (ihcWrappers.scila.ScilaWrapper)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "INHECO SCILA CO2 incubator (ihcWrappers.scila.ScilaWrapper), adapted from f9r/ihcpmslib-wrappers. It reads `device_name`, `firmware_version`, `state`, `current_temperature` and 8 more; sets `auto_boost_co2`; runs `set_temperature` and `stop_incubation`. `set_temperature`: set the target temperature of a thermal zone and optionally wait for the zone to reach the setpoint within a declared tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/f9r__ihcpmslib-wrappers/",
   "upstream": {
     "repo_url": "https://github.com/f9r/ihcpmslib-wrappers",
     "commit": "3e6bd4c47f395bc37122e0e814184c540a99dd4e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/f9r__ihcpmslib-wrappers",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/f9r__ihcpmslib-wrappers --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/f9r__ihcpmslib-wrappers --backend fake --mcp"
 }

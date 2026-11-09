@@ -2,7 +2,11 @@
   "name": "robots/qgallouedec__panda-gym",
   "package": "robots/qgallouedec__panda-gym",
   "mhs_package": "mhs/MHS/drivers/robots/qgallouedec__panda-gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "panda-gym PandaReach-v3 (PyBullet)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "panda-gym PandaReach-v3 (PyBullet), adapted from qgallouedec/panda-gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/qgallouedec__panda-gym/",
   "upstream": {
     "repo_url": "https://github.com/qgallouedec/panda-gym",
     "commit": "10c4d8adaab07d8a29b2f8dc0aa85f8edd8532ae",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/qgallouedec__panda-gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/qgallouedec__panda-gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/qgallouedec__panda-gym --backend fake --mcp"
 }

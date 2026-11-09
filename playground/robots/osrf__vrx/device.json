@@ -2,7 +2,11 @@
   "name": "robots/osrf__vrx",
   "package": "robots/osrf__vrx",
   "mhs_package": "mhs/MHS/drivers/robots/osrf__vrx",
-  "website": "https://mhs.openai4s.org",
+  "title": "Virtual RobotX (VRX) simulation environment",
+  "category": "Simulation",
+  "topic": "marine robotics",
+  "intro": "Virtual RobotX (VRX) simulation environment, adapted from osrf/vrx. It reads `read_sim_clock` and `read_task_info`; runs `publish_left_thrust`, `publish_right_thrust`, `publish_left_thrust_position` and `publish_right_thrust_position`. `publish_left_thrust`: publish one Float64 command on /wamv/thrusters/left/thrust; the receipt is transmission evidence only, not motion, thrust attainment or stopping. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/osrf__vrx/",
   "upstream": {
     "repo_url": "https://github.com/osrf/vrx",
     "commit": "7609d1bd90ce7edb29d040a082f949e8b089c864",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/osrf__vrx",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/osrf__vrx --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/osrf__vrx --backend fake --mcp"
 }

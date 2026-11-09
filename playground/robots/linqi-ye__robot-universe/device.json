@@ -2,7 +2,11 @@
   "name": "robots/linqi-ye__robot-universe",
   "package": "robots/linqi-ye__robot-universe",
   "mhs_package": "mhs/MHS/drivers/robots/linqi-ye__robot-universe",
-  "website": "https://mhs.openai4s.org",
+  "title": "bdx scene (robot-universe)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "bdx scene (robot-universe), adapted from linqi-ye/robot-universe. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/linqi-ye__robot-universe/",
   "upstream": {
     "repo_url": "https://github.com/linqi-ye/robot-universe",
     "commit": "3f2de2ab27f18cd677cf159afe1992a42daa24d8",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/linqi-ye__robot-universe",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linqi-ye__robot-universe --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linqi-ye__robot-universe --backend fake --mcp"
 }

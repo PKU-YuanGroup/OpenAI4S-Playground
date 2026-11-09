@@ -2,7 +2,11 @@
   "name": "robots/hzaskywalker__plasticinelab",
   "package": "robots/hzaskywalker__plasticinelab",
   "mhs_package": "mhs/MHS/drivers/robots/hzaskywalker__plasticinelab",
-  "website": "https://mhs.openai4s.org",
+  "title": "PlasticineLab Move-v1 (soft-body manipulation benchmark)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "PlasticineLab Move-v1 (soft-body manipulation benchmark), adapted from hzaskywalker/plasticinelab. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/hzaskywalker__plasticinelab/",
   "upstream": {
     "repo_url": "https://github.com/hzaskywalker/plasticinelab",
     "commit": "ac1a2f7b0bbbe88706b51bf3aa9d72483e1d05b6",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/hzaskywalker__plasticinelab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hzaskywalker__plasticinelab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hzaskywalker__plasticinelab --backend fake --mcp"
 }

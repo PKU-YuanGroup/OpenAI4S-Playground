@@ -2,7 +2,11 @@
   "name": "labs/ad-sdl__pf400_module_ros",
   "package": "labs/ad-sdl__pf400_module_ros",
   "mhs_package": "mhs/MHS/drivers/labs/ad-sdl__pf400_module_ros",
-  "website": "https://mhs.openai4s.org",
+  "title": "PF400 arm through ad-sdl pf400_module_ros",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "PF400 arm through ad-sdl pf400_module_ros, adapted from ad-sdl/pf400_module_ros. It reads `traj_state`; runs `move_joints` and `halt`. `move_joints`: send mspeed and MoveJ for robot 1. A leading 0 is the client's success code (tcp_driver.py:23), not proof the target was reached. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/ad-sdl__pf400_module_ros/",
   "upstream": {
     "repo_url": "https://github.com/ad-sdl/pf400_module_ros",
     "commit": "dad325c4bf86efda3b81f98d33837ec5ce21fc0c",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ad-sdl__pf400_module_ros",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ad-sdl__pf400_module_ros --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ad-sdl__pf400_module_ros --backend fake --mcp"
 }

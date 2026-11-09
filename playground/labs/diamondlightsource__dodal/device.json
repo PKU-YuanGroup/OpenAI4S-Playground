@@ -2,7 +2,11 @@
   "name": "labs/diamondlightsource__dodal",
   "package": "labs/diamondlightsource__dodal",
   "mhs_package": "mhs/MHS/drivers/labs/diamondlightsource__dodal",
-  "website": "https://mhs.openai4s.org",
+  "title": "DECTRIS Eiger area detector (dodal)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "DECTRIS Eiger area detector (dodal), adapted from diamondlightsource/dodal. It reads `armed`, `bit_depth`, `stale_params` and `acquisition_id`; runs `stage`, `unstage`, `disarm` and `files`. `stage`: arm the Eiger for one externally triggered collection with the operator's DetectorParams: stage() runs the upstream arming chain unless the detector is armed. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/diamondlightsource__dodal/",
   "upstream": {
     "repo_url": "https://github.com/diamondlightsource/dodal",
     "commit": "f96fef4e72a734de6bb523b4229410254e7e8eab",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/diamondlightsource__dodal",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/diamondlightsource__dodal --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/diamondlightsource__dodal --backend fake --mcp"
 }

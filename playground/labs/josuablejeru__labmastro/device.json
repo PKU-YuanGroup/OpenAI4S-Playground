@@ -2,7 +2,11 @@
   "name": "labs/josuablejeru__labmastro",
   "package": "labs/josuablejeru__labmastro",
   "mhs_package": "mhs/MHS/drivers/labs/josuablejeru__labmastro",
-  "website": "https://mhs.openai4s.org",
+  "title": "Hanmatek HM bench supply (labmastro Modbus RTU)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Hanmatek HM bench supply (labmastro Modbus RTU), adapted from josuablejeru/labmastro. It reads `output_enabled`, `voltage` and `current`; sets `voltage_setpoint`, `current_setpoint`, `over_voltage_protection` and `over_current_protection`; runs `output_on` and `output_off`. `output_on`: enable the output (0x0001 = 1, confirmed by read-back) at the supply's live setpoints, which this package cannot read or bound: set and verify them on the supply first. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/josuablejeru__labmastro/",
   "upstream": {
     "repo_url": "https://github.com/josuablejeru/labmastro",
     "commit": "86db05e8dd4e37d66667e18e4d8e2fadbb864b18",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/josuablejeru__labmastro",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/josuablejeru__labmastro --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/josuablejeru__labmastro --backend fake --mcp"
 }

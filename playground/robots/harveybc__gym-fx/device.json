@@ -2,7 +2,11 @@
   "name": "robots/harveybc__gym-fx",
   "package": "robots/harveybc__gym-fx",
   "mhs_package": "mhs/MHS/drivers/robots/harveybc__gym-fx",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-fx backtrader trading environment",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "gym-fx backtrader trading environment, adapted from harveybc/gym-fx. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/harveybc__gym-fx/",
   "upstream": {
     "repo_url": "https://github.com/harveybc/gym-fx",
     "commit": "1eeecb789965f3e01e9e51f479c6f89265b03859",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/harveybc__gym-fx",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/harveybc__gym-fx --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/harveybc__gym-fx --backend fake --mcp"
 }

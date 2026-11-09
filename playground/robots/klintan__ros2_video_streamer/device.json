@@ -2,7 +2,11 @@
   "name": "robots/klintan__ros2_video_streamer",
   "package": "robots/klintan__ros2_video_streamer",
   "mhs_package": "mhs/MHS/drivers/robots/klintan__ros2_video_streamer",
-  "website": "https://mhs.openai4s.org",
+  "title": "ROS 2 video streamer camera simulator",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "ROS 2 video streamer camera simulator, adapted from klintan/ros2_video_streamer. It runs `capture_image`. `capture_image`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/klintan__ros2_video_streamer/",
   "upstream": {
     "repo_url": "https://github.com/klintan/ros2_video_streamer",
     "commit": "4fc6d858d748322250cb0dc5a7864ac2576d148f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/klintan__ros2_video_streamer",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_video_streamer --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_video_streamer --backend fake --mcp"
 }

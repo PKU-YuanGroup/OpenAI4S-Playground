@@ -2,7 +2,11 @@
   "name": "robots/ac-93__tactile_gym",
   "package": "robots/ac-93__tactile_gym",
   "mhs_package": "mhs/MHS/drivers/robots/ac-93__tactile_gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "tactile_gym edge_follow-v0 (PyBullet simulation)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "tactile_gym edge_follow-v0 (PyBullet simulation), adapted from ac-93/tactile_gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ac-93__tactile_gym/",
   "upstream": {
     "repo_url": "https://github.com/ac-93/tactile_gym",
     "commit": "28417ebaf52ac325200c4fbd351cd13c6a466f7d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ac-93__tactile_gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ac-93__tactile_gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ac-93__tactile_gym --backend fake --mcp"
 }

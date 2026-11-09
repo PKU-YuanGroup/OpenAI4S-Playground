@@ -2,7 +2,11 @@
   "name": "labs/ombayley__chemklipper",
   "package": "labs/ombayley__chemklipper",
   "mhs_package": "mhs/MHS/drivers/labs/ombayley__chemklipper",
-  "website": "https://mhs.openai4s.org",
+  "title": "ChemKlipper CoreXY gantry (chem_klipper.devices.gantry:Gantry)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "ChemKlipper CoreXY gantry (chem_klipper.devices.gantry:Gantry), adapted from ombayley/chemklipper. It reads `connected`, `status`, `position` and `target_position`; runs `home_gantry`, `move_cartesian` and `stop_motion`. `home_gantry`: home all gantry axes with the native G28. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/ombayley__chemklipper/",
   "upstream": {
     "repo_url": "https://github.com/ombayley/chemklipper",
     "commit": "e88503106b481ad12a2469b3dbe991c18186e650",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ombayley__chemklipper",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ombayley__chemklipper --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ombayley__chemklipper --backend fake --mcp"
 }

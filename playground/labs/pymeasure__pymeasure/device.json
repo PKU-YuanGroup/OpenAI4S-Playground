@@ -2,7 +2,11 @@
   "name": "labs/pymeasure__pymeasure",
   "package": "labs/pymeasure__pymeasure",
   "mhs_package": "mhs/MHS/drivers/labs/pymeasure__pymeasure",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keithley DMM6500 multimeter",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keithley DMM6500 multimeter, adapted from pymeasure/pymeasure. It reads `mode`, `digits`, `measure_voltage` and `measure_resistance`; sets `nplc`; runs `measure_current`. `measure_current`: measure current on a declared channel and return the value with its timestamp and range. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pymeasure__pymeasure/",
   "upstream": {
     "repo_url": "https://github.com/pymeasure/pymeasure",
     "commit": "9c6a96014e74bda79988ae0757a6b38ca390d247",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pymeasure__pymeasure",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymeasure__pymeasure --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymeasure__pymeasure --backend fake --mcp"
 }

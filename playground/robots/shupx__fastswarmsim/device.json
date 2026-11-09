@@ -2,7 +2,11 @@
   "name": "robots/shupx__fastswarmsim",
   "package": "robots/shupx__fastswarmsim",
   "mhs_package": "mhs/MHS/drivers/robots/shupx__fastswarmsim",
-  "website": "https://mhs.openai4s.org",
+  "title": "FastSwarmSim lock-step time coordinator",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "FastSwarmSim lock-step time coordinator, adapted from shupx/fastswarmsim. It reads `clock_running`, `clock_factor`, `read_sim_clock` and `read_clock_status`; runs `pause` and `resume`. `pause`: pause clock advancement with the acknowledged fss/clock_control service. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/shupx__fastswarmsim/",
   "upstream": {
     "repo_url": "https://github.com/shupx/fastswarmsim",
     "commit": "56a6380fcd409a0700baedc39a632a823622d633",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/shupx__fastswarmsim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/shupx__fastswarmsim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/shupx__fastswarmsim --backend fake --mcp"
 }

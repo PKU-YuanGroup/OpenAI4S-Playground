@@ -2,7 +2,11 @@
   "name": "robots/simpler-env__maniskill2_real2sim",
   "package": "robots/simpler-env__maniskill2_real2sim",
   "mhs_package": "mhs/MHS/drivers/robots/simpler-env__maniskill2_real2sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "SimplerEnv ManiSkill2 real2sim (GraspSingleCokeCanInScene-v0)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "SimplerEnv ManiSkill2 real2sim (GraspSingleCokeCanInScene-v0), adapted from simpler-env/maniskill2_real2sim. It reads `observation`, `reward`, `terminated`, `truncated` and 5 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/simpler-env__maniskill2_real2sim/",
   "upstream": {
     "repo_url": "https://github.com/simpler-env/maniskill2_real2sim",
     "commit": "ef7a4d4fdf4b69f2c2154db5b15b9ac8dfe10682",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/simpler-env__maniskill2_real2sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/simpler-env__maniskill2_real2sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/simpler-env__maniskill2_real2sim --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/hrjp__easys_sim",
   "package": "robots/hrjp__easys_sim",
   "mhs_package": "mhs/MHS/drivers/robots/hrjp__easys_sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "Easys simulated camera and balloon detector",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Easys simulated camera and balloon detector, adapted from hrjp/easys_sim. It runs `capture`. `capture`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/hrjp__easys_sim/",
   "upstream": {
     "repo_url": "https://github.com/hrjp/easys_sim",
     "commit": "65f5daeb8fb82970ea03b5a0cc7a24509ea8c5c5",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/hrjp__easys_sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hrjp__easys_sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hrjp__easys_sim --backend fake --mcp"
 }

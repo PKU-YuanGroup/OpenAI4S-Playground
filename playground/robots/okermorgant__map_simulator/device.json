@@ -2,7 +2,11 @@
   "name": "robots/okermorgant__map_simulator",
   "package": "robots/okermorgant__map_simulator",
   "mhs_package": "mhs/MHS/drivers/robots/okermorgant__map_simulator",
-  "website": "https://mhs.openai4s.org",
+  "title": "map_simulator ROS 2 2-D simulator",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "map_simulator ROS 2 2-D simulator, adapted from okermorgant/map_simulator. It reads `odom_pose`, `odom_twist`, `read_odometry` and `read_scan`; runs `spawn_robot` and `publish_twist`. `spawn_robot`: call the upstream /simulator/spawn service to create a robot or reset an existing robot's pose. The Spawn response is empty, so the receipt confirms only that the service callback returned; it does not prove creation, URDF arrival, motion or a stopped robot. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/okermorgant__map_simulator/",
   "upstream": {
     "repo_url": "https://github.com/okermorgant/map_simulator",
     "commit": "537a06464d7fcaa2cba4f4fea9532f0556854440",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/okermorgant__map_simulator",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/okermorgant__map_simulator --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/okermorgant__map_simulator --backend fake --mcp"
 }

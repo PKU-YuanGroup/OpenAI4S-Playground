@@ -2,7 +2,11 @@
   "name": "robots/yang-zj1026__navila-bench",
   "package": "robots/yang-zj1026__navila-bench",
   "mhs_package": "mhs/MHS/drivers/robots/yang-zj1026__navila-bench",
-  "website": "https://mhs.openai4s.org",
+  "title": "NaVILA-Bench go2_matterport_vision (Isaac Lab / Isaac Sim 4.1 target)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "NaVILA-Bench go2_matterport_vision (Isaac Lab / Isaac Sim 4.1 target), adapted from yang-zj1026/navila-bench. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/yang-zj1026__navila-bench/",
   "upstream": {
     "repo_url": "https://github.com/yang-zj1026/navila-bench",
     "commit": "e9d2db12ce5788c0f987d734c0094100b6bc0d3a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/yang-zj1026__navila-bench",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/yang-zj1026__navila-bench --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/yang-zj1026__navila-bench --backend fake --mcp"
 }

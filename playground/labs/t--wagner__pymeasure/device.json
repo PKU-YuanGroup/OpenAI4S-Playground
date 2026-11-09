@@ -2,7 +2,11 @@
   "name": "labs/t--wagner__pymeasure",
   "package": "labs/t--wagner__pymeasure",
   "mhs_package": "mhs/MHS/drivers/labs/t--wagner__pymeasure",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keithley 2000 multimeter",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keithley 2000 multimeter, adapted from t--wagner/pymeasure. It reads `identification`, `voltage_dc`, `current_dc` and `resistance`; sets `voltage_range`; runs `measure_voltage`, `measure_current` and `measure_resistance`. `measure_voltage`: measure a DC or RMS voltage on a declared channel or terminal pair and return the value with its sampling timestamp and measurement range. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/t--wagner__pymeasure/",
   "upstream": {
     "repo_url": "https://github.com/t--wagner/pymeasure",
     "commit": "d9c552f3a3fabd51c9fb4b76cd1e095f738e96bf",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/t--wagner__pymeasure",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/t--wagner__pymeasure --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/t--wagner__pymeasure --backend fake --mcp"
 }

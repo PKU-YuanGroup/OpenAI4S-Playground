@@ -2,7 +2,11 @@
   "name": "robots/fazildgr8__ros_autonomous_slam",
   "package": "robots/fazildgr8__ros_autonomous_slam",
   "mhs_package": "mhs/MHS/drivers/robots/fazildgr8__ros_autonomous_slam",
-  "website": "https://mhs.openai4s.org",
+  "title": "ros_autonomous_slam TurtleBot3 exploration stack",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "ros_autonomous_slam TurtleBot3 exploration stack, adapted from fazildgr8/ros_autonomous_slam. It reads `read_occupancy_map`, `read_frontiers`, `read_exploration_region`, `read_odometry` and 1 more. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/fazildgr8__ros_autonomous_slam/",
   "upstream": {
     "repo_url": "https://github.com/fazildgr8/ros_autonomous_slam",
     "commit": "997c968cb64f544b913e72debcceaad0ed2faea9",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/fazildgr8__ros_autonomous_slam",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fazildgr8__ros_autonomous_slam --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/fazildgr8__ros_autonomous_slam --backend fake --mcp"
 }

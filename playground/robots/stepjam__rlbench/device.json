@@ -2,7 +2,11 @@
   "name": "robots/stepjam__rlbench",
   "package": "robots/stepjam__rlbench",
   "mhs_package": "mhs/MHS/drivers/robots/stepjam__rlbench",
-  "website": "https://mhs.openai4s.org",
+  "title": "RLBench reach_target (state observations)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "RLBench reach_target (state observations), adapted from stepjam/rlbench. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/stepjam__rlbench/",
   "upstream": {
     "repo_url": "https://github.com/stepjam/rlbench",
     "commit": "02720bba4c73fe02eb75df946b8791b806028a9d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/stepjam__rlbench",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stepjam__rlbench --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stepjam__rlbench --backend fake --mcp"
 }

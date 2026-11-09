@@ -2,7 +2,11 @@
   "name": "robots/intel__ros2_intel_realsense",
   "package": "robots/intel__ros2_intel_realsense",
   "mhs_package": "mhs/MHS/drivers/robots/intel__ros2_intel_realsense",
-  "website": "https://mhs.openai4s.org",
+  "title": "Intel RealSense D400 series camera",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Intel RealSense D400 series camera, adapted from intel/ros2_intel_realsense. It reads `frame_id`, `width` and `height`; runs `capture_image`. `capture_image`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/intel__ros2_intel_realsense/",
   "upstream": {
     "repo_url": "https://github.com/intel/ros2_intel_realsense",
     "commit": "74efb28ba4c4c41d5aaf588c969372616d6f5928",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/intel__ros2_intel_realsense",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/intel__ros2_intel_realsense --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/intel__ros2_intel_realsense --backend fake --mcp"
 }

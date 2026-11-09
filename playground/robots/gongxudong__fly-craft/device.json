@@ -2,7 +2,11 @@
   "name": "robots/gongxudong__fly-craft",
   "package": "robots/gongxudong__fly-craft",
   "mhs_package": "mhs/MHS/drivers/robots/gongxudong__fly-craft",
-  "website": "https://mhs.openai4s.org",
+  "title": "FlyCraft-v0 (fixed-wing UAV velocity vector control)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "FlyCraft-v0 (fixed-wing UAV velocity vector control), adapted from gongxudong/fly-craft. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/gongxudong__fly-craft/",
   "upstream": {
     "repo_url": "https://github.com/gongxudong/fly-craft",
     "commit": "a54a1c2a1005b6d6ba67d8cea9fbc78c8769f449",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/gongxudong__fly-craft",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/gongxudong__fly-craft --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/gongxudong__fly-craft --backend fake --mcp"
 }

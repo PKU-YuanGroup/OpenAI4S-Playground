@@ -2,7 +2,11 @@
   "name": "robots/ycyao216__dexverse",
   "package": "robots/ycyao216__dexverse",
   "mhs_package": "mhs/MHS/drivers/robots/ycyao216__dexverse",
-  "website": "https://mhs.openai4s.org",
+  "title": "DexVerse GraspKettle (floating right Shadow hand, Isaac Lab)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "DexVerse GraspKettle (floating right Shadow hand, Isaac Lab), adapted from ycyao216/dexverse. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ycyao216__dexverse/",
   "upstream": {
     "repo_url": "https://github.com/ycyao216/dexverse",
     "commit": "30cc673e27684b9f10186fa6bea731aed246bc9f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ycyao216__dexverse",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ycyao216__dexverse --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ycyao216__dexverse --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/mobile-robots-group-uc3m__adamsim",
   "package": "robots/mobile-robots-group-uc3m__adamsim",
   "mhs_package": "mhs/MHS/drivers/robots/mobile-robots-group-uc3m__adamsim",
-  "website": "https://mhs.openai4s.org",
+  "title": "ADAMSim ADAM mobile base",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "ADAMSim ADAM mobile base, adapted from mobile-robots-group-uc3m/adamsim. It reads `camera_angle`, `left_arm_joint_positions` and `right_arm_joint_positions`; runs `drive` and `stop_motion`. `drive`: drive a mobile base with a commanded linear and angular velocity for a bounded duration, or to a target pose. Obstacle and zone limits are enforced by the binding safety envelope. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/mobile-robots-group-uc3m__adamsim/",
   "upstream": {
     "repo_url": "https://github.com/mobile-robots-group-uc3m/adamsim",
     "commit": "85a9b1fce83a36c45bb29412546f67bc8a03c29b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/mobile-robots-group-uc3m__adamsim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mobile-robots-group-uc3m__adamsim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mobile-robots-group-uc3m__adamsim --backend fake --mcp"
 }

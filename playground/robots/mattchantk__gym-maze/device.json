@@ -2,7 +2,11 @@
   "name": "robots/mattchantk__gym-maze",
   "package": "robots/mattchantk__gym-maze",
   "mhs_package": "mhs/MHS/drivers/robots/mattchantk__gym-maze",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-maze maze-v0 (5x5 sample maze)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "gym-maze maze-v0 (5x5 sample maze), adapted from mattchantk/gym-maze. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/mattchantk__gym-maze/",
   "upstream": {
     "repo_url": "https://github.com/mattchantk/gym-maze",
     "commit": "83176811b49b5538a6213520612f44fb1bc49114",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/mattchantk__gym-maze",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mattchantk__gym-maze --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/mattchantk__gym-maze --backend fake --mcp"
 }

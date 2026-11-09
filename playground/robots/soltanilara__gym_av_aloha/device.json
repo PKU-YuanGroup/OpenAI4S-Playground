@@ -2,7 +2,11 @@
   "name": "robots/soltanilara__gym_av_aloha",
   "package": "robots/soltanilara__gym_av_aloha",
   "mhs_package": "mhs/MHS/drivers/robots/soltanilara__gym_av_aloha",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym_av_aloha cube-transfer-v1 (MuJoCo ALOHA simulation)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "gym_av_aloha cube-transfer-v1 (MuJoCo ALOHA simulation), adapted from soltanilara/gym_av_aloha. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/soltanilara__gym_av_aloha/",
   "upstream": {
     "repo_url": "https://github.com/soltanilara/gym_av_aloha",
     "commit": "3e8edfdf5e2ff9cfc6e330ab9f970417e0e2a77d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/soltanilara__gym_av_aloha",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/soltanilara__gym_av_aloha --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/soltanilara__gym_av_aloha --backend fake --mcp"
 }

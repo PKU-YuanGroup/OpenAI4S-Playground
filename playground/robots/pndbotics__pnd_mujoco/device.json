@@ -2,7 +2,11 @@
   "name": "robots/pndbotics__pnd_mujoco",
   "package": "robots/pndbotics__pnd_mujoco",
   "mhs_package": "mhs/MHS/drivers/robots/pndbotics__pnd_mujoco",
-  "website": "https://mhs.openai4s.org",
+  "title": "PNDbotics Adam-Lite humanoid (MuJoCo scene)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "PNDbotics Adam-Lite humanoid (MuJoCo scene), adapted from pndbotics/pnd_mujoco. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/pndbotics__pnd_mujoco/",
   "upstream": {
     "repo_url": "https://github.com/pndbotics/pnd_mujoco",
     "commit": "84873eb3c4afd584d468864ba41527a1c14fb688",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/pndbotics__pnd_mujoco",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pndbotics__pnd_mujoco --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pndbotics__pnd_mujoco --backend fake --mcp"
 }

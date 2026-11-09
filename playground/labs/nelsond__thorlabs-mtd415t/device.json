@@ -2,7 +2,11 @@
   "name": "labs/nelsond__thorlabs-mtd415t",
   "package": "labs/nelsond__thorlabs-mtd415t",
   "mhs_package": "mhs/MHS/drivers/labs/nelsond__thorlabs-mtd415t",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs MTD415T temperature controller",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "Thorlabs MTD415T temperature controller, adapted from nelsond/thorlabs-mtd415t. It reads `temperature`, `setpoint`, `tec_current`, `tec_voltage` and 6 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/nelsond__thorlabs-mtd415t/",
   "upstream": {
     "repo_url": "https://github.com/nelsond/thorlabs-mtd415t",
     "commit": "c53ec5c7db67f4cb47619d2ceaa4aead5e583923",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/nelsond__thorlabs-mtd415t",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nelsond__thorlabs-mtd415t --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nelsond__thorlabs-mtd415t --backend fake --mcp"
 }

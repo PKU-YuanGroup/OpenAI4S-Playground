@@ -2,7 +2,11 @@
   "name": "robots/farama-foundation__highwayenv",
   "package": "robots/farama-foundation__highwayenv",
   "mhs_package": "mhs/MHS/drivers/robots/farama-foundation__highwayenv",
-  "website": "https://mhs.openai4s.org",
+  "title": "HighwayEnv highway-v0 (farama-foundation/highwayenv)",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "HighwayEnv highway-v0 (farama-foundation/highwayenv), adapted from farama-foundation/highwayenv. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/farama-foundation__highwayenv/",
   "upstream": {
     "repo_url": "https://github.com/farama-foundation/highwayenv",
     "commit": "2a268f348f10f4d1ac83f96bc8a53d2fa50dd3b0",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/farama-foundation__highwayenv",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__highwayenv --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/farama-foundation__highwayenv --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/scopefoundry__hw_picam",
   "package": "labs/scopefoundry__hw_picam",
   "mhs_package": "mhs/MHS/drivers/labs/scopefoundry__hw_picam",
-  "website": "https://mhs.openai4s.org",
+  "title": "Princeton Instruments PICam camera (ScopeFoundryHW.picam)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Princeton Instruments PICam camera (ScopeFoundryHW.picam), adapted from scopefoundry/hw_picam. It reads `adc_speed`, `sensor_temperature_status` and `readout_stride`; sets `exposure_time`, `roi_x`, `roi_width`, `roi_x_binning` and 3 more; runs `capture`. `capture`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/scopefoundry__hw_picam/",
   "upstream": {
     "repo_url": "https://github.com/scopefoundry/hw_picam",
     "commit": "fab5d61440b38e04e176e66ff880d16061f23997",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/scopefoundry__hw_picam",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/scopefoundry__hw_picam --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/scopefoundry__hw_picam --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/pairlab__leibnizgym",
   "package": "robots/pairlab__leibnizgym",
   "mhs_package": "mhs/MHS/drivers/robots/pairlab__leibnizgym",
-  "website": "https://mhs.openai4s.org",
+  "title": "LeibnizGym TriFinger IsaacGym environment",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "LeibnizGym TriFinger IsaacGym environment, adapted from pairlab/leibnizgym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset_world` and `set_seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/pairlab__leibnizgym/",
   "upstream": {
     "repo_url": "https://github.com/pairlab/leibnizgym",
     "commit": "2c1cb14fbfece09644445d58fe7ac28c41611e5f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/pairlab__leibnizgym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pairlab__leibnizgym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/pairlab__leibnizgym --backend fake --mcp"
 }

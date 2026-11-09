@@ -2,7 +2,11 @@
   "name": "labs/davehe929__scopebench-mcp",
   "package": "labs/davehe929__scopebench-mcp",
   "mhs_package": "mhs/MHS/drivers/labs/davehe929__scopebench-mcp",
-  "website": "https://mhs.openai4s.org",
+  "title": "RIGOL DHO800/DHO900 oscilloscope",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "RIGOL DHO800/DHO900 oscilloscope, adapted from davehe929/scopebench-mcp. It reads `trigger_status`, `frequency`, `period`, `vpp` and 2 more; sets `channel_coupling`, `channel_scale`, `channel_offset`, `trigger_level` and 2 more; runs `measure`. `measure`: read one instrument-side scalar measurement of one analog channel. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/davehe929__scopebench-mcp/",
   "upstream": {
     "repo_url": "https://github.com/davehe929/scopebench-mcp",
     "commit": "3f0abc87a2839e816744a7d867c1ef06ed721f7a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/davehe929__scopebench-mcp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/davehe929__scopebench-mcp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/davehe929__scopebench-mcp --backend fake --mcp"
 }

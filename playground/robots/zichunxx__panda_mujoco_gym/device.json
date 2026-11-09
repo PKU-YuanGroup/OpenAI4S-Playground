@@ -2,7 +2,11 @@
   "name": "robots/zichunxx__panda_mujoco_gym",
   "package": "robots/zichunxx__panda_mujoco_gym",
   "mhs_package": "mhs/MHS/drivers/robots/zichunxx__panda_mujoco_gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "Franka Panda pick-and-place scene (panda_mujoco_gym)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "Franka Panda pick-and-place scene (panda_mujoco_gym), adapted from zichunxx/panda_mujoco_gym. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/zichunxx__panda_mujoco_gym/",
   "upstream": {
     "repo_url": "https://github.com/zichunxx/panda_mujoco_gym",
     "commit": "e9881d993234875ee1d55d717176bf7999bdb583",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/zichunxx__panda_mujoco_gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zichunxx__panda_mujoco_gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/zichunxx__panda_mujoco_gym --backend fake --mcp"
 }

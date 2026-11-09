@@ -2,7 +2,11 @@
   "name": "robots/robotis-git__turtlebot3",
   "package": "robots/robotis-git__turtlebot3",
   "mhs_package": "mhs/MHS/drivers/robots/robotis-git__turtlebot3",
-  "website": "https://mhs.openai4s.org",
+  "title": "ROBOTIS TurtleBot3 mobile base",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "ROBOTIS TurtleBot3 mobile base, adapted from robotis-git/turtlebot3. It reads `battery_voltage`, `battery_percentage`, `battery_present`, `odom_pose` and 3 more; runs `publish_velocity`, `set_motor_power` and `disable_torque`. `publish_velocity`: publish one geometry_msgs/TwistStamped velocity setpoint to the upstream cmd_vel topic; the receipt confirms only that rosbridge accepted the publication, not motion, arrival or stopping. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/robotis-git__turtlebot3/",
   "upstream": {
     "repo_url": "https://github.com/robotis-git/turtlebot3",
     "commit": "fc817ce3073af1d6032397c64504134882af5e9a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robotis-git__turtlebot3",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotis-git__turtlebot3 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotis-git__turtlebot3 --backend fake --mcp"
 }

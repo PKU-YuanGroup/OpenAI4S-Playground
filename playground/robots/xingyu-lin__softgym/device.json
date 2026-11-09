@@ -2,7 +2,11 @@
   "name": "robots/xingyu-lin__softgym",
   "package": "robots/xingyu-lin__softgym",
   "mhs_package": "mhs/MHS/drivers/robots/xingyu-lin__softgym",
-  "website": "https://mhs.openai4s.org",
+  "title": "SoftGym PourWaterPosControlEnv (key_point, rotation_bottom)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "SoftGym PourWaterPosControlEnv (key_point, rotation_bottom), adapted from xingyu-lin/softgym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/xingyu-lin__softgym/",
   "upstream": {
     "repo_url": "https://github.com/xingyu-lin/softgym",
     "commit": "bb383f64cd488062587714abbae38f27ed9f2457",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/xingyu-lin__softgym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/xingyu-lin__softgym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/xingyu-lin__softgym --backend fake --mcp"
 }

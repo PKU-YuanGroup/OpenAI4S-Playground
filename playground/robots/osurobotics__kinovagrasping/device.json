@@ -2,7 +2,11 @@
   "name": "robots/osurobotics__kinovagrasping",
   "package": "robots/osurobotics__kinovagrasping",
   "mhs_package": "mhs/MHS/drivers/robots/osurobotics__kinovagrasping",
-  "website": "https://mhs.openai4s.org",
+  "title": "Kinova j2s7s300 grasping environment (kinovagripper-v0)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "Kinova j2s7s300 grasping environment (kinovagripper-v0), adapted from osurobotics/kinovagrasping. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/osurobotics__kinovagrasping/",
   "upstream": {
     "repo_url": "https://github.com/osurobotics/kinovagrasping",
     "commit": "f22af60d3683fdc4ffecf49ccff179fbc6750748",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/osurobotics__kinovagrasping",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/osurobotics__kinovagrasping --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/osurobotics__kinovagrasping --backend fake --mcp"
 }

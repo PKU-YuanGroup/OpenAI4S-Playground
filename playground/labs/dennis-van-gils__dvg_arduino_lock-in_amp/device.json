@@ -2,7 +2,11 @@
   "name": "labs/dennis-van-gils__dvg_arduino_lock-in_amp",
   "package": "labs/dennis-van-gils__dvg_arduino_lock-in_amp",
   "mhs_package": "mhs/MHS/drivers/labs/dennis-van-gils__dvg_arduino_lock-in_amp",
-  "website": "https://mhs.openai4s.org",
+  "title": "DvG Arduino lock-in amplifier (Alia_protocol_serial.Alia)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "DvG Arduino lock-in amplifier (Alia_protocol_serial.Alia), adapted from dennis-van-gils/dvg_arduino_lock-in_amp. It reads `ref_clipping_high`, `ref_clipping_low`, `adc_autocal_valid`, `adc_autocal_gaincorr` and 4 more; sets `ref_waveform`, `ref_freq`, `ref_offset`, `ref_amplitude` and 1 more; runs `start_acquisition` and `stop_acquisition`. `start_acquisition`: start the lock-in acquisition (the native on command); it takes no input. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/dennis-van-gils__dvg_arduino_lock-in_amp/",
   "upstream": {
     "repo_url": "https://github.com/dennis-van-gils/dvg_arduino_lock-in_amp",
     "commit": "64c0f18f9111eef2fc4feb10466c4dd9a39fb516",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/dennis-van-gils__dvg_arduino_lock-in_amp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/dennis-van-gils__dvg_arduino_lock-in_amp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/dennis-van-gils__dvg_arduino_lock-in_amp --backend fake --mcp"
 }

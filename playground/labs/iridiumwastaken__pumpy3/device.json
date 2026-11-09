@@ -2,7 +2,11 @@
   "name": "labs/iridiumwastaken__pumpy3",
   "package": "labs/iridiumwastaken__pumpy3",
   "mhs_package": "mhs/MHS/drivers/labs/iridiumwastaken__pumpy3",
-  "website": "https://mhs.openai4s.org",
+  "title": "Harvard PHD 2000 syringe pump (pumpy3.Pump2000)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Harvard PHD 2000 syringe pump (pumpy3.Pump2000), adapted from iridiumwastaken/pumpy3. It reads `infused_volume` and `running`; sets `diameter`, `rate` and `target_volume`; runs `start_pump` and `stop_pump`. `start_pump`: start infusing or withdrawing with the rate and target volume already configured. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/iridiumwastaken__pumpy3/",
   "upstream": {
     "repo_url": "https://github.com/iridiumwastaken/pumpy3",
     "commit": "0819cd6f9c402ce75e12eb697672a8b3559f93c1",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/iridiumwastaken__pumpy3",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/iridiumwastaken__pumpy3 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/iridiumwastaken__pumpy3 --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/chemgymrl__chemgymrl",
   "package": "labs/chemgymrl__chemgymrl",
   "mhs_package": "mhs/MHS/drivers/labs/chemgymrl__chemgymrl",
-  "website": "https://mhs.openai4s.org",
+  "title": "ChemGymRL GenWurtzExtract-v2 extraction bench",
+  "category": "Simulation",
+  "topic": "wet-lab automation and chemistry",
+  "intro": "ChemGymRL GenWurtzExtract-v2 extraction bench, adapted from chemgymrl/chemgymrl. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/chemgymrl__chemgymrl/",
   "upstream": {
     "repo_url": "https://github.com/chemgymrl/chemgymrl",
     "commit": "ab8227b6b33f13617b7e551bdf6b894df7eec68d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/chemgymrl__chemgymrl",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/chemgymrl__chemgymrl --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/chemgymrl__chemgymrl --backend fake --mcp"
 }

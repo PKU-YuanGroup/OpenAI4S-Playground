@@ -2,7 +2,11 @@
   "name": "robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch",
   "package": "robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch",
   "mhs_package": "mhs/MHS/drivers/robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch",
-  "website": "https://mhs.openai4s.org",
+  "title": "CS285 obstacles-cs285-v0 (2D navigation)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "CS285 obstacles-cs285-v0 (2D navigation), adapted from erfanmhi/deep-reinforcement-learning-cs285-pytorch. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch/",
   "upstream": {
     "repo_url": "https://github.com/erfanmhi/deep-reinforcement-learning-cs285-pytorch",
     "commit": "6da04f367e52a451c202ae7e5477994c1d149baf",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/erfanmhi__deep-reinforcement-learning-cs285-pytorch --backend fake --mcp"
 }

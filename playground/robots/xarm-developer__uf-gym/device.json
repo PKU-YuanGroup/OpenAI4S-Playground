@@ -2,7 +2,11 @@
   "name": "robots/xarm-developer__uf-gym",
   "package": "robots/xarm-developer__uf-gym",
   "mhs_package": "mhs/MHS/drivers/robots/xarm-developer__uf-gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "UFACTORY xArm6 Reach (panda-gym / PyBullet)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "UFACTORY xArm6 Reach (panda-gym / PyBullet), adapted from xarm-developer/uf-gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/xarm-developer__uf-gym/",
   "upstream": {
     "repo_url": "https://github.com/xarm-developer/uf-gym",
     "commit": "5d93e0419193bfed8a7cefc7bbe9b045a650f049",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/xarm-developer__uf-gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/xarm-developer__uf-gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/xarm-developer__uf-gym --backend fake --mcp"
 }

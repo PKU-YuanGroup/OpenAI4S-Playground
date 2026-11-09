@@ -2,7 +2,11 @@
   "name": "labs/maximilianb2__pc-gym",
   "package": "labs/maximilianb2__pc-gym",
   "mhs_package": "mhs/MHS/drivers/labs/maximilianb2__pc-gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "pc-gym CSTR process-control environment",
+  "category": "Simulation",
+  "topic": "wet-lab automation and chemistry",
+  "intro": "pc-gym CSTR process-control environment, adapted from maximilianb2/pc-gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/maximilianb2__pc-gym/",
   "upstream": {
     "repo_url": "https://github.com/maximilianb2/pc-gym",
     "commit": "fbfb36bf84b494cd157cff88292e1fd1b864cee5",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/maximilianb2__pc-gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/maximilianb2__pc-gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/maximilianb2__pc-gym --backend fake --mcp"
 }

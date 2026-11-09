@@ -2,7 +2,11 @@
   "name": "robots/caelan__ltamp",
   "package": "robots/caelan__ltamp",
   "mhs_package": "mhs/MHS/drivers/robots/caelan__ltamp",
-  "website": "https://mhs.openai4s.org",
+  "title": "LTAMP simulated PR2 (PyBullet PBController)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "LTAMP simulated PR2 (PyBullet PBController), adapted from caelan/ltamp. It reads `joint_positions`; sets `torso_position`; runs `move_arms`. `move_arms`: command one or more actuated joints to target positions in joint space, optionally over a declared duration, and report whether the target was reached within tolerance. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/caelan__ltamp/",
   "upstream": {
     "repo_url": "https://github.com/caelan/ltamp",
     "commit": "7e0a28dca1156b1dc6d3b9459fed58607249c3ed",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/caelan__ltamp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/caelan__ltamp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/caelan__ltamp --backend fake --mcp"
 }

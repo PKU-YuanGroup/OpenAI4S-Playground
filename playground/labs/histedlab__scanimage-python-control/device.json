@@ -2,7 +2,11 @@
   "name": "labs/histedlab__scanimage-python-control",
   "package": "labs/histedlab__scanimage-python-control",
   "mhs_package": "mhs/MHS/drivers/labs/histedlab__scanimage-python-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "ScanImage remote control (py_json_client.ScanimageTcpipClient)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "ScanImage remote control (py_json_client.ScanimageTcpipClient), adapted from histedlab/scanimage-python-control. It sets `scan_zoom_factor`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/histedlab__scanimage-python-control/",
   "upstream": {
     "repo_url": "https://github.com/histedlab/scanimage-python-control",
     "commit": "9de4309aef951b390ed4b5a1240797a54d1001d8",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/histedlab__scanimage-python-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/histedlab__scanimage-python-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/histedlab__scanimage-python-control --backend fake --mcp"
 }

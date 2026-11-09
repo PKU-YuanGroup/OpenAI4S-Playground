@@ -2,7 +2,11 @@
   "name": "robots/robocasa__robocasa-gr1-tabletop-tasks",
   "package": "robots/robocasa__robocasa-gr1-tabletop-tasks",
   "mhs_package": "mhs/MHS/drivers/robots/robocasa__robocasa-gr1-tabletop-tasks",
-  "website": "https://mhs.openai4s.org",
+  "title": "RoboCasa GR-1 Tabletop task (Gymnasium GrootRoboCasaEnv)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "RoboCasa GR-1 Tabletop task (Gymnasium GrootRoboCasaEnv), adapted from robocasa/robocasa-gr1-tabletop-tasks. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robocasa__robocasa-gr1-tabletop-tasks/",
   "upstream": {
     "repo_url": "https://github.com/robocasa/robocasa-gr1-tabletop-tasks",
     "commit": "4840e671596f93ca03651524b9f72ffb1aadfeff",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robocasa__robocasa-gr1-tabletop-tasks",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robocasa__robocasa-gr1-tabletop-tasks --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robocasa__robocasa-gr1-tabletop-tasks --backend fake --mcp"
 }

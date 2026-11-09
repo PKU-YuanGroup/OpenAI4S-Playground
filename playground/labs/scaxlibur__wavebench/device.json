@@ -2,7 +2,11 @@
   "name": "labs/scaxlibur__wavebench",
   "package": "labs/scaxlibur__wavebench",
   "mhs_package": "mhs/MHS/drivers/labs/scaxlibur__wavebench",
-  "website": "https://mhs.openai4s.org",
+  "title": "RIGOL DG4202 signal source (WaveBench dg4202 driver)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "RIGOL DG4202 signal source (WaveBench dg4202 driver), adapted from scaxlibur/wavebench. It reads `identity` and `amplitude_unit`; sets `output`, `function`, `frequency`, `amplitude` and 1 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/scaxlibur__wavebench/",
   "upstream": {
     "repo_url": "https://github.com/scaxlibur/wavebench",
     "commit": "44506c4975d8615ace0d2dbababe880b89567709",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/scaxlibur__wavebench",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/scaxlibur__wavebench --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/scaxlibur__wavebench --backend fake --mcp"
 }

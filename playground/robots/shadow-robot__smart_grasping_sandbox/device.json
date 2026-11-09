@@ -2,7 +2,11 @@
   "name": "robots/shadow-robot__smart_grasping_sandbox",
   "package": "robots/shadow-robot__smart_grasping_sandbox",
   "mhs_package": "mhs/MHS/drivers/robots/shadow-robot__smart_grasping_sandbox",
-  "website": "https://mhs.openai4s.org",
+  "title": "Shadow Smart Grasping Sandbox",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Shadow Smart Grasping Sandbox, adapted from shadow-robot/smart_grasping_sandbox. It reads `read_joint_states` and `read_object_pose`; runs `pause_physics`, `unpause_physics`, `reset_world`, `home_configuration` and 2 more. `pause_physics`: pause the Gazebo simulation through /gazebo/pause_physics. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/shadow-robot__smart_grasping_sandbox/",
   "upstream": {
     "repo_url": "https://github.com/shadow-robot/smart_grasping_sandbox",
     "commit": "6f8de0600126bcbd38c38c1fcc8b97c6a868ad8d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/shadow-robot__smart_grasping_sandbox",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/shadow-robot__smart_grasping_sandbox --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/shadow-robot__smart_grasping_sandbox --backend fake --mcp"
 }

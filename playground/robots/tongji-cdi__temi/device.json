@@ -2,7 +2,11 @@
   "name": "robots/tongji-cdi__temi",
   "package": "robots/tongji-cdi__temi",
   "mhs_package": "mhs/MHS/drivers/robots/tongji-cdi__temi",
-  "website": "https://mhs.openai4s.org",
+  "title": "Temi robot (temi.api:Temi)",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "Temi robot (temi.api:Temi), adapted from tongji-cdi/temi. It runs `goto`, `speak`, `ask`, `interface` and 1 more. `goto`: go to a saved location and report whether Temi says it reached it. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/tongji-cdi__temi/",
   "upstream": {
     "repo_url": "https://github.com/tongji-cdi/temi",
     "commit": "ec0a395405df1583d3357fd944b0c43396b30a7c",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/tongji-cdi__temi",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tongji-cdi__temi --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tongji-cdi__temi --backend fake --mcp"
 }

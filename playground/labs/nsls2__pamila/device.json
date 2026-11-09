@@ -2,7 +2,11 @@
   "name": "labs/nsls2__pamila",
   "package": "labs/nsls2__pamila",
   "mhs_package": "mhs/MHS/drivers/labs/nsls2__pamila",
-  "website": "https://mhs.openai4s.org",
+  "title": "PAMILA read-only middle-layer variable list",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "PAMILA read-only middle-layer variable list, adapted from nsls2/pamila. It reads `mlv_count`, `mlv_names`, `enabled_mlv_names`, `enabled_status` and 3 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/nsls2__pamila/",
   "upstream": {
     "repo_url": "https://github.com/nsls2/pamila",
     "commit": "62a439b6be7cb72353575183a7fea26b45a35394",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/nsls2__pamila",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls2__pamila --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls2__pamila --backend fake --mcp"
 }

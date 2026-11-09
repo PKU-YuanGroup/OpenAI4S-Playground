@@ -2,7 +2,11 @@
   "name": "labs/ap--__python-seabreeze",
   "package": "labs/ap--__python-seabreeze",
   "mhs_package": "mhs/MHS/drivers/labs/ap--__python-seabreeze",
-  "website": "https://mhs.openai4s.org",
+  "title": "Ocean Optics spectrometer (python-seabreeze Spectrometer)",
+  "category": "Spectroscopy",
+  "topic": null,
+  "intro": "Ocean Optics spectrometer (python-seabreeze Spectrometer), adapted from ap--/python-seabreeze. It reads `pixel_count`, `max_intensity`, `serial_number` and `model_name`; runs `measure_intensity` and `set_integration_time`. `measure_intensity`: measure optical or radiant intensity at a declared wavelength or channel and return the value with its unit and integration time. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/ap--__python-seabreeze/",
   "upstream": {
     "repo_url": "https://github.com/ap--/python-seabreeze",
     "commit": "3de4fdd6bbb533a701309c746c94cac2ffc05be0",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ap--__python-seabreeze",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ap--__python-seabreeze --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ap--__python-seabreeze --backend fake --mcp"
 }

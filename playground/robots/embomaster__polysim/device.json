@@ -2,7 +2,11 @@
   "name": "robots/embomaster__polysim",
   "package": "robots/embomaster__polysim",
   "mhs_package": "mhs/MHS/drivers/robots/embomaster__polysim",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree G1 29-DoF (PolySim MuJoCo scene)",
+  "category": "Simulation",
+  "topic": "legged and humanoid robots",
+  "intro": "Unitree G1 29-DoF (PolySim MuJoCo scene), adapted from embomaster/polysim. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/embomaster__polysim/",
   "upstream": {
     "repo_url": "https://github.com/embomaster/polysim",
     "commit": "0fdb349785479b5c0c30d3c676fae67025b8d34a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/embomaster__polysim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/embomaster__polysim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/embomaster__polysim --backend fake --mcp"
 }

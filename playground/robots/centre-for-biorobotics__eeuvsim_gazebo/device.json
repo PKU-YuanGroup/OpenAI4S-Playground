@@ -2,7 +2,11 @@
   "name": "robots/centre-for-biorobotics__eeuvsim_gazebo",
   "package": "robots/centre-for-biorobotics__eeuvsim_gazebo",
   "mhs_package": "mhs/MHS/drivers/robots/centre-for-biorobotics__eeuvsim_gazebo",
-  "website": "https://mhs.openai4s.org",
+  "title": "eeUVsim U-CAT AUV simulator",
+  "category": "Simulation",
+  "topic": "underwater robotics",
+  "intro": "eeUVsim U-CAT AUV simulator, adapted from centre-for-biorobotics/eeuvsim_gazebo. It reads `name`, `pose`, `twist`, `reference_frame` and 6 more; runs `set_fin_oscillation` and `publish_reset`. `set_fin_oscillation`: publish one Flippers message with the four fin oscillation commands on /hw/flippers_cmd. The receipt confirms only that rosbridge accepted the publication, not that moveFins applied it or that the AUV moved or stopped. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/centre-for-biorobotics__eeuvsim_gazebo/",
   "upstream": {
     "repo_url": "https://github.com/centre-for-biorobotics/eeuvsim_gazebo",
     "commit": "7276ed34215c6b75caf03d6d5144ee550aaf6600",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/centre-for-biorobotics__eeuvsim_gazebo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/centre-for-biorobotics__eeuvsim_gazebo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/centre-for-biorobotics__eeuvsim_gazebo --backend fake --mcp"
 }

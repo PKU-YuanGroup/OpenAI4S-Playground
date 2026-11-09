@@ -2,7 +2,11 @@
   "name": "robots/dyson-ai__grip",
   "package": "robots/dyson-ai__grip",
   "mhs_package": "mhs/MHS/drivers/robots/dyson-ai__grip",
-  "website": "https://mhs.openai4s.org",
+  "title": "Grip PickAndPlaceEnvironment (pybullet)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "Grip PickAndPlaceEnvironment (pybullet), adapted from dyson-ai/grip. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset_world` and `fence`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/dyson-ai__grip/",
   "upstream": {
     "repo_url": "https://github.com/dyson-ai/grip",
     "commit": "eee9f38f86ac636ba4b4ddd1e6b9cfb783f0e203",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/dyson-ai__grip",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dyson-ai__grip --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dyson-ai__grip --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/bilalkabas__drl-nav",
   "package": "robots/bilalkabas__drl-nav",
   "mhs_package": "mhs/MHS/drivers/robots/bilalkabas__drl-nav",
-  "website": "https://mhs.openai4s.org",
+  "title": "DRL-Nav AirSim corridor (legacy Gym environment)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "DRL-Nav AirSim corridor (legacy Gym environment), adapted from bilalkabas/drl-nav. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/bilalkabas__drl-nav/",
   "upstream": {
     "repo_url": "https://github.com/bilalkabas/drl-nav",
     "commit": "a996f5461c90adfe765ca3274d4da7c8499891c3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/bilalkabas__drl-nav",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/bilalkabas__drl-nav --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/bilalkabas__drl-nav --backend fake --mcp"
 }

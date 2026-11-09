@@ -2,7 +2,11 @@
   "name": "robots/carolzyy__modesuite",
   "package": "robots/carolzyy__modesuite",
   "mhs_package": "mhs/MHS/drivers/robots/carolzyy__modesuite",
-  "website": "https://mhs.openai4s.org",
+  "title": "MoDeSuite MoDe-Spot-Bend-v0 (simulated Spot mobile manipulator)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "MoDeSuite MoDe-Spot-Bend-v0 (simulated Spot mobile manipulator), adapted from carolzyy/modesuite. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/carolzyy__modesuite/",
   "upstream": {
     "repo_url": "https://github.com/carolzyy/modesuite",
     "commit": "470681a7ff117e487060ad52bc4f199e3fa34474",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/carolzyy__modesuite",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/carolzyy__modesuite --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/carolzyy__modesuite --backend fake --mcp"
 }

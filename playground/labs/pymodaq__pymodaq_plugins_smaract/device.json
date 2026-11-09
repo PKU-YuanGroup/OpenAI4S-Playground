@@ -2,7 +2,11 @@
   "name": "labs/pymodaq__pymodaq_plugins_smaract",
   "package": "labs/pymodaq__pymodaq_plugins_smaract",
   "mhs_package": "mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_smaract",
-  "website": "https://mhs.openai4s.org",
+  "title": "SmarAct MCS2 controller channel (pymodaq_plugins_smaract)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "SmarAct MCS2 controller channel (pymodaq_plugins_smaract), adapted from pymodaq/pymodaq_plugins_smaract. It reads `position`, `units`, `base_resolution`, `positioner_type` and 3 more; runs `absolute_move`, `relative_move`, `find_reference` and `stop_motion`. `absolute_move`: move the bound MCS2 channel to an absolute position given in controller base units. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pymodaq__pymodaq_plugins_smaract/",
   "upstream": {
     "repo_url": "https://github.com/pymodaq/pymodaq_plugins_smaract",
     "commit": "eeb3fa8ced4ce9eab102951a4ad482ee4152fe6c",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pymodaq__pymodaq_plugins_smaract",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_smaract --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_smaract --backend fake --mcp"
 }

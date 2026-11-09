@@ -2,7 +2,11 @@
   "name": "robots/b4be1__rl-arch-assembly",
   "package": "robots/b4be1__rl-arch-assembly",
   "mhs_package": "mhs/MHS/drivers/robots/b4be1__rl-arch-assembly",
-  "website": "https://mhs.openai4s.org",
+  "title": "rl-arch-assembly StackingTask (simulated UR10 placing)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "rl-arch-assembly StackingTask (simulated UR10 placing), adapted from b4be1/rl-arch-assembly. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/b4be1__rl-arch-assembly/",
   "upstream": {
     "repo_url": "https://github.com/b4be1/rl-arch-assembly",
     "commit": "187e460c79e41ae38e1b750d75e369f3473dd3eb",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/b4be1__rl-arch-assembly",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/b4be1__rl-arch-assembly --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/b4be1__rl-arch-assembly --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/mcleu__pyapt",
   "package": "labs/mcleu__pyapt",
   "mhs_package": "mhs/MHS/drivers/labs/mcleu__pyapt",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs APT motion controller (PyAPT)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs APT motion controller (PyAPT), adapted from mcleu/pyapt. It reads `connected`, `stage_minimum`, `stage_maximum`, `stage_units` and 6 more; sets `position`, `acceleration` and `maximum_velocity`; runs `move_relative`, `home` and `stop_stage`. `move_relative`: move the stage relative to its current position; mRel waits for the move and the driver returns the position the controller reports afterwards. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/mcleu__pyapt/",
   "upstream": {
     "repo_url": "https://github.com/mcleu/pyapt",
     "commit": "2d5c4c64350d70daa60c0bd49c9afd03f85bc412",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/mcleu__pyapt",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mcleu__pyapt --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mcleu__pyapt --backend fake --mcp"
 }

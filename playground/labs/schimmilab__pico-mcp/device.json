@@ -2,7 +2,11 @@
   "name": "labs/schimmilab__pico-mcp",
   "package": "labs/schimmilab__pico-mcp",
   "mhs_package": "mhs/MHS/drivers/labs/schimmilab__pico-mcp",
-  "website": "https://mhs.openai4s.org",
+  "title": "PicoScope 5000A/B series oscilloscope (pico_mcp.scope.Scope)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "PicoScope 5000A/B series oscilloscope (pico_mcp.scope.Scope), adapted from schimmilab/pico-mcp. It reads `connected`, `variant`, `serial`, `resolution_bits` and 1 more; sets `channel_a_enabled`, `channel_a_coupling`, `channel_a_range_v`, `channel_b_enabled` and 8 more; runs `set_signal_generator`, `stop_signal_generator` and `capture_block`. `set_signal_generator`: configure the built-in signal generator (AWG) through ps5000aSetSigGenBuiltInV2. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/schimmilab__pico-mcp/",
   "upstream": {
     "repo_url": "https://github.com/schimmilab/pico-mcp",
     "commit": "08fd81ee1c1e79b4d82e0997ca840b46adeef811",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/schimmilab__pico-mcp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/schimmilab__pico-mcp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/schimmilab__pico-mcp --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/alba-synchrotron__sls-detector",
   "package": "labs/alba-synchrotron__sls-detector",
   "mhs_package": "mhs/MHS/drivers/labs/alba-synchrotron__sls-detector",
-  "website": "https://mhs.openai4s.org",
+  "title": "SLS Mythen II detector (sls.client.Detector)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "SLS Mythen II detector (sls.client.Detector), adapted from alba-synchrotron/sls-detector. It reads `detector_type`, `run_status`, `settings`, `nb_modules` and 2 more; sets `energy_threshold`, `exposure_time`, `nb_frames`, `nb_cycles` and 2 more; runs `acquire`, `start_acquisition` and `stop_acquisition`. `acquire`: run one configured acquisition through Detector.acquire() and return the last frame. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/alba-synchrotron__sls-detector/",
   "upstream": {
     "repo_url": "https://github.com/alba-synchrotron/sls-detector",
     "commit": "961d33152af298eb4cbd311d9d185683ba992199",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/alba-synchrotron__sls-detector",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alba-synchrotron__sls-detector --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alba-synchrotron__sls-detector --backend fake --mcp"
 }

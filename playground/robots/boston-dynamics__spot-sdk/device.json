@@ -2,7 +2,11 @@
   "name": "robots/boston-dynamics__spot-sdk",
   "package": "robots/boston-dynamics__spot-sdk",
   "mhs_package": "mhs/MHS/drivers/robots/boston-dynamics__spot-sdk",
-  "website": "https://mhs.openai4s.org",
+  "title": "Boston Dynamics Spot (bosdyn.client.robot.Robot)",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "Boston Dynamics Spot (bosdyn.client.robot.Robot), adapted from boston-dynamics/spot-sdk. It reads `serial_number`, `nickname`, `species`, `estopped` and 5 more; sets `motors_on`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/boston-dynamics__spot-sdk/",
   "upstream": {
     "repo_url": "https://github.com/boston-dynamics/spot-sdk",
     "commit": "04537ddafe0641d1751af3eb9e76cb785fc18594",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/boston-dynamics__spot-sdk",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/boston-dynamics__spot-sdk --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/boston-dynamics__spot-sdk --backend fake --mcp"
 }

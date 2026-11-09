@@ -2,7 +2,11 @@
   "name": "robots/coppolam__ros_mav_swarm_simulator",
   "package": "robots/coppolam__ros_mav_swarm_simulator",
   "mhs_package": "mhs/MHS/drivers/robots/coppolam__ros_mav_swarm_simulator",
-  "website": "https://mhs.openai4s.org",
+  "title": "Coppolam ROS MAV swarm simulator (uav1)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "Coppolam ROS MAV swarm simulator (uav1), adapted from coppolam/ros_mav_swarm_simulator. It reads `read_odometry`; runs `set_velocity`, `enable_motors` and `land`. `set_velocity`: publish one geometry_msgs/Twist velocity command on /uav1/cmd_vel; the receipt reports the values sent and confirms transmission only, not arrival, motion or a continuous stream. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/coppolam__ros_mav_swarm_simulator/",
   "upstream": {
     "repo_url": "https://github.com/coppolam/ros_mav_swarm_simulator",
     "commit": "eca05eaaecc05242493b176f2f2656f21b14c250",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/coppolam__ros_mav_swarm_simulator",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/coppolam__ros_mav_swarm_simulator --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/coppolam__ros_mav_swarm_simulator --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/christofferkrook__laserphysics_devices",
   "package": "labs/christofferkrook__laserphysics_devices",
   "mhs_package": "mhs/MHS/drivers/labs/christofferkrook__laserphysics_devices",
-  "website": "https://mhs.openai4s.org",
+  "title": "Ando AQ-6315A optical spectrum analyzer",
+  "category": "Spectroscopy",
+  "topic": null,
+  "intro": "Ando AQ-6315A optical spectrum analyzer, adapted from christofferkrook/laserphysics_devices. It sets `start_wl`, `stop_wl`, `center_wl`, `span` and 7 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/christofferkrook__laserphysics_devices/",
   "upstream": {
     "repo_url": "https://github.com/christofferkrook/laserphysics_devices",
     "commit": "7af657f90b192af988610525ead54bb2cc83a11d",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/christofferkrook__laserphysics_devices",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/christofferkrook__laserphysics_devices --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/christofferkrook__laserphysics_devices --backend fake --mcp"
 }

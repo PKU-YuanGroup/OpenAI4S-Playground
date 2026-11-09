@@ -2,7 +2,11 @@
   "name": "robots/duburcqa__jiminy",
   "package": "robots/duburcqa__jiminy",
   "mhs_package": "mhs/MHS/drivers/robots/duburcqa__jiminy",
-  "website": "https://mhs.openai4s.org",
+  "title": "Jiminy CartPole (gym_jiminy)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Jiminy CartPole (gym_jiminy), adapted from duburcqa/jiminy. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/duburcqa__jiminy/",
   "upstream": {
     "repo_url": "https://github.com/duburcqa/jiminy",
     "commit": "accdf3629d9d8c08bb97f2905f010f1616d2168a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/duburcqa__jiminy",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/duburcqa__jiminy --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/duburcqa__jiminy --backend fake --mcp"
 }

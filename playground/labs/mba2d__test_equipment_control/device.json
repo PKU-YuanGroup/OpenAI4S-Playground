@@ -2,7 +2,11 @@
   "name": "labs/mba2d__test_equipment_control",
   "package": "labs/mba2d__test_equipment_control",
   "mhs_package": "mhs/MHS/drivers/labs/mba2d__test_equipment_control",
-  "website": "https://mhs.openai4s.org",
+  "title": "A2D electronic load",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "A2D electronic load, adapted from mba2d/test_equipment_control. It reads `voltage`, `adc_voltage`, `current_reported` and `temperature`; sets `current`, `output`, `led` and `fan`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/mba2d__test_equipment_control/",
   "upstream": {
     "repo_url": "https://github.com/mba2d/test_equipment_control",
     "commit": "34bb54c13c766fdfe7e6260872a03e8dfefd3ad2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/mba2d__test_equipment_control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mba2d__test_equipment_control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mba2d__test_equipment_control --backend fake --mcp"
 }

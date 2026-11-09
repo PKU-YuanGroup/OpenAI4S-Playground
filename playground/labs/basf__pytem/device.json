@@ -2,7 +2,11 @@
   "name": "labs/basf__pytem",
   "package": "labs/basf__pytem",
   "mhs_package": "mhs/MHS/drivers/labs/basf__pytem",
-  "website": "https://mhs.openai4s.org",
+  "title": "BASF pyTEM TEM interface (pyTEM.Interface.Interface)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "BASF pyTEM TEM interface (pyTEM.Interface.Interface), adapted from basf/pytem. It reads `stage_home`, `beam_blanked`, `screen_position`, `column_valve_position` and 5 more; sets `stage_x`, `stage_y`, `stage_z`, `stage_alpha` and 1 more; runs `reset_stage_position` and `enter_safe_state`. `reset_stage_position`: reset the stage to x=y=z=alpha=beta=0 (the native reset_stage_position). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/basf__pytem/",
   "upstream": {
     "repo_url": "https://github.com/basf/pytem",
     "commit": "d2b2800329524c205c266fe72a35c7fd477cc735",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/basf__pytem",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/basf__pytem --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/basf__pytem --backend fake --mcp"
 }

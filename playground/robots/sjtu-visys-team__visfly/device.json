@@ -2,7 +2,11 @@
   "name": "robots/sjtu-visys-team__visfly",
   "package": "robots/sjtu-visys-team__visfly",
   "mhs_package": "mhs/MHS/drivers/robots/sjtu-visys-team__visfly",
-  "website": "https://mhs.openai4s.org",
+  "title": "VisFly NavigationEnv (Habitat-Sim quadrotor navigation)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "VisFly NavigationEnv (Habitat-Sim quadrotor navigation), adapted from sjtu-visys-team/visfly. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/sjtu-visys-team__visfly/",
   "upstream": {
     "repo_url": "https://github.com/sjtu-visys-team/visfly",
     "commit": "6ff29bfcbc752da4f9474f6f0ece29d836111a22",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/sjtu-visys-team__visfly",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sjtu-visys-team__visfly --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sjtu-visys-team__visfly --backend fake --mcp"
 }

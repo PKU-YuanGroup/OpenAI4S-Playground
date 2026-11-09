@@ -2,7 +2,11 @@
   "name": "labs/cukelarter__chemyx-syringe-pump",
   "package": "labs/cukelarter__chemyx-syringe-pump",
   "mhs_package": "mhs/MHS/drivers/labs/cukelarter__chemyx-syringe-pump",
-  "website": "https://mhs.openai4s.org",
+  "title": "CHEMYX syringe pump",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "CHEMYX syringe pump, adapted from cukelarter/chemyx-syringe-pump. It reads `pump_status`, `parameters`, `parameter_limits`, `displaced_volume` and 1 more; sets `units`, `diameter`, `rate`, `volume` and 2 more; runs `start_run`, `pause_run`, `restart_run` and `stop_run`. `start_run`: start the configured run (start). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/cukelarter__chemyx-syringe-pump/",
   "upstream": {
     "repo_url": "https://github.com/cukelarter/chemyx-syringe-pump",
     "commit": "14011ba2aeb2fcedff7a9b1718e58dc9acefb97f",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/cukelarter__chemyx-syringe-pump",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cukelarter__chemyx-syringe-pump --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cukelarter__chemyx-syringe-pump --backend fake --mcp"
 }

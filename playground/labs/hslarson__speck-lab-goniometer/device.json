@@ -2,7 +2,11 @@
   "name": "labs/hslarson__speck-lab-goniometer",
   "package": "labs/hslarson__speck-lab-goniometer",
   "mhs_package": "mhs/MHS/drivers/labs/hslarson__speck-lab-goniometer",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs compact spectrometer (pyCCT SpectrometerWrapper)",
+  "category": "Spectroscopy",
+  "topic": null,
+  "intro": "Thorlabs compact spectrometer (pyCCT SpectrometerWrapper), adapted from hslarson/speck-lab-goniometer. It reads `device_id`; sets `manual_exposure`, `hardware_average`, `input_hw_trigger_enabled`, `input_hw_trigger_average_no_wait` and 3 more; runs `acquire_spectrum`. `acquire_spectrum`: acquire an optical or mass spectrum over a declared wavelength or mass range and return the axis and intensity arrays, or an artifact reference for large spectra. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/hslarson__speck-lab-goniometer/",
   "upstream": {
     "repo_url": "https://github.com/hslarson/speck-lab-goniometer",
     "commit": "9ca84d8c8c6c6ec9f9f3a3bd3cd968fc6657a803",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/hslarson__speck-lab-goniometer",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hslarson__speck-lab-goniometer --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/hslarson__speck-lab-goniometer --backend fake --mcp"
 }

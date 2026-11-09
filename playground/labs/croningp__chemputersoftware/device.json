@@ -2,7 +2,11 @@
   "name": "labs/croningp__chemputersoftware",
   "package": "labs/croningp__chemputersoftware",
   "mhs_package": "mhs/MHS/drivers/labs/croningp__chemputersoftware",
-  "website": "https://mhs.openai4s.org",
+  "title": "IKA RET Control Visc hotplate stirrer",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "IKA RET Control Visc hotplate stirrer, adapted from croningp/chemputersoftware. It reads `medium_temperature`, `stir_rate` and `ph`; sets `temperature_setpoint` and `stir_rate_setpoint`; runs `set_temperature`, `start_heating`, `stop_heating`, `start_stirring` and 2 more. `set_temperature`: set the target temperature of a thermal zone and optionally wait for the zone to reach the setpoint within a declared tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/croningp__chemputersoftware/",
   "upstream": {
     "repo_url": "https://github.com/croningp/chemputersoftware",
     "commit": "0f249ce8f7c30e99bdf54f67cbd012d48e91dd3b",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/croningp__chemputersoftware",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/croningp__chemputersoftware --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/croningp__chemputersoftware --backend fake --mcp"
 }

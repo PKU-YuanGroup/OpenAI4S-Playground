@@ -2,7 +2,11 @@
   "name": "labs/sciencecorp__galago-tools",
   "package": "labs/sciencecorp__galago-tools",
   "mhs_package": "mhs/MHS/drivers/labs/sciencecorp__galago-tools",
-  "website": "https://mhs.openai4s.org",
+  "title": "Opentrons OT-2 through galago-tools' Ot2Driver",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Opentrons OT-2 through galago-tools' Ot2Driver, adapted from sciencecorp/galago-tools. It reads `run_id` and `run_status`; runs `run_protocol` and `stop_run`. `run_protocol`: upload an operator-approved protocol file, create a run of it and play it. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/sciencecorp__galago-tools/",
   "upstream": {
     "repo_url": "https://github.com/sciencecorp/galago-tools",
     "commit": "7ddf68c7bb7eda0243f6466cfbd6b97fdcfcf782",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/sciencecorp__galago-tools",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/sciencecorp__galago-tools --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/sciencecorp__galago-tools --backend fake --mcp"
 }

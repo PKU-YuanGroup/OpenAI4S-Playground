@@ -2,7 +2,11 @@
   "name": "robots/unity-technologies__unity-robotics-hub",
   "package": "robots/unity-technologies__unity-robotics-hub",
   "mhs_package": "mhs/MHS/drivers/robots/unity-technologies__unity-robotics-hub",
-  "website": "https://mhs.openai4s.org",
+  "title": "Niryo pick-and-place planner (Unity Robotics Hub)",
+  "category": "Other devices",
+  "topic": null,
+  "intro": "Niryo pick-and-place planner (Unity Robotics Hub), adapted from unity-technologies/unity-robotics-hub. It runs `plan_pick_and_place`. `plan_pick_and_place`: plan four trajectories. executed is always false. Exclusive. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/unity-technologies__unity-robotics-hub/",
   "upstream": {
     "repo_url": "https://github.com/unity-technologies/unity-robotics-hub",
     "commit": "b8d1e1d4c76c9ce75fc145cdbf55a9072cc77364",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/unity-technologies__unity-robotics-hub",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unity-technologies__unity-robotics-hub --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/unity-technologies__unity-robotics-hub --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/wetenschaap__pymista",
   "package": "labs/wetenschaap__pymista",
   "mhs_package": "mhs/MHS/drivers/labs/wetenschaap__pymista",
-  "website": "https://mhs.openai4s.org",
+  "title": "Zaber microscopy stage (pymista.ZaberStage)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Zaber microscopy stage (pymista.ZaberStage), adapted from wetenschaap/pymista. It reads `position`, `moving` and `homed`; runs `move_absolute`, `move_relative`, `home_axes` and `stop_motion`. `move_absolute`: move the axes to absolute positions in micrometres and wait until the stage is idle. The array names the leading axes in order; trailing axes keep their current position. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/wetenschaap__pymista/",
   "upstream": {
     "repo_url": "https://github.com/wetenschaap/pymista",
     "commit": "b30040a192c329b6144a120f0dfea2ca68060760",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/wetenschaap__pymista",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/wetenschaap__pymista --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/wetenschaap__pymista --backend fake --mcp"
 }

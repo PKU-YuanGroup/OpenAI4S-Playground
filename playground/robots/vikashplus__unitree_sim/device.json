@@ -2,7 +2,11 @@
   "name": "robots/vikashplus__unitree_sim",
   "package": "robots/vikashplus__unitree_sim",
   "mhs_package": "mhs/MHS/drivers/robots/vikashplus__unitree_sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree A1 quadruped (MuJoCo model)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Unitree A1 quadruped (MuJoCo model), adapted from vikashplus/unitree_sim. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/vikashplus__unitree_sim/",
   "upstream": {
     "repo_url": "https://github.com/vikashplus/unitree_sim",
     "commit": "21b5524e7c5586565de5e789e94bb69efd36db69",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/vikashplus__unitree_sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vikashplus__unitree_sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/vikashplus__unitree_sim --backend fake --mcp"
 }

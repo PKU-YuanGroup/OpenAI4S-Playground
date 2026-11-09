@@ -2,7 +2,11 @@
   "name": "labs/steiva__opentrons-ot2-http-python-wrapper",
   "package": "labs/steiva__opentrons-ot2-http-python-wrapper",
   "mhs_package": "mhs/MHS/drivers/labs/steiva__opentrons-ot2-http-python-wrapper",
-  "website": "https://mhs.openai4s.org",
+  "title": "Opentrons OT-2 (HTTP wrapper)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Opentrons OT-2 (HTTP wrapper), adapted from steiva/opentrons-ot2-http-python-wrapper. It reads `robot_model` and `run_count`; runs `aspirate`, `dispense`, `create_run`, `load_pipette` and 4 more. `aspirate`: draw a specified volume of liquid from a declared labware well into a pipette tip, with a bounded flow rate and an optional liquid-level offset. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/steiva__opentrons-ot2-http-python-wrapper/",
   "upstream": {
     "repo_url": "https://github.com/steiva/opentrons-ot2-http-python-wrapper",
     "commit": "6bf929c11fe94a03c8b444c70e13be273933f365",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/steiva__opentrons-ot2-http-python-wrapper",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/steiva__opentrons-ot2-http-python-wrapper --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/steiva__opentrons-ot2-http-python-wrapper --backend fake --mcp"
 }

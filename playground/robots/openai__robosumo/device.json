@@ -2,7 +2,11 @@
   "name": "robots/openai__robosumo",
   "package": "robots/openai__robosumo",
   "mhs_package": "mhs/MHS/drivers/robots/openai__robosumo",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenAI RoboSumo Ant-vs-Ant (two-agent MuJoCo sumo)",
+  "category": "Simulation",
+  "topic": "multi-robot systems",
+  "intro": "OpenAI RoboSumo Ant-vs-Ant (two-agent MuJoCo sumo), adapted from openai/robosumo. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/openai__robosumo/",
   "upstream": {
     "repo_url": "https://github.com/openai/robosumo",
     "commit": "3a317e27d2342dd47a869950e93315b23a74921a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/openai__robosumo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__robosumo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openai__robosumo --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/fretchen__synqs_devices",
   "package": "labs/fretchen__synqs_devices",
   "mhs_package": "mhs/MHS/drivers/labs/fretchen__synqs_devices",
-  "website": "https://mhs.openai4s.org",
+  "title": "Andor Solis camera (synqs_devices)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Andor Solis camera (synqs_devices), adapted from fretchen/synqs_devices. It reads `frame_width`, `frame_height`, `x_binning`, `y_binning` and 2 more; sets `exposure_time`, `acquisition_mode`, `trigger_mode`, `trigger_edge` and 2 more; runs `snap`. `snap`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/fretchen__synqs_devices/",
   "upstream": {
     "repo_url": "https://github.com/fretchen/synqs_devices",
     "commit": "ec4bb24639e9d0d4cb707e1c2a6296a47dfe9f02",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/fretchen__synqs_devices",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/fretchen__synqs_devices --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/fretchen__synqs_devices --backend fake --mcp"
 }

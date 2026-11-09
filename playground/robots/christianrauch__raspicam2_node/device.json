@@ -2,7 +2,11 @@
   "name": "robots/christianrauch__raspicam2_node",
   "package": "robots/christianrauch__raspicam2_node",
   "mhs_package": "mhs/MHS/drivers/robots/christianrauch__raspicam2_node",
-  "website": "https://mhs.openai4s.org",
+  "title": "Raspberry Pi Camera (raspicam2)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Raspberry Pi Camera (raspicam2), adapted from christianrauch/raspicam2_node. It reads `frame_id`, `width` and `height`; runs `capture_image`. `capture_image`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/christianrauch__raspicam2_node/",
   "upstream": {
     "repo_url": "https://github.com/christianrauch/raspicam2_node",
     "commit": "749689a967bfc427e74520dfd107f30f5c50bf0e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/christianrauch__raspicam2_node",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/christianrauch__raspicam2_node --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/christianrauch__raspicam2_node --backend fake --mcp"
 }

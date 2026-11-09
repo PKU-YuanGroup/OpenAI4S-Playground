@@ -2,7 +2,11 @@
   "name": "labs/tiagocoutinho__gepace",
   "package": "labs/tiagocoutinho__gepace",
   "mhs_package": "mhs/MHS/drivers/labs/tiagocoutinho__gepace",
-  "website": "https://mhs.openai4s.org",
+  "title": "GE Druck Pace pressure controller (gepace.Pace)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "GE Druck Pace pressure controller (gepace.Pace), adapted from tiagocoutinho/gepace. It reads `idn`, `version`, `mac`, `task` and 11 more; runs `set_pressure_control`, `start_pressure_control` and `stop_pressure_control`. `set_pressure_control`: enable or disable the pressure control output of module 1 (OUTP1:STAT). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/tiagocoutinho__gepace/",
   "upstream": {
     "repo_url": "https://github.com/tiagocoutinho/gepace",
     "commit": "4caa5f8c404277281033bc7f10b280d42941dfeb",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/tiagocoutinho__gepace",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__gepace --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tiagocoutinho__gepace --backend fake --mcp"
 }

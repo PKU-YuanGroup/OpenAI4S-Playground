@@ -2,7 +2,11 @@
   "name": "labs/itdaniher__olin-smus",
   "package": "labs/itdaniher__olin-smus",
   "mhs_package": "mhs/MHS/drivers/labs/itdaniher__olin-smus",
-  "website": "https://mhs.openai4s.org",
+  "title": "Olin ModCon USB source-measure unit",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Olin ModCon USB source-measure unit, adapted from itdaniher/olin-smus. It reads `measured_voltage`, `measured_current`, `mod_voltage` and `source_mode`; sets `source_voltage` and `source_current`; runs `source_off`. `source_off`: set the source current target to zero with the upstream set(amps=0) safety call; it takes no input and is the declared safe state. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/itdaniher__olin-smus/",
   "upstream": {
     "repo_url": "https://github.com/itdaniher/olin-smus",
     "commit": "3bddec37c09a408493dab0bf899080670e8807fe",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/itdaniher__olin-smus",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/itdaniher__olin-smus --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/itdaniher__olin-smus --backend fake --mcp"
 }

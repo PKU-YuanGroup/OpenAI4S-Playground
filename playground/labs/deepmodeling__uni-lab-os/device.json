@@ -2,7 +2,11 @@
   "name": "labs/deepmodeling__uni-lab-os",
   "package": "labs/deepmodeling__uni-lab-os",
   "mhs_package": "mhs/MHS/drivers/labs/deepmodeling__uni-lab-os",
-  "website": "https://mhs.openai4s.org",
+  "title": "Runze syringe pump",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Runze syringe pump, adapted from deepmodeling/uni-lab-os. It reads `plunger_position`, `velocity_grade`, `velocity_init`, `velocity_end` and 7 more; sets `position` and `max_velocity`; runs `pump` and `stop_pump`. `pump`: run a pump at a declared flow rate for a declared duration or volume in a declared direction, reporting the volume moved. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/deepmodeling__uni-lab-os/",
   "upstream": {
     "repo_url": "https://github.com/deepmodeling/uni-lab-os",
     "commit": "43923ec9473e2f6d33d3ca1ebca4bf4d507e06b2",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/deepmodeling__uni-lab-os",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/deepmodeling__uni-lab-os --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/deepmodeling__uni-lab-os --backend fake --mcp"
 }

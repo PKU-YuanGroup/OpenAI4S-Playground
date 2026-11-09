@@ -2,7 +2,11 @@
   "name": "robots/klintan__ros2_track_imu",
   "package": "robots/klintan__ros2_track_imu",
   "mhs_package": "mhs/MHS/drivers/robots/klintan__ros2_track_imu",
-  "website": "https://mhs.openai4s.org",
+  "title": "TrackIMU ROS 2 IMU",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "TrackIMU ROS 2 IMU, adapted from klintan/ros2_track_imu. It runs `read_imu`. `read_imu`: read linear acceleration, angular velocity and orientation from an inertial measurement unit, with the declared reference frame and timestamp. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/klintan__ros2_track_imu/",
   "upstream": {
     "repo_url": "https://github.com/klintan/ros2_track_imu",
     "commit": "21741c413ceec1104c62276a6d00deddb95fec4c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/klintan__ros2_track_imu",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_track_imu --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_track_imu --backend fake --mcp"
 }

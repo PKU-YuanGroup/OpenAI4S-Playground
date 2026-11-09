@@ -2,7 +2,11 @@
   "name": "labs/phamdangnguyen__-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial",
   "package": "labs/phamdangnguyen__-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial",
   "mhs_package": "mhs/MHS/drivers/labs/phamdangnguyen__-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial",
-  "website": "https://mhs.openai4s.org",
+  "title": "KDS Gemini 88 Plus dual-rate syringe pump",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "KDS Gemini 88 Plus dual-rate syringe pump, adapted from phamdangnguyen/-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial. It reads `status` and `running`; sets `syringe_volume`, `diameter`, `target_time`, `target_volume` and 1 more; runs `syringe`, `run` and `stop_pump`. `syringe`: select the syringe for both channels with 'syr {channel} {code} {index}'. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/phamdangnguyen__-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial/",
   "upstream": {
     "repo_url": "https://github.com/phamdangnguyen/-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial",
     "commit": "ab6a02be981ea541d11f8788567030073ad2a378",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/phamdangnguyen__-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/phamdangnguyen__-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/phamdangnguyen__-control-kds-gemini-88-plus-dual-rate-syringe-pump-using-python-and-serial --backend fake --mcp"
 }

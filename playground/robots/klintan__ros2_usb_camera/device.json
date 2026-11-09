@@ -2,7 +2,11 @@
   "name": "robots/klintan__ros2_usb_camera",
   "package": "robots/klintan__ros2_usb_camera",
   "mhs_package": "mhs/MHS/drivers/robots/klintan__ros2_usb_camera",
-  "website": "https://mhs.openai4s.org",
+  "title": "ROS 2 USB camera images and calibration",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "ROS 2 USB camera images and calibration, adapted from klintan/ros2_usb_camera. It reads `frame_id`, `read_camera_calibration` and `read_camera_info`; runs `capture`. `capture`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/klintan__ros2_usb_camera/",
   "upstream": {
     "repo_url": "https://github.com/klintan/ros2_usb_camera",
     "commit": "146c5911ebcc5539eb8550e02763abe1fdfa8d05",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/klintan__ros2_usb_camera",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_usb_camera --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/klintan__ros2_usb_camera --backend fake --mcp"
 }

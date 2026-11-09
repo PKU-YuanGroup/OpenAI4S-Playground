@@ -2,7 +2,11 @@
   "name": "labs/czbiohub-sf__reglo-icc-pump-control",
   "package": "labs/czbiohub-sf__reglo-icc-pump-control",
   "mhs_package": "mhs/MHS/drivers/labs/czbiohub-sf__reglo-icc-pump-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Masterflex Ismatec Reglo ICC peristaltic pump",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Masterflex Ismatec Reglo ICC peristaltic pump, adapted from czbiohub-sf/reglo-icc-pump-control. It reads `max_flow_rate`, `running`, `channel_count`, `pump_address` and 4 more; sets `tubing_id`; runs `pump` and `stop_pump`. `pump`: run a pump at a declared flow rate for a declared duration or volume in a declared direction, reporting the volume moved. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/czbiohub-sf__reglo-icc-pump-control/",
   "upstream": {
     "repo_url": "https://github.com/czbiohub-sf/reglo-icc-pump-control",
     "commit": "af0f8648a56512cad67af26068830e65754ead5e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/czbiohub-sf__reglo-icc-pump-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/czbiohub-sf__reglo-icc-pump-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/czbiohub-sf__reglo-icc-pump-control --backend fake --mcp"
 }

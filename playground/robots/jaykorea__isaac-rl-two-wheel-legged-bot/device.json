@@ -2,7 +2,11 @@
   "name": "robots/jaykorea__isaac-rl-two-wheel-legged-bot",
   "package": "robots/jaykorea__isaac-rl-two-wheel-legged-bot",
   "mhs_package": "mhs/MHS/drivers/robots/jaykorea__isaac-rl-two-wheel-legged-bot",
-  "website": "https://mhs.openai4s.org",
+  "title": "Isaac Lab Flamingo velocity flat constraint task",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Isaac Lab Flamingo velocity flat constraint task, adapted from jaykorea/isaac-rl-two-wheel-legged-bot. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/jaykorea__isaac-rl-two-wheel-legged-bot/",
   "upstream": {
     "repo_url": "https://github.com/jaykorea/isaac-rl-two-wheel-legged-bot",
     "commit": "d922cce9e07a8877c37e12b2cb39dfdcf34b9d40",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jaykorea__isaac-rl-two-wheel-legged-bot",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jaykorea__isaac-rl-two-wheel-legged-bot --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jaykorea__isaac-rl-two-wheel-legged-bot --backend fake --mcp"
 }

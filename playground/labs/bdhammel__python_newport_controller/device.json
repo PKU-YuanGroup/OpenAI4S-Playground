@@ -2,7 +2,11 @@
   "name": "labs/bdhammel__python_newport_controller",
   "package": "labs/bdhammel__python_newport_controller",
   "mhs_package": "mhs/MHS/drivers/labs/bdhammel__python_newport_controller",
-  "website": "https://mhs.openai4s.org",
+  "title": "New Focus Picomotor controller (newport.Controller)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "New Focus Picomotor controller (newport.Controller), adapted from bdhammel/python_newport_controller. It reads `positions`; runs `move_steps` and `stop_motion`. `move_steps`: move one Picomotor channel by a relative number of steps (the native xPRnn command). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/bdhammel__python_newport_controller/",
   "upstream": {
     "repo_url": "https://github.com/bdhammel/python_newport_controller",
     "commit": "1d960070435d1a47708ed42986697ac72a0ba4f3",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/bdhammel__python_newport_controller",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bdhammel__python_newport_controller --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bdhammel__python_newport_controller --backend fake --mcp"
 }

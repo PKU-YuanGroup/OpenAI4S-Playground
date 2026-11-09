@@ -2,7 +2,11 @@
   "name": "labs/pymodaq__pymodaq_plugins_andor",
   "package": "labs/pymodaq__pymodaq_plugins_andor",
   "mhs_package": "mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_andor",
-  "website": "https://mhs.openai4s.org",
+  "title": "Andor SDK3 camera (pymodaq_plugins_andor AndorCamera)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Andor SDK3 camera (pymodaq_plugins_andor AndorCamera), adapted from pymodaq/pymodaq_plugins_andor. It reads `sensor_width`, `sensor_height`, `roi_width`, `roi_height` and 8 more; sets `integration_time`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pymodaq__pymodaq_plugins_andor/",
   "upstream": {
     "repo_url": "https://github.com/pymodaq/pymodaq_plugins_andor",
     "commit": "673a12ae4e9eaf13ed58ce7412d180002386fd5c",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pymodaq__pymodaq_plugins_andor",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_andor --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_andor --backend fake --mcp"
 }

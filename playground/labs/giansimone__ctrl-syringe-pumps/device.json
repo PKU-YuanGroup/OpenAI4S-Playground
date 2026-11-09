@@ -2,7 +2,11 @@
   "name": "labs/giansimone__ctrl-syringe-pumps",
   "package": "labs/giansimone__ctrl-syringe-pumps",
   "mhs_package": "mhs/MHS/drivers/labs/giansimone__ctrl-syringe-pumps",
-  "website": "https://mhs.openai4s.org",
+  "title": "Syringe pump over serial (ctrl-syringe-pumps)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Syringe pump over serial (ctrl-syringe-pumps), adapted from giansimone/ctrl-syringe-pumps. It sets `diameter`, `direction` and `pumping_rate`; runs `run_pump`, `stop_pump`, `test_pump` and `reverse_direction`. `run_pump`: start the pump (RUN). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/giansimone__ctrl-syringe-pumps/",
   "upstream": {
     "repo_url": "https://github.com/giansimone/ctrl-syringe-pumps",
     "commit": "3b0d3154003498f65150d8f04905f3a27cdd9017",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/giansimone__ctrl-syringe-pumps",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/giansimone__ctrl-syringe-pumps --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/giansimone__ctrl-syringe-pumps --backend fake --mcp"
 }

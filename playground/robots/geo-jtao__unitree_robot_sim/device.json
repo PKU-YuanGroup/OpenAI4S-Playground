@@ -2,7 +2,11 @@
   "name": "robots/geo-jtao__unitree_robot_sim",
   "package": "robots/geo-jtao__unitree_robot_sim",
   "mhs_package": "mhs/MHS/drivers/robots/geo-jtao__unitree_robot_sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree B2 MuJoCo scene",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Unitree B2 MuJoCo scene, adapted from geo-jtao/unitree_robot_sim. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/geo-jtao__unitree_robot_sim/",
   "upstream": {
     "repo_url": "https://github.com/geo-jtao/unitree_robot_sim",
     "commit": "49fb7fa50e0c3b65dd2a07ac4df370ba781858b8",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/geo-jtao__unitree_robot_sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/geo-jtao__unitree_robot_sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/geo-jtao__unitree_robot_sim --backend fake --mcp"
 }

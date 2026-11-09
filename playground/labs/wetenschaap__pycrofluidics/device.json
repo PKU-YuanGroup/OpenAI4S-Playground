@@ -2,7 +2,11 @@
   "name": "labs/wetenschaap__pycrofluidics",
   "package": "labs/wetenschaap__pycrofluidics",
   "mhs_package": "mhs/MHS/drivers/labs/wetenschaap__pycrofluidics",
-  "website": "https://mhs.openai4s.org",
+  "title": "Elveflow OB1 pressure controller (pycrofluidics.OB1elve)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Elveflow OB1 pressure controller (pycrofluidics.OB1elve), adapted from wetenschaap/pycrofluidics. It reads `flow_1`, `flow_2`, `flow_3`, `flow_4` and 1 more; sets `pressure_1`, `pressure_2`, `pressure_3` and `pressure_4`; runs `read_pressure`, `read_flow`, `start_remote` and `stop_remote`. `read_pressure`: read the pressure of one OB1 channel and return it in mbar. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/wetenschaap__pycrofluidics/",
   "upstream": {
     "repo_url": "https://github.com/wetenschaap/pycrofluidics",
     "commit": "319de9d08c1a5f39ddd5030c98d8c356fbfb0f9c",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/wetenschaap__pycrofluidics",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/wetenschaap__pycrofluidics --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/wetenschaap__pycrofluidics --backend fake --mcp"
 }

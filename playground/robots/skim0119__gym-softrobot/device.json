@@ -2,7 +2,11 @@
   "name": "robots/skim0119__gym-softrobot",
   "package": "robots/skim0119__gym-softrobot",
   "mhs_package": "mhs/MHS/drivers/robots/skim0119__gym-softrobot",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-softrobot OctoMuscleCrawl-v0 (eight-arm soft crawler)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "gym-softrobot OctoMuscleCrawl-v0 (eight-arm soft crawler), adapted from skim0119/gym-softrobot. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/skim0119__gym-softrobot/",
   "upstream": {
     "repo_url": "https://github.com/skim0119/gym-softrobot",
     "commit": "e4a73ed86191747f4d0af56e612a6e339e952448",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/skim0119__gym-softrobot",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/skim0119__gym-softrobot --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/skim0119__gym-softrobot --backend fake --mcp"
 }

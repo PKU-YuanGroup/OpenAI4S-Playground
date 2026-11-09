@@ -2,7 +2,11 @@
   "name": "robots/ubi-agni__mujoco_ros_pkgs",
   "package": "robots/ubi-agni__mujoco_ros_pkgs",
   "mhs_package": "mhs/MHS/drivers/robots/ubi-agni__mujoco_ros_pkgs",
-  "website": "https://mhs.openai4s.org",
+  "title": "MuJoCo ROS simulator",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "MuJoCo ROS simulator, adapted from ubi-agni/mujoco_ros_pkgs. It reads `get_sim_info`; runs `pause`. `pause`: pause the MuJoCo ROS simulator with the acknowledged set_pause service. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ubi-agni__mujoco_ros_pkgs/",
   "upstream": {
     "repo_url": "https://github.com/ubi-agni/mujoco_ros_pkgs",
     "commit": "9304ca7ec254ac1aaa0c2f556513a9a51d28530e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ubi-agni__mujoco_ros_pkgs",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ubi-agni__mujoco_ros_pkgs --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ubi-agni__mujoco_ros_pkgs --backend fake --mcp"
 }

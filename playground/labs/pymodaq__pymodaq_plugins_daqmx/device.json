@@ -2,7 +2,11 @@
   "name": "labs/pymodaq__pymodaq_plugins_daqmx",
   "package": "labs/pymodaq__pymodaq_plugins_daqmx",
   "mhs_package": "mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_daqmx",
-  "website": "https://mhs.openai4s.org",
+  "title": "NI-DAQmx analog output (PyMoDAQ DAQ_NIDAQmx_Actuator)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "NI-DAQmx analog output (PyMoDAQ DAQ_NIDAQmx_Actuator), adapted from pymodaq/pymodaq_plugins_daqmx. It reads `device`, `analog_output_max_rate`, `analog_input_max_rate`, `analog_triggering_supported` and 2 more; sets `analog_output`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pymodaq__pymodaq_plugins_daqmx/",
   "upstream": {
     "repo_url": "https://github.com/pymodaq/pymodaq_plugins_daqmx",
     "commit": "f2129a920a64338b2ca3b0e06614680b30385072",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pymodaq__pymodaq_plugins_daqmx",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_daqmx --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_daqmx --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/qiangwang-academic__ur5e_robot_gym_env_real_and_sim",
   "package": "robots/qiangwang-academic__ur5e_robot_gym_env_real_and_sim",
   "mhs_package": "mhs/MHS/drivers/robots/qiangwang-academic__ur5e_robot_gym_env_real_and_sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "CoppeliaSim UR5 reaching environment v3 (legacy Gym)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "CoppeliaSim UR5 reaching environment v3 (legacy Gym), adapted from qiangwang-academic/ur5e_robot_gym_env_real_and_sim. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/qiangwang-academic__ur5e_robot_gym_env_real_and_sim/",
   "upstream": {
     "repo_url": "https://github.com/qiangwang-academic/ur5e_robot_gym_env_real_and_sim",
     "commit": "513acb7e235ab940fd03c3038208678e285690f3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/qiangwang-academic__ur5e_robot_gym_env_real_and_sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/qiangwang-academic__ur5e_robot_gym_env_real_and_sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/qiangwang-academic__ur5e_robot_gym_env_real_and_sim --backend fake --mcp"
 }

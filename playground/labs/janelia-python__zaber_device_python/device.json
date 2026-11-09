@@ -2,7 +2,11 @@
   "name": "labs/janelia-python__zaber_device_python",
   "package": "labs/janelia-python__zaber_device_python",
   "mhs_package": "mhs/MHS/drivers/labs/janelia-python__zaber_device_python",
-  "website": "https://mhs.openai4s.org",
+  "title": "Zaber stage (zaber_device.ZaberStage)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Zaber stage (zaber_device.ZaberStage), adapted from janelia-python/zaber_device_python. It reads `x_position`, `y_position`, `z_position`, `x_actuator_id` and 3 more; sets `x_microstep_size`, `y_microstep_size`, `z_microstep_size`, `x_travel` and 2 more; runs `home`, `stop_motion`, `move_absolute`, `move_relative` and 2 more. `home`: home every device in the chain and report the home status of the configured axes. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/janelia-python__zaber_device_python/",
   "upstream": {
     "repo_url": "https://github.com/janelia-python/zaber_device_python",
     "commit": "2fec6746359b35acd4cf0c121cff03da8ae0a062",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/janelia-python__zaber_device_python",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/janelia-python__zaber_device_python --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/janelia-python__zaber_device_python --backend fake --mcp"
 }

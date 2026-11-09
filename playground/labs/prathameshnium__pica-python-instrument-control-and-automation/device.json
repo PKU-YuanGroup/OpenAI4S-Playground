@@ -2,7 +2,11 @@
   "name": "labs/prathameshnium__pica-python-instrument-control-and-automation",
   "package": "labs/prathameshnium__pica-python-instrument-control-and-automation",
   "mhs_package": "mhs/MHS/drivers/labs/prathameshnium__pica-python-instrument-control-and-automation",
-  "website": "https://mhs.openai4s.org",
+  "title": "Cryo-con 34 temperature controller (PICA Cryocon34Backend)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "Cryo-con 34 temperature controller (PICA Cryocon34Backend), adapted from prathameshnium/pica-python-instrument-control-and-automation. It reads `temperature`, `control_engaged`, `heater_readback`, `ramp_rate` and 11 more; sets `setpoint`, `loop_type`, `loop_source`, `max_power` and 4 more; runs `control_engage` and `control_stop`. `control_engage`: engage every enabled control loop at the configured setpoint (native CONTROL). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/prathameshnium__pica-python-instrument-control-and-automation/",
   "upstream": {
     "repo_url": "https://github.com/prathameshnium/pica-python-instrument-control-and-automation",
     "commit": "17ce57d76e679841379bcc13d33f77fe046f9c87",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/prathameshnium__pica-python-instrument-control-and-automation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/prathameshnium__pica-python-instrument-control-and-automation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/prathameshnium__pica-python-instrument-control-and-automation --backend fake --mcp"
 }

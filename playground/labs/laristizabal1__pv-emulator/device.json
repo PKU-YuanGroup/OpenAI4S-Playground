@@ -2,7 +2,11 @@
   "name": "labs/laristizabal1__pv-emulator",
   "package": "labs/laristizabal1__pv-emulator",
   "mhs_package": "mhs/MHS/drivers/labs/laristizabal1__pv-emulator",
-  "website": "https://mhs.openai4s.org",
+  "title": "EA-PS 10060-170 programmable DC source (PV emulator)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "EA-PS 10060-170 programmable DC source (PV emulator), adapted from laristizabal1/pv-emulator. It reads `voltage`, `current`, `power` and `error_code`; sets `voltage_setpoint`, `current_setpoint` and `output`; runs `output_off`. `output_off`: switch the DC output off (OUTP OFF); this action is the safe state and takes no input. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/laristizabal1__pv-emulator/",
   "upstream": {
     "repo_url": "https://github.com/laristizabal1/pv-emulator",
     "commit": "a2339189e88c80889a86ac67bcf98b5cc9fc4447",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/laristizabal1__pv-emulator",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/laristizabal1__pv-emulator --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/laristizabal1__pv-emulator --backend fake --mcp"
 }

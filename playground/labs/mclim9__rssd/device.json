@@ -2,7 +2,11 @@
   "name": "labs/mclim9__rssd",
   "package": "labs/mclim9__rssd",
   "mhs_package": "mhs/MHS/drivers/labs/mclim9__rssd",
-  "website": "https://mhs.openai4s.org",
+  "title": "Rohde & Schwarz FSWP phase noise analyzer (rssd PNA class)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Rohde & Schwarz FSWP phase noise analyzer (rssd PNA class), adapted from mclim9/rssd. It reads `channels`, `sweep_time_s`, `sweep_type` and `reference_level_db`; sets `attenuation_db`, `center_freq_hz` and `sweep_points`. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/mclim9__rssd/",
   "upstream": {
     "repo_url": "https://github.com/mclim9/rssd",
     "commit": "7b040ee12841e721953a1f737297586135c0c110",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/mclim9__rssd",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mclim9__rssd --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mclim9__rssd --backend fake --mcp"
 }

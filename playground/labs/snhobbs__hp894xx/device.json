@@ -2,7 +2,11 @@
   "name": "labs/snhobbs__hp894xx",
   "package": "labs/snhobbs__hp894xx",
   "mhs_package": "mhs/MHS/drivers/labs/snhobbs__hp894xx",
-  "website": "https://mhs.openai4s.org",
+  "title": "HP 89400 series vector signal analyzer (HP894xx.HP89400Device)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "HP 89400 series vector signal analyzer (HP894xx.HP89400Device), adapted from snhobbs/hp894xx. It reads `center_frequency`, `span`, `x_units`, `y_units` and 5 more; runs `acquire_spectrum`, `abort_measurement` and `enable_autorange`. `acquire_spectrum`: read one trace: start a data read, return the Y values and the X/Y metadata the analyzer reports. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/snhobbs__hp894xx/",
   "upstream": {
     "repo_url": "https://github.com/snhobbs/hp894xx",
     "commit": "6745a53c20fb02b1a178fde70b1975b6b86f3518",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/snhobbs__hp894xx",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/snhobbs__hp894xx --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/snhobbs__hp894xx --backend fake --mcp"
 }

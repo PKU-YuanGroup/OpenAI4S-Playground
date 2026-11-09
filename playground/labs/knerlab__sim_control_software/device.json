@@ -2,7 +2,11 @@
   "name": "labs/knerlab__sim_control_software",
   "package": "labs/knerlab__sim_control_software",
   "mhs_package": "mhs/MHS/drivers/labs/knerlab__sim_control_software",
-  "website": "https://mhs.openai4s.org",
+  "title": "Motorized polarizer (knerlab SIM/AO microscope)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Motorized polarizer (knerlab SIM/AO microscope), adapted from knerlab/sim_control_software. It reads `position`; runs `move_absolute` and `stop_motion`. `move_absolute`: command one or more actuated joints to target positions in joint space, optionally over a declared duration, and report whether the target was reached within tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/knerlab__sim_control_software/",
   "upstream": {
     "repo_url": "https://github.com/knerlab/sim_control_software",
     "commit": "4abc7e9ddafa89bc0ab0fc8f6e25321fe676d95c",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/knerlab__sim_control_software",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/knerlab__sim_control_software --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/knerlab__sim_control_software --backend fake --mcp"
 }

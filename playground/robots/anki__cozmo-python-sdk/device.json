@@ -2,7 +2,11 @@
   "name": "robots/anki__cozmo-python-sdk",
   "package": "robots/anki__cozmo-python-sdk",
   "mhs_package": "mhs/MHS/drivers/robots/anki__cozmo-python-sdk",
-  "website": "https://mhs.openai4s.org",
+  "title": "Anki Cozmo robot (cozmo.robot.Robot)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Anki Cozmo robot (cozmo.robot.Robot), adapted from anki/cozmo-python-sdk. It reads `head_angle`, `lift_ratio`, `lift_height`, `is_charging` and 1 more; runs `move_head`, `set_lift_ratio` and `stop_all`. `move_head`: command one or more actuated joints to target positions in joint space, optionally over a declared duration, and report whether the target was reached within tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/anki__cozmo-python-sdk/",
   "upstream": {
     "repo_url": "https://github.com/anki/cozmo-python-sdk",
     "commit": "dd29edef18748fcd816550469195323842a7872e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/anki__cozmo-python-sdk",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/anki__cozmo-python-sdk --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/anki__cozmo-python-sdk --backend fake --mcp"
 }

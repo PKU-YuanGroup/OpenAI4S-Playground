@@ -2,7 +2,11 @@
   "name": "labs/nion-software__nionswift-instrumentation-kit",
   "package": "labs/nion-software__nionswift-instrumentation-kit",
   "mhs_package": "mhs/MHS/drivers/labs/nion-software__nionswift-instrumentation-kit",
-  "website": "https://mhs.openai4s.org",
+  "title": "Nion STEM instrument (nion.device_kit.InstrumentDevice:Instrument)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Nion STEM instrument (nion.device_kit.InstrumentDevice:Instrument), adapted from nion-software/nionswift-instrumentation-kit. It reads `beam_current_a`; sets `beam_voltage`, `defocus_m` and `energy_offset_ev`; runs `high_tension_off`. `high_tension_off`: remove the high tension: write the EHT control as 0 through the value manager; no input. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/nion-software__nionswift-instrumentation-kit/",
   "upstream": {
     "repo_url": "https://github.com/nion-software/nionswift-instrumentation-kit",
     "commit": "4db575faa502752dc5018754006391c4850a604b",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/nion-software__nionswift-instrumentation-kit",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nion-software__nionswift-instrumentation-kit --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nion-software__nionswift-instrumentation-kit --backend fake --mcp"
 }

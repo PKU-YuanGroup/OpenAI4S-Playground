@@ -2,7 +2,11 @@
   "name": "robots/nasa__astrobee",
   "package": "robots/nasa__astrobee",
   "mhs_package": "mhs/MHS/drivers/robots/nasa__astrobee",
-  "website": "https://mhs.openai4s.org",
+  "title": "Astrobee free-flyer (ROS 1)",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "Astrobee free-flyer (ROS 1), adapted from nasa/astrobee. It reads `commanded_segment_stamp_nsecs`; runs `move` and `stop`. `move`: move through world-frame poses; return the Motion action's application result. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/nasa__astrobee/",
   "upstream": {
     "repo_url": "https://github.com/nasa/astrobee",
     "commit": "bf43a42d5f89bf0679e51ab25e7a9b7800313e9c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/nasa__astrobee",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nasa__astrobee --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/nasa__astrobee --backend fake --mcp"
 }

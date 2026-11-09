@@ -2,7 +2,11 @@
   "name": "robots/dh-ng__tacex",
   "package": "robots/dh-ng__tacex",
   "mhs_package": "mhs/MHS/drivers/robots/dh-ng__tacex",
-  "website": "https://mhs.openai4s.org",
+  "title": "TacEx Ball Rolling (Isaac Lab privileged task)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "TacEx Ball Rolling (Isaac Lab privileged task), adapted from dh-ng/tacex. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/dh-ng__tacex/",
   "upstream": {
     "repo_url": "https://github.com/dh-ng/tacex",
     "commit": "adceed41afb7cb48f9ec1f66a662fb8e5a06627f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/dh-ng__tacex",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dh-ng__tacex --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dh-ng__tacex --backend fake --mcp"
 }

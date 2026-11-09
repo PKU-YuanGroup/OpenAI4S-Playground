@@ -2,7 +2,11 @@
   "name": "labs/trash-hold__oscilloscope_dimserver",
   "package": "labs/trash-hold__oscilloscope_dimserver",
   "mhs_package": "mhs/MHS/drivers/labs/trash-hold__oscilloscope_dimserver",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tektronix TDS3054C oscilloscope (oscilloscope_dimserver)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Tektronix TDS3054C oscilloscope (oscilloscope_dimserver), adapted from trash-hold/oscilloscope_dimserver. It reads `horizontal_increment`; sets `channel`, `channel_enabled`, `vertical_scale`, `vertical_position` and 5 more; runs `single_acquisition` and `stop_acquisition`. `single_acquisition`: run one single-sequence acquisition and wait for it to finish (the native sample). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/trash-hold__oscilloscope_dimserver/",
   "upstream": {
     "repo_url": "https://github.com/trash-hold/oscilloscope_dimserver",
     "commit": "6a34db58756fc0ac7ef8d4021bc290973d5cb65f",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/trash-hold__oscilloscope_dimserver",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/trash-hold__oscilloscope_dimserver --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/trash-hold__oscilloscope_dimserver --backend fake --mcp"
 }

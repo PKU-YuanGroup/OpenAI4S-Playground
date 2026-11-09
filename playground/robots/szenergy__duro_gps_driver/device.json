@@ -2,7 +2,11 @@
   "name": "robots/szenergy__duro_gps_driver",
   "package": "robots/szenergy__duro_gps_driver",
   "mhs_package": "mhs/MHS/drivers/robots/szenergy__duro_gps_driver",
-  "website": "https://mhs.openai4s.org",
+  "title": "Duro Inertial GPS ROS 1 driver",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Duro Inertial GPS ROS 1 driver, adapted from szenergy/duro_gps_driver. It reads `read_fix`, `read_imu`, `read_mag`, `read_time_reference` and 5 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/szenergy__duro_gps_driver/",
   "upstream": {
     "repo_url": "https://github.com/szenergy/duro_gps_driver",
     "commit": "d09c1f33aa07ba89d082c3e213282e2bbdbbe725",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/szenergy__duro_gps_driver",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/szenergy__duro_gps_driver --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/szenergy__duro_gps_driver --backend fake --mcp"
 }

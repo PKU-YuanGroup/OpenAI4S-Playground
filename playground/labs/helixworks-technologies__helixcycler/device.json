@@ -2,7 +2,11 @@
   "name": "labs/helixworks-technologies__helixcycler",
   "package": "labs/helixworks-technologies__helixcycler",
   "mhs_package": "mhs/MHS/drivers/labs/helixworks-technologies__helixcycler",
-  "website": "https://mhs.openai4s.org",
+  "title": "HelixCycler OT thermocycler (tc_send_code.HardwareController)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "HelixCycler OT thermocycler (tc_send_code.HardwareController), adapted from helixworks-technologies/helixcycler. It reads `lid_temperature`, `plate_temperature` and `plate_hold_remaining`; sets `lid_setpoint`, `plate_setpoint` and `shake_speed`; runs `set_plate_target`, `open_lid`, `close_lid` and `deactivate_all`. `set_plate_target`: set the target temperature of a thermal zone and optionally wait for the zone to reach the setpoint within a declared tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/helixworks-technologies__helixcycler/",
   "upstream": {
     "repo_url": "https://github.com/helixworks-technologies/helixcycler",
     "commit": "29bcd934a8d5289021fb774de17ecdf578ff92f7",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/helixworks-technologies__helixcycler",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/helixworks-technologies__helixcycler --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/helixworks-technologies__helixcycler --backend fake --mcp"
 }

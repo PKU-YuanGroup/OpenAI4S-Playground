@@ -2,7 +2,11 @@
   "name": "labs/jieunboy0516__newport-smc100-motor-controller-library---python",
   "package": "labs/jieunboy0516__newport-smc100-motor-controller-library---python",
   "mhs_package": "mhs/MHS/drivers/labs/jieunboy0516__newport-smc100-motor-controller-library---python",
-  "website": "https://mhs.openai4s.org",
+  "title": "Newport SMC100 motor controller (smc100_base.smc100)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Newport SMC100 motor controller (smc100_base.smc100), adapted from jieunboy0516/newport-smc100-motor-controller-library---python. It reads `position`, `state` and `errors`; sets `velocity`; runs `move_absolute`, `move_relative`, `start_home` and `stop_motion`. `move_absolute`: move the axis to an absolute position in mm (the native PA command). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/jieunboy0516__newport-smc100-motor-controller-library---python/",
   "upstream": {
     "repo_url": "https://github.com/jieunboy0516/newport-smc100-motor-controller-library---python",
     "commit": "b828102ddcc30495084606fd1634066c95c985a0",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/jieunboy0516__newport-smc100-motor-controller-library---python",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jieunboy0516__newport-smc100-motor-controller-library---python --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/jieunboy0516__newport-smc100-motor-controller-library---python --backend fake --mcp"
 }

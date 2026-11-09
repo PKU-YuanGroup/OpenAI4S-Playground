@@ -2,7 +2,11 @@
   "name": "robots/warplab__isaac-auv-env",
   "package": "robots/warplab__isaac-auv-env",
   "mhs_package": "mhs/MHS/drivers/robots/warplab__isaac-auv-env",
-  "website": "https://mhs.openai4s.org",
+  "title": "WarpAUV IsaacLab direct environment",
+  "category": "Simulation",
+  "topic": "underwater robotics",
+  "intro": "WarpAUV IsaacLab direct environment, adapted from warplab/isaac-auv-env. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/warplab__isaac-auv-env/",
   "upstream": {
     "repo_url": "https://github.com/warplab/isaac-auv-env",
     "commit": "7c5ebe7f7a08acd2570b5fba328e92b7f59f6794",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/warplab__isaac-auv-env",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/warplab__isaac-auv-env --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/warplab__isaac-auv-env --backend fake --mcp"
 }

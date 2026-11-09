@@ -2,7 +2,11 @@
   "name": "robots/linorobot__linorobot2",
   "package": "robots/linorobot__linorobot2",
   "mhs_package": "mhs/MHS/drivers/robots/linorobot__linorobot2",
-  "website": "https://mhs.openai4s.org",
+  "title": "linorobot2 Gazebo mobile-base environment",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "linorobot2 Gazebo mobile-base environment, adapted from linorobot/linorobot2. It reads `read_odometry`, `read_sim_clock`, `read_imu` and `read_laser_scan`; runs `publish_cmd_vel` and `resume_simulation`. `publish_cmd_vel`: publish one geometry_msgs/Twist velocity setpoint to /cmd_vel for the gz-sim DiffDrive plugin. The receipt confirms only that rosbridge accepted the publication, not motion, arrival or stopping. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/linorobot__linorobot2/",
   "upstream": {
     "repo_url": "https://github.com/linorobot/linorobot2",
     "commit": "f6b0bd0350c4a9d6b815ef4bb5c701a1e5129711",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/linorobot__linorobot2",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linorobot__linorobot2 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linorobot__linorobot2 --backend fake --mcp"
 }

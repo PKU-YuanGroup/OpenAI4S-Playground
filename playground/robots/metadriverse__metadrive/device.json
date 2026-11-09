@@ -2,7 +2,11 @@
   "name": "robots/metadriverse__metadrive",
   "package": "robots/metadriverse__metadrive",
   "mhs_package": "mhs/MHS/drivers/robots/metadriverse__metadrive",
-  "website": "https://mhs.openai4s.org",
+  "title": "MetaDrive driving simulator (Gymnasium environment)",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "MetaDrive driving simulator (Gymnasium environment), adapted from metadriverse/metadrive. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/metadriverse__metadrive/",
   "upstream": {
     "repo_url": "https://github.com/metadriverse/metadrive",
     "commit": "325d9e2f9c20e495bde66f30e0ef2b40efbce39c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/metadriverse__metadrive",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/metadriverse__metadrive --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/metadriverse__metadrive --backend fake --mcp"
 }

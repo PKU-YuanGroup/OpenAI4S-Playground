@@ -2,7 +2,11 @@
   "name": "labs/baroobob__keithley2400",
   "package": "labs/baroobob__keithley2400",
   "mhs_package": "mhs/MHS/drivers/labs/baroobob__keithley2400",
-  "website": "https://mhs.openai4s.org",
+  "title": "Keithley 2400 source-measure unit",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Keithley 2400 source-measure unit, adapted from baroobob/keithley2400. It reads `trigger_delay`; sets `voltage` and `output`; runs `measure_current`, `measure_voltage`, `measure_resistance` and `safe_state`. `measure_current`: configure current measurement (CONF:CURR, FORM:ELEM CURR) in source-voltage mode and read one sample with the trigger settings of the clone; the source voltage is not changed. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/baroobob__keithley2400/",
   "upstream": {
     "repo_url": "https://github.com/baroobob/keithley2400",
     "commit": "6491ff740bbdeac2f5cceca43a8b9133fb615399",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/baroobob__keithley2400",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/baroobob__keithley2400 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/baroobob__keithley2400 --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/burhankarahasan__thorlabs-pico",
   "package": "labs/burhankarahasan__thorlabs-pico",
   "mhs_package": "mhs/MHS/drivers/labs/burhankarahasan__thorlabs-pico",
-  "website": "https://mhs.openai4s.org",
+  "title": "Pi Pico W stepper rotation axis (stepper_controller.PicoStepperController)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Pi Pico W stepper rotation axis (stepper_controller.PicoStepperController), adapted from burhankarahasan/thorlabs-pico. It reads `current_rps` and `position_steps`; sets `target_rps`; runs `stop_motion`, `enable_motor`, `disable_motor` and `set_ramp_rate`. `stop_motion`: stop all motion on the resource with a declared deceleration profile and report the stopping position. This capability is always cancellable=false and is exempt from rate limiting. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/burhankarahasan__thorlabs-pico/",
   "upstream": {
     "repo_url": "https://github.com/burhankarahasan/thorlabs-pico",
     "commit": "91898e3a55a925ca36ce24d53997351c1b947779",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/burhankarahasan__thorlabs-pico",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/burhankarahasan__thorlabs-pico --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/burhankarahasan__thorlabs-pico --backend fake --mcp"
 }

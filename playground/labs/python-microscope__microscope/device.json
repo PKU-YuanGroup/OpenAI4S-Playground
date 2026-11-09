@@ -2,7 +2,11 @@
   "name": "labs/python-microscope__microscope",
   "package": "labs/python-microscope__microscope",
   "mhs_package": "mhs/MHS/drivers/labs/python-microscope__microscope",
-  "website": "https://mhs.openai4s.org",
+  "title": "Cobolt laser (microscope.lights.cobolt:CoboltLaser)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Cobolt laser (microscope.lights.cobolt:CoboltLaser), adapted from python-microscope/microscope. It reads `is_on`, `enabled`, `measured_power` and `status`; sets `power`; runs `enable_emission` and `disable_emission`. `enable_emission`: switch the laser emission on (the native enable). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/python-microscope__microscope/",
   "upstream": {
     "repo_url": "https://github.com/python-microscope/microscope",
     "commit": "47c13d0342dca476a279f2de2da5b84ce2162326",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/python-microscope__microscope",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/python-microscope__microscope --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/python-microscope__microscope --backend fake --mcp"
 }

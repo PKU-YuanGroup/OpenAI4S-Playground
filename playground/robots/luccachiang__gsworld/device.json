@@ -2,7 +2,11 @@
   "name": "robots/luccachiang__gsworld",
   "package": "robots/luccachiang__gsworld",
   "mhs_package": "mhs/MHS/drivers/robots/luccachiang__gsworld",
-  "website": "https://mhs.openai4s.org",
+  "title": "GSWorld RealFr3-v1 (empty scene, FR3 UMI)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "GSWorld RealFr3-v1 (empty scene, FR3 UMI), adapted from luccachiang/gsworld. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/luccachiang__gsworld/",
   "upstream": {
     "repo_url": "https://github.com/luccachiang/gsworld",
     "commit": "532950475cc80a97c7050fd94858a1a8841dbf2c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/luccachiang__gsworld",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/luccachiang__gsworld --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/luccachiang__gsworld --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/clvrai__furniture-bench",
   "package": "robots/clvrai__furniture-bench",
   "mhs_package": "mhs/MHS/drivers/robots/clvrai__furniture-bench",
-  "website": "https://mhs.openai4s.org",
+  "title": "FurnitureBench FurnitureSim-v0 (Isaac Gym)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "FurnitureBench FurnitureSim-v0 (Isaac Gym), adapted from clvrai/furniture-bench. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/clvrai__furniture-bench/",
   "upstream": {
     "repo_url": "https://github.com/clvrai/furniture-bench",
     "commit": "a87960a2490a7a19c86ea16a5ef371718b2baa70",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/clvrai__furniture-bench",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/clvrai__furniture-bench --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/clvrai__furniture-bench --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/nsls-ii-ari__ari_sxn_common",
   "package": "labs/nsls-ii-ari__ari_sxn_common",
   "mhs_package": "mhs/MHS/drivers/labs/nsls-ii-ari__ari_sxn_common",
-  "website": "https://mhs.openai4s.org",
+  "title": "ARI M1 mirror section (ari_sxn_common, read only)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "ARI M1 mirror section (ari_sxn_common, read only), adapted from nsls-ii-ari/ari_sxn_common. It reads `ry_coarse`, `ry_fine`, `rz`, `x` and 20 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/nsls-ii-ari__ari_sxn_common/",
   "upstream": {
     "repo_url": "https://github.com/nsls-ii-ari/ari_sxn_common",
     "commit": "13892fc39dd2605a8641d76649e7b13c434d9183",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/nsls-ii-ari__ari_sxn_common",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-ari__ari_sxn_common --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-ari__ari_sxn_common --backend fake --mcp"
 }

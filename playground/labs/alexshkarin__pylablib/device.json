@@ -2,7 +2,11 @@
   "name": "labs/alexshkarin__pylablib",
   "package": "labs/alexshkarin__pylablib",
   "mhs_package": "mhs/MHS/drivers/labs/alexshkarin__pylablib",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs Kinesis motor controller (pylablib KinesisMotor)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs Kinesis motor controller (pylablib KinesisMotor), adapted from alexshkarin/pylablib. It reads `position`, `moving`, `homed`, `status` and 2 more; sets `max_velocity`; runs `home_axis`, `stop_motion` and `move_to_absolute`. `home_axis`: home the axis with the native MOT_HOME and report the homed bit; it takes no input. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/alexshkarin__pylablib/",
   "upstream": {
     "repo_url": "https://github.com/alexshkarin/pylablib",
     "commit": "96d9504d3e668f18beb3b75503c01b93152dbcd5",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/alexshkarin__pylablib",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alexshkarin__pylablib --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/alexshkarin__pylablib --backend fake --mcp"
 }

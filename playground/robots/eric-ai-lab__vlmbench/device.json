@@ -2,7 +2,11 @@
   "name": "robots/eric-ai-lab__vlmbench",
   "package": "robots/eric-ai-lab__vlmbench",
   "mhs_package": "mhs/MHS/drivers/robots/eric-ai-lab__vlmbench",
-  "website": "https://mhs.openai4s.org",
+  "title": "VLMbench DropPenColor (Gymnasium state mode)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "VLMbench DropPenColor (Gymnasium state mode), adapted from eric-ai-lab/vlmbench. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/eric-ai-lab__vlmbench/",
   "upstream": {
     "repo_url": "https://github.com/eric-ai-lab/vlmbench",
     "commit": "479bd17b7d80645002af74f142a29dfe8b428876",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/eric-ai-lab__vlmbench",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/eric-ai-lab__vlmbench --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/eric-ai-lab__vlmbench --backend fake --mcp"
 }

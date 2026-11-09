@@ -2,7 +2,11 @@
   "name": "labs/uwo-fast__openreactor",
   "package": "labs/uwo-fast__openreactor",
   "mhs_package": "mhs/MHS/drivers/labs/uwo-fast__openreactor",
-  "website": "https://mhs.openai4s.org",
+  "title": "openreactor RLHT heater slice (openreactor.rlht.RlhtSlice)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "openreactor RLHT heater slice (openreactor.rlht.RlhtSlice), adapted from uwo-fast/openreactor. It reads `state`, `version`, `mode`, `estop` and 2 more; sets `setpoint_1` and `setpoint_2`; runs `stop_heating`. `stop_heating`: put both heater outputs in the safe state (setpoints zero, then open-loop duty zero). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/uwo-fast__openreactor/",
   "upstream": {
     "repo_url": "https://github.com/uwo-fast/openreactor",
     "commit": "ade88dc17e1c06775ddcb1cdc9ca6c40e4083db0",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/uwo-fast__openreactor",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/uwo-fast__openreactor --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/uwo-fast__openreactor --backend fake --mcp"
 }

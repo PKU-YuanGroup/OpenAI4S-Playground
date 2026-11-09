@@ -2,7 +2,11 @@
   "name": "labs/clarklabucb__newerapumps_python3",
   "package": "labs/clarklabucb__newerapumps_python3",
   "mhs_package": "mhs/MHS/drivers/labs/clarklabucb__newerapumps_python3",
-  "website": "https://mhs.openai4s.org",
+  "title": "New Era NE-500 syringe pump",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "New Era NE-500 syringe pump, adapted from clarklabucb/newerapumps_python3. It sets `flow_rate` and `diameter`; runs `start_pump` and `stop_pump`. `start_pump`: start the pump at the flow rate stored on the device (<n>RUN). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/clarklabucb__newerapumps_python3/",
   "upstream": {
     "repo_url": "https://github.com/clarklabucb/newerapumps_python3",
     "commit": "b8e3d0214ded43734ad22fa378b5bd408010f109",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/clarklabucb__newerapumps_python3",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/clarklabucb__newerapumps_python3 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/clarklabucb__newerapumps_python3 --backend fake --mcp"
 }

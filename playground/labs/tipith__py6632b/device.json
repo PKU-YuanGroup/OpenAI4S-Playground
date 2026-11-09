@@ -2,7 +2,11 @@
   "name": "labs/tipith__py6632b",
   "package": "labs/tipith__py6632b",
   "mhs_package": "mhs/MHS/drivers/labs/tipith__py6632b",
-  "website": "https://mhs.openai4s.org",
+  "title": "HP 6632B DC source (py6632B.HP6632B)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "HP 6632B DC source (py6632B.HP6632B), adapted from tipith/py6632b. It reads `voltage`, `current`, `output_enabled` and `identity`; runs `set_source`, `set_output` and `stop_output`. `set_source`: set the output voltage and current limit together with one native SOUR:VOLT/CURR command. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/tipith__py6632b/",
   "upstream": {
     "repo_url": "https://github.com/tipith/py6632b",
     "commit": "a91f78a004f592e7588d483f28daebcbab8572e8",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/tipith__py6632b",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tipith__py6632b --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/tipith__py6632b --backend fake --mcp"
 }

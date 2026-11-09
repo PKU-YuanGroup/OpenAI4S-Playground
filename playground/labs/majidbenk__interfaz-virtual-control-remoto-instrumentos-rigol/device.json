@@ -2,7 +2,11 @@
   "name": "labs/majidbenk__interfaz-virtual-control-remoto-instrumentos-rigol",
   "package": "labs/majidbenk__interfaz-virtual-control-remoto-instrumentos-rigol",
   "mhs_package": "mhs/MHS/drivers/labs/majidbenk__interfaz-virtual-control-remoto-instrumentos-rigol",
-  "website": "https://mhs.openai4s.org",
+  "title": "RIGOL DP832A DC power supply",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "RIGOL DP832A DC power supply, adapted from majidbenk/interfaz-virtual-control-remoto-instrumentos-rigol. It reads `measured_voltage_1`, `measured_voltage_2`, `measured_voltage_3`, `measured_current_1` and 5 more; sets `voltage_1`, `voltage_2`, `voltage_3`, `current_1` and 11 more; runs `output_off`. `output_off`: disable all three channel outputs; the safe state of the supply. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/majidbenk__interfaz-virtual-control-remoto-instrumentos-rigol/",
   "upstream": {
     "repo_url": "https://github.com/majidbenk/interfaz-virtual-control-remoto-instrumentos-rigol",
     "commit": "770ab3a1f81699873a7aeb86df0b1ab4a5061f5f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/majidbenk__interfaz-virtual-control-remoto-instrumentos-rigol",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/majidbenk__interfaz-virtual-control-remoto-instrumentos-rigol --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/majidbenk__interfaz-virtual-control-remoto-instrumentos-rigol --backend fake --mcp"
 }

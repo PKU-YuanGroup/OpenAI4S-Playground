@@ -2,7 +2,11 @@
   "name": "robots/wh200720041__warehouse_simulation_toolkit",
   "package": "robots/wh200720041__warehouse_simulation_toolkit",
   "mhs_package": "mhs/MHS/drivers/robots/wh200720041__warehouse_simulation_toolkit",
-  "website": "https://mhs.openai4s.org",
+  "title": "Warehouse Simulation Toolkit (Gazebo, Pioneer 3DX)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Warehouse Simulation Toolkit (Gazebo, Pioneer 3DX), adapted from wh200720041/warehouse_simulation_toolkit. It runs `publish_cmd_vel`. `publish_cmd_vel`: publish one geometry_msgs/Twist velocity setpoint on /cmd_vel for the Gazebo differential-drive subscription. The receipt is transmission evidence only, not motion, arrival or stopping. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/wh200720041__warehouse_simulation_toolkit/",
   "upstream": {
     "repo_url": "https://github.com/wh200720041/warehouse_simulation_toolkit",
     "commit": "18df8ce6dde61711e0705f3bd872465a01bd01a2",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/wh200720041__warehouse_simulation_toolkit",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/wh200720041__warehouse_simulation_toolkit --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/wh200720041__warehouse_simulation_toolkit --backend fake --mcp"
 }

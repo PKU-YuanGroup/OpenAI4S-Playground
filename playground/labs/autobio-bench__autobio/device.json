@@ -2,7 +2,11 @@
   "name": "labs/autobio-bench__autobio",
   "package": "labs/autobio-bench__autobio",
   "mhs_package": "mhs/MHS/drivers/labs/autobio-bench__autobio",
-  "website": "https://mhs.openai4s.org",
+  "title": "AutoBio DexHand021 right hand (MuJoCo model)",
+  "category": "Simulation",
+  "topic": "pipetting",
+  "intro": "AutoBio DexHand021 right hand (MuJoCo model), adapted from autobio-bench/autobio. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/autobio-bench__autobio/",
   "upstream": {
     "repo_url": "https://github.com/autobio-bench/autobio",
     "commit": "08504213356cbfe9a82bcd33a43cd282945a45df",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/autobio-bench__autobio",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/autobio-bench__autobio --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/autobio-bench__autobio --backend fake --mcp"
 }

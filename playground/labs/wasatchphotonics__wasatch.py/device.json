@@ -2,7 +2,11 @@
   "name": "labs/wasatchphotonics__wasatch.py",
   "package": "labs/wasatchphotonics__wasatch.py",
   "mhs_package": "mhs/MHS/drivers/labs/wasatchphotonics__wasatch.py",
-  "website": "https://mhs.openai4s.org",
+  "title": "Wasatch Photonics FID spectrometer (wasatch.FeatureIdentificationDevice)",
+  "category": "Spectroscopy",
+  "topic": null,
+  "intro": "Wasatch Photonics FID spectrometer (wasatch.FeatureIdentificationDevice), adapted from wasatchphotonics/wasatch.py. It reads `detector_temperature_degC`, `detector_tec_setpoint_degC`, `tec_enabled`, `ambient_temperature_degC` and 1 more; sets `integration_time_ms`; runs `acquire_spectrum` and `laser_off`. `acquire_spectrum`: acquire one spectrum with the current integration time. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/wasatchphotonics__wasatch.py/",
   "upstream": {
     "repo_url": "https://github.com/wasatchphotonics/wasatch.py",
     "commit": "c3ea52bde83d9d004d0b97850f09515dfc42f741",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/wasatchphotonics__wasatch.py",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/wasatchphotonics__wasatch.py --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/wasatchphotonics__wasatch.py --backend fake --mcp"
 }

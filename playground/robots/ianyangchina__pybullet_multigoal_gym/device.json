@@ -2,7 +2,11 @@
   "name": "robots/ianyangchina__pybullet_multigoal_gym",
   "package": "robots/ianyangchina__pybullet_multigoal_gym",
   "mhs_package": "mhs/MHS/drivers/robots/ianyangchina__pybullet_multigoal_gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "pybullet_multigoal_gym KukaBlockStack (parallel jaw, sparse reward)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "pybullet_multigoal_gym KukaBlockStack (parallel jaw, sparse reward), adapted from ianyangchina/pybullet_multigoal_gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ianyangchina__pybullet_multigoal_gym/",
   "upstream": {
     "repo_url": "https://github.com/ianyangchina/pybullet_multigoal_gym",
     "commit": "54b50b8de3d2d58f88f8d4036aafc0858ed3d1e5",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ianyangchina__pybullet_multigoal_gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ianyangchina__pybullet_multigoal_gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ianyangchina__pybullet_multigoal_gym --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/kinovarobotics__ros_kortex",
   "package": "robots/kinovarobotics__ros_kortex",
   "mhs_package": "mhs/MHS/drivers/robots/kinovarobotics__ros_kortex",
-  "website": "https://mhs.openai4s.org",
+  "title": "Kinova Kortex ROS 1 base stop services",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Kinova Kortex ROS 1 base stop services, adapted from kinovarobotics/ros_kortex. It runs `stop` and `apply_emergency_stop`. `stop`: invoke the acknowledged Kortex base/stop service; this reports the ROS callback result only, not a measured stopping position or zero velocity. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/kinovarobotics__ros_kortex/",
   "upstream": {
     "repo_url": "https://github.com/kinovarobotics/ros_kortex",
     "commit": "c3280d8a6a6b5d96590d51538e3f265710a6c77d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/kinovarobotics__ros_kortex",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kinovarobotics__ros_kortex --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/kinovarobotics__ros_kortex --backend fake --mcp"
 }

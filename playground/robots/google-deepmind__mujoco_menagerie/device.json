@@ -2,7 +2,11 @@
   "name": "robots/google-deepmind__mujoco_menagerie",
   "package": "robots/google-deepmind__mujoco_menagerie",
   "mhs_package": "mhs/MHS/drivers/robots/google-deepmind__mujoco_menagerie",
-  "website": "https://mhs.openai4s.org",
+  "title": "AgileX PiPER (MuJoCo Menagerie)",
+  "category": "Simulation",
+  "topic": "robot simulation model",
+  "intro": "AgileX PiPER (MuJoCo Menagerie), adapted from google-deepmind/mujoco_menagerie. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/google-deepmind__mujoco_menagerie/",
   "upstream": {
     "repo_url": "https://github.com/google-deepmind/mujoco_menagerie",
     "commit": "0059d4335f8156206f63a35662313385f7ad6d74",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/google-deepmind__mujoco_menagerie",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-deepmind__mujoco_menagerie --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/google-deepmind__mujoco_menagerie --backend fake --mcp"
 }

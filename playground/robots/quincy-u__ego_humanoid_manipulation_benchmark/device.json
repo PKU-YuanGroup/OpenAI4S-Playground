@@ -2,7 +2,11 @@
   "name": "robots/quincy-u__ego_humanoid_manipulation_benchmark",
   "package": "robots/quincy-u__ego_humanoid_manipulation_benchmark",
   "mhs_package": "mhs/MHS/drivers/robots/quincy-u__ego_humanoid_manipulation_benchmark",
-  "website": "https://mhs.openai4s.org",
+  "title": "EgoVLA Humanoid-Base-v0 (Isaac Lab benchmark)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "EgoVLA Humanoid-Base-v0 (Isaac Lab benchmark), adapted from quincy-u/ego_humanoid_manipulation_benchmark. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/quincy-u__ego_humanoid_manipulation_benchmark/",
   "upstream": {
     "repo_url": "https://github.com/quincy-u/ego_humanoid_manipulation_benchmark",
     "commit": "4489a673153d40f0dcba84c9210c426edfc62812",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/quincy-u__ego_humanoid_manipulation_benchmark",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/quincy-u__ego_humanoid_manipulation_benchmark --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/quincy-u__ego_humanoid_manipulation_benchmark --backend fake --mcp"
 }

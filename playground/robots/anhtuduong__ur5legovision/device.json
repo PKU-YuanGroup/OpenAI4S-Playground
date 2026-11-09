@@ -2,7 +2,11 @@
   "name": "robots/anhtuduong__ur5legovision",
   "package": "robots/anhtuduong__ur5legovision",
   "mhs_package": "mhs/MHS/drivers/robots/anhtuduong__ur5legovision",
-  "website": "https://mhs.openai4s.org",
+  "title": "UR5LegoVision UR5 ROS 1 arm",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "UR5LegoVision UR5 ROS 1 arm, adapted from anhtuduong/ur5legovision. It reads `read_joint_state` and `read_ee_pose`; runs `move_joints`, `move_gripper`, `pause` and `resume`. `move_joints`: command six joint positions through the upstream /ur5/move_joints service; the boolean acknowledgement does not establish measured arrival. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/anhtuduong__ur5legovision/",
   "upstream": {
     "repo_url": "https://github.com/anhtuduong/ur5legovision",
     "commit": "7cf487fbadcfd42e2fe09f75c7345d24920a1e3d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/anhtuduong__ur5legovision",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/anhtuduong__ur5legovision --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/anhtuduong__ur5legovision --backend fake --mcp"
 }

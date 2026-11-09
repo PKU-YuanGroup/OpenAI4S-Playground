@@ -2,7 +2,11 @@
   "name": "robots/will0103__ros2-mobile-manipulator",
   "package": "robots/will0103__ros2-mobile-manipulator",
   "mhs_package": "mhs/MHS/drivers/robots/will0103__ros2-mobile-manipulator",
-  "website": "https://mhs.openai4s.org",
+  "title": "will0103 ROS 2 mobile manipulator simulation",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "will0103 ROS 2 mobile manipulator simulation, adapted from will0103/ros2-mobile-manipulator. It runs `move_robot`. `move_robot`: send one MoveRobot velocity/duration goal to the ROS 2 /move_robot action server. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/will0103__ros2-mobile-manipulator/",
   "upstream": {
     "repo_url": "https://github.com/will0103/ros2-mobile-manipulator",
     "commit": "6f49e8f3b306a864d8d139d2dc270afebecea819",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/will0103__ros2-mobile-manipulator",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/will0103__ros2-mobile-manipulator --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/will0103__ros2-mobile-manipulator --backend fake --mcp"
 }

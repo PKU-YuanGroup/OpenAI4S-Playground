@@ -2,7 +2,11 @@
   "name": "robots/frankarobotics__franka_ros2",
   "package": "robots/frankarobotics__franka_ros2",
   "mhs_package": "mhs/MHS/drivers/robots/frankarobotics__franka_ros2",
-  "website": "https://mhs.openai4s.org",
+  "title": "Franka TMR spine and battery ROS 2 interfaces",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Franka TMR spine and battery ROS 2 interfaces, adapted from frankarobotics/franka_ros2. It reads `position`, `position_valid`, `state`, `state_valid` and 3 more; runs `move_absolute`, `halt_motion`, `switch_off_spine`, `switch_on_spine` and 2 more. `move_absolute`: move the spine to an absolute position through the ROS 2 MoveAbsolute action; the action returns the spine's reached flag and stop reason, and cancellation requests the upstream quick-stop and re-arm path. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/frankarobotics__franka_ros2/",
   "upstream": {
     "repo_url": "https://github.com/frankarobotics/franka_ros2",
     "commit": "4acc05c01ebfcdf916ee6b3df966df0ad7b2f9ec",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/frankarobotics__franka_ros2",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/frankarobotics__franka_ros2 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/frankarobotics__franka_ros2 --backend fake --mcp"
 }

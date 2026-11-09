@@ -2,7 +2,11 @@
   "name": "labs/davidlutton__labtoolkit",
   "package": "labs/davidlutton__labtoolkit",
   "mhs_package": "mhs/MHS/drivers/labs/davidlutton__labtoolkit",
-  "website": "https://mhs.openai4s.org",
+  "title": "Agilent PSA spectrum analyser (labtoolkit AgilentE44nn)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Agilent PSA spectrum analyser (labtoolkit AgilentE44nn), adapted from davidlutton/labtoolkit. It reads `identification`; sets `frequency_center`, `frequency_span`, `sweep_points`, `resolution_bandwidth` and 2 more; runs `stop_sweep`. `stop_sweep`: stop continuous sweeping (the native stop, INIT:CONTinuous OFF); it takes no input. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/davidlutton__labtoolkit/",
   "upstream": {
     "repo_url": "https://github.com/davidlutton/labtoolkit",
     "commit": "1c27b35490002822f9860f45a86235cce949c172",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/davidlutton__labtoolkit",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/davidlutton__labtoolkit --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/davidlutton__labtoolkit --backend fake --mcp"
 }

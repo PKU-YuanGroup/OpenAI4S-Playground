@@ -2,7 +2,11 @@
   "name": "robots/learnsyslab__crazyflow",
   "package": "robots/learnsyslab__crazyflow",
   "mhs_package": "mhs/MHS/drivers/robots/learnsyslab__crazyflow",
-  "website": "https://mhs.openai4s.org",
+  "title": "Crazyflow DroneReachPos-v0 (JAX drone simulation)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "Crazyflow DroneReachPos-v0 (JAX drone simulation), adapted from learnsyslab/crazyflow. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/learnsyslab__crazyflow/",
   "upstream": {
     "repo_url": "https://github.com/learnsyslab/crazyflow",
     "commit": "70d09e455859580c45b0e4a06ee4a92efbbc2d6f",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/learnsyslab__crazyflow",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/learnsyslab__crazyflow --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/learnsyslab__crazyflow --backend fake --mcp"
 }

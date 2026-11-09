@@ -2,7 +2,11 @@
   "name": "robots/agilexrobotics__ugv_gazebo_sim",
   "package": "robots/agilexrobotics__ugv_gazebo_sim",
   "mhs_package": "mhs/MHS/drivers/robots/agilexrobotics__ugv_gazebo_sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "AgileX Scout V2 Gazebo empty world",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "AgileX Scout V2 Gazebo empty world, adapted from agilexrobotics/ugv_gazebo_sim. It runs `publish_cmd_vel`. `publish_cmd_vel`: publish geometry_msgs/Twist linear.x and angular.z on /cmd_vel. TwistCmdCallback converts them to four Float64 wheel commands and stores no Twist. The receipt is transmission evidence and the values sent, not a measured velocity and not a cleared controller. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/agilexrobotics__ugv_gazebo_sim/",
   "upstream": {
     "repo_url": "https://github.com/agilexrobotics/ugv_gazebo_sim",
     "commit": "27633a956c845903ee630538afeb17fe70afdd84",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/agilexrobotics__ugv_gazebo_sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/agilexrobotics__ugv_gazebo_sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/agilexrobotics__ugv_gazebo_sim --backend fake --mcp"
 }

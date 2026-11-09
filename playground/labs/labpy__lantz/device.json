@@ -2,7 +2,11 @@
   "name": "labs/labpy__lantz",
   "package": "labs/labpy__lantz",
   "mhs_package": "mhs/MHS/drivers/labs/labpy__lantz",
-  "website": "https://mhs.openai4s.org",
+  "title": "LabJack U12 USB DAQ (Lantz U12)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "LabJack U12 USB DAQ (Lantz U12), adapted from labpy/lantz. It reads `driver_version`, `firmware_version`, `analog_input_0`, `counter` and 2 more; sets `local_id`; runs `sample_voltages`, `set_analog_outputs`, `pulse_out` and `reset_device`. `sample_voltages`: acquire a block of analog input scans from channel 0 with aiBurst. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/labpy__lantz/",
   "upstream": {
     "repo_url": "https://github.com/labpy/lantz",
     "commit": "3e878e3f765a4295b0089d04e241d4beb7b8a65b",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/labpy__lantz",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/labpy__lantz --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/labpy__lantz --backend fake --mcp"
 }

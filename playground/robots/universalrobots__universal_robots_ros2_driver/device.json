@@ -2,7 +2,11 @@
   "name": "robots/universalrobots__universal_robots_ros2_driver",
   "package": "robots/universalrobots__universal_robots_ros2_driver",
   "mhs_package": "mhs/MHS/drivers/robots/universalrobots__universal_robots_ros2_driver",
-  "website": "https://mhs.openai4s.org",
+  "title": "Universal Robots ROS 2 dashboard client",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Universal Robots ROS 2 dashboard client, adapted from universalrobots/universal_robots_ros2_driver. It reads `read_program_running`; runs `stop_dashboard_program`. `stop_dashboard_program`: stop the active dashboard program through the acknowledged UR dashboard stop service; this does not command joint motion or claim a physical emergency stop. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/universalrobots__universal_robots_ros2_driver/",
   "upstream": {
     "repo_url": "https://github.com/universalrobots/universal_robots_ros2_driver",
     "commit": "7e031424bc7a3e590d65fe297214ac21e1f9ffdd",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/universalrobots__universal_robots_ros2_driver",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/universalrobots__universal_robots_ros2_driver --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/universalrobots__universal_robots_ros2_driver --backend fake --mcp"
 }

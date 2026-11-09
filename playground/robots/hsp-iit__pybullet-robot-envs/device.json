@@ -2,7 +2,11 @@
   "name": "robots/hsp-iit__pybullet-robot-envs",
   "package": "robots/hsp-iit__pybullet-robot-envs",
   "mhs_package": "mhs/MHS/drivers/robots/hsp-iit__pybullet-robot-envs",
-  "website": "https://mhs.openai4s.org",
+  "title": "PyBullet iCubReach-v0 (iCub reach simulation)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "PyBullet iCubReach-v0 (iCub reach simulation), adapted from hsp-iit/pybullet-robot-envs. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/hsp-iit__pybullet-robot-envs/",
   "upstream": {
     "repo_url": "https://github.com/hsp-iit/pybullet-robot-envs",
     "commit": "8fb3f9ba1f1a0dec4cd1e96e26556afbd89cbd59",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/hsp-iit__pybullet-robot-envs",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hsp-iit__pybullet-robot-envs --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/hsp-iit__pybullet-robot-envs --backend fake --mcp"
 }

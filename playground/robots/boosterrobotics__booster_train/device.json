@@ -2,7 +2,11 @@
   "name": "robots/boosterrobotics__booster_train",
   "package": "robots/boosterrobotics__booster_train",
   "mhs_package": "mhs/MHS/drivers/robots/boosterrobotics__booster_train",
-  "website": "https://mhs.openai4s.org",
+  "title": "Booster T1 MotionTracking-v0 (Isaac Lab manager-based environment)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Booster T1 MotionTracking-v0 (Isaac Lab manager-based environment), adapted from boosterrobotics/booster_train. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/boosterrobotics__booster_train/",
   "upstream": {
     "repo_url": "https://github.com/boosterrobotics/booster_train",
     "commit": "8bb5b53824e0fbcfe69a5cb78a81f4bddb3e2a6e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/boosterrobotics__booster_train",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/boosterrobotics__booster_train --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/boosterrobotics__booster_train --backend fake --mcp"
 }

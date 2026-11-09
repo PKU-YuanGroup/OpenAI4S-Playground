@@ -2,7 +2,11 @@
   "name": "labs/ad-sdl__ur_module",
   "package": "labs/ad-sdl__ur_module",
   "mhs_package": "mhs/MHS/drivers/labs/ad-sdl__ur_module",
-  "website": "https://mhs.openai4s.org",
+  "title": "Universal Robots arm (ur_interface.ur:UR)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "Universal Robots arm (ur_interface.ur:UR), adapted from ad-sdl/ur_module. It reads `movement_state`, `joint_positions`, `robot_mode`, `safety_status` and 5 more; runs `home`, `pause_program`, `stop_program`, `power_off_arm` and 1 more. `home`: command one or more actuated joints to target positions in joint space, optionally over a declared duration, and report whether the target was reached within tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/ad-sdl__ur_module/",
   "upstream": {
     "repo_url": "https://github.com/ad-sdl/ur_module",
     "commit": "75f1c5fe53c70bccbe1f37eeeb55a382133e623e",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ad-sdl__ur_module",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ad-sdl__ur_module --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ad-sdl__ur_module --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/internrobotics__internutopia",
   "package": "robots/internrobotics__internutopia",
   "mhs_package": "mhs/MHS/drivers/robots/internrobotics__internutopia",
-  "website": "https://mhs.openai4s.org",
+  "title": "InternUtopia Gymnasium environment (Isaac Sim)",
+  "category": "Simulation",
+  "topic": "mobile robots",
+  "intro": "InternUtopia Gymnasium environment (Isaac Sim), adapted from internrobotics/internutopia. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/internrobotics__internutopia/",
   "upstream": {
     "repo_url": "https://github.com/internrobotics/internutopia",
     "commit": "b0a9520c586317c2743023c153cbf7c4f04f4732",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/internrobotics__internutopia",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/internrobotics__internutopia --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/internrobotics__internutopia --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/sunblaze-ucb__rl-generalization",
   "package": "robots/sunblaze-ucb__rl-generalization",
   "mhs_package": "mhs/MHS/drivers/robots/sunblaze-ucb__rl-generalization",
-  "website": "https://mhs.openai4s.org",
+  "title": "Sunblaze CartPole-v0 (deterministic classic control)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Sunblaze CartPole-v0 (deterministic classic control), adapted from sunblaze-ucb/rl-generalization. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/sunblaze-ucb__rl-generalization/",
   "upstream": {
     "repo_url": "https://github.com/sunblaze-ucb/rl-generalization",
     "commit": "5e05aa108aeadd4cf21f45d56128e9da3bddc14c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/sunblaze-ucb__rl-generalization",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sunblaze-ucb__rl-generalization --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sunblaze-ucb__rl-generalization --backend fake --mcp"
 }

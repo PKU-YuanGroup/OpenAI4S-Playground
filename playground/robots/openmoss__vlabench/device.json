@@ -2,7 +2,11 @@
   "name": "robots/openmoss__vlabench",
   "package": "robots/openmoss__vlabench",
   "mhs_package": "mhs/MHS/drivers/robots/openmoss__vlabench",
-  "website": "https://mhs.openai4s.org",
+  "title": "VLABench xArm7 (MuJoCo scene)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "VLABench xArm7 (MuJoCo scene), adapted from openmoss/vlabench. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/openmoss__vlabench/",
   "upstream": {
     "repo_url": "https://github.com/openmoss/vlabench",
     "commit": "cf588fe60c0c7282174fe979f5913170cfe69017",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/openmoss__vlabench",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openmoss__vlabench --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/openmoss__vlabench --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/biologytools__bioimager",
   "package": "labs/biologytools__bioimager",
   "mhs_package": "mhs/MHS/drivers/labs/biologytools__bioimager",
-  "website": "https://mhs.openai4s.org",
+  "title": "Cobolt laser (PythonMicroscope)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Cobolt laser (PythonMicroscope), adapted from biologytools/bioimager. It reads `power` and `status`; sets `emission` and `power_setpoint`; runs `disable_laser`. `disable_laser`: disable laser emission through the native disable(); it takes no input. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/biologytools__bioimager/",
   "upstream": {
     "repo_url": "https://github.com/biologytools/bioimager",
     "commit": "149b45255d628cc4118b3829cd7c5b10c9c6cb07",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/biologytools__bioimager",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/biologytools__bioimager --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/biologytools__bioimager --backend fake --mcp"
 }

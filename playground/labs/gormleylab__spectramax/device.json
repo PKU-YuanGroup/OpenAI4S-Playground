@@ -2,7 +2,11 @@
   "name": "labs/gormleylab__spectramax",
   "package": "labs/gormleylab__spectramax",
   "mhs_package": "mhs/MHS/drivers/labs/gormleylab__spectramax",
-  "website": "https://mhs.openai4s.org",
+  "title": "SpectraMax plate reader (spectramax.Spectramax)",
+  "category": "Spectroscopy",
+  "topic": null,
+  "intro": "SpectraMax plate reader (spectramax.Spectramax), adapted from gormleylab/spectramax. It reads `instrument_status` and `plate_data`; runs `set_incubator_temperature`, `read_uvvis` and `incubator_off`. `set_incubator_temperature`: set the incubator temperature through SoftMax Pro; 0 turns the incubator off. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/gormleylab__spectramax/",
   "upstream": {
     "repo_url": "https://github.com/gormleylab/spectramax",
     "commit": "7940d4064663d576cbe8b1200e529f3acc1ef924",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/gormleylab__spectramax",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/gormleylab__spectramax --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/gormleylab__spectramax --backend fake --mcp"
 }

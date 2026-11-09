@@ -2,7 +2,11 @@
   "name": "labs/pymodaq__pymodaq_plugins_newport",
   "package": "labs/pymodaq__pymodaq_plugins_newport",
   "mhs_package": "mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_newport",
-  "website": "https://mhs.openai4s.org",
+  "title": "Newport SMC100 single-axis motion controller",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Newport SMC100 single-axis motion controller, adapted from pymodaq/pymodaq_plugins_newport. It reads `identity`, `position`, `is_moving`, `speed` and 1 more; runs `move_abs`, `move_rel`, `home` and `stop_motion`. `move_abs`: command an absolute move with PA; the controller reports completion through is_moving. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pymodaq__pymodaq_plugins_newport/",
   "upstream": {
     "repo_url": "https://github.com/pymodaq/pymodaq_plugins_newport",
     "commit": "bad8a714aa079f9ae2aab95851efedc32a8505ba",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pymodaq__pymodaq_plugins_newport",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_newport --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_newport --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/elijah-waichong-chan__go2-convex-mpc",
   "package": "robots/elijah-waichong-chan__go2-convex-mpc",
   "mhs_package": "mhs/MHS/drivers/robots/elijah-waichong-chan__go2-convex-mpc",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree Go2 convex MPC scene (MuJoCo)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Unitree Go2 convex MPC scene (MuJoCo), adapted from elijah-waichong-chan/go2-convex-mpc. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/elijah-waichong-chan__go2-convex-mpc/",
   "upstream": {
     "repo_url": "https://github.com/elijah-waichong-chan/go2-convex-mpc",
     "commit": "1c63c6a762779887ab0431fd60db681dede6cb32",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/elijah-waichong-chan__go2-convex-mpc",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/elijah-waichong-chan__go2-convex-mpc --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/elijah-waichong-chan__go2-convex-mpc --backend fake --mcp"
 }

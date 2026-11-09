@@ -2,7 +2,11 @@
   "name": "robots/tobirohrer__building-energy-storage-simulation",
   "package": "robots/tobirohrer__building-energy-storage-simulation",
   "mhs_package": "mhs/MHS/drivers/robots/tobirohrer__building-energy-storage-simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "Building Energy Storage Simulation (battery, solar and price-varying grid)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Building Energy Storage Simulation (battery, solar and price-varying grid), adapted from tobirohrer/building-energy-storage-simulation. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/tobirohrer__building-energy-storage-simulation/",
   "upstream": {
     "repo_url": "https://github.com/tobirohrer/building-energy-storage-simulation",
     "commit": "05b9197c8d6f600bed2a5b092db6de6f07bf3c65",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/tobirohrer__building-energy-storage-simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tobirohrer__building-energy-storage-simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tobirohrer__building-energy-storage-simulation --backend fake --mcp"
 }

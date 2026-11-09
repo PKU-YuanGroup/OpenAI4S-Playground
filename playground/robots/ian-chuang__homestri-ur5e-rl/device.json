@@ -2,7 +2,11 @@
   "name": "robots/ian-chuang__homestri-ur5e-rl",
   "package": "robots/ian-chuang__homestri-ur5e-rl",
   "mhs_package": "mhs/MHS/drivers/robots/ian-chuang__homestri-ur5e-rl",
-  "website": "https://mhs.openai4s.org",
+  "title": "homestri-ur5e-rl BaseRobot-v0 (MuJoCo simulation)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "homestri-ur5e-rl BaseRobot-v0 (MuJoCo simulation), adapted from ian-chuang/homestri-ur5e-rl. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ian-chuang__homestri-ur5e-rl/",
   "upstream": {
     "repo_url": "https://github.com/ian-chuang/homestri-ur5e-rl",
     "commit": "89b7e23cc5acbd9a164222fa548cb0113684523e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ian-chuang__homestri-ur5e-rl",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ian-chuang__homestri-ur5e-rl --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ian-chuang__homestri-ur5e-rl --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/allenai__molmospaces",
   "package": "robots/allenai__molmospaces",
   "mhs_package": "mhs/MHS/drivers/robots/allenai__molmospaces",
-  "website": "https://mhs.openai4s.org",
+  "title": "MolmoSpaces GymEnv (Franka pick, simulated)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "MolmoSpaces GymEnv (Franka pick, simulated), adapted from allenai/molmospaces. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/allenai__molmospaces/",
   "upstream": {
     "repo_url": "https://github.com/allenai/molmospaces",
     "commit": "713fd12ab593c3bbb4abfaa76622e14249aa36b3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/allenai__molmospaces",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/allenai__molmospaces --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/allenai__molmospaces --backend fake --mcp"
 }

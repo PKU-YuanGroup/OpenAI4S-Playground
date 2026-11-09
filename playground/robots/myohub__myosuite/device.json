@@ -2,7 +2,11 @@
   "name": "robots/myohub__myosuite",
   "package": "robots/myohub__myosuite",
   "mhs_package": "mhs/MHS/drivers/robots/myohub__myosuite",
-  "website": "https://mhs.openai4s.org",
+  "title": "MyoSuite Baoding balls (myoChallengeBaodingP1-v1)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "MyoSuite Baoding balls (myoChallengeBaodingP1-v1), adapted from myohub/myosuite. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/myohub__myosuite/",
   "upstream": {
     "repo_url": "https://github.com/myohub/myosuite",
     "commit": "2d08f42dfec85278566c95b1d09f5bd67662b3d6",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/myohub__myosuite",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/myohub__myosuite --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/myohub__myosuite --backend fake --mcp"
 }

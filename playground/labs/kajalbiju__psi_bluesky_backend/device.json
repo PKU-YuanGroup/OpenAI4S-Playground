@@ -2,7 +2,11 @@
   "name": "labs/kajalbiju__psi_bluesky_backend",
   "package": "labs/kajalbiju__psi_bluesky_backend",
   "mhs_package": "mhs/MHS/drivers/labs/kajalbiju__psi_bluesky_backend",
-  "website": "https://mhs.openai4s.org",
+  "title": "Oxford Instruments Mercury iTC temperature controller (PSI Bluesky4)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "Oxford Instruments Mercury iTC temperature controller (PSI Bluesky4), adapted from kajalbiju/psi_bluesky_backend. It reads `temperature`; sets `temperature_setpoint`, `heater_setpoint`, `p_value`, `i_value` and 1 more; runs `heater_off`. `heater_off`: drive the temperature-loop setpoint to 0 K and the heater-loop setpoint to 0 (the safe state); it takes no input. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/kajalbiju__psi_bluesky_backend/",
   "upstream": {
     "repo_url": "https://github.com/kajalbiju/psi_bluesky_backend",
     "commit": "59252b014ef37fc4f2de2e37eda1fca755afe50f",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/kajalbiju__psi_bluesky_backend",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kajalbiju__psi_bluesky_backend --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/kajalbiju__psi_bluesky_backend --backend fake --mcp"
 }

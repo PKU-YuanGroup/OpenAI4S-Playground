@@ -2,7 +2,11 @@
   "name": "robots/robotcasters__b1env",
   "package": "robots/robotcasters__b1env",
   "mhs_package": "mhs/MHS/drivers/robots/robotcasters__b1env",
-  "website": "https://mhs.openai4s.org",
+  "title": "Unitree B1 Simulation Environment (B1Sim)",
+  "category": "Simulation",
+  "topic": "legged robots",
+  "intro": "Unitree B1 Simulation Environment (B1Sim), adapted from robotcasters/b1env. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robotcasters__b1env/",
   "upstream": {
     "repo_url": "https://github.com/robotcasters/b1env",
     "commit": "cdf57676193c1bbe15960157aac059a291c0e89c",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robotcasters__b1env",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcasters__b1env --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcasters__b1env --backend fake --mcp"
 }

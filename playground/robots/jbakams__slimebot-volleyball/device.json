@@ -2,7 +2,11 @@
   "name": "robots/jbakams__slimebot-volleyball",
   "package": "robots/jbakams__slimebot-volleyball",
   "mhs_package": "mhs/MHS/drivers/robots/jbakams__slimebot-volleyball",
-  "website": "https://mhs.openai4s.org",
+  "title": "Slimebot Volleyball 1-vs-1 (Gym simulation)",
+  "category": "Simulation",
+  "topic": "multi-robot systems",
+  "intro": "Slimebot Volleyball 1-vs-1 (Gym simulation), adapted from jbakams/slimebot-volleyball. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/jbakams__slimebot-volleyball/",
   "upstream": {
     "repo_url": "https://github.com/jbakams/slimebot-volleyball",
     "commit": "0733b0ad1f9d1f62ba8b5717f69edf6b0cb1544a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jbakams__slimebot-volleyball",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jbakams__slimebot-volleyball --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jbakams__slimebot-volleyball --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/robotis-git__turtlebot3_simulations",
   "package": "robots/robotis-git__turtlebot3_simulations",
   "mhs_package": "mhs/MHS/drivers/robots/robotis-git__turtlebot3_simulations",
-  "website": "https://mhs.openai4s.org",
+  "title": "ROBOTIS TurtleBot3 fake simulation node",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "ROBOTIS TurtleBot3 fake simulation node, adapted from robotis-git/turtlebot3_simulations. It reads `odom_pose`, `odom_twist`, `wheel_velocity`, `read_odometry` and 1 more; runs `publish_velocity`. `publish_velocity`: publish one geometry_msgs/Twist to the upstream /cmd_vel subscription; the fake node consumes only linear.x and angular.z. The receipt confirms only that rosbridge accepted the publication, not motion, arrival or stopping. /cmd_vel is also a physical TurtleBot3 command topic, so this action is R2. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robotis-git__turtlebot3_simulations/",
   "upstream": {
     "repo_url": "https://github.com/robotis-git/turtlebot3_simulations",
     "commit": "9be186fb03d84ed4f293e5c0db71d8c05bbc91f3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robotis-git__turtlebot3_simulations",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotis-git__turtlebot3_simulations --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotis-git__turtlebot3_simulations --backend fake --mcp"
 }

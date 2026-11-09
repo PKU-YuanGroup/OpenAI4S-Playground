@@ -2,7 +2,11 @@
   "name": "labs/bionanomics__microscope-agent",
   "package": "labs/bionanomics__microscope-agent",
   "mhs_package": "mhs/MHS/drivers/labs/bionanomics__microscope-agent",
-  "website": "https://mhs.openai4s.org",
+  "title": "Baumer VCXU-23C GenICam camera",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Baumer VCXU-23C GenICam camera, adapted from bionanomics/microscope-agent. It reads `exposure_time_range_us`, `gain_range`, `pixel_format` and `balance_white_auto`; sets `exposure_time_us` and `gain`; runs `capture`. `capture`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/bionanomics__microscope-agent/",
   "upstream": {
     "repo_url": "https://github.com/bionanomics/microscope-agent",
     "commit": "3aef391397deb42f0a1b814091eb2e4b3fe8ed5a",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/bionanomics__microscope-agent",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bionanomics__microscope-agent --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/bionanomics__microscope-agent --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/pmezydlo__oscilloscope_lan_data_capture",
   "package": "labs/pmezydlo__oscilloscope_lan_data_capture",
   "mhs_package": "mhs/MHS/drivers/labs/pmezydlo__oscilloscope_lan_data_capture",
-  "website": "https://mhs.openai4s.org",
+  "title": "Rigol DS1000Z series oscilloscope (oscilloscope_functions.oscilloscope)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Rigol DS1000Z series oscilloscope (oscilloscope_functions.oscilloscope), adapted from pmezydlo/oscilloscope_lan_data_capture. It reads `manufacturer`, `instrument_model`, `serial_number`, `firmware_version` and 4 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pmezydlo__oscilloscope_lan_data_capture/",
   "upstream": {
     "repo_url": "https://github.com/pmezydlo/oscilloscope_lan_data_capture",
     "commit": "f68c0b8d5acb7592ad21fd39b453d5a4d892a91e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pmezydlo__oscilloscope_lan_data_capture",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pmezydlo__oscilloscope_lan_data_capture --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pmezydlo__oscilloscope_lan_data_capture --backend fake --mcp"
 }

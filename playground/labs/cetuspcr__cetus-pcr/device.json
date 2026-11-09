@@ -2,7 +2,11 @@
   "name": "labs/cetuspcr__cetus-pcr",
   "package": "labs/cetuspcr__cetus-pcr",
   "mhs_package": "mhs/MHS/drivers/labs/cetuspcr__cetus-pcr",
-  "website": "https://mhs.openai4s.org",
+  "title": "Cetus PCR low-cost thermocycler (functions.ArduinoPCR)",
+  "category": "Thermal and process control",
+  "topic": null,
+  "intro": "Cetus PCR low-cost thermocycler (functions.ArduinoPCR), adapted from cetuspcr/cetus-pcr. It reads `sample_temperature`, `lid_temperature`, `is_running`, `current_step` and 1 more; runs `run_protocol` and `stop_peltier`. `run_protocol`: run one temperature hold step for a number of cycles through the upstream PID experiment loop; the Peltier is driven by that loop, not by a temperature setpoint of the firmware. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/cetuspcr__cetus-pcr/",
   "upstream": {
     "repo_url": "https://github.com/cetuspcr/cetus-pcr",
     "commit": "bbed1fd40257f5ba51bf4d9c9bc5fa328f28d7cb",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/cetuspcr__cetus-pcr",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cetuspcr__cetus-pcr --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/cetuspcr__cetus-pcr --backend fake --mcp"
 }

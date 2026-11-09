@@ -2,7 +2,11 @@
   "name": "labs/andrewvp41__lambda-physik-lpx200-lasercontroller",
   "package": "labs/andrewvp41__lambda-physik-lpx200-lasercontroller",
   "mhs_package": "mhs/MHS/drivers/labs/andrewvp41__lambda-physik-lpx200-lasercontroller",
-  "website": "https://mhs.openai4s.org",
+  "title": "Lambda Physik LPX 200 laser",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Lambda Physik LPX 200 laser, adapted from andrewvp41/lambda-physik-lpx200-lasercontroller. It reads `operating_mode`, `pressure` and `gas_mix`; sets `trigger_mode`, `mode`, `repetition_rate`, `high_voltage` and 1 more; runs `emission_on` and `emission_off`. `emission_on`: start laser operation with OPMODE=ON (the RUN STOP start command). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/andrewvp41__lambda-physik-lpx200-lasercontroller/",
   "upstream": {
     "repo_url": "https://github.com/andrewvp41/lambda-physik-lpx200-lasercontroller",
     "commit": "abd240f534a93923342ae6bef374e9d9885b8776",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/andrewvp41__lambda-physik-lpx200-lasercontroller",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/andrewvp41__lambda-physik-lpx200-lasercontroller --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/andrewvp41__lambda-physik-lpx200-lasercontroller --backend fake --mcp"
 }

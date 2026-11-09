@@ -2,7 +2,11 @@
   "name": "robots/stereolabs__zed-ros2-wrapper",
   "package": "robots/stereolabs__zed-ros2-wrapper",
   "mhs_package": "mhs/MHS/drivers/robots/stereolabs__zed-ros2-wrapper",
-  "website": "https://mhs.openai4s.org",
+  "title": "Stereolabs ZED ROS 2 wrapper",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Stereolabs ZED ROS 2 wrapper, adapted from stereolabs/zed-ros2-wrapper. It runs `cap_sensing_image_v1`. `cap_sensing_image_v1`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/stereolabs__zed-ros2-wrapper/",
   "upstream": {
     "repo_url": "https://github.com/stereolabs/zed-ros2-wrapper",
     "commit": "b19902daf0136b6e841b5e415c2d01f425411c45",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/stereolabs__zed-ros2-wrapper",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stereolabs__zed-ros2-wrapper --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/stereolabs__zed-ros2-wrapper --backend fake --mcp"
 }

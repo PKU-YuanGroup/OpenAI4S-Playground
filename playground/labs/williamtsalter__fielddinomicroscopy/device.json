@@ -2,7 +2,11 @@
   "name": "labs/williamtsalter__fielddinomicroscopy",
   "package": "labs/williamtsalter__fielddinomicroscopy",
   "mhs_package": "mhs/MHS/drivers/labs/williamtsalter__fielddinomicroscopy",
-  "website": "https://mhs.openai4s.org",
+  "title": "Dino-Lite AM7515 USB microscope (dnx64.DNX64)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Dino-Lite AM7515 USB microscope (dnx64.DNX64), adapted from williamtsalter/fielddinomicroscopy. It reads `device_name` and `device_id`; sets `exposure_value`, `ae_target` and `auto_exposure`; runs `set_led`, `set_flc_level` and `switch_off_illumination`. `set_led`: turn the microscope LED on or off (SetLEDState). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/williamtsalter__fielddinomicroscopy/",
   "upstream": {
     "repo_url": "https://github.com/williamtsalter/fielddinomicroscopy",
     "commit": "e67297f1822dbe3b5a385a41828fb5064cdf8b25",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/williamtsalter__fielddinomicroscopy",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/williamtsalter__fielddinomicroscopy --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/williamtsalter__fielddinomicroscopy --backend fake --mcp"
 }

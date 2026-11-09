@@ -2,7 +2,11 @@
   "name": "labs/imswitch2__imswitch2",
   "package": "labs/imswitch2__imswitch2",
   "mhs_package": "mhs/MHS/drivers/labs/imswitch2__imswitch2",
-  "website": "https://mhs.openai4s.org",
+  "title": "ImSwitch2 Standa rotation mount",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "ImSwitch2 Standa rotation mount, adapted from imswitch2/imswitch2. It reads `position`; runs `move_absolute` and `stop_motion`. `move_absolute`: command one or more actuated joints to target positions in joint space, optionally over a declared duration, and report whether the target was reached within tolerance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/imswitch2__imswitch2/",
   "upstream": {
     "repo_url": "https://github.com/imswitch2/imswitch2",
     "commit": "86763f7ba89fb15efbf3229ea5df1c9e1395fc7d",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/imswitch2__imswitch2",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/imswitch2__imswitch2 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/imswitch2__imswitch2 --backend fake --mcp"
 }

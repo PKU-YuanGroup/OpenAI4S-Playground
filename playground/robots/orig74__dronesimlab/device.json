@@ -2,7 +2,11 @@
   "name": "robots/orig74__dronesimlab",
   "package": "robots/orig74__dronesimlab",
   "mhs_package": "mhs/MHS/drivers/robots/orig74__dronesimlab",
-  "website": "https://mhs.openai4s.org",
+  "title": "DroneSimLab UE4 camera bridge",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "DroneSimLab UE4 camera bridge, adapted from orig74/dronesimlab. It runs `capture_image`. `capture_image`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/orig74__dronesimlab/",
   "upstream": {
     "repo_url": "https://github.com/orig74/dronesimlab",
     "commit": "211c94319c52b3090ec4e2c0c96fe0147a2a4ac7",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/orig74__dronesimlab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/orig74__dronesimlab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/orig74__dronesimlab --backend fake --mcp"
 }

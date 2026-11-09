@@ -2,7 +2,11 @@
   "name": "robots/drcl-usc__hector_simulation",
   "package": "robots/drcl-usc__hector_simulation",
   "mhs_package": "mhs/MHS/drivers/robots/drcl-usc__hector_simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "HECTOR humanoid Gazebo simulation",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "HECTOR humanoid Gazebo simulation, adapted from drcl-usc/hector_simulation. It reads `read_model_states`; runs `send_left_hip_command`, `send_left_hip2_command`, `send_left_thigh_command`, `send_left_calf_command` and 6 more. `send_left_hip_command`: publish one unitree_legged_msgs/MotorCmd for the simulated left_hip joint. The receipt proves only that rosbridge accepted the publication; it does not prove that the controller applied it, that the joint moved, or that the robot is stable. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/drcl-usc__hector_simulation/",
   "upstream": {
     "repo_url": "https://github.com/drcl-usc/hector_simulation",
     "commit": "edfdc7b1a9855c71887ac2cf2ebe0bb5dee5ea49",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/drcl-usc__hector_simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/drcl-usc__hector_simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/drcl-usc__hector_simulation --backend fake --mcp"
 }

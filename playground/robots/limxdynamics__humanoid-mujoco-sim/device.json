@@ -2,7 +2,11 @@
   "name": "robots/limxdynamics__humanoid-mujoco-sim",
   "package": "robots/limxdynamics__humanoid-mujoco-sim",
   "mhs_package": "mhs/MHS/drivers/robots/limxdynamics__humanoid-mujoco-sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "LimX HU_D03 humanoid (MuJoCo simulation)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "LimX HU_D03 humanoid (MuJoCo simulation), adapted from limxdynamics/humanoid-mujoco-sim. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/limxdynamics__humanoid-mujoco-sim/",
   "upstream": {
     "repo_url": "https://github.com/limxdynamics/humanoid-mujoco-sim",
     "commit": "4a1f297725660172e590a239020cc08fb3798aa3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/limxdynamics__humanoid-mujoco-sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/limxdynamics__humanoid-mujoco-sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/limxdynamics__humanoid-mujoco-sim --backend fake --mcp"
 }

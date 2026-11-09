@@ -2,7 +2,11 @@
   "name": "labs/oelemento__star-sim",
   "package": "labs/oelemento__star-sim",
   "mhs_package": "mhs/MHS/drivers/labs/oelemento__star-sim",
-  "website": "https://mhs.openai4s.org",
+  "title": "Hamilton STARlet digital twin (star_sim.RobotEnv, PyLabRobot ChatterBox)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Hamilton STARlet digital twin (star_sim.RobotEnv, PyLabRobot ChatterBox), adapted from oelemento/star-sim. It reads `tips_remaining_columns`; runs `transfer`, `mix` and `tracked_volumes`. `transfer`: pick up fresh tips, aspirate the source wells, dispense the target wells, discard the tips; no cleanup after a failure. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/oelemento__star-sim/",
   "upstream": {
     "repo_url": "https://github.com/oelemento/star-sim",
     "commit": "5b5211a4c5414e5a9752b286515fbe87e769842d",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/oelemento__star-sim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/oelemento__star-sim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/oelemento__star-sim --backend fake --mcp"
 }

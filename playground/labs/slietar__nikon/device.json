@@ -2,7 +2,11 @@
   "name": "labs/slietar__nikon",
   "package": "labs/slietar__nikon",
   "mhs_package": "mhs/MHS/drivers/labs/slietar__nikon",
-  "website": "https://mhs.openai4s.org",
+  "title": "Nikon Ti2-E microscope (nikon.microscope:MicroscopeDevice)",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "Nikon Ti2-E microscope (nikon.microscope:MicroscopeDevice), adapted from slietar/nikon. It reads `firmware_version` and `zoom`; sets `x`, `y`, `z`, `condenser` and 6 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/slietar__nikon/",
   "upstream": {
     "repo_url": "https://github.com/slietar/nikon",
     "commit": "d53b4e261ae487f237a65048cf1931a40e39794b",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/slietar__nikon",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/slietar__nikon --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/slietar__nikon --backend fake --mcp"
 }

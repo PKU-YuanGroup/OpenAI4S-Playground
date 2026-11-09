@@ -2,7 +2,11 @@
   "name": "labs/labjack__labjackpython",
   "package": "labs/labjack__labjackpython",
   "mhs_package": "mhs/MHS/drivers/labs/labjack__labjackpython",
-  "website": "https://mhs.openai4s.org",
+  "title": "LabJack U3 USB DAQ (LabJackPython U3)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "LabJack U3 USB DAQ (LabJackPython U3), adapted from labjack/labjackpython. It reads `analog_input_0`, `internal_temperature`, `dio_states` and `measure_voltage`; sets `fio_analog` and `eio_analog`; runs `set_digital_output` and `reset_device`. `set_digital_output`: drive one U3 digital I/O line high or low; the line is also set to output. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/labjack__labjackpython/",
   "upstream": {
     "repo_url": "https://github.com/labjack/labjackpython",
     "commit": "a2f13eb548cca6416b1d44b08b63f7c5fd7f943b",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/labjack__labjackpython",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/labjack__labjackpython --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/labjack__labjackpython --backend fake --mcp"
 }

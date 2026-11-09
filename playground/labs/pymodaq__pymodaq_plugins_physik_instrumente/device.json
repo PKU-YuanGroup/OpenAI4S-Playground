@@ -2,7 +2,11 @@
   "name": "labs/pymodaq__pymodaq_plugins_physik_instrumente",
   "package": "labs/pymodaq__pymodaq_plugins_physik_instrumente",
   "mhs_package": "mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_physik_instrumente",
-  "website": "https://mhs.openai4s.org",
+  "title": "PI GCS2 stage controller (PyMoDAQ PIWrapper)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "PI GCS2 stage controller (PyMoDAQ PIWrapper), adapted from pymodaq/pymodaq_plugins_physik_instrumente. It reads `identity`, `axis_names`, `axis_units`, `positions` and 2 more; runs `move_absolute`, `move_relative`, `home_axis` and `stop_motion`. `move_absolute`: move one axis to an absolute position with the native move_absolute() and report the position the controller reads back. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pymodaq__pymodaq_plugins_physik_instrumente/",
   "upstream": {
     "repo_url": "https://github.com/pymodaq/pymodaq_plugins_physik_instrumente",
     "commit": "6fb8d954c432eac431e87c511a70e82c7b4df5f8",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pymodaq__pymodaq_plugins_physik_instrumente",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_physik_instrumente --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_physik_instrumente --backend fake --mcp"
 }

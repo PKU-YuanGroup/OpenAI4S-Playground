@@ -2,7 +2,11 @@
   "name": "robots/tatp-233__discoverse",
   "package": "robots/tatp-233__discoverse",
   "mhs_package": "mhs/MHS/drivers/robots/tatp-233__discoverse",
-  "website": "https://mhs.openai4s.org",
+  "title": "MMK2 mobile manipulator floor scene (MuJoCo)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "MMK2 mobile manipulator floor scene (MuJoCo), adapted from tatp-233/discoverse. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/tatp-233__discoverse/",
   "upstream": {
     "repo_url": "https://github.com/tatp-233/discoverse",
     "commit": "d67f47c084aba0e0cf422a8725235f8b9238655a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/tatp-233__discoverse",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tatp-233__discoverse --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/tatp-233__discoverse --backend fake --mcp"
 }

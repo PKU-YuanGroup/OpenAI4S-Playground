@@ -2,7 +2,11 @@
   "name": "labs/rwb27__openflexure_nano_motor_controller",
   "package": "labs/rwb27__openflexure_nano_motor_controller",
   "mhs_package": "mhs/MHS/drivers/labs/rwb27__openflexure_nano_motor_controller",
-  "website": "https://mhs.openai4s.org",
+  "title": "OpenFlexure Motor Board stage",
+  "category": "Optics and microscopy",
+  "topic": null,
+  "intro": "OpenFlexure Motor Board stage, adapted from rwb27/openflexure_nano_motor_controller. It reads `firmware`, `position`, `step_time`, `ramp_time` and 2 more; runs `move_relative`, `move_absolute`, `focus_relative`, `home` and 1 more. `move_relative`: move the stage by a relative displacement in integer motor steps. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/rwb27__openflexure_nano_motor_controller/",
   "upstream": {
     "repo_url": "https://github.com/rwb27/openflexure_nano_motor_controller",
     "commit": "18a19977dde0cd78f14154c41073a857e2332e54",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/rwb27__openflexure_nano_motor_controller",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/rwb27__openflexure_nano_motor_controller --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/rwb27__openflexure_nano_motor_controller --backend fake --mcp"
 }

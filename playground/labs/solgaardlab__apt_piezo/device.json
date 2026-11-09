@@ -2,7 +2,11 @@
   "name": "labs/solgaardlab__apt_piezo",
   "package": "labs/solgaardlab__apt_piezo",
   "mhs_package": "mhs/MHS/drivers/labs/solgaardlab__apt_piezo",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs APT piezo channel (interface.module.Module)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs APT piezo channel (interface.module.Module), adapted from solgaardlab/apt_piezo. It reads `max_travel`; sets `position` and `closed_loop`; runs `move_piezo` and `zero_piezo`. `move_piezo`: command the piezo module to a travel in micrometres (native move()). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/solgaardlab__apt_piezo/",
   "upstream": {
     "repo_url": "https://github.com/solgaardlab/apt_piezo",
     "commit": "677eb8f632b6b1d7c84c1fd83a5821239331e4a5",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/solgaardlab__apt_piezo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/solgaardlab__apt_piezo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/solgaardlab__apt_piezo --backend fake --mcp"
 }

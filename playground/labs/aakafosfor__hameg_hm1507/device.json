@@ -2,7 +2,11 @@
   "name": "labs/aakafosfor__hameg_hm1507",
   "package": "labs/aakafosfor__hameg_hm1507",
   "mhs_package": "mhs/MHS/drivers/labs/aakafosfor__hameg_hm1507",
-  "website": "https://mhs.openai4s.org",
+  "title": "HAMEG HM1507 oscilloscope (serial remote control)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "HAMEG HM1507 oscilloscope (serial remote control), adapted from aakafosfor/hameg_hm1507. It sets `timebase` and `channel`; runs `autoset`. `autoset`: run the scope's automatic setup (the upstream AUTOSET command). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/aakafosfor__hameg_hm1507/",
   "upstream": {
     "repo_url": "https://github.com/aakafosfor/hameg_hm1507",
     "commit": "0a03fdc25414d400331769c9e125dd80e0cf5964",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/aakafosfor__hameg_hm1507",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aakafosfor__hameg_hm1507 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/aakafosfor__hameg_hm1507 --backend fake --mcp"
 }

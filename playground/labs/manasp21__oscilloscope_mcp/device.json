@@ -2,7 +2,11 @@
   "name": "labs/manasp21__oscilloscope_mcp",
   "package": "labs/manasp21__oscilloscope_mcp",
   "mhs_package": "mhs/MHS/drivers/labs/manasp21__oscilloscope_mcp",
-  "website": "https://mhs.openai4s.org",
+  "title": "Oscilloscope MCP Ethernet backend (oscilloscope_mcp.EthernetOscilloscope)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Oscilloscope MCP Ethernet backend (oscilloscope_mcp.EthernetOscilloscope), adapted from manasp21/oscilloscope_mcp. It reads `initialized`, `acquisition_active`, `channel_count`, `trigger_source` and 4 more; sets `sample_rate_hz`, `record_length`, `voltage_range_v`, `coupling` and 1 more; runs `configure_channel`, `setup_trigger`, `acquire_waveform` and `stop_acquisition`. `configure_channel`: configure one channel's voltage range, coupling and impedance. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/manasp21__oscilloscope_mcp/",
   "upstream": {
     "repo_url": "https://github.com/manasp21/oscilloscope_mcp",
     "commit": "49b9c4a7b06b0a98688f5f9cd689ec21c25d3eeb",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/manasp21__oscilloscope_mcp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/manasp21__oscilloscope_mcp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/manasp21__oscilloscope_mcp --backend fake --mcp"
 }

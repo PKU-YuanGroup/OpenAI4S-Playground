@@ -2,7 +2,11 @@
   "name": "robots/learnsyslab__safe-control-gym",
   "package": "robots/learnsyslab__safe-control-gym",
   "mhs_package": "mhs/MHS/drivers/robots/learnsyslab__safe-control-gym",
-  "website": "https://mhs.openai4s.org",
+  "title": "Safe-Control-Gym CartPole (PyBullet)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "Safe-Control-Gym CartPole (PyBullet), adapted from learnsyslab/safe-control-gym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/learnsyslab__safe-control-gym/",
   "upstream": {
     "repo_url": "https://github.com/learnsyslab/safe-control-gym",
     "commit": "6b5391d014f36fdfa0f9d22d92c77387e5274308",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/learnsyslab__safe-control-gym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/learnsyslab__safe-control-gym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/learnsyslab__safe-control-gym --backend fake --mcp"
 }

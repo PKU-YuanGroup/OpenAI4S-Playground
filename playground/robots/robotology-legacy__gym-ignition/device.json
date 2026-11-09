@@ -2,7 +2,11 @@
   "name": "robots/robotology-legacy__gym-ignition",
   "package": "robots/robotology-legacy__gym-ignition",
   "mhs_package": "mhs/MHS/drivers/robots/robotology-legacy__gym-ignition",
-  "website": "https://mhs.openai4s.org",
+  "title": "gym-ignition CartPoleDiscreteBalancing-Gazebo-v0",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "gym-ignition CartPoleDiscreteBalancing-Gazebo-v0, adapted from robotology-legacy/gym-ignition. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robotology-legacy__gym-ignition/",
   "upstream": {
     "repo_url": "https://github.com/robotology-legacy/gym-ignition",
     "commit": "4bc8e0465eed68911434485ba0b9c0a6740d516e",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robotology-legacy__gym-ignition",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotology-legacy__gym-ignition --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotology-legacy__gym-ignition --backend fake --mcp"
 }

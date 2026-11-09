@@ -2,7 +2,11 @@
   "name": "robots/svengronauer__phoenix-drone-simulation",
   "package": "robots/svengronauer__phoenix-drone-simulation",
   "mhs_package": "mhs/MHS/drivers/robots/svengronauer__phoenix-drone-simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "Phoenix Drone Simulation DroneHoverSimpleEnv-v0",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "Phoenix Drone Simulation DroneHoverSimpleEnv-v0, adapted from svengronauer/phoenix-drone-simulation. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/svengronauer__phoenix-drone-simulation/",
   "upstream": {
     "repo_url": "https://github.com/svengronauer/phoenix-drone-simulation",
     "commit": "c5d690732976351f5bbea4161913d98c376a4f04",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/svengronauer__phoenix-drone-simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/svengronauer__phoenix-drone-simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/svengronauer__phoenix-drone-simulation --backend fake --mcp"
 }

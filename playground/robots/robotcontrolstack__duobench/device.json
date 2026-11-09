@@ -2,7 +2,11 @@
   "name": "robots/robotcontrolstack__duobench",
   "package": "robots/robotcontrolstack__duobench",
   "mhs_package": "mhs/MHS/drivers/robots/robotcontrolstack__duobench",
-  "website": "https://mhs.openai4s.org",
+  "title": "DuoBench ball_maze (FR3 Duo bimanual manipulation)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "DuoBench ball_maze (FR3 Duo bimanual manipulation), adapted from robotcontrolstack/duobench. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robotcontrolstack__duobench/",
   "upstream": {
     "repo_url": "https://github.com/robotcontrolstack/duobench",
     "commit": "29e09f916d68539d454c93266c195d2abb8a8253",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robotcontrolstack__duobench",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcontrolstack__duobench --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robotcontrolstack__duobench --backend fake --mcp"
 }

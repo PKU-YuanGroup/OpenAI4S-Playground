@@ -2,7 +2,11 @@
   "name": "labs/fredrik-qi__fork_fluent_sila2_connector",
   "package": "labs/fredrik-qi__fork_fluent_sila2_connector",
   "mhs_package": "mhs/MHS/drivers/labs/fredrik-qi__fork_fluent_sila2_connector",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tecan Fluent liquid handler",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Tecan Fluent liquid handler, adapted from fredrik-qi/fork_fluent_sila2_connector. It reads `state`, `progress`, `last_error`, `runnable_methods` and 1 more; runs `start_fluent`, `prepare_method`, `run_method`, `pause_run` and 9 more. `start_fluent`: start FluentControl or attach to a running instance without credentials; the connector may wait without a timeout and then prepares the method 'Method to prepare'. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/fredrik-qi__fork_fluent_sila2_connector/",
   "upstream": {
     "repo_url": "https://github.com/fredrik-qi/fork_fluent_sila2_connector",
     "commit": "4a2f857c619c5bcead352b52622a72cc2d356ffe",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/fredrik-qi__fork_fluent_sila2_connector",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/fredrik-qi__fork_fluent_sila2_connector --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/fredrik-qi__fork_fluent_sila2_connector --backend fake --mcp"
 }

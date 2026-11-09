@@ -2,7 +2,11 @@
   "name": "robots/jjshoots__crazyflyt",
   "package": "robots/jjshoots__crazyflyt",
   "mhs_package": "mhs/MHS/drivers/robots/jjshoots__crazyflyt",
-  "website": "https://mhs.openai4s.org",
+  "title": "Crazyflie 2.x (CrazyFlyt DroneController)",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "Crazyflie 2.x (CrazyFlyt DroneController), adapted from jjshoots/crazyflyt. It reads `position_estimate`, `setpoint` and `running`; sets `pos_control`; runs `set_position_setpoint`, `set_velocity_setpoint` and `halt`. `set_position_setpoint`: store an (x, y, z, yaw) setpoint in m and rad, select position control and start the control thread. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/jjshoots__crazyflyt/",
   "upstream": {
     "repo_url": "https://github.com/jjshoots/crazyflyt",
     "commit": "85d99afa21cb5b90fd130cd480f0589a2b700b58",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/jjshoots__crazyflyt",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jjshoots__crazyflyt --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/jjshoots__crazyflyt --backend fake --mcp"
 }

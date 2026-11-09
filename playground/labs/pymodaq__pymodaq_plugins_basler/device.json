@@ -2,7 +2,11 @@
   "name": "labs/pymodaq__pymodaq_plugins_basler",
   "package": "labs/pymodaq__pymodaq_plugins_basler",
   "mhs_package": "mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_basler",
-  "website": "https://mhs.openai4s.org",
+  "title": "Basler camera (pymodaq_plugins_basler.hardware.basler:BaslerCamera)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Basler camera (pymodaq_plugins_basler.hardware.basler:BaslerCamera), adapted from pymodaq/pymodaq_plugins_basler. It reads `model_name`, `detector_size`, `exposure_ms`, `gain` and 3 more; sets `roi_x0`, `roi_x1`, `roi_y0`, `roi_y1` and 2 more; runs `start_grabbing`, `stop_grabbing` and `clear_roi`. `start_grabbing`: start continuous acquisition with the camera's current frame rate (the native start_grabbing with None). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/pymodaq__pymodaq_plugins_basler/",
   "upstream": {
     "repo_url": "https://github.com/pymodaq/pymodaq_plugins_basler",
     "commit": "2bb80b0f2f1f904675065ff432302b885389ee99",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/pymodaq__pymodaq_plugins_basler",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_basler --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/pymodaq__pymodaq_plugins_basler --backend fake --mcp"
 }

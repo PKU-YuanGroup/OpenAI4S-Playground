@@ -2,7 +2,11 @@
   "name": "robots/isaac-sim__isaacgymenvs",
   "package": "robots/isaac-sim__isaacgymenvs",
   "mhs_package": "mhs/MHS/drivers/robots/isaac-sim__isaacgymenvs",
-  "website": "https://mhs.openai4s.org",
+  "title": "Isaac Gym Ant (simulated)",
+  "category": "Simulation",
+  "topic": "legged and humanoid robots",
+  "intro": "Isaac Gym Ant (simulated), adapted from isaac-sim/isaacgymenvs. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/isaac-sim__isaacgymenvs/",
   "upstream": {
     "repo_url": "https://github.com/isaac-sim/isaacgymenvs",
     "commit": "aeed298638a1f7b5421b38f5f3cc2d1079b6d9c3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/isaac-sim__isaacgymenvs",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isaac-sim__isaacgymenvs --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/isaac-sim__isaacgymenvs --backend fake --mcp"
 }

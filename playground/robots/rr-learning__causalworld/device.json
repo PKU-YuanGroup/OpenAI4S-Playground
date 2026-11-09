@@ -2,7 +2,11 @@
   "name": "robots/rr-learning__causalworld",
   "package": "robots/rr-learning__causalworld",
   "mhs_package": "mhs/MHS/drivers/robots/rr-learning__causalworld",
-  "website": "https://mhs.openai4s.org",
+  "title": "rr-learning CausalWorld TriFinger benchmark (PyBullet)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "rr-learning CausalWorld TriFinger benchmark (PyBullet), adapted from rr-learning/causalworld. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/rr-learning__causalworld/",
   "upstream": {
     "repo_url": "https://github.com/rr-learning/causalworld",
     "commit": "1045277101a92c506db42704da28f6e7227d401b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/rr-learning__causalworld",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rr-learning__causalworld --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/rr-learning__causalworld --backend fake --mcp"
 }

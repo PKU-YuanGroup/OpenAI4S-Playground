@@ -2,7 +2,11 @@
   "name": "robots/patmce__uav-drl-oa-gymnasium-ros-gazebo",
   "package": "robots/patmce__uav-drl-oa-gymnasium-ros-gazebo",
   "mhs_package": "mhs/MHS/drivers/robots/patmce__uav-drl-oa-gymnasium-ros-gazebo",
-  "website": "https://mhs.openai4s.org",
+  "title": "UAV DRL obstacle-avoidance DroneGymGazeboEnv-v0",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "UAV DRL obstacle-avoidance DroneGymGazeboEnv-v0, adapted from patmce/uav-drl-oa-gymnasium-ros-gazebo. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/patmce__uav-drl-oa-gymnasium-ros-gazebo/",
   "upstream": {
     "repo_url": "https://github.com/patmce/uav-drl-oa-gymnasium-ros-gazebo",
     "commit": "7e72584e02545c782bc15f3a73480a228a9498af",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/patmce__uav-drl-oa-gymnasium-ros-gazebo",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/patmce__uav-drl-oa-gymnasium-ros-gazebo --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/patmce__uav-drl-oa-gymnasium-ros-gazebo --backend fake --mcp"
 }

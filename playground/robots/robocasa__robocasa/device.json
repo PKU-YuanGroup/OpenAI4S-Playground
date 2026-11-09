@@ -2,7 +2,11 @@
   "name": "robots/robocasa__robocasa",
   "package": "robots/robocasa__robocasa",
   "mhs_package": "mhs/MHS/drivers/robots/robocasa__robocasa",
-  "website": "https://mhs.openai4s.org",
+  "title": "RoboCasa PickPlaceCounterToCabinet (kitchen simulation)",
+  "category": "Simulation",
+  "topic": "robot manipulation",
+  "intro": "RoboCasa PickPlaceCounterToCabinet (kitchen simulation), adapted from robocasa/robocasa. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset_world` and `set_seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robocasa__robocasa/",
   "upstream": {
     "repo_url": "https://github.com/robocasa/robocasa",
     "commit": "456174f62b89b8fca99eaaf33949c29fec9cfc2a",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robocasa__robocasa",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robocasa__robocasa --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robocasa__robocasa --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/physical-superintelligence-lab__simple",
   "package": "robots/physical-superintelligence-lab__simple",
   "mhs_package": "mhs/MHS/drivers/robots/physical-superintelligence-lab__simple",
-  "website": "https://mhs.openai4s.org",
+  "title": "SIMPLE Franka tabletop grasp (MuJoCo)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "SIMPLE Franka tabletop grasp (MuJoCo), adapted from physical-superintelligence-lab/simple. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/physical-superintelligence-lab__simple/",
   "upstream": {
     "repo_url": "https://github.com/physical-superintelligence-lab/simple",
     "commit": "6d10628794d9c7de4596b4f2afb2c054a637c2bc",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/physical-superintelligence-lab__simple",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/physical-superintelligence-lab__simple --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/physical-superintelligence-lab__simple --backend fake --mcp"
 }

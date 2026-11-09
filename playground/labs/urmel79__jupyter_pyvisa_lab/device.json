@@ -2,7 +2,11 @@
   "name": "labs/urmel79__jupyter_pyvisa_lab",
   "package": "labs/urmel79__jupyter_pyvisa_lab",
   "mhs_package": "mhs/MHS/drivers/labs/urmel79__jupyter_pyvisa_lab",
-  "website": "https://mhs.openai4s.org",
+  "title": "Benning MM12 digital multimeter",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Benning MM12 digital multimeter, adapted from urmel79/jupyter_pyvisa_lab. It reads `device_model`, `device_serial`, `model_id`, `firmware_version` and 6 more. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/urmel79__jupyter_pyvisa_lab/",
   "upstream": {
     "repo_url": "https://github.com/urmel79/jupyter_pyvisa_lab",
     "commit": "418a7f6bbef16a7c30ece599f8367fe5585291d9",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/urmel79__jupyter_pyvisa_lab",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/urmel79__jupyter_pyvisa_lab --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/urmel79__jupyter_pyvisa_lab --backend fake --mcp"
 }

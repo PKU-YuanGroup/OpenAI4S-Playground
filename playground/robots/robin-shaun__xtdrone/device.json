@@ -2,7 +2,11 @@
   "name": "robots/robin-shaun__xtdrone",
   "package": "robots/robin-shaun__xtdrone",
   "mhs_package": "mhs/MHS/drivers/robots/robin-shaun__xtdrone",
-  "website": "https://mhs.openai4s.org",
+  "title": "XTDrone typhoon_h480_0 position bridge",
+  "category": "Mobile robots",
+  "topic": null,
+  "intro": "XTDrone typhoon_h480_0 position bridge, adapted from robin-shaun/xtdrone. It reads `read_target` and `read_position`; runs `publish_position_setpoint`. `publish_position_setpoint`: publish one map-frame local position setpoint to MAVROS; the receipt reports the values handed to rosbridge and is transmission only, not arrival or a stop. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/robin-shaun__xtdrone/",
   "upstream": {
     "repo_url": "https://github.com/robin-shaun/xtdrone",
     "commit": "671f3d45b22bfe4b7f2b23ae8d4251f3172781b3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/robin-shaun__xtdrone",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robin-shaun__xtdrone --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/robin-shaun__xtdrone --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/ad-sdl__sdl-simulation",
   "package": "labs/ad-sdl__sdl-simulation",
   "mhs_package": "mhs/MHS/drivers/labs/ad-sdl__sdl-simulation",
-  "website": "https://mhs.openai4s.org",
+  "title": "SDL Gazebo mobile manipulator (UR5e arm)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "SDL Gazebo mobile manipulator (UR5e arm), adapted from ad-sdl/sdl-simulation. It reads `read_arm_status` and `read_nav_status`; runs `arm_pose_goal`, `base_pose_goal`, `left_gripper_position` and `right_gripper_position`. `arm_pose_goal`: publish one geometry_msgs/Pose arm target; the receipt reports the values sent and no execution acknowledgement is available. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/labs/ad-sdl__sdl-simulation/",
   "upstream": {
     "repo_url": "https://github.com/ad-sdl/sdl-simulation",
     "commit": "7ae7b7ac5581a891451e0007c0cd8de885773082",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/ad-sdl__sdl-simulation",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ad-sdl__sdl-simulation --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/ad-sdl__sdl-simulation --backend fake --mcp"
 }

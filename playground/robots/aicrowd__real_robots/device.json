@@ -2,7 +2,11 @@
   "name": "robots/aicrowd__real_robots",
   "package": "robots/aicrowd__real_robots",
   "mhs_package": "mhs/MHS/drivers/robots/aicrowd__real_robots",
-  "website": "https://mhs.openai4s.org",
+  "title": "REALRobot2020 Kuka iiwa tabletop (PyBullet simulation)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "REALRobot2020 Kuka iiwa tabletop (PyBullet simulation), adapted from aicrowd/real_robots. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/aicrowd__real_robots/",
   "upstream": {
     "repo_url": "https://github.com/aicrowd/real_robots",
     "commit": "6dd5b70bad14426483e2d3ee29b3d8708d34e1ba",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/aicrowd__real_robots",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aicrowd__real_robots --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aicrowd__real_robots --backend fake --mcp"
 }

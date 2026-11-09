@@ -2,7 +2,11 @@
   "name": "labs/michel4j__aunt-isara",
   "package": "labs/michel4j__aunt-isara",
   "mhs_package": "mhs/MHS/drivers/labs/michel4j__aunt-isara",
-  "website": "https://mhs.openai4s.org",
+  "title": "ISARA sample automounter (AuntISARAApp)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "ISARA sample automounter (AuntISARAApp), adapted from michel4j/aunt-isara. It reads `status`, `action`, `position`, `tool` and 7 more; runs `select_mount_port`, `home` and `stop_all_motion`. `select_mount_port`: convert a dewar port into the native tool, puck and sample mount parameters and store it as the next port; this prepares a mount and does not move the robot. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/michel4j__aunt-isara/",
   "upstream": {
     "repo_url": "https://github.com/michel4j/aunt-isara",
     "commit": "f95cff5e6cec38e0b9945ae5673251fa5d11466f",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/michel4j__aunt-isara",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/michel4j__aunt-isara --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/michel4j__aunt-isara --backend fake --mcp"
 }

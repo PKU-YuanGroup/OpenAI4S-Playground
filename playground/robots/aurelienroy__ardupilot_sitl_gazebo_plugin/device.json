@@ -2,7 +2,11 @@
   "name": "robots/aurelienroy__ardupilot_sitl_gazebo_plugin",
   "package": "robots/aurelienroy__ardupilot_sitl_gazebo_plugin",
   "mhs_package": "mhs/MHS/drivers/robots/aurelienroy__ardupilot_sitl_gazebo_plugin",
-  "website": "https://mhs.openai4s.org",
+  "title": "ArduPilot SITL Gazebo plugin (ROS 1 surface)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "ArduPilot SITL Gazebo plugin (ROS 1 surface), adapted from aurelienroy/ardupilot_sitl_gazebo_plugin. It reads `observe_motor_speed`; runs `take_lapse_lock` and `release_lapse_lock`. `take_lapse_lock`: take the plugin's bounded wall-time lapse lock with the upstream method default horizon of 1 s; this pauses the plugin loop that steps the paused Gazebo world and exchanges packets with ArduPilot SITL, not ArduPilot itself, and the plugin clears the lock automatically when the timer expires. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/aurelienroy__ardupilot_sitl_gazebo_plugin/",
   "upstream": {
     "repo_url": "https://github.com/aurelienroy/ardupilot_sitl_gazebo_plugin",
     "commit": "75430fbc77967cd0a2e3c429a76b5787a9bff2d1",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/aurelienroy__ardupilot_sitl_gazebo_plugin",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aurelienroy__ardupilot_sitl_gazebo_plugin --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aurelienroy__ardupilot_sitl_gazebo_plugin --backend fake --mcp"
 }

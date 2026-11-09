@@ -2,7 +2,11 @@
   "name": "labs/beniroquai__opentrons-microscope-platereader",
   "package": "labs/beniroquai__opentrons-microscope-platereader",
   "mhs_package": "mhs/MHS/drivers/labs/beniroquai__opentrons-microscope-platereader",
-  "website": "https://mhs.openai4s.org",
+  "title": "NEJE laser 2 engraver controller (pyGraver serial protocol)",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "NEJE laser 2 engraver controller (pyGraver serial protocol), adapted from beniroquai/opentrons-microscope-platereader. It reads `carving_progress`; runs `move_xy`, `set_laser`, `pause_carving` and `stop_carving`. `move_xy`: move the engraver head to an absolute XY target (moveXY frame). A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/beniroquai__opentrons-microscope-platereader/",
   "upstream": {
     "repo_url": "https://github.com/beniroquai/opentrons-microscope-platereader",
     "commit": "867f54163da7e8d17db1e6aac0bbdb0105905f22",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/beniroquai__opentrons-microscope-platereader",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/beniroquai__opentrons-microscope-platereader --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/beniroquai__opentrons-microscope-platereader --backend fake --mcp"
 }

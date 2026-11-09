@@ -2,7 +2,11 @@
   "name": "robots/linden713__humanoid_amp",
   "package": "robots/linden713__humanoid_amp",
   "mhs_package": "mhs/MHS/drivers/robots/linden713__humanoid_amp",
-  "website": "https://mhs.openai4s.org",
+  "title": "Humanoid AMP (Isaac Lab DirectRLEnv, dance task)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "Humanoid AMP (Isaac Lab DirectRLEnv, dance task), adapted from linden713/humanoid_amp. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/linden713__humanoid_amp/",
   "upstream": {
     "repo_url": "https://github.com/linden713/humanoid_amp",
     "commit": "99efa6d60e351ec3def0dc6e983baf143fd31328",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/linden713__humanoid_amp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linden713__humanoid_amp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/linden713__humanoid_amp --backend fake --mcp"
 }

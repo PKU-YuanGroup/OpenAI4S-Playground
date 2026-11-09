@@ -2,7 +2,11 @@
   "name": "robots/qdeyna__ur10e_2f140_topic_based_ros2_control",
   "package": "robots/qdeyna__ur10e_2f140_topic_based_ros2_control",
   "mhs_package": "mhs/MHS/drivers/robots/qdeyna__ur10e_2f140_topic_based_ros2_control",
-  "website": "https://mhs.openai4s.org",
+  "title": "UR10e arm (fake hardware)",
+  "category": "Robot arms and grippers",
+  "topic": null,
+  "intro": "UR10e arm (fake hardware), adapted from qdeyna/ur10e_2f140_topic_based_ros2_control. It reads `joint_positions`, `joint_velocities` and `read_joint_state`; runs `follow_arm_trajectory` and `activate_trajectory_controller`. `follow_arm_trajectory`: send FollowJointTrajectory points on the fake-hardware scaled controller; return the controller error_code and error_string. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/qdeyna__ur10e_2f140_topic_based_ros2_control/",
   "upstream": {
     "repo_url": "https://github.com/qdeyna/ur10e_2f140_topic_based_ros2_control",
     "commit": "7db5397edae2795c8366d1ac1581f277124bde98",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/qdeyna__ur10e_2f140_topic_based_ros2_control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/qdeyna__ur10e_2f140_topic_based_ros2_control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/qdeyna__ur10e_2f140_topic_based_ros2_control --backend fake --mcp"
 }

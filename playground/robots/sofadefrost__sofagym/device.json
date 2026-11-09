@@ -2,7 +2,11 @@
   "name": "robots/sofadefrost__sofagym",
   "package": "robots/sofadefrost__sofagym",
   "mhs_package": "mhs/MHS/drivers/robots/sofadefrost__sofagym",
-  "website": "https://mhs.openai4s.org",
+  "title": "SofaGym soft trunk (trunk-v0)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "SofaGym soft trunk (trunk-v0), adapted from sofadefrost/sofagym. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/sofadefrost__sofagym/",
   "upstream": {
     "repo_url": "https://github.com/sofadefrost/sofagym",
     "commit": "f5ad4e44a0dc522d8018c184245b7aa630292118",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/sofadefrost__sofagym",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sofadefrost__sofagym --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/sofadefrost__sofagym --backend fake --mcp"
 }

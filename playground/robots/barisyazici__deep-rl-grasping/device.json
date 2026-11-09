@@ -2,7 +2,11 @@
   "name": "robots/barisyazici__deep-rl-grasping",
   "package": "robots/barisyazici__deep-rl-grasping",
   "mhs_package": "mhs/MHS/drivers/robots/barisyazici__deep-rl-grasping",
-  "website": "https://mhs.openai4s.org",
+  "title": "deep-rl-grasping gripper-env-v0 (simulated grasping)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "deep-rl-grasping gripper-env-v0 (simulated grasping), adapted from barisyazici/deep-rl-grasping. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/barisyazici__deep-rl-grasping/",
   "upstream": {
     "repo_url": "https://github.com/barisyazici/deep-rl-grasping",
     "commit": "fd2214e42a77e80fa986f04e27e043e0133b4d51",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/barisyazici__deep-rl-grasping",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/barisyazici__deep-rl-grasping --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/barisyazici__deep-rl-grasping --backend fake --mcp"
 }

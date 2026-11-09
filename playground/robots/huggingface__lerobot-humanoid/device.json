@@ -2,7 +2,11 @@
   "name": "robots/huggingface__lerobot-humanoid",
   "package": "robots/huggingface__lerobot-humanoid",
   "mhs_package": "mhs/MHS/drivers/robots/huggingface__lerobot-humanoid",
-  "website": "https://mhs.openai4s.org",
+  "title": "LeRobot humanoid bipedal platform (MuJoCo simulation)",
+  "category": "Simulation",
+  "topic": "humanoid robots",
+  "intro": "LeRobot humanoid bipedal platform (MuJoCo simulation), adapted from huggingface/lerobot-humanoid. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/huggingface__lerobot-humanoid/",
   "upstream": {
     "repo_url": "https://github.com/huggingface/lerobot-humanoid",
     "commit": "d0b0d9c51853a1e821a12186e9796cded1b79b4b",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/huggingface__lerobot-humanoid",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__lerobot-humanoid --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/huggingface__lerobot-humanoid --backend fake --mcp"
 }

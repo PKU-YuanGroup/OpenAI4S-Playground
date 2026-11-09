@@ -2,7 +2,11 @@
   "name": "robots/dartenv__dart-env",
   "package": "robots/dartenv__dart-env",
   "mhs_package": "mhs/MHS/drivers/robots/dartenv__dart-env",
-  "website": "https://mhs.openai4s.org",
+  "title": "dart-env Copy-v0 (algorithmic tape world)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "dart-env Copy-v0 (algorithmic tape world), adapted from dartenv/dart-env. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/dartenv__dart-env/",
   "upstream": {
     "repo_url": "https://github.com/dartenv/dart-env",
     "commit": "43e5f8c17b534e180e2340ec2ef405950ad7f542",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/dartenv__dart-env",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dartenv__dart-env --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/dartenv__dart-env --backend fake --mcp"
 }

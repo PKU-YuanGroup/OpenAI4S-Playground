@@ -2,7 +2,11 @@
   "name": "robots/brave-eai__dexjoco",
   "package": "robots/brave-eai__dexjoco",
   "mhs_package": "mhs/MHS/drivers/robots/brave-eai__dexjoco",
-  "website": "https://mhs.openai4s.org",
+  "title": "DexJoCo bimanual assembly (MuJoCo scene)",
+  "category": "Simulation",
+  "topic": "robot arm manipulation",
+  "intro": "DexJoCo bimanual assembly (MuJoCo scene), adapted from brave-eai/dexjoco. It reads `time_ms`, `qpos`, `qvel`, `ctrl` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/brave-eai__dexjoco/",
   "upstream": {
     "repo_url": "https://github.com/brave-eai/dexjoco",
     "commit": "8d23b0fab23b17a58c4b55f3942e17013aaf8267",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/brave-eai__dexjoco",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/brave-eai__dexjoco --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/brave-eai__dexjoco --backend fake --mcp"
 }

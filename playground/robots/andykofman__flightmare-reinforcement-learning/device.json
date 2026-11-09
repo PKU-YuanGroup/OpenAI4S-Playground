@@ -2,7 +2,11 @@
   "name": "robots/andykofman__flightmare-reinforcement-learning",
   "package": "robots/andykofman__flightmare-reinforcement-learning",
   "mhs_package": "mhs/MHS/drivers/robots/andykofman__flightmare-reinforcement-learning",
-  "website": "https://mhs.openai4s.org",
+  "title": "Flightmare FlightEnvVec (QuadrotorEnv_v1 simulation)",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "Flightmare FlightEnvVec (QuadrotorEnv_v1 simulation), adapted from andykofman/flightmare-reinforcement-learning. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/andykofman__flightmare-reinforcement-learning/",
   "upstream": {
     "repo_url": "https://github.com/andykofman/flightmare-reinforcement-learning",
     "commit": "22fb5d16eec32b1816aa568c20643d91ca7c76f7",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/andykofman__flightmare-reinforcement-learning",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andykofman__flightmare-reinforcement-learning --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/andykofman__flightmare-reinforcement-learning --backend fake --mcp"
 }

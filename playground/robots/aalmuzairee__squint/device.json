@@ -2,7 +2,11 @@
   "name": "robots/aalmuzairee__squint",
   "package": "robots/aalmuzairee__squint",
   "mhs_package": "mhs/MHS/drivers/robots/aalmuzairee__squint",
-  "website": "https://mhs.openai4s.org",
+  "title": "Squint SO-101 LiftCube (ManiSkill)",
+  "category": "Simulation",
+  "topic": null,
+  "intro": "Squint SO-101 LiftCube (ManiSkill), adapted from aalmuzairee/squint. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/aalmuzairee__squint/",
   "upstream": {
     "repo_url": "https://github.com/aalmuzairee/squint",
     "commit": "7086fd516eda7df585a5261c541e0670a6d916b4",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/aalmuzairee__squint",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aalmuzairee__squint --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/aalmuzairee__squint --backend fake --mcp"
 }

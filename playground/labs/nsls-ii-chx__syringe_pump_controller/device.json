@@ -2,7 +2,11 @@
   "name": "labs/nsls-ii-chx__syringe_pump_controller",
   "package": "labs/nsls-ii-chx__syringe_pump_controller",
   "mhs_package": "mhs/MHS/drivers/labs/nsls-ii-chx__syringe_pump_controller",
-  "website": "https://mhs.openai4s.org",
+  "title": "NSLS-II CHX syringe pump controller",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "NSLS-II CHX syringe pump controller, adapted from nsls-ii-chx/syringe_pump_controller. It reads `direction` and `dispensed_volume`; sets `flow_rate` and `volume`; runs `dispense` and `stop_pump`. `dispense`: run a pump at a declared flow rate for a declared duration or volume in a declared direction, reporting the volume moved. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/nsls-ii-chx__syringe_pump_controller/",
   "upstream": {
     "repo_url": "https://github.com/nsls-ii-chx/syringe_pump_controller",
     "commit": "cbda9ca1c20127a220eb91a61b6420a366ae5cf8",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/nsls-ii-chx__syringe_pump_controller",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-chx__syringe_pump_controller --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/nsls-ii-chx__syringe_pump_controller --backend fake --mcp"
 }

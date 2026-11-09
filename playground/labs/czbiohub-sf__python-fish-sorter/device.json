@@ -2,7 +2,11 @@
   "name": "labs/czbiohub-sf__python-fish-sorter",
   "package": "labs/czbiohub-sf__python-fish-sorter",
   "mhs_package": "mhs/MHS/drivers/labs/czbiohub-sf__python-fish-sorter",
-  "website": "https://mhs.openai4s.org",
+  "title": "Fish Sorter pneumatic valve controller (Wago, Modbus TCP)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Fish Sorter pneumatic valve controller (Wago, Modbus TCP), adapted from czbiohub-sf/python-fish-sorter. It reads `function_code` and `function_echo`; sets `draw_time_ms` and `expel_time_ms`; runs `set_pressure`, `set_vacuum`, `idle_atmospheric` and `safe_pneumatics`. `set_pressure`: pressure on or off: writes the upstream press_on or press_off code and waits until the controller has taken it. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/czbiohub-sf__python-fish-sorter/",
   "upstream": {
     "repo_url": "https://github.com/czbiohub-sf/python-fish-sorter",
     "commit": "a8f2409fa6924b1aed83e1224c34a0528b5cb002",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/czbiohub-sf__python-fish-sorter",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/czbiohub-sf__python-fish-sorter --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/czbiohub-sf__python-fish-sorter --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "robots/ernestum__quadrotorenvironment",
   "package": "robots/ernestum__quadrotorenvironment",
   "mhs_package": "mhs/MHS/drivers/robots/ernestum__quadrotorenvironment",
-  "website": "https://mhs.openai4s.org",
+  "title": "QuadrotorEnvironment quadrotor simulator",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "QuadrotorEnvironment quadrotor simulator, adapted from ernestum/quadrotorenvironment. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step`, `reset` and `seed`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/ernestum__quadrotorenvironment/",
   "upstream": {
     "repo_url": "https://github.com/ernestum/quadrotorenvironment",
     "commit": "597f8e3294c6a5d3ffc6907749f94a97dee700f3",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/ernestum__quadrotorenvironment",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ernestum__quadrotorenvironment --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/ernestum__quadrotorenvironment --backend fake --mcp"
 }

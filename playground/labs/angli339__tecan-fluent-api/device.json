@@ -2,7 +2,11 @@
   "name": "labs/angli339__tecan-fluent-api",
   "package": "labs/angli339__tecan-fluent-api",
   "mhs_package": "mhs/MHS/drivers/labs/angli339__tecan-fluent-api",
-  "website": "https://mhs.openai4s.org",
+  "title": "Tecan Fluent liquid handler through FluentControl (tecan_fluent.tecan_ctrl.Tecan)",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Tecan Fluent liquid handler through FluentControl (tecan_fluent.tecan_ctrl.Tecan), adapted from angli339/tecan-fluent-api. It reads `fluent_status` and `channel_open`; runs `liha_aspirate`, `liha_dispense`, `liha_mix`, `mca_aspirate` and 2 more. `liha_aspirate`: aspirate a volume through one LiHa tip from a 96-well labware well. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/angli339__tecan-fluent-api/",
   "upstream": {
     "repo_url": "https://github.com/angli339/tecan-fluent-api",
     "commit": "d087edd9a4cd415961c8337fc82a300bf24fda11",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/angli339__tecan-fluent-api",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/angli339__tecan-fluent-api --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/angli339__tecan-fluent-api --backend fake --mcp"
 }

@@ -2,7 +2,11 @@
   "name": "labs/mattjax16__rigol-dho-mcp",
   "package": "labs/mattjax16__rigol-dho-mcp",
   "mhs_package": "mhs/MHS/drivers/labs/mattjax16__rigol-dho-mcp",
-  "website": "https://mhs.openai4s.org",
+  "title": "Rigol DHO oscilloscope through rigol-dho-mcp (controlled MCP contract)",
+  "category": "Electronics and measurement",
+  "topic": null,
+  "intro": "Rigol DHO oscilloscope through rigol-dho-mcp (controlled MCP contract), adapted from mattjax16/rigol-dho-mcp. It reads `trigger_status`; runs `identify`, `get_status`, `run_control`, `configure_channel` and 12 more. `identify`: query the *IDN? identity string through the identify tool. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/mattjax16__rigol-dho-mcp/",
   "upstream": {
     "repo_url": "https://github.com/mattjax16/rigol-dho-mcp",
     "commit": "f9ac7191869845ae46ca714de69a877c388b2530",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/mattjax16__rigol-dho-mcp",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mattjax16__rigol-dho-mcp --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/mattjax16__rigol-dho-mcp --backend fake --mcp"
 }

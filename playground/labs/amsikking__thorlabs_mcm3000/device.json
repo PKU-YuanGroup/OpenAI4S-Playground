@@ -2,7 +2,11 @@
   "name": "labs/amsikking__thorlabs_mcm3000",
   "package": "labs/amsikking__thorlabs_mcm3000",
   "mhs_package": "mhs/MHS/drivers/labs/amsikking__thorlabs_mcm3000",
-  "website": "https://mhs.openai4s.org",
+  "title": "Thorlabs MCM3000 series 3-axis controller",
+  "category": "Motion control",
+  "topic": null,
+  "intro": "Thorlabs MCM3000 series 3-axis controller, adapted from amsikking/thorlabs_mcm3000. It reads `position_ch0`, `position_ch1` and `position_ch2`; runs `move_channel` and `stop_motion`. `move_channel`: move one configured controller channel to a position in micrometres and report the position the controller reads back. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/amsikking__thorlabs_mcm3000/",
   "upstream": {
     "repo_url": "https://github.com/amsikking/thorlabs_mcm3000",
     "commit": "390cd97e44abe04945db9b73ec8dc34a099d9f96",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/amsikking__thorlabs_mcm3000",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/amsikking__thorlabs_mcm3000 --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/amsikking__thorlabs_mcm3000 --backend fake --mcp"
 }

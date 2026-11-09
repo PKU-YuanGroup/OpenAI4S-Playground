@@ -2,7 +2,11 @@
   "name": "robots/misterblue__ros2_raspicam_node",
   "package": "robots/misterblue__ros2_raspicam_node",
   "mhs_package": "mhs/MHS/drivers/robots/misterblue__ros2_raspicam_node",
-  "website": "https://mhs.openai4s.org",
+  "title": "Raspberry Pi camera JPEG stream (ros2_raspicam_node)",
+  "category": "Sensors and cameras",
+  "topic": null,
+  "intro": "Raspberry Pi camera JPEG stream (ros2_raspicam_node), adapted from misterblue/ros2_raspicam_node. It runs `capture_image`. `capture_image`: capture a single image from a named camera with a declared resolution and exposure and return an image artifact reference. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/robots/misterblue__ros2_raspicam_node/",
   "upstream": {
     "repo_url": "https://github.com/misterblue/ros2_raspicam_node",
     "commit": "cebf5fdacd18b50943bd234600e8fc3622ae4a46",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/misterblue__ros2_raspicam_node",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/misterblue__ros2_raspicam_node --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/misterblue__ros2_raspicam_node --backend fake --mcp"
 }

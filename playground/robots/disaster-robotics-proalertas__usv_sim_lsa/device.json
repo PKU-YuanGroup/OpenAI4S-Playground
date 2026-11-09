@@ -2,7 +2,11 @@
   "name": "robots/disaster-robotics-proalertas__usv_sim_lsa",
   "package": "robots/disaster-robotics-proalertas__usv_sim_lsa",
   "mhs_package": "mhs/MHS/drivers/robots/disaster-robotics-proalertas__usv_sim_lsa",
-  "website": "https://mhs.openai4s.org",
+  "title": "USV_SIM_LSA differential USV simulator",
+  "category": "Simulation",
+  "topic": "underwater robotics",
+  "intro": "USV_SIM_LSA differential USV simulator, adapted from disaster-robotics-proalertas/usv_sim_lsa. It reads `read_simulator_state`, `read_goal_result` and `read_thruster_command`; runs `move_usv_goal`, `pause_physics` and `unpause_physics`. `move_usv_goal`: publish one nav_msgs/Odometry goal to the heading controller's move_usv/goal subscription; the controller publishes the two thruster commands without an acknowledgement. The receipt proves only that rosbridge accepted the publication, not that the boat moved or reached the goal. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/disaster-robotics-proalertas__usv_sim_lsa/",
   "upstream": {
     "repo_url": "https://github.com/disaster-robotics-proalertas/usv_sim_lsa",
     "commit": "61e8f4a5f78f18c01dac0d4eea7f4c3c416e6cb8",
@@ -20,6 +24,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/disaster-robotics-proalertas__usv_sim_lsa",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/disaster-robotics-proalertas__usv_sim_lsa --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/disaster-robotics-proalertas__usv_sim_lsa --backend fake --mcp"
 }

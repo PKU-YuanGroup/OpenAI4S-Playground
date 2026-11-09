@@ -2,7 +2,11 @@
   "name": "robots/iamaisim__projectairsim",
   "package": "robots/iamaisim__projectairsim",
   "mhs_package": "mhs/MHS/drivers/robots/iamaisim__projectairsim",
-  "website": "https://mhs.openai4s.org",
+  "title": "Project AirSim drone-landing environment",
+  "category": "Simulation",
+  "topic": "UAVs",
+  "intro": "Project AirSim drone-landing environment, adapted from iamaisim/projectairsim. It reads `observation`, `reward`, `terminated`, `truncated` and 4 more; runs `step` and `reset`. `step`: advance the simulated world by a bounded number of fixed timesteps, optionally applying an action for each step, and return the resulting observation and terminal flags. A simulator: the market serves it with a stand-in that needs no simulator install.",
+  "website": "https://mhs.openai4s.org/market/robots/iamaisim__projectairsim/",
   "upstream": {
     "repo_url": "https://github.com/iamaisim/projectairsim",
     "commit": "62229cd7c77ad31da7bc8aba8dd6303c564d8ba2",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add robots/iamaisim__projectairsim",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/iamaisim__projectairsim --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/robots/iamaisim__projectairsim --backend fake --mcp"
 }

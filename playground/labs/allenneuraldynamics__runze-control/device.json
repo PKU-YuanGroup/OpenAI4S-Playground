@@ -2,7 +2,11 @@
   "name": "labs/allenneuraldynamics__runze-control",
   "package": "labs/allenneuraldynamics__runze-control",
   "mhs_package": "mhs/MHS/drivers/labs/allenneuraldynamics__runze-control",
-  "website": "https://mhs.openai4s.org",
+  "title": "Runze ZSB-SY01B multichannel syringe pump",
+  "category": "Liquid handling and fluidics",
+  "topic": null,
+  "intro": "Runze ZSB-SY01B multichannel syringe pump, adapted from allenneuraldynamics/runze-control. It reads `position_steps`, `position_percent`, `position_ul`, `firmware_version` and 4 more; runs `move_to_percent`, `aspirate`, `dispense`, `select_valve_port` and 3 more. `move_to_percent`: move the plunger to an absolute position in percent of full travel. A hardware driver: the market serves its fake backend, so no instrument is needed.",
+  "website": "https://mhs.openai4s.org/market/labs/allenneuraldynamics__runze-control/",
   "upstream": {
     "repo_url": "https://github.com/allenneuraldynamics/runze-control",
     "commit": "34392b3d9bc0d60c0c46f69908fec7f108cef230",
@@ -21,6 +25,7 @@
     "backend": "fake",
     "status": "contract_checked"
   },
+  "install_openai4s": "openai4s lab add labs/allenneuraldynamics__runze-control",
   "serve_http": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/allenneuraldynamics__runze-control --backend fake --port 7400",
   "serve_mcp": "PYTHONPATH=mhs/MHS/sdk/src python3 -m mhs serve mhs/MHS/drivers/labs/allenneuraldynamics__runze-control --backend fake --mcp"
 }
