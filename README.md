@@ -55,7 +55,7 @@ The original six featured simulator submodules remain available with `git submod
 ## Update the catalog
 
 ```bash
-git -C mhs pull --ff-only
+git submodule update --init --remote mhs # the submodule is a detached checkout: move it to OpenMHS main
 python3 scripts/sync_devices.py          # devices.json, CATALOG.md, playground/*/device.json and README.md
 python3 scripts/sync_devices.py --check
 ```

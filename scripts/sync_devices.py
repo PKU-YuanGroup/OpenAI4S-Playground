@@ -168,13 +168,23 @@ def main():
         parser.error("mhs/MHS/drivers/market.json not found; run `git submodule update --init mhs` "
                      "(an OpenMHS with `mhs market`)")
     rows = devices()
+    wanted = outputs(rows)
     different = []
-    for path, text in outputs(rows).items():
+    for path, text in wanted.items():
         if not path.is_file() or path.read_text() != text:
             different.append(str(path.relative_to(ROOT)))
             if not args.check:
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text(text)
+    # A package that left the market leaves its generated pair behind: device.json is written by this script only.
+    for record in sorted((ROOT / "playground").glob("**/device.json")):
+        if record in wanted:
+            continue
+        for orphan in (record, record.with_name("README.md")):
+            if orphan.is_file():
+                different.append(str(orphan.relative_to(ROOT)) + " (no longer in the market)")
+                if not args.check:
+                    orphan.unlink()
     if args.check and different:
         parser.exit(1, "catalog drift: " + ", ".join(different[:10]) + "\n")
     print(f"{len(rows)} market packages; {len(different)} {'stale' if args.check else 'updated'} files")
